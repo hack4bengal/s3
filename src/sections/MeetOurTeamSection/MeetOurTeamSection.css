@@ -1,0 +1,66 @@
+.meetourteam_section {
+
+  color: white;
+  font-family: 'Poppins';
+}
+
+.meetourteam_section-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meetourteam_section-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 82px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.meetourteam_section-title2 {
+  margin-bottom: 3rem;
+}
+
+.meetourteam_section-button {
+  border: 1px solid #ff1717;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  color: #d7d7d7;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.meetourteam_section-button:hover {
+  transition: all 0.2s ease-in-out;
+  color: white;
+  background-color: #ff1717;
+  border: 1px solid #ff1717;
+}
+
+@media screen and (max-width: 650px) {
+  .meetourteam_section {
+    padding-top: 2rem;
+  }
+
+  .meetourteam_section-title {
+    font-size: 36px;
+    line-height: normal;
+  }
+
+  .meetourteam_section-title2 {
+    font-size: 30px !important;
+    margin-top: 20px;
+  }
+}

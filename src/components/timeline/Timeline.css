@@ -1,0 +1,192 @@
+.headers-timeline_main {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.headers-timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+}
+
+.row-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+
+}
+
+.headers {
+  flex: 1;
+  /*   padding: 20px; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxed {
+  background-color: rgba(34, 34, 34, 0.25);
+  width: 100%;
+  min-height: 110px;
+  /*   padding: 20px; */
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #e13b3c;
+  color: white;
+  font-weight: 700;
+  font-family: 'Poppins';
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #e13b3c;
+  position: absolute;
+  bottom: -15px;
+}
+
+.active-timelineOne {
+  background-color: #e13b3c;
+  color: white;
+  box-shadow: 0 0 10px 0 #e13b3c;
+}
+
+.boxed:hover {
+  background-color: #e13b3c;
+  color: white;
+  box-shadow: 0 0 10px 0 #e13b3c;
+  cursor: pointer;
+}
+
+.timeline-card {
+  min-height: 200px;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.25);
+  border: 2px solid #e13b3c;
+  border-radius: 5px;
+}
+
+.timeline-card-header {
+  display: flex;
+  flex-direction: row;
+  min-height: 40%;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-family: 'Poppins';
+}
+
+.col-1 {
+  width: 50%;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8px;
+  background-color: #e13b3c;
+  text-align: center;
+}
+
+.col-2 {
+  width: 50%;
+  text-align: center;
+  background-color: #343a40;
+  border-top-right-radius: 5px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8px;
+}
+
+.timeline-card-body {
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 500;
+  padding: 15px;
+}
+
+.timeline-card-mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .row-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .show-mob-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hid-mob-time {
+    display: none;
+  }
+
+  .timeline-card-mobile {
+    display: block;
+  }
+
+  .timeline-card-xl {
+    display: none;
+  }
+
+  .row-one {
+    flex-wrap: wrap;
+  }
+
+  .timeline-card {
+    width: 85%;
+  }
+
+  .headers {
+    /* flex: 0 0 50%; */
+    width: 100%;
+
+    padding: 5px;
+  }
+
+  .boxed {
+    width: 90%;
+  }
+
+  .col-1 {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .col-2 {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .timeline-card-header {
+    flex-direction: column;
+  }
+}

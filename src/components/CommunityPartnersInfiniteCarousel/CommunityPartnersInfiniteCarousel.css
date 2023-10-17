@@ -1,0 +1,41 @@
+.hack4bengal__section6_communityPartnerSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem;
+  border-radius: 0.75rem;
+  gap: 3rem;
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+  min-height: 243px;
+}
+
+.platinum {
+  transition: all 0.8s ease;
+  border: 2px solid rgba(18, 17, 39, 0.08);
+}
+
+.hack4bengal__section6_communityPartnerImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  animation: move-rtl 10000ms linear infinite;
+
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  overflow: hidden;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

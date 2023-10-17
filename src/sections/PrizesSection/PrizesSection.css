@@ -1,0 +1,416 @@
+.prize_section {
+  color: white;
+  font-family: "Poppins";
+}
+
+.prize_section-boxtitle,
+.prize_section-box,
+.prize_section-title {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.prize_section-description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.prize_section-title1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+}
+
+.prize_section-title2 {
+  font-style: medium;
+  font-weight: 370;
+  font-size: 40px;
+  line-height: 82px;
+  text-align: center;
+  letter-spacing: 1px;
+  /* margin-bottom: 1rem; */
+}
+
+.prize_section-box {
+  width: 40%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  border-radius: 40px;
+  margin: 2rem 0;
+
+  background: rgba(34, 34, 34, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(237, 238, 244, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  cursor: pointer;
+}
+
+.prize_section-box:hover {
+  box-shadow: 0 8px 32px 0 rgba(135, 33, 31, 0.57);
+}
+
+.prize_section-boxtitle {
+  font-size: 30px;
+  font-style: normal;
+  margin: 1rem 0;
+  padding-bottom: 3%;
+  color: #e13b3c;
+  font-weight: 600;
+  text-align: center;
+}
+
+.prize_section-title hr {
+  width: 10%;
+  margin: auto;
+  border: 1px solid #e13b3c;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .prize_section-box {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .prize_section-title1 {
+    font-size: 36px;
+    line-height: normal;
+  }
+
+  .prize_section-title2 {
+    line-height: normal;
+    font-size: 16px;
+  }
+
+  .prize_section-box {
+    width: 100%;
+    padding: 3.5rem;
+  }
+
+  .prize_section-boxtitle {
+    font-size: 24px;
+  }
+
+  .prize_section-boxInfo {
+    font-size: 16px;
+  }
+}
+
+/* //* Prizes section */
+
+.prizes_box_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8rem;
+  /*   padding: 1rem; */
+  gap: 3rem;
+  width: 1200px;
+}
+
+.prizebox {
+  min-height: 18rem;
+  position: relative;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  min-width: 360px;
+  background-image: url("../../assets//images//prizes//cardbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.8s ease;
+}
+
+.flip-box-prizes {
+  background-image: url("../../assets//images//prizes//cardbg.png");
+}
+
+.prizebox img {
+  width: 8rem;
+}
+
+.prizebox1 {
+  margin-top: 5rem;
+  min-height: 16rem;
+}
+
+.prizebox2 {
+  margin-top: 0rem;
+  min-height: 10rem;
+  display: block;
+}
+
+.prizebox3 {
+  margin-top: 5rem;
+  min-height: 16rem;
+}
+
+.prizebox4 {
+  display: none;
+}
+
+.prizebox2:hover {
+  box-shadow: 0 0 10px 0 #ffd700;
+}
+
+.prizebox1:hover {
+  box-shadow: 0 0 10px 0 #c0c0c0;
+}
+
+.prizebox3:hover {
+  box-shadow: 0 0 10px 0 #cd7f32;
+}
+
+.prizebox1 {
+  margin-top: 5rem;
+  min-height: 18rem;
+}
+
+.prizebox1_imgdiv {
+  position: absolute;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: -4.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.prizes_textdiv {
+  width: 100%;
+  margin: auto;
+  border-radius: 15px;
+  transition: all 0.8s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  min-height: 95%;
+  color: #fff;
+}
+
+.prizes_textdiv2 {
+  min-height: 80%;
+}
+
+.prize_textdiv_texts {
+  font-family: Poppins;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.prize_textdiv_texts h1 {
+  margin-top: 1rem;
+  font-size: 3.5rem;
+}
+
+.prize_textdiv_texts h2 {
+  font-size: 1.75rem;
+}
+
+.prizes_btndiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.prizes_btndiv > button {
+  border: 1px solid #ff1717;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  color: #d7d7d7;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.prizes_btndiv > button:hover {
+  transition: all 0.2s ease-in-out;
+  color: white;
+  background-color: #ff1717;
+  border: 1px solid #ff1717;
+}
+
+@media screen and (max-width: 1300px) {
+  .prizes_box_main {
+    flex-wrap: wrap;
+    margin-top: 0rem;
+  }
+
+  .prizebox1 {
+    margin-top: 0rem;
+    min-height: 16rem;
+  }
+
+  .prizebox2 {
+    display: none;
+  }
+
+  .prizebox4 {
+    display: block;
+    margin-top: 0rem;
+    min-height: 16rem;
+  }
+
+  .prizes_textdiv2 {
+    min-height: 95%;
+  }
+
+  .prizebox3 {
+    margin-top: 0rem;
+    min-height: 16rem;
+  }
+
+  .prizes_textdiv {
+    margin-top: 90px;
+    padding-top: 40px;
+  }
+
+  .prizebox1_imgdiv {
+    margin-top: 3rem;
+  }
+
+  .prizes_btndiv {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mb_prizeboxparent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+
+  .mb_prizebox {
+    min-height: 18rem;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    width: 80vw;
+    background-image: url("../../assets//images//prizes//cardbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.8s ease;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .mb_prizebox1:hover {
+    box-shadow: 0 0 10px 0 #ffd700;
+  }
+
+  .mb_prizebox2:hover {
+    box-shadow: 0 0 10px 0 #c0c0c0;
+  }
+
+  .mb_prizebox3:hover {
+    box-shadow: 0 0 10px 0 #cd7f32;
+  }
+
+  .mb_prizebox > img {
+    width: 120px;
+  }
+
+  .mb_prizebox > div > h3 {
+    font-size: 3rem;
+  }
+
+  .mb_prizebox > div > p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mb_prizebox > div > h3 {
+    font-size: 2.2rem;
+  }
+
+  .mb_prizebox > div > p {
+    font-size: 1.5rem;
+  }
+
+  .mb_prizebox > img {
+    width: 100px;
+  }
+
+  .mb_prizebox1 {
+    margin-top: 0rem;
+    min-height: 14rem;
+  }
+
+  .prizebox2 {
+    display: none;
+  }
+
+  .prizebox4 {
+    display: block;
+    margin-top: 0rem;
+    min-height: 14rem;
+  }
+
+  .prizes_textdiv2 {
+    min-height: 95%;
+  }
+
+  .mb_prizebox3 {
+    margin-top: 0rem;
+    min-height: 14rem;
+  }
+
+  .mb_prizebox2 {
+    margin-top: 0rem;
+    min-height: 14rem;
+  }
+
+  .prizes_textdiv {
+    margin-top: 90px;
+    padding-top: 40px;
+  }
+
+  .prizebox1_imgdiv {
+    margin-top: 3rem;
+  }
+
+  .prizes_btndiv {
+    margin-top: 2rem;
+  }
+}

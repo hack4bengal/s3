@@ -1,0 +1,125 @@
+.live_parent {
+  padding: 3rem 9rem;
+}
+
+.live_parent_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.live_counter_parent > h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: 1px;
+  color: #ff171a;
+}
+
+.live_counter_parent > p {
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.live_event_parent {
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  background-color: #242424;
+  border-radius: 10px;
+  max-width: 600px;
+  border: 1px solid #ff171a;
+}
+
+.event_titles {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: #ff171a;
+}
+.current_event {
+  border-right: 6px solid #ff171a;
+  padding-right: 2rem;
+  border-radius: 5px;
+}
+
+.event_name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: white;
+  word-break: break-words;
+}
+
+.live_twitter_feed {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.live_twitter_feed > h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.live_twitter_feed > h2 > span {
+  color: #ff171a;
+}
+
+@media screen and (max-width: 600px) {
+  .live_parent {
+    padding: 2rem 4rem;
+  }
+  .live_parent_header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .live_event_parent {
+    max-width: 90vw;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .current_event {
+    border-bottom: 6px solid #ff171a;
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+
+  .live_twitter_feed > h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.live_bingo{
+ display: flex;   
+ justify-content: center;
+ margin-top: 3rem;
+}
+
+.live_bingo >a>button{
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  background-color: #242424;
+  border-radius: 10px;
+  max-width: 600px;
+  border: 1px solid #ff171a;
+  color: #ff171a;
+   font-size: 2rem;
+   cursor: pointer !important;
+   z-index: 999999;
+}

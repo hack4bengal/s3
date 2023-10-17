@@ -1,0 +1,187 @@
+.faq_section {
+
+  color: white;
+  font-family: "Poppins";
+  margin: 0;
+}
+
+.faq_section-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faq_section-part1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faq_section-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.faq_section-content {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  width: 85%;
+}
+
+.faq_section-part2 {
+  max-width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  min-height: 800px;
+  gap: 6rem;
+}
+
+.section7-heading {
+  font-size: 23px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.section7-accordion {
+  list-style: none;
+}
+
+.section7-accordion_item {
+  border-bottom: 0.5px solid #ffffff;
+  /*  width: 90%; */
+}
+
+.section7-button {
+  background-color: #1B1B1B;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0px;
+  cursor: pointer;
+  border: none;
+}
+
+.section7-control {
+  font-size: 2rem;
+}
+
+.section7-answer {
+  background-color: #1B1B1B;
+  padding: 18px 0px;
+  padding-top: 4px;
+  font-size: 20px;
+  line-height: normal;
+  text-align: left;
+  font-weight: 300;
+}
+
+.section7-question {
+  font-style: normal;
+  font-size: 21px;
+  line-height: 36px;
+  font-family: "Poppins";
+  letter-spacing: -0.5px;
+  width: 80%;
+}
+
+/* activate toggle */
+.section7-accordion_item.active .button {
+  background-color: #15131c;
+}
+
+.section7-answer_wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.2s;
+}
+
+.faq_section-image {
+  width: 40%;
+}
+
+.faq_section-image img {
+  width: 100%;
+}
+
+.faq_section-questions {
+  max-width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  .section7-question {
+    max-width: 90%;
+  }
+
+
+  .faq_section-part2 {
+    max-width: 100%;
+    min-height: 660px;
+  }
+
+  .faq_section-questions {
+    max-width: 90%;
+  }
+
+  .faq_section-image {
+    display: none;
+  }
+
+  .faq_section-part2 {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .faq_section-questions ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq_section-image {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .faq_section-title {
+    font-size: 36px;
+  }
+
+  .faq_section-content {
+    font-size: 16px;
+  }
+
+  .section7-button {
+    padding: 0;
+  }
+
+  .section7-question {
+    font-size: 17px;
+    padding: 12px 0;
+  }
+
+  .section7-answer {
+    font-size: 15px;
+  }
+
+  .section7-control {
+    font-size: 1.2rem;
+  }
+}

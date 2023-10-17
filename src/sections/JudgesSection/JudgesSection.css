@@ -1,0 +1,137 @@
+.hack4bengal__section4 {
+  /*   padding-top: 2rem;
+  padding-bottom: 2rem; */
+  font-family: 'Poppins';
+}
+
+.hack4bengal__section4-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hack4bengal__section4-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 82px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+.hack4bengal__section4-speakers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 650px) {
+  .hack4bengal__section4-speakers {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .hack4bengal__section4-title {
+    font-size: 36px;
+  }
+}
+
+hr {
+  width: 10%;
+  margin: auto;
+  border: 1px solid #e13b3c;
+  margin-bottom: 2rem;
+}
+
+.judges_parent {
+  width: 1200px;
+  margin: auto;
+}
+
+.judges_section {
+  /* padding-top: 4rem;
+  padding-bottom: 4rem; */
+  color: white;
+  font-family: 'Poppins';
+}
+
+.judges_section-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.judges_section_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.judges_section_container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.judges_section_container .slider .slick-list {
+  margin: 0 2rem;
+  box-sizing: initial;
+  padding: 80px 0px;
+  overflow-y: visible;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.judges_section_container .slider .slick-arrow .slick-prev button {
+  display: none;
+}
+
+.judges_section_container .slider .slick-list .slick-slide>div {
+  padding: 0 35px;
+}
+
+.slick-slide {}
+
+@media (min-width: 1024px) {
+  .judges_section_container .slider .slick-list .slick-slide.slick-active.slick-current+.slick-slide {
+    transition: all 1000ms ease-out;
+    scale: 1.1;
+    transform: translateY(-30px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .judges_section-body {
+    margin: 0 1rem;
+  }
+
+  .judges_section {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .judges_section_container .slider .slick-list .slick-slide>div {
+    padding: 0 0;
+  }
+
+  .judges_section-slider {
+    padding-top: 1rem;
+  }
+
+  .judges_section_title {
+    font-size: 36px;
+  }
+}

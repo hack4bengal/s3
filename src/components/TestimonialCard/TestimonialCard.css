@@ -1,0 +1,159 @@
+.hack4bengal__testimonial-cards {
+  padding: 40px 30px;
+  background-color: #242424;
+  border: 4px solid #ff1717;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  min-width: 330px;
+  max-width: 330px;
+  height: 530px;
+}
+
+@media screen and (max-width: 768px) {
+  .hack4bengal__testimonial-cards {
+    min-width: 340px;
+    max-width: 340px;
+  }
+}
+
+.hack4bengal__testimonial-cards .hack4bengal__testimonial-card-img {
+  display: inline-block;
+  height: 135px;
+  width: 135px;
+  margin-bottom: 15px;
+  z-index: 1;
+  position: relative;
+  border: 2px solid red;
+  border-radius: 100%;
+}
+
+.hack4bengal__testimonial-cards .hack4bengal__testimonial-card-img::before {
+  content: '';
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #ff1717;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.hack4bengal__testimonial-cards:hover .hack4bengal__testimonial-card-img::before {
+  height: 100%;
+}
+
+.hack4bengal__testimonial-cards .hack4bengal__testimonial-card-img::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ff1717;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hack4bengal__testimonial-cards .hack4bengal__testimonial-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.hack4bengal__testimonial-cards:hover .hack4bengal__testimonial-card-img img {
+  box-shadow: 0 0 0 14px #fff;
+  transform: scale(0.75);
+}
+
+.hack4bengal__testimonial-cards .name {
+  display: block;
+  font-size: 22px;
+  color: #ff1717;
+  text-transform: capitalize;
+}
+
+.hack4bengal__testimonial-cards .title {
+  display: block;
+  font-size: 0.7rem;
+  font-style: italic;
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.hack4bengal__testimonial-cards .testimonial {
+  display: block;
+  font-size: 0.9rem;
+  /*   font-style: italic; */
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.domain3 {
+  color: #000;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.hack4bengal__testimonial-cards .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #ff1717;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.hack4bengal__testimonial-cards:hover .social {
+  bottom: 0;
+}
+
+.hack4bengal__testimonial-cards .social li {
+  display: inline-block;
+}
+
+.hack4bengal__testimonial-cards .social li a {
+  display: block;
+  padding: 10px;
+  margin-top: 3px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.hack4bengal__testimonial-cards .social li a:hover {
+  color: #ff1717;
+  background-color: #f7f5ec;
+  border-radius: 5px;
+}
+
+/* .slider{
+    border:1px solid blue;
+    margin: 0 auto;
+  } */
+
+.slick-slide div {
+  /* border:1px solid blue; */
+  margin: 0 auto;
+  width: 100%;
+}

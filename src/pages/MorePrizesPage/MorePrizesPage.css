@@ -1,0 +1,338 @@
+.moreprizesection_god {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moreprizesection_parent {
+  width: 1200px;
+}
+
+.moreprizesection_title {
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.moreprizesbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* .moreprizesbox-container2 {
+  align-items: center;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+} */
+
+@media screen and (min-width: 1380px) {
+  .moreprizesbox-container,
+  .moreprizesbox-container2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .moreprizesbox-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+  }
+}
+
+.moreprizesbox-item {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  width: 360px;
+  margin-bottom: 3px;
+  max-width: 100%;
+  cursor: pointer;
+  /* 8 */
+}
+
+.flip-prizebox {
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  margin-bottom: 10px;
+}
+
+.flip-moreprizesbox-front,
+.flip-moreprizesbox-back {
+  /*  background-color: rgb(34, 34, 34); */
+  border: 2px solid #ffffff;
+  /*  border: 2px solid #ff1717; */
+  border-radius: 5px;
+
+  background-image: url("../../assets//images//prizes//cardbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  min-height: 420px;
+  -ms-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-moreprizesbox-front {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-prizebox:hover .flip-moreprizesbox-front {
+  -ms-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-moreprizesbox-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-prizebox:hover .flip-moreprizesbox-back {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-prizebox .inner {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  -ms-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+}
+
+.inner > h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.flip-moreprizesbox-icon {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.flip-moreprizesbox-header {
+  font-size: 34px;
+}
+
+.flip-prizebox p {
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.flip-moreprizesbox-img {
+  margin-top: 25px;
+  width: 40px;
+}
+
+.flip-moreprizesbox-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  color: #ff1717;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+.problem_statement_btn {
+  background-color: #ff1717;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins";
+  font-style: normal;
+  padding: 10px;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+  .tezosbox > .flip-prizebox > .flip-moreprizesbox-back > .inner > p {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .moreprizesection_title {
+    font-size: 36px;
+    line-height: normal;
+  }
+
+  .flip-moreprizesbox-icon {
+    display: none;
+  }
+
+  .flip-moreprizesbox-front,
+  .flip-moreprizesbox-back {
+    min-height: 300px;
+  }
+
+  .moreprizesbox-item {
+    min-width: calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+
+  .moreprizesbox-container2 {
+    padding-top: 0px;
+  }
+
+  .moreprizesbox-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .moreprizesbox-container2 {
+    align-items: center;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .flip-prizebox .inner {
+    padding: 15px;
+  }
+
+  .flip-prizebox h3 {
+    font-size: 20px !important;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*    background-color: #ff1717; */
+    justify-content: center;
+  }
+
+  .flip-prizebox p {
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px !important;
+    letter-spacing: 1px;
+  }
+  .specialheight {
+    min-height: 370px !important;
+  }
+
+  .specialwidth {
+    min-width: 70% !important;
+  }
+}
+
+/* This is for devices (360) */
+
+@media screen and (max-width: 450px) {
+  .flip-prizebox .inner {
+    padding: 2px;
+  }
+
+  .flip-prizebox .inner > p {
+    font-size: 13px !important;
+    margin: 0;
+  }
+
+  .flip-prizebox h3 {
+    font-size: 18px !important;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #ff1717; */
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 0 5px;
+  }
+
+  .problem_statement_btn {
+    font-size: 16px;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    color: #ff1717;
+  }
+
+  .specialheight {
+    min-height: 370px !important;
+  }
+
+  .specialwidth {
+    min-width: 70% !important;
+  }
+}

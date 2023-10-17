@@ -1,0 +1,85 @@
+.hack4bengal__sponsers-carousel-container {
+  background-color: rgba(32, 32, 32, 1);
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 2.5rem;
+}
+
+.hack4bengal__sponsers-carousel {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 800%;
+  animation: scrollInfinite 10s linear infinite;
+}
+
+.hack4bengal__sponsers-carousel:hover {
+  animation-play-state: paused;
+}
+
+.hack4bengal__sponsers-carousel-item {
+  display: inline-block;
+  margin: 2rem 3rem;
+  height: 75px;
+  width: auto;
+  object-fit: contain;
+}
+
+.hack4bengal__sponsers-carousel-item img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+  object-fit: cover;
+}
+
+.codeutsava__sponsers-carousel-item-block {
+  margin: 0px 20vw;
+  display: inline-block;
+}
+
+@keyframes scrollInfinite {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 30));
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.h4b_reg_text_wrapper {
+  font-family: "Montserrat", sans-serif;
+  color: #e53538;
+  background-color: #242425;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.h4b_reg_text_wrapper p {
+  white-space: nowrap;
+  padding: 20px 6rem;
+  letter-spacing: 2px;
+  animation: move-rtl 10000ms linear infinite;
+  margin-bottom: 0px;
+  user-select: none;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 15px #fff, 0 0 1px #fff,
+    0 0 1px #fff, 0 0 2px #fff, 0 0 2px #fff;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

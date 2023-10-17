@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --color-bg: #1B1B1B;
+  --primary-c: #ff1717;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar:horizontal {
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(78, 82, 88, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff1717;
+  border-radius: 10px;
+}

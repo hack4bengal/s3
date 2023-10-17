@@ -1,0 +1,62 @@
+.hack4bengal__section8 {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  color: white;
+  font-family: "Poppins";
+}
+
+.hack4bengal__section8-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hack4bengal__section8-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 82px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+}
+
+.hack4bengal__section8-problems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hack4bengal__section8-button {
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  color: #d7d7d7;
+  transition: all 0.2s ease-in-out;
+}
+
+.hack4bengal__section8-button:hover {
+  transition: all 0.2s ease-in-out;
+  color: white;
+  background-color: #38b6ff;
+  border: 1px solid #38b6ff;
+}
+
+@media screen and (max-width: 650px) {
+  .hack4bengal__section8-title {
+    font-size: 36px;
+    line-height: normal;
+  }
+}
