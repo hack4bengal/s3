@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./HomePage.css";
 import "../../App.css";
 
@@ -35,14 +35,13 @@ export default class HomePage extends Component {
         <InfiniteCarousel />
 
         <div className="hack4bengal_container hack4bengal_container_vertical">
-          <HackathonCountdownSection />
           <AboutUsSection />
           <TimelineSection />
           <Venue />
           <OfflineEventsSection />
           <ThemesSection />
           <PrizesSection1 />
-          <MorePrizesPage />
+          {/* <MorePrizesPage /> */}
           <JudgesSection />
           {/*  <PastSpeakersSection /> */}
           <PartnersAndSponsorsSection />

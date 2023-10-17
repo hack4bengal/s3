@@ -155,7 +155,7 @@ const Footer = ({ doge }) => {
 
           <div className="hack4bengal__footer-social-map">
             <a
-              href="https://s1.hack4bengal.tech/"
+              href="https://s2.hack4bengal.tech/"
               target="_blank"
               rel="noreferrer"
             >
@@ -193,7 +193,7 @@ const Footer = ({ doge }) => {
                   fill="red"
                 ></path>{" "}
               </svg>
-              Visit Season 1
+              Visit Season 2
             </a>
           </div>
         </div>

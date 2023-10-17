@@ -16,7 +16,7 @@ const JudgesSection = () => {
       id="judges"
     >
       <div className="judges_parent" style={{ maxWidth: "100%" }}>
-        <div className="judges_section_title">Our Mentors</div>
+        <div className="judges_section_title">Our Past Mentors</div>
         <hr />
         <div className="judges_section_container">
           <Slider {...sliderSettings} className="slider">

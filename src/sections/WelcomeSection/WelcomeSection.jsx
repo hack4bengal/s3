@@ -40,15 +40,6 @@ const WelcomeSection = () => {
             <div className="hack4bengal_section1_header">
               <img src={newbanner2} alt="hack4bengal"></img>
             </div>
-
-            <div className="hack4bengal__section1-para">
-              <p className="span1"> In Collaboration with</p>{" "}
-              <p className="span2">
-                Cyber Security Center of Excellence <br /> Department of
-                Information Technology & Electronics <br /> Government of West
-                Bengal
-              </p>
-            </div>
           </div>
           <div
             className="hack4bengal__section1-button-container"
@@ -66,34 +57,7 @@ const WelcomeSection = () => {
                 <p>Join Discord</p>
               </a>
             </div>
-            {/* <div className="hack4bengal__section1-register">
-            <a
-              className="hack4bengal__section1-register-link"
-              href="https://forms.gle/2Ehe6UyD4BLisVRr5"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span>{"</> "}</span>Coming Soon
-            </a>
-          </div> */}
-            {/* 
-          <div className="hack4bengal__section1-register">
-            <a className="hack4bengal__section1-register-link" href="#">
-              <span>{"</> "}</span>Coming Soon
-            </a>
-          </div> */}
 
-            {/* <div className="hack4bengal__section1-register">
-               <a
-                className="hack4bengal__section1-register-link landingpagebtn"
-                href="https://lu.ma/hack4bengal"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>{"</> "}</span>
-                <p>Register Now</p>
-              </a> 
-            </div> */}
             <div className="hack4bengal__section1-register">
               <div
                 className="apply-button"

@@ -1,39 +1,35 @@
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
-import { Link, useNavigate } from 'react-router-dom';
-import "./Venue.css"
+import { Link, useNavigate } from "react-router-dom";
+import "./Venue.css";
 
 const Venue = () => {
+  const navigate = useNavigate();
+  let element;
 
-    const navigate = useNavigate();
-    let element;
+  const gotoId = (id) => {
+    navigate("/venue");
+    setTimeout(() => {
+      element = document.getElementById(id);
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 500);
+  };
 
-    const gotoId = (id) => {
-        navigate("/venue");
-        setTimeout(() => {
-            element = document.getElementById(id);
-            element.scrollIntoView({ behavior: "smooth", block: "center" });
-        }, 500);
-    };
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 1 } }}
+        viewport={{ once: false }}
+        className="hack4bengal__section2"
+      >
+        <div className="h4b_about_main">
+          <div id="venue">
+            <div>
+              <h1>Venue</h1>
+              <hr />
 
-
-    return (
-        <>
-            <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, transition: { duration: 1 } }}
-                viewport={{ once: false }}
-                className="hack4bengal__section2"
-            >
-
-
-                <div className="h4b_about_main">
-                    <div id="venue">
-                        <div >
-                            <h1>Venue</h1>
-                            <hr />
-
-                            <div className="venue_description">
+              {/* <div className="venue_description">
                                 Sister Nivedita University (SNU), DG 1/2 New Town, Action Area 1, Kolkata - 700156
 
                                 <div className='venue_buttondiv'>
@@ -52,15 +48,15 @@ const Venue = () => {
                                         </button>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
+              <h3 style={{ textAlign: "center" }}>To be decided soon...</h3>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </>
+  );
+};
 
-                        </div>
-                    </div>
-                </div>
-            </motion.div>
-        </>
-    )
-}
-
-export default Venue
+export default Venue;
