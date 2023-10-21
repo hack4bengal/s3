@@ -59,13 +59,13 @@ const WelcomeSection = () => {
             </div>
 
             <div className="hack4bengal__section1-register">
-              <div
+              <a
+                href="https://bit.ly/h4bs3-pre-registration"
                 className="apply-button"
-                // data-hackathon-slug="hack4bengal-2"
                 data-button-theme="dark"
               >
-                <span style={{ height: "10px" }}>📝</span> Applications Closed
-              </div>
+                <span style={{ height: "10px" }}>📝</span> Pre-Registration
+              </a>
             </div>
           </div>
         </motion.div>
