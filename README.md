@@ -1,72 +1,30 @@
-# S3 Website 
+<h1 align="center">Hack4Bengal 3.0</h1>
 
-# Getting Started with Create React App
+<p align="center"><img src="https://github.com/hack4bengal/s3/assets/46371923/7d7a423a-d56a-427a-965c-727197868609" alt="Logo" width="150px" height="150px" /><br>
+<p align="center">    
+    <img src=https://img.shields.io/github/license/hack4bengal/s3>  
+    <a href="http://makeapullrequest.com" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome"></a>
+    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/hack4bengal/s3">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/hack4bengal/s3">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/hack4bengal/s3">
+    <img alt="Hacktoberfest issues" src="https://img.shields.io/github/hacktoberfest/2022/hack4bengal/s3">
+    <img alt="Contributor over time" src="https://contributor-overtime-api.apiseven.com/contributors-svg?chart=contributorOverTime&repo=hack4bengal/s3">
+    
+</p>
+<br>
+<!-- <img width="375" alt="square-grey-logo" src="https://github.com/hack4bengal/s3/assets/46371923/7d7a423a-d56a-427a-965c-727197868609"> -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Hack4Bengal Overview
 
-### `npm start`
+Hack4Bengal is a dynamic and inclusive hackathon, that brings together passionate tech enthusiasts to foster innovation and problem-solving. Founded with the vision of empowering the tech ecosystem in eastern India, it has quickly evolved into a thriving platform for skill development, networking, and the exploration of cutting-edge technologies. As a community initiative, Hack4Bengal aims to bridge the gap between enthusiastic learners and the tech industry, providing them with a launchpad for their career journey. With a commitment to knowledge sharing, it offers mentorship, workshops, and opportunities for participants to collaborate, learn, and build. The hackathon's core principles include community engagement, innovation, and accessibility. Hosting events facilitates learning opportunities and showcases the talent of individuals, creating a network of future leaders and innovators. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Opportunity
+Thanks for contributing `TOP Contributors` or an `Active Contributor` willing to contribute further as a Core Team Member of Hack4Bengal Season 3 are most welcome, make sure to interact here in our [Discord Server](https://discord.gg/hack4bengal-2-0-920970750154899476) as well and talk about your contribution. If you're contributing for the first time, read the [contributors' guidelines](CONTRIBUTING.md). So that it will be easier for us to choose some of you. Happy Hacktoberfest!! <3
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## OUR VALUABLE CONTRIBUTORS✨
+<a href="https://github.com/hack4bengal/s3/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=hack4bengal/s3" />
+</a>
