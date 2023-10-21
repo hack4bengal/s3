@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./WelcomeSection.css";
 import discord from "../../assets/img/discord-mark-blue.png";
 
-import newbanner2 from "../../assets/updates/newbanner3.png";
+import newbanner2 from "../../assets/updates/newbanners3.png";
 import { motion, transform } from "framer-motion";
 import { staggerChildren, fadeIn } from "../../motionUtils";
 import "../../../node_modules/font-awesome/css/font-awesome.min.css";
