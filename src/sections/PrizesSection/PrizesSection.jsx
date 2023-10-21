@@ -123,7 +123,7 @@ const PrizesSection1 = () => {
           </div>
         )} */}
 
-        <h3 style={{ textAlign: "center" }}>To be decided soon...</h3>
+        <h3 style={{ textAlign: "center" , fontSize:"1.17em"}}>To be decided soon...</h3>
       </div>
     </motion.div>
   );
