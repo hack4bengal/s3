@@ -7,7 +7,7 @@
     <img alt="GitHub Forks" src="https://img.shields.io/github/forks/hack4bengal/s3">
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/hack4bengal/s3">
     <img alt="GitHub issues" src="https://img.shields.io/github/issues/hack4bengal/s3">
-    <img alt="Hacktoberfest issues" src="https://img.shields.io/github/hacktoberfest/2022/hack4bengal/s3">
+    <img alt="Hacktoberfest issues" src="https://img.shields.io/github/hacktoberfest/2023/hack4bengal/s3">
     <img alt="Contributor over time" src="https://contributor-overtime-api.apiseven.com/contributors-svg?chart=contributorOverTime&repo=hack4bengal/s3">
     
 </p>
