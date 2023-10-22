@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import HomePage from "./pages/home/HomePage";
-import TeamPage from "./pages/TeamPage/TeamPage";
 import "./App.css";
 import ScrollToTop from "./ScrollToTop";
 import MorePrizesPage from "./pages/MorePrizesPage/MorePrizesPage";
@@ -27,7 +26,6 @@ export default class App extends Component {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/team" element={<TeamPage />} />
           <Route path="/prizes" element={<MorePrizesPage />} />
           <Route path="/events" element={<EventTcp />} />
           <Route path="privacy" element={<PrivacyPolicy />} />
