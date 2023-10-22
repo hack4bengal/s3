@@ -364,18 +364,6 @@ const Navbar = () => {
           <li className="hack4bengal__navbar-hamburger-navitem">
             <p
               onClick={() => {
-                gotoId("team");
-                toggleMenu();
-              }}
-            >
-              <h3 className="hack4bengal__navbar-hamburger-menu-heading">
-                Team
-              </h3>
-            </p>
-          </li>
-          <li className="hack4bengal__navbar-hamburger-navitem">
-            <p
-              onClick={() => {
                 gotoId("faq");
                 toggleMenu();
               }}

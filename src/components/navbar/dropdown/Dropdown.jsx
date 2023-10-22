@@ -13,7 +13,6 @@ const Dropdown = ({ open, setOpen }) => {
         setOpen={setOpen}
       />
       <DropdownItem text={"FAQ"} parentid="faq" setOpen={setOpen} />
-      <DropdownItem text={"Team"} parentid="team" setOpen={setOpen} />
     </div>
   );
 };
