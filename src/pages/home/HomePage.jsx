@@ -14,7 +14,6 @@ import JudgesSection from "../../sections/JudgesSection/JudgesSection.jsx";
 import TestimonialSection from "../../sections/TestimonialSection/TestimonialSection.jsx";
 import PartnersAndSponsorsSection from "../../sections/PartnersAndSponsorsSection/PartnersAndSponsorsSection.jsx";
 import FAQSection from "../../sections/FAQSection/FAQSection.jsx";
-import MeetOurTeamSection from "../../sections/MeetOurTeamSection/MeetOurTeamSection.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 import PrizesSection1 from "../../sections/PrizesSection/PrizesSection";
 import MorePrizesPage from "../MorePrizesPage/MorePrizesPage";
@@ -47,7 +46,6 @@ export default class HomePage extends Component {
           <PartnersAndSponsorsSection />
           <TestimonialSection />
           <FAQSection />
-          <MeetOurTeamSection />
         </div>
 
         <div className="hack4bengal__footer-container">
