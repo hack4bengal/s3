@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./WelcomeSection.css";
 import discord from "../../assets/img/discord-mark-blue.png";
 
-import newbanner2 from "../../assets/updates/newbanner3.png";
+import banner from "../../assets/img/banner.png";
 import { motion, transform } from "framer-motion";
 import { staggerChildren, fadeIn } from "../../motionUtils";
 import "../../../node_modules/font-awesome/css/font-awesome.min.css";
@@ -38,7 +38,7 @@ const WelcomeSection = () => {
             <div className="hack4bengal__section1-heading">Welcome To</div>
 
             <div className="hack4bengal_section1_header">
-              <img src={newbanner2} alt="hack4bengal"></img>
+              <img src={banner} alt="hack4bengal"></img>
             </div>
           </div>
           <div
