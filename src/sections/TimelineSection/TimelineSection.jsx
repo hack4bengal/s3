@@ -1,7 +1,7 @@
-import React from "react";
-import "./TimelineSection.css";
-import { motion } from "framer-motion";
-import Timeline from "../../components/timeline/Timeline.jsx";
+import React from 'react';
+import './TimelineSection.css';
+import { motion } from 'framer-motion';
+import Timeline from '../../components/timeline/Timeline.jsx';
 
 const TimelineSection = () => {
   return (
@@ -18,7 +18,7 @@ const TimelineSection = () => {
               <h1>Timeline</h1>
 
               <hr />
-              <h3 style={{ textAlign: "center" }}>To be decided soon...</h3>
+              <h3 style={{ textAlign: 'center' }}>To be decided soon...</h3>
             </div>
           </div>
         </div>
