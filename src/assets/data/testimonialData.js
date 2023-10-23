@@ -40,7 +40,7 @@ const testimonials = [
     img: DebashisSen,
     facebook: "",
     twitter: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/debashis-senias/",
     github: "",
     email: "",
     testimonial:
