@@ -17,7 +17,7 @@ import FAQSection from "../../sections/FAQSection/FAQSection.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 import PrizesSection1 from "../../sections/PrizesSection/PrizesSection";
 import MorePrizesPage from "../MorePrizesPage/MorePrizesPage";
-import Venue from "../../sections/venue/Venue";
+// import Venue from "../../sections/venue/Venue";
 
 export default class HomePage extends Component {
   render() {
