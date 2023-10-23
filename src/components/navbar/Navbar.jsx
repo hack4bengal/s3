@@ -89,21 +89,21 @@ const Navbar = () => {
               <li className="hack4bengal__navbar-navitem">
                 <p
                   onClick={() => {
-                    gotoId("venue");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">Venue</h3>
-                </p>
-              </li>
-              <li className="hack4bengal__navbar-navitem">
-                <p
-                  onClick={() => {
                     gotoId("timeline");
                     toggleMenu();
                   }}
                 >
                   <h3 className="hack4bengal__navbar-menu-heading">Timeline</h3>
+                </p>
+              </li>
+              <li className="hack4bengal__navbar-navitem">
+                <p
+                  onClick={() => {
+                    gotoId("venue");
+                    toggleMenu();
+                  }}
+                >
+                  <h3 className="hack4bengal__navbar-menu-heading">Venue</h3>
                 </p>
               </li>
               <li className="hack4bengal__navbar-navitem">
