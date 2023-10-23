@@ -36,7 +36,7 @@ export default class HomePage extends Component {
         <div className="hack4bengal_container hack4bengal_container_vertical">
           <AboutUsSection />
           <TimelineSection />
-          <Venue />
+          {/* <Venue /> */}
           <OfflineEventsSection />
           <ThemesSection />
           <PrizesSection1 />
