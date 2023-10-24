@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../../App.css";
-import Event from "../../sections/event/Event.js";
+import Event from "../../sections/event/Event";
 
 import NavbarTeam from "../../components/navbarTeam/NavbarTeam";
 import Navbar from "../../components/navbar/Navbar";
