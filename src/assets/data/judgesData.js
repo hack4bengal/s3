@@ -21,7 +21,7 @@ import NishantShah from "../images/judges/Nishant_Shah.jpeg";
 import RaihanKhan from "../images/judges/RaihanKhan.jpg";
 import doge from "../img/doge.png"
 
-const judges = [
+const mentors = [
   {
     name: "Jyoti Mishra",
     designation: "Software Design Engineer-4, Evertz Microsystems",
@@ -179,4 +179,4 @@ const judges = [
   },
 ];
 
-export default judges;
+export default mentors;

@@ -333,7 +333,7 @@ const Navbar = () => {
           <li className="hack4bengal__navbar-hamburger-navitem">
             <p
               onClick={() => {
-                gotoId("judges");
+                gotoId("mentors");
                 toggleMenu();
               }}
             >
