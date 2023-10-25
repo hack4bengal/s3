@@ -33,7 +33,18 @@ body:
   - type: textarea
     id: screenshots
     attributes:
-      label: Put here any screenshots or videos (optional)
+      label: Put here any screenshots or videos
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+
   - type: checkboxes
     id: checks
     attributes:
