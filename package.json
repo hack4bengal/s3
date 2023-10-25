@@ -27,7 +27,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "vite",
+    "dev": "vite --port 3000",
     "build": "vite build",
     "test": "vite test",
     "eject": "vite eject",
