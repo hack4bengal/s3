@@ -19,7 +19,7 @@ import Saby from "../images/judges/saby-min.png";
 import Kazi from "../images/judges/kazi-min.png";
 import NishantShah from "../images/judges/Nishant_Shah.jpeg";
 import RaihanKhan from "../images/judges/RaihanKhan.jpg";
-import doge from "../img/doge.png"
+// import doge from "../img/doge.png"
 
 const mentors = [
   {
@@ -149,13 +149,7 @@ const mentors = [
     position: "Mentor / Judge",
     linkedin: "https://www.linkedin.com/in/hrittikhere",
   },
-  {
-    name: "You found it",
-    designation: "Hack4Bengal",
-    image: doge,
-    position: "Mentor / Judge",
-    linkedin: "https://www.linkedin.com/in/notfound",
-  },
+  
   {
     name: "Sunit Roy",
     designation: "GitHub Campus Expert",
