@@ -2,11 +2,12 @@ import React, { useEffect } from "react";
 import "./WelcomeSection.css";
 import discord from "../../assets/img/discord-mark-blue.png";
 
-import newbanner2 from "../../assets/updates/newbanner3.png";
+import banner from "../../assets/img/banner.png";
 import { motion, transform } from "framer-motion";
 import { staggerChildren, fadeIn } from "../../motionUtils";
 import "../../../node_modules/font-awesome/css/font-awesome.min.css";
 import { backgroundColors } from "dracula-ui";
+import { Link } from "react-router-dom";
 
 const WelcomeSection = () => {
   React.useEffect(() => {
@@ -38,35 +39,33 @@ const WelcomeSection = () => {
             <div className="hack4bengal__section1-heading">Welcome To</div>
 
             <div className="hack4bengal_section1_header">
-              <img src={newbanner2} alt="hack4bengal"></img>
+              <img src={banner} alt="hack4bengal"></img>
             </div>
           </div>
           <div
             className="hack4bengal__section1-button-container"
             style={{ display: "flex", placeContent: "center" }}
           >
-            <div className="hack4bengal__section1-discord" id="discord">
-              <a
-                className="hack4bengal__section1-discord-link landingpagebtn"
-                href="https://discord.com/invite/hack4bengal-2-0-920970750154899476"
-                target="_blank"
-                rel="noreferrer"
-              >
+            <Link
+              to="https://discord.com/invite/hack4bengal-2-0-920970750154899476"
+              className="hack4bengal__section1-discord"
+              id="discord"
+            >
+              <div className="hack4bengal__section1-discord-link landingpagebtn">
                 <img src={discord} alt="discord" />
                 {"  "}
                 <p>Join Discord</p>
-              </a>
-            </div>
+              </div>
+            </Link>
 
-            <div className="hack4bengal__section1-register">
-              <a
-                href="https://bit.ly/h4bs3-pre-registration"
-                className="apply-button"
-                data-button-theme="dark"
-              >
+            <Link
+              to="https://bit.ly/h4bs3-pre-registration"
+              className="apply-button hack4bengal__section1-register"
+            >
+              <div>
                 <span style={{ height: "10px" }}>📝</span> Pre-Registration
-              </a>
-            </div>
+              </div>
+            </Link>
           </div>
         </motion.div>
         <motion.ul
