@@ -142,6 +142,47 @@
   height: auto;
 }
 
+.sponsors-img{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#img-other{
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-other a div{
+  width: 13rem;
+  height: 8rem;
+  object-fit: contain;
+}
+
+#img-other a div img{
+  width: 100%;
+  height: 100%;
+}
+
+#img-gov img{
+  width: 15rem;
+  height: 15rem;
+}
+
+#img-gov{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .hack4bengal__section6-sponser-image p {
   margin: 0px;
   font-weight: 400;
@@ -156,9 +197,6 @@
   font-size: 16px;
   margin-top: 12px;
   text-align: center;
-}
-
-.nasscom {
 }
 
 .platinum {
