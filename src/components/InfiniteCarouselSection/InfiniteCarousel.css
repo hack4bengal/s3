@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .hack4bengal__sponsers-carousel-container {
   background-color: rgba(32, 32, 32, 1);
   width: 100%;
@@ -47,7 +49,6 @@
   }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .h4b_reg_text_wrapper {
   font-family: "Montserrat", sans-serif;
