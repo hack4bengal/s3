@@ -1,6 +1,6 @@
 import React from "react";
 import "./JudgesSection.css";
-import judges from "../../assets/data/judgesData";
+import mentors from "../../assets/data/judgesData";
 import NewTeamCard from "../../components/teamCard/NewTeamCard";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
@@ -13,14 +13,14 @@ const JudgesSection = () => {
       whileInView={{ opacity: 1, transition: { duration: 1 } }}
       viewport={{ once: false }}
       className="judges_section"
-      id="judges"
+      id="mentors"
     >
       <div className="judges_parent" style={{ maxWidth: "100%" }}>
         <div className="judges_section_title">Our Past Mentors</div>
         <hr />
         <div className="judges_section_container">
           <Slider {...sliderSettings} className="slider">
-            {judges.map((judge, key) => (
+            {mentors.map((judge, key) => (
               <NewTeamCard
                 index={key}
                 img={judge.image}

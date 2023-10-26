@@ -53,7 +53,7 @@ const testimonials = [
     description: "",
     img: ArshGoyal,
     facebook: "",
-    twitter: "",
+    twitter:"",
     linkedin: "https://www.linkedin.com/in/arshgoyal/",
     github: "",
     youtube: "",
