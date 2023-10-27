@@ -1,59 +1,58 @@
-name: Bug Report
-description: Report a bug
-labels: ["bug"]
+name: 🐞 Bug
+description: Found a bug? Use this template
+title: "Bug: Write a small description here"
+labels:
+  [
+    "status: todo ⏳",
+    "🐞 bug",
+    "hacktoberfest"
+  ]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Please fill out the sections below to help everyone identify and fix the bug
   - type: textarea
     id: description
     attributes:
-      label: Describe your issue
-      placeholder: When I click here this happens
+      label: Description
+      description: Write a detailed description of the issue that you faced.
     validations:
       required: true
   - type: textarea
-    id: steps
+    id: solution
     attributes:
-      label: Steps to reproduce
-      placeholder: |
-        1. Go to page X
-        2. Click here
-        3. Click there
-    validations:
-      required: true
-  - type: textarea
-    id: expected
-    attributes:
-      label: What was the expected result?
-      placeholder: I expected this to happen
+      label: Proposed Solution
+      description: Write a solution which you think can fix this issue.
     validations:
       required: true
   - type: textarea
     id: screenshots
     attributes:
-      label: Put here any screenshots or videos
+      label: Screenshots
+      description: Please add screenshots/videos if applicable
+    validations:
+      required: false
+  
   - type: dropdown
-    id: browsers
+    id: browser
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
+      label: "🌐 Browser"
+      description: "What browser are you using ?"
       options:
-        - Firefox
-        - Chrome
-        - Safari
+        - Google Chrome
+        - Brave
         - Microsoft Edge
+        - Mozilla Firefox
+        - Safari
+        - Opera
+        - Other
+    validations:
+      required: true
 
   - type: checkboxes
-    id: checks
+    id: no-duplicate-issues
     attributes:
-      label: Extra fields
+      label: "Checklist ✅"
       options:
-        - label: I have used the search function to check if an issue already exists
+        - label: "I checked and didn't find similar [issue](https://github.com/hack4bengal/s3/issues)"
           required: true
-        - label: I'd like to work on this issue
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for reporting this issue! We will get back to you as soon as possible.
+
+        - label: "I have read the [Contributing Guidelines](https://github.com/hack4bengal/s3/blob/main/CONTRIBUTING.md)"
+          required: true
