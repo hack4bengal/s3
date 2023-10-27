@@ -25,7 +25,7 @@ After cloning the repository, change the current working directory to the reposi
 
 
 ```
-cd hack4bengal.github.io
+cd s3
 ```
 Before making any changes, make sure to always create a new branch. To create a new brach run the following command:
 
@@ -33,6 +33,15 @@ Before making any changes, make sure to always create a new branch. To create a 
 git checkout -b branch-name
 ```
 You can run `git branch` command to check your branch status.
+
+## Start the server
+
+After successfully making a branch, run the project by using the following commands:
+
+```
+npm install
+npm run dev
+```
 
 ## Make changes
 
