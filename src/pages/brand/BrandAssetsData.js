@@ -22,14 +22,7 @@ import image14 from "../../assets/images/brandassets/h4b-color-palette.png"
 
 
 const brandassetsData = [
-    {
-        image: image1,
-        name: "Hack4Bengal Wide Govt. Infused Logo Light"
-    },
-    {
-        image: image2,
-        name: "Hack4Bengal Wide Govt. Infused Logo Dark"
-    },
+
     {
         image: image3,
         name: "Hack4Bengal Grey Wide Logo Dark Text"
