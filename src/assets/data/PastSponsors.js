@@ -49,21 +49,19 @@ import hedera from "../images/sponsers/Hedera.png";
 import linode from "../images/sponsers/Linode.png";
 import twilio from "../images/sponsers/Twilio.png";
 import stickermule from "../images/sponsers/stickermule.png";
-
-const gov=[
+const sponsors=[
     {
         img: cscoe,
         link: "https://cscoe.itewb.gov.in/",
         alt: "Cybersecurity Centre of execellence",
+        id:"square"
     },
     {
         img: wb,
         link: "https://wb.gov.in/",
         alt: "Government of West Bengal",
+        id:"square"
     },
-]
-
-const sponsors=[
     {
         img: nasscom,
         link: "https://nasscom.in/",
@@ -113,11 +111,13 @@ const sponsors=[
         img: foss,
         link: "https://fossunited.org/",
         alt: "Foss United",
-    },
+        id:"foss"  //unique id 
+    },             //for adding extra width to make it look good
     {
         img: egk,
         link: "https://m.esogolpokori.co.in/",
         alt: "Eso Golpo Kori",
+        id:"square"
     },
     {
         img: balsamiq,
@@ -238,21 +238,25 @@ const sponsors=[
         img: graph,
         link: "https://thegraph.com/",
         alt: "The graph",
+        id:"square"
     },
     {
         img: Resourcio,
         link: "https://www.resourcio.tech/",
         alt: "Resourcio",
+        id:"square"
     },
     {
         img: Devorld,
         link: "https://in.linkedin.com/company/devorld",
         alt: "Devorld",
+        id:"square"
     },
     {
         img: IEIAOT,
         link: "https://sccsebio.vercel.app/",
         alt: "IEI Student Chapter",
+        id:"square"
     },
     {
         img: CodeChamp,
@@ -311,4 +315,4 @@ const sponsors=[
     },
 ]
 
-export {gov,sponsors};
+export default sponsors;
