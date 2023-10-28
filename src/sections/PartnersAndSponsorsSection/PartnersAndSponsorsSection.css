@@ -4,10 +4,6 @@
 }
 
 .hack4bengal__section6-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   width: 1200px;
   margin: auto;
 }
@@ -143,44 +139,36 @@
 }
 
 .sponsors-img{
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   margin-top: 1rem;
 }
 
-#img-other{
+.img-container a{
   display: flex;
-  gap: 4rem;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-#img-other a div{
-  width: 13rem;
-  height: 8rem;
-  object-fit: contain;
+.rectangle-img-padding{
+  padding-top: 8rem;
 }
 
-#img-other a div img{
-  width: 100%;
-  height: 100%;
+.square-img-padding{
+  padding-top: 3rem;
 }
 
-#img-gov img{
+.img-container a .square-img{
   width: 15rem;
   height: 15rem;
 }
 
-#img-gov{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+.img-container a .rectangle-img{
+  height: 8rem;
+  width: 19rem;
+}
+
+.img-container a .foss{
+  width: 29rem;
+  height: 15rem;
 }
 
 .hack4bengal__section6-sponser-image p {

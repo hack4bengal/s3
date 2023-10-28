@@ -1,13 +1,14 @@
 import React from "react";
-import sponsers from "../../assets/data/sponsersData";
-import {gov,sponsors} from "../../assets/data/PastSponsors";
+import sponsors from "../../assets/data/PastSponsors";
 import "./PartnersAndSponsorsSection.css";
 import { motion } from "framer-motion";
-
-import CommunityPartnersInfiniteCarousel from "../../components/CommunityPartnersInfiniteCarousel/CommunityPartnersInfiniteCarousel";
-import { textAligns } from "dracula-ui";
+import Slider from "react-slick";
+import { sliderSettings } from "../../motionUtils";
 
 const PartnersAndSponsorsSection = () => {
+  sponsors.map((sponsor)=>{
+    console.log(!sponsor.id);
+  })
   return (
     <>
       <motion.div
@@ -25,24 +26,16 @@ const PartnersAndSponsorsSection = () => {
             Past Sponsors
           </div>
           <hr />
-          {/* <h3 style={{ textAlign: "center" }}>To be decided soon...</h3> */}
           <div className="sponsors-img">
-            <div id="img-gov">
-              {gov.map((sponsor)=>(
-                  <a href={sponsor.link} key={sponsor.img}>
-                      <img src={sponsor.img} alt={sponsor.alt} />
+            <Slider {...sliderSettings} className="slider">
+            {sponsors.map((sponsor)=>(
+                <div className="img-container">
+                  <a href={sponsor.link} key={sponsor.img} className={!sponsor.id?`rectangle-img-padding`:`square-img-padding`}>
+                      <img src={sponsor.img} alt={sponsor.alt} className={sponsor.id?`${sponsor.id === "foss"?`foss`:`square-img`}`:`rectangle-img`}/>
                   </a>
-              ))}
-            </div>
-            <div id="img-other">
-              {sponsors.map((sponsor)=>(
-                <a href={sponsor.link} key={sponsor.img}>
-                  <div>
-                    <img src={sponsor.img} alt={sponsor.alt} />
-                  </div> 
-                </a>
-              ))}
-            </div>
+                </div>
+                ))}
+            </Slider>
           </div>
         </div>
       </motion.div>
