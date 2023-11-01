@@ -2,11 +2,20 @@
   description: Have a new idea/feature for Hack4Bengal? Please suggest!
   title: "Feature: Write a small description here"
   labels:
-    [
-      "status: todo ⏳",
-      "💡 feature",
-      "hacktoberfest"
-    ]
+  [
+    "bug",
+    "changes needed",
+    "design",
+    "documentation",
+    "duplicate",
+    "enhancement",
+    "good first issue".
+    "hacktoberfest",
+    "help wanted",
+    "invalid",
+    "question",
+    "won't fix"
+  ]
   body:
     - type: textarea
       id: description
