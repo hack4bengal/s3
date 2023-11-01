@@ -3,9 +3,18 @@ description: Kindly use this template if you found any issue in documentation.
 title: "Docs: Write a small description here"
 labels:
   [
-    "status: todo ⏳",
-    "📚 docs",
-    "hacktoberfest"
+    "bug",
+    "changes needed",
+    "design",
+    "documentation",
+    "duplicate",
+    "enhancement",
+    "good first issue".
+    "hacktoberfest",
+    "help wanted",
+    "invalid",
+    "question",
+    "won't fix"
   ]
 body:
   - type: textarea
