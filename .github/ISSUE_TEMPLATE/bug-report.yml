@@ -3,9 +3,18 @@ description: Found a bug? Use this template
 title: "Bug: Write a small description here"
 labels:
   [
-    "status: todo ⏳",
-    "🐞 bug",
-    "hacktoberfest"
+    "bug",
+    "changes needed",
+    "design",
+    "documentation",
+    "duplicate",
+    "enhancement",
+    "good first issue".
+    "hacktoberfest",
+    "help wanted",
+    "invalid",
+    "question",
+    "won't fix"
   ]
 body:
   - type: textarea
