@@ -3,7 +3,18 @@ description: Use this for any other issues. Kindly don't create blank issues
 title: "📂Other: Write a small description here"
 labels:
   [
-    "status: todo ⏳",
+    "bug",
+    "changes needed",
+    "design",
+    "documentation",
+    "duplicate",
+    "enhancement",
+    "good first issue".
+    "hacktoberfest",
+    "help wanted",
+    "invalid",
+    "question",
+    "won't fix"
   ]
 body:
   - type: textarea
