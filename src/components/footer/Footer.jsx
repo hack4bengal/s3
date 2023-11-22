@@ -10,12 +10,14 @@ const Footer = ({ doge }) => {
     <>
       <div className="hack4bengal__footer" id="contactus">
         <div className="hack4bengal__footer-container1">
-          <div className="hack4bengal__footer-logos">
-            <img
+          <div className="hack4bengal__footer-logos" onClick={() => {
+            window.scrollTo(0, 0);
+          }}>
+            <Link><img
               src={footer}
               className="hack4bengal__footer-logo-tcp"
               alt="Hack4Bengal"
-            />
+            /></Link>
           </div>
           <div className="hack4bengal__footer-social-container">
             <div className="hack4bengal__footer-social-links-container">

@@ -183,7 +183,7 @@
 
 .hack4bengal__section1-discord:hover,
 .hack4bengal__section1-register:hover {
-  background-color: rgb(39, 51, 63, 0.9);
+  background-color: #ff5757;
 }
 
 .hack4bengal__section1-register {
@@ -264,6 +264,7 @@
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -282,6 +283,7 @@
 }
 
 @media screen and (max-width: 1000px) {
+
   .hack4bengal__section1-scrollDown,
   .hack4bengal__section1-side-links {
     display: none;
