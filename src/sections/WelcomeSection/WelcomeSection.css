@@ -27,7 +27,6 @@
   justify-content: center;
   align-items: center;
   padding: 10px 50px;
-
   background-color: rgba(21, 19, 19, 0.775);
   border-radius: 15px;
 }
@@ -80,7 +79,7 @@
   display: flex;
   justify-content: center;
   /* background-color: rgba(255, 255, 255, 0.909); */
-  border-radius: 12px;
+  /* border-radius: 12px; */
   max-width: fit-content;
   user-select: none;
 }
@@ -118,7 +117,7 @@
 .hack4bengal__section1-button {
   align-items: center;
   background-color: #f3f6fb;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   border: 2px solid transparent;
   color: #000;
   display: flex;
@@ -144,7 +143,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.909);
-  border-radius: 4px;
+  border-radius: 10px;
   margin-left: 14px;
   cursor: pointer;
   font-size: large;
@@ -191,7 +190,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 10px;
   margin-left: 14px;
   cursor: pointer;
   font-size: large;
