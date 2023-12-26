@@ -1,7 +1,7 @@
 // import Footer from "../../components/footer/Footer"
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
-import NavbarTeam from "../../components/navbarTeam/NavbarTeam";
+
 import "./PrivacyPolicy.css";
 export default function PrivacyPolicy() {
     return (

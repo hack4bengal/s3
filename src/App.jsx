@@ -1,24 +1,25 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import HomePage from "./pages/home/HomePage";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import ScrollToTop from "./ScrollToTop";
 import MorePrizesPage from "./pages/MorePrizesPage/MorePrizesPage";
-import EventTcp from "./pages/eventTcp/EventTcp";
-import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
 import Terms from "./pages/Terms/Terms";
-import CodeofConduct from "./pages/coc/CodeofConduct";
 import Assets from "./pages/assets/Assets";
-import Register from "./pages/register/Register";
-import Evengelist from "./pages/evangelist/Evengelist";
-import Partner from "./pages/cp/cp";
-import Schedulepage from "./pages/schedule/Schedulepage";
-import Guide from "./pages/guide/Guide";
-import Venue from "./pages/venue/Venue";
-import Brand from "./pages/brand/Brand";
-import Live from "./pages/live/Live";
 import Bingo from "./pages/bingo/Bingo";
+import Brand from "./pages/brand/Brand";
+import CodeofConduct from "./pages/coc/CodeofConduct";
 import Coreteam from "./pages/coreteam/coreteam";
+import Partner from "./pages/cp/cp";
+import Discord from "./pages/discord/Discord";
+import Evengelist from "./pages/evangelist/Evengelist";
+import EventTcp from "./pages/eventTcp/EventTcp";
+import Guide from "./pages/guide/Guide";
+import HomePage from "./pages/home/HomePage";
+import Live from "./pages/live/Live";
+import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
+import Register from "./pages/register/Register";
+import Schedulepage from "./pages/schedule/Schedulepage";
+import Venue from "./pages/venue/Venue";
 export default class App extends Component {
   render() {
     return (
@@ -42,6 +43,7 @@ export default class App extends Component {
           <Route path="/live" element={<Live />} />
           <Route path="/bingo" element={<Bingo />} />
           <Route path="/coreteam" element={<Coreteam />} />
+          <Route path="/discord" element={<Discord />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
