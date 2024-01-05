@@ -1,31 +1,26 @@
-import React, { useEffect } from 'react'
-import "./Brand.css"
-import Navbar from '../../components/navbar/Navbar'
-import brandassetsData from './BrandAssetsData'
-import BrandCard from './brandcard/BrandCard'
+import React, { useEffect } from "react";
+import { brandContent } from "../../assets/data/BrandContent.js";
+import "./Brand.scss";
+import BrandCard from "./brandCard/BrandCard";
+function Brand() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-const Brand = () => {
-
-
-    return (
-        <>
-            <Navbar />
-            <div className="brandPage_parent">
-                <h1>Brands</h1>
-                <hr />
-                <br />
-                <br />
-
-                <div className="brandPage_brandCard_parent">
-                    {brandassetsData.map((brand) => {
-                        return (
-                            <BrandCard brand={brand} />
-                        )
-                    })}
-                </div>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className="brand">
+        <div className="brand__content">
+          <h1 className="heading">Brands</h1>
+          <div className="brandCards__parent">
+            {brandContent.map((brandItem, brandIndex) => (
+              <BrandCard key={brandIndex} brandItem={brandItem} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Brand
+export default Brand;

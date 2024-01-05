@@ -1,52 +1,53 @@
-import React, { Component } from "react";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import "./App.css";
-import ScrollToTop from "./ScrollToTop";
-import MorePrizesPage from "./pages/MorePrizesPage/MorePrizesPage";
-import Terms from "./pages/Terms/Terms";
-import Assets from "./pages/assets/Assets";
-import Bingo from "./pages/bingo/Bingo";
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Footer from "./components/footer/Footer";
 import Brand from "./pages/brand/Brand";
 import CodeofConduct from "./pages/coc/CodeofConduct";
-import Coreteam from "./pages/coreteam/coreteam";
-import Partner from "./pages/cp/cp";
 import Discord from "./pages/discord/Discord";
-import Evengelist from "./pages/evangelist/Evengelist";
-import EventTcp from "./pages/eventTcp/EventTcp";
-import Guide from "./pages/guide/Guide";
-import HomePage from "./pages/home/HomePage";
-import Live from "./pages/live/Live";
-import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
-import Register from "./pages/register/Register";
-import Schedulepage from "./pages/schedule/Schedulepage";
-import Venue from "./pages/venue/Venue";
-export default class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <ScrollToTop />
+import Home from "./pages/home/Home";
+
+import Navbar from "./components/navbar/Navbar";
+import "./styles/Globals.scss";
+
+const App = () => {
+  const homeRef = React.useRef(null);
+  const aboutRef = React.useRef(null);
+  const timelineRef = React.useRef(null);
+  const themeRef = React.useRef(null);
+  const prizesRef = React.useRef(null);
+  const sponsorsRef = React.useRef(null);
+  const collaboratorsRef = React.useRef(null);
+  const mentorsRef = React.useRef(null);
+  const testimonialsRef = React.useRef(null);
+  const faqRef = React.useRef(null);
+
+  const refs = {
+    home: homeRef,
+    about: aboutRef,
+    timeline: timelineRef,
+    themes: themeRef,
+    prizes: prizesRef,
+    sponsors: sponsorsRef,
+    collaborators: collaboratorsRef,
+    mentors: mentorsRef,
+    testimonials: testimonialsRef,
+    faq: faqRef,
+  };
+
+  return (
+    <Router basename={import.meta.env.BASE_URL}>
+      <Navbar refs={refs} />
+      <main>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/prizes" element={<MorePrizesPage />} />
-          <Route path="/events" element={<EventTcp />} />
-          <Route path="privacy" element={<PrivacyPolicy />} />
-          <Route path="tnc" element={<Terms />} />
-          <Route path="coc" element={<CodeofConduct />} />
-          <Route path="/assets" element={<Assets />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/evangelist" element={<Evengelist />} />
-          <Route path="/cp" element={<Partner />} />
-          <Route path="/schedule" element={<Schedulepage />} />
-          <Route path="/guide" element={<Guide />} />
-          <Route path="/venue" element={<Venue />} />
-          <Route path="/brand" element={<Brand />} />
-          <Route path="/live" element={<Live />} />
-          <Route path="/bingo" element={<Bingo />} />
-          <Route path="/coreteam" element={<Coreteam />} />
-          <Route path="/discord" element={<Discord />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route exact path="/" element={<Home refs={refs} />} />
+          <Route exact path="/discord" element={<Discord />} />
+          <Route exact path="/coc" element={<CodeofConduct refs={refs} />} />
+          <Route exact path="/brand" element={<Brand refs={refs} />} />
         </Routes>
-      </BrowserRouter>
-    );
-  }
-}
+      </main>
+      <Footer />
+    </Router>
+  );
+};
+
+export default App;

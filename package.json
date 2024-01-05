@@ -1,57 +1,35 @@
 {
-  "name": "hack4bengal",
-  "version": "0.1.0",
+  "name": "s3",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "dev-expose": "vite --port 3000 --host 0.0.0.0",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@frank-mayer/react-tag-cloud": "^1.1.1",
-    "@lottiefiles/react-lottie-player": "^3.5.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@vitejs/plugin-react": "^4.1.0",
-    "dracula-ui": "^1.0.6",
-    "font-awesome": "^4.7.0",
-    "framer-motion": "^8.4.0",
+    "@studio-freight/lenis": "^1.0.33",
+    "@studio-freight/react-lenis": "^0.0.38",
+    "axios": "^1.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
-    "react-router-dom": "^6.6.0",
-    "react-slick": "^0.29.0",
-    "react-twitter-embed": "^4.0.4",
-    "swiper": "^9.1.1",
-    "TagCloud": "^2.3.2",
-    "vite": "^4.5.0",
-    "vite-plugin-svgr": "^4.1.0",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "dev": "vite --port 3000",
-    "build": "vite build",
-    "test": "vite test",
-    "eject": "vite eject",
-    "serve": "vite preview"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-fast-marquee": "^1.6.2",
+    "react-icons": "^4.11.0",
+    "react-router-dom": "^6.17.0",
+    "zustand": "^4.4.4"
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "sass": "^1.69.5",
+    "vite": "^4.4.5"
   }
 }

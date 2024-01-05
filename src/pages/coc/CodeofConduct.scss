@@ -1,0 +1,47 @@
+.coc {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 4rem;
+   margin-top: 5rem;
+  .text__bold {
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  p {
+    font-family: var(--body-font);
+    word-wrap: break-word;
+    margin: 2rem 0;
+  }
+  a {
+    color: var(--h4bred);
+  }
+  .heading {
+    font-size: 1.5em;
+    color: var(--h4bred);
+    margin: 4rem 0;
+  }
+
+  .coc__reporting__content {
+    .coc__reporting__list {
+      padding: 0;
+      li {
+        font-family: var(--body-font);
+        margin: 0 0 2rem 0;
+        word-wrap: break-word;
+      }
+      .coc__repoting__emails {
+        margin-left: 30px;
+        li {
+          margin-top: 2px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .coc__wrapper {
+    width: 80%;
+  }
+}

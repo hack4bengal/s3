@@ -1,25 +1,26 @@
-import React from 'react'
-import "./BrandCard.css"
+/* eslint-disable react/prop-types */
+import React from "react";
+import "./BrandCard.scss";
 
-const BrandCard = ({ brand }) => {
-    return (
-        <>
-
-            <div className="brandcard_parent">
-                <img src={brand?.image} alt="" className='brandcard_preview' />
-                <div className="brandcard_name"><p>{brand?.name}</p></div>
-
-                <a
-                    className='brandcard_downloadbtn'
-                    href={brand?.image}
-                    download
-                >
-                    PNG
-                </a>
-            </div>
-
-        </>
-    )
+function BrandCard({ brandItem }) {
+  const { image, name } = brandItem;
+  return (
+    <div className="brand_card">
+      <div className="brand_card__image">
+        <img src={image} alt="" />
+      </div>
+      <div className="brand_card__contents">
+        <div className="brand_card__text">
+          <p>{name}</p>
+        </div>
+        <div className="brand_card__download-button">
+          <a href={image} download>
+            PNG
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default BrandCard
+export default BrandCard;

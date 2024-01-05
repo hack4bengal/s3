@@ -1,0 +1,40 @@
+.marquee_wrapper {
+  font-family: var(--body-font);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+
+  @media screen and (max-width: 576px) {
+    position: relative;
+  }
+
+  p {
+    white-space: nowrap;
+    padding: 5px 3rem;
+    letter-spacing: 2px;
+    animation: move-rtl 5s linear infinite;
+    margin-bottom: 0px;
+    user-select: none;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

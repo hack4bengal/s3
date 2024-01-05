@@ -1,0 +1,41 @@
+.brand_card {
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid red;
+  background-color: rgb(38, 37, 37);
+  border-radius: 10px;
+  .brand_card__image {
+    margin: auto;
+    border-radius: 10px;
+    min-height: 10rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .brand_card__contents {
+    margin: 1rem 0;
+    font-family: var(--body-font);
+    .brand_card__text {
+      p {
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+    }
+
+    .brand_card__download-button {
+      margin: 2rem 0 1rem 0;
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #ffffff;
+        padding: 5px 40px;
+        border-radius: 50px;
+      }
+    }
+  }
+}

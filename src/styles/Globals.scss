@@ -1,0 +1,78 @@
+/* Default styles, not to be altered without permission */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --heading-font: "Montserrat", sans-serif;
+  --body-font: "Poppins", sans-serif;
+  --marquee-font: "Geo", sans-serif;
+  --h4bred: #ff1717;
+  --text-color: white;
+  --alt-color: #dcdcdc;
+}
+
+body,
+main {
+  background-color: #1b1b1b;
+  min-height: 100dvh;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.red {
+  color: var(--h4bred);
+}
+
+.disable-select,
+svg,
+img {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--heading-font);
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 1px solid var(--h4bred);
+    width: 100px;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar:horizontal {
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(78, 82, 88, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff1717;
+  border-radius: 10px;
+}

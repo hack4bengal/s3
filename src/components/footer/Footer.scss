@@ -1,0 +1,205 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  padding: 2.5rem 3rem;
+  font-family: var(--heading-font);
+
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .footer__content__top {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-shrink: 0;
+
+      .footer__content__top__socials {
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          $size: 2rem;
+          width: $size;
+          height: $size;
+          flex-shrink: 0;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1.5rem;
+      }
+    }
+
+    .footer__content__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .footer__content__bottom__links {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.0625rem;
+        text-align: center;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        a {
+          text-decoration: none;
+        }
+
+        .footer__content__bottom__link {
+          color: var(--alt-color);
+          text-transform: capitalize;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          @media screen and (max-width: 576px) {
+            text-align: center;
+          }
+        }
+
+        .footer__content__bottom__mailhead {
+          color: #737373;
+        }
+
+        .footer__content__bottom__mail {
+          color: var(--h4bred);
+          text-transform: lowercase;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+        @media screen and (max-width: 576px) {
+          align-items: center;
+        }
+      }
+
+      .foooter__backtotop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .footer__prev_season {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .footer__content__bottom__prevseason {
+          color: var(--alt-color);
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: capitalize;
+          text-decoration: none;
+          transition: opacity 0.2s ease-in-out;
+          white-space: nowrap;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          @media screen and (max-width: 768px) {
+            padding-right: unset;
+          }
+
+          @media screen and (max-width: 576px) {
+            text-align: center;
+          }
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      gap: 1.5rem;
+    }
+  }
+
+  .footer__bg_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #00000010;
+  }
+
+  .footer__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    backdrop-filter: blur(10.5px);
+    mix-blend-mode: overlay;
+
+    .footer_bg__img {
+      position: absolute;
+      height: max-content;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      z-index: -2;
+      object-fit: cover;
+    }
+
+    .footer__bg__left {
+      position: absolute;
+      width: 50.68788rem;
+      height: 48.875rem;
+      left: -25.38rem;
+      bottom: -24.44rem;
+      border-radius: 50.68788rem;
+      background: #d5d5d51c;
+      filter: blur(315.58453369140625px);
+    }
+
+    .footer__bg__right {
+      position: absolute;
+      width: 33.54256rem;
+      height: 32.34294rem;
+      right: -17.86rem;
+      bottom: -17.2rem;
+      border-radius: 33.54256rem;
+      background: #ff1717;
+      filter: blur(363.6622619628906px);
+    }
+  }
+}

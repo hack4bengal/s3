@@ -1,43 +1,49 @@
-import React, { useEffect } from "react";
-import { useRef, useState } from "react";
-import "./Navbar.css";
-import hack4bengal from "../../assets/images/navbar/h4blogo.png";
-
-import { motion } from "framer-motion";
-import { headerVariants } from "../../motionUtils";
+/* eslint-disable react/no-unknown-property */
+import React, { useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Dropdown from "./dropdown/Dropdown";
+import navbarContent from "../../assets/data/NavbarContent";
+import "./Navbar.scss";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const hamburger = useRef(null);
-  function toggleMenu() {
-    setIsOpen(!isOpen);
-    hamburger.current.classList.toggle("active");
-  }
+const Navbar = ({ refs }) => {
+  const [isActive, setIsActive] = React.useState(false);
+  const [isDropdownActive, setIsDropdownActive] = React.useState(false);
+
+  const handleClick = () => {
+    setIsActive((prevIsActive) => !prevIsActive);
+  };
+
   const navigate = useNavigate();
-  let element;
 
-  const gotoId = (id) => {
+  const gotoElement = (el) => {
+    setIsActive(false);
+
+    if (el.startsWith("/")) {
+      navigate(el);
+      return;
+    }
+
     if (window.location.pathname !== "/") {
       navigate("/");
+
       setTimeout(() => {
-        element = document.getElementById(id);
-        element.scrollIntoView({ behavior: "smooth", block: "center" });
+        window.scrollTo({
+          top: refs[el].current.offsetTop,
+          behavior: "smooth",
+        });
       }, 500);
     } else {
-      window.location.href = "#" + id;
+      window.scrollTo({
+        top: refs[el].current.offsetTop,
+        behavior: "smooth",
+      });
     }
   };
 
   let menuRef = useRef();
-  const [open, setOpen] = useState(false);
-
   useEffect(() => {
     let handler = (e) => {
       if (!menuRef.current.contains(e.target)) {
-        setOpen(false);
-        // console.log(menuRef.current);
+        setIsDropdownActive(false);
       }
     };
 
@@ -49,321 +55,143 @@ const Navbar = () => {
   });
 
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="show"
-      variants={headerVariants}
-      viewport={{ once: false, amount: 0.25 }}
-      className="hack4bengal__navbar-container"
-    >
-      <header className="hack4bengal__navbar ">
-        <div className="hack4bengal__navbar-body" ref={menuRef}>
-          <Link to={"/"}>
-            <div className="hack4bengal__navbar-logo">
-              <img src={hack4bengal} alt="logo" />
-            </div>
-          </Link>
-          <nav className="hack4bengal__navbar-menu">
-            <ul className="hack4bengal__navbar-navlist">
-              <li className="hack4bengal__navbar-navitem">
-                <p
-                  /* href="#home" */
-                  onClick={() => {
-                    gotoId("home");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">Home</h3>
-                </p>
-              </li>
-              <li className="hack4bengal__navbar-navitem">
-                <p
-                  onClick={() => {
-                    gotoId("aboutus");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">About</h3>
-                </p>
-              </li>
-              <li className="hack4bengal__navbar-navitem">
-                <p
-                  onClick={() => {
-                    gotoId("timeline");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">Timeline</h3>
-                </p>
-              </li>
-              {/* <li className="hack4bengal__navbar-navitem">
-                <p
-                  onClick={() => {
-                    gotoId("venue");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">Venue</h3>
-                </p>
-              </li> */}
-              {/* <li className="hack4bengal__navbar-navitem">
-                <Link to={"/live"}>
-                  <h3 className="hack4bengal__navbar-menu-heading">Live</h3>
-                </Link>
-              </li> */}
+    <nav className="navbar" ref={menuRef}>
+      <Link to="/" className="navbar__logo_link">
+        <img src={navbarContent.logo} alt="logo" className="navbar__logo" />
+      </Link>
 
-              <li className="hack4bengal__navbar-navitem">
-                <p
-                  onClick={() => {
-                    gotoId("themes");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">Themes</h3>
-                </p>
-              </li>
-              <li className="hack4bengal__navbar-navitem">
-                <p
-                  onClick={() => {
-                    gotoId("prizes");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">Prizes</h3>
-                </p>
-              </li>
+      <ul>
+        {navbarContent.links.map((link, index) => (
+          <li
+            key={index}
+            onClick={() => {
+              gotoElement(link?.link);
+            }}
+          >
+            <p className="navbar__link">{link?.text}</p>
+          </li>
+        ))}
 
-              <li className="hack4bengal__navbar-navitem">
-                <p
-                  onClick={() => {
-                    gotoId("sponsors");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">Sponsors</h3>
-                </p>
-              </li>
-
-              {/*  <li className="hack4bengal__navbar-navitem">
-                <p
-                  onClick={() => {
-                    gotoId("speakers");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">Speakers</h3>
-                </p>
-              </li>
-
-              <li className="hack4bengal__navbar-navitem">
-                <p
-                  onClick={() => {
-                    gotoId("sponsers");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">Sponsors</h3>
-                </p>
-              </li>
-              <li className="hack4bengal__navbar-navitem">
-                <p
-                  onClick={() => {
-                    gotoId("faq");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">FAQ</h3>
-                </p>
-              </li>
-              <li className="hack4bengal__navbar-navitem">
-                <p
-                  onClick={() => {
-                    gotoId("team");
-                    toggleMenu();
-                  }}
-                >
-                  <h3 className="hack4bengal__navbar-menu-heading">Team</h3>
-                </p>
-              </li> */}
-              <div style={{ position: "relative" }}>
-                <li className="hack4bengal__navbar-navitem">
-                  <p
-                    onClick={() => {
-                      //console.log("Hello mf");
-                      setOpen(!open);
-                    }}
-                  >
-                    <h3 className="hack4bengal__navbar-menu-heading">More</h3>
-                  </p>
-                </li>
-
-                <Dropdown open={open} setOpen={setOpen} />
-              </div>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <header
-        className={`hack4bengal__navbar-hamburger ${
-          isOpen ? `hamburger-open` : ``
-        }`}
-      >
-        <div className="hack4bengal__navbar-hamburger-body">
-          <nav className="hack4bengal__navbar-hamburger-nav">
-            <div className="hamburger">
-              <svg
-                className="ham hamRotate ham8"
-                viewBox="0 0 100 100"
-                width="80"
-                ref={hamburger}
+        <div
+          className="navbar__dropdown"
+          onClick={() =>
+            setIsDropdownActive((prevIsDropdownActive) => !prevIsDropdownActive)
+          }
+        >
+          <span className="navbar__link">More</span>
+          <ul
+            className={`navbar__dropdown__items ${
+              isDropdownActive ? "navbar__dropdown__items__active" : ""
+            }`}
+          >
+            {navbarContent.dropdown.links.map((link, index) => (
+              <li
+                key={index}
                 onClick={() => {
-                  // gotoId("aboutus");
-                  toggleMenu();
+                  gotoElement(link?.link);
                 }}
               >
-                <path
-                  className="line top"
-                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
-                />
-                <path className="line middle" d="m 30,50 h 40" />
-                <path
-                  className="line bottom"
-                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
-                />
-              </svg>
-            </div>
-            <div className="hack4bengal__navbar-hamburger-logo">
-              <img src={hack4bengal} alt="logo" />
-            </div>
-            <div
-              className="hack4bengal__navbar-hamburger-logo"
-              style={{
-                display: "none",
-                transform: "scale(2)",
-                marginTop: "40px",
-              }}
-            ></div>
-          </nav>
+                <p to={link?.link} className="navbar__dropdown__link">
+                  {link?.text}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
-        <ul
-          className={`hack4bengal__navbar-hamburger-navlist ${
-            isOpen ? `activeMenu slide-bottom` : ``
+        <svg className="navbar__dropdown__down__svg">
+          <filter el="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
+            />
+            <feColorMatrix
+              in="blur"
+              type="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+              result="goo"
+            />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </svg>
+      </ul>
+      <div className="navbar__mobile">
+        <svg
+          className={`navbar__mobile__ham navbar__mobile_ham__hamRotate ${
+            isActive ? "navbar__mobile_ham__active" : ""
+          } navbar__mobile_ham__ham1`}
+          viewBox="0 0 100 100"
+          width="70"
+          onClick={handleClick}
+        >
+          <path
+            className="navbar__mobile_ham__line navbar__mobile_ham__top"
+            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+          />
+          <path
+            className="navbar__mobile_ham__line navbar__mobile_ham__middle"
+            d="m 30,47 h 40"
+          />
+          <path
+            className="navbar__mobile_ham__line navbar__mobile_ham__bottom"
+            d="m 30,61 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+          />
+        </svg>
+        <div
+          className={`navbar__mobile__menu ${
+            isActive ? "" : "navbar__mobile__menu__hidden"
           }`}
         >
-          <li
-            onClick={() => {
-              gotoId("home");
-              toggleMenu();
-            }}
-            className="hack4bengal__navbar-hamburger-navitem"
+          <div
+            className={`navbar__mobile__sidebar ${
+              isActive ? "navbar__mobile__sidebar__active" : ""
+            }`}
           >
-            <h3 className="hack4bengal__navbar-hamburger-menu-heading">Home</h3>
-          </li>
-          <li
-            onClick={() => {
-              gotoId("aboutus");
-              toggleMenu();
-            }}
-            className="hack4bengal__navbar-hamburger-navitem"
-          >
-            <h3 className="hack4bengal__navbar-hamburger-menu-heading">
-              About Us
-            </h3>
-          </li>
-          <li
-            onClick={() => {
-              gotoId("venue");
-              toggleMenu();
-            }}
-            className="hack4bengal__navbar-hamburger-navitem"
-          >
-            <h3 className="hack4bengal__navbar-hamburger-menu-heading">
-              Venue
-            </h3>
-          </li>
-          <li
-            onClick={() => {
-              gotoId("timeline");
-              toggleMenu();
-            }}
-            className="hack4bengal__navbar-hamburger-navitem"
-          >
-            <h3 className="hack4bengal__navbar-hamburger-menu-heading">
-              Timeline
-            </h3>
-          </li>
-          <li className="hack4bengal__navbar-hamburger-navitem">
-            <Link to={"/live"}>
-              <h3 className="hack4bengal__navbar-hamburger-menu-heading">
-                Live
-              </h3>
-            </Link>
-          </li>
-          <li
-            onClick={() => {
-              gotoId("themes");
-              toggleMenu();
-            }}
-            className="hack4bengal__navbar-hamburger-navitem"
-          >
-            <h3 className="hack4bengal__navbar-hamburger-menu-heading">
-              Themes
-            </h3>
-          </li>
-          <li
-            onClick={() => {
-              gotoId("prizes");
-              toggleMenu();
-            }}
-            className="hack4bengal__navbar-hamburger-navitem"
-          >
-            <h3 className="hack4bengal__navbar-hamburger-menu-heading">
-              Prizes
-            </h3>
-          </li>
-          <li
-            onClick={() => {
-              gotoId("mentors");
-              toggleMenu();
-            }}
-            className="hack4bengal__navbar-hamburger-navitem"
-          >
-            <h3 className="hack4bengal__navbar-hamburger-menu-heading">
-              Mentors
-            </h3>
-          </li>
-          <li onClick={()=>{
-            gotoId("testimonials");
-            toggleMenu();
-          }} className="hack4bengal__navbar-hamburger-navitem">
-            
-              <h3 className="hack4bengal__navbar-hamburger-menu-heading">
-                Testimonials
-              </h3>
-          </li>
-          <li
-            onClick={() => {
-              gotoId("sponsors");
-              toggleMenu();
-            }}
-            className="hack4bengal__navbar-hamburger-navitem"
-          >
-            <h3 className="hack4bengal__navbar-hamburger-menu-heading">
-              Sponsors
-            </h3>
-          </li>
-          <li
-            onClick={() => {
-              gotoId("faq");
-              toggleMenu();
-            }}
-            className="hack4bengal__navbar-hamburger-navitem"
-          >
-            <h3 className="hack4bengal__navbar-hamburger-menu-heading">FAQ</h3>
-          </li>
-        </ul>
-      </header>
-    </motion.div>
+            <div className="navbar__mobile__menu__h4b">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2"
+                height="560"
+                viewBox="0 0 2 560"
+                fill="none"
+              >
+                <path d="M1 560L1 0" stroke="#FF1717" strokeWidth="2" />
+              </svg>
+              <ul>
+                {navbarContent.links.map((link, index) => (
+                  <li
+                    key={index}
+                    onClick={() => {
+                      gotoElement(link?.link);
+                    }}
+                  >
+                    <Link to={link?.link} className="navbar__mobile__link">
+                      {link?.text}
+                    </Link>
+                  </li>
+                ))}
+                {navbarContent.dropdown.links.map((link, index) => (
+                  <li
+                    key={index}
+                    onClick={() => {
+                      gotoElement(link?.link);
+                    }}
+                  >
+                    <Link to={link?.link} className="navbar__mobile__link">
+                      {link?.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="navbar__mobile__menu__h4b__logo" el="lmao">
+              <span>Developed By</span>
+              <img src={navbarContent.logo} alt="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 };
 

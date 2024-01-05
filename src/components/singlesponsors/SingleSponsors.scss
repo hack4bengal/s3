@@ -1,0 +1,23 @@
+.single__sponsor {
+  background-color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  width: min-content;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 72px;
+
+  @media screen and (max-width: 576px) {
+    width: 150px;
+    height: 43px;
+  }
+
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

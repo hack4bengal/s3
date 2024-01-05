@@ -1,0 +1,53 @@
+name: 👩🏻‍🚀 MAIN -> Preview Deploy (Frontend)
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  DEPLOY_PR_FROM_FORK: true
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+
+jobs:
+
+  Deploy-Preview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - id: script
+        uses: actions/github-script@v3
+        with:
+          script: |
+            const isPr = [ 'pull_request', 'pull_request_target' ].includes(context.eventName)
+            core.setOutput('ref', isPr ? context.payload.pull_request.head.ref : context.ref)
+            core.setOutput('repo', isPr ? context.payload.pull_request.head.repo.full_name : context.repo.full_name)
+
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ steps.script.outputs.repo }}
+
+      # - name: Create Branch
+      #   uses: peterjgrainger/action-create-branch@v2.2.0
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     branch: "${{ github.event.pull_request.head.ref }}"
+      #     sha: "${{ github.event.pull_request.head.sha }}"
+
+      - name: Deploy to Vercel Action
+        uses: BetaHuhn/deploy-to-vercel-action@latest
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          DEPLOY_PR_FROM_FORK: true
+          DELETE_EXISTING_COMMENT: true
+          PR_LABELS: false

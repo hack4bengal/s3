@@ -1,0 +1,164 @@
+.home {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+  background-image: url("../../assets/images/LandingImages/bridge.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 4.7rem;
+
+  @media screen and (max-width: 576px) {
+    padding: 0 2rem;
+  }
+
+  .home__content {
+    display: flex;
+    justify-content: space-between;
+    height: 89%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    padding: 0 3rem;
+
+    @media screen and (max-width: 576px) {
+      text-align: center;
+      height: 100%;
+      margin-top: 3rem;
+      padding: 0;
+    }
+
+    .home__text {
+      font-family: var(--heading-font);
+      letter-spacing: 1px;
+
+      p {
+        font-weight: 400;
+        font-size: clamp(1.2rem, 6vw, 1.6rem);
+        line-height: 1;
+        margin-bottom: 13px;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: clamp(2.1rem, 7vw, 3.8rem);
+        line-height: 1;
+      }
+
+      h2 {
+        font-weight: 400;
+        font-size: clamp(1.7rem, 7vw, 3.05rem);
+        line-height: 1;
+
+        @media screen and (max-width: 576px) {
+          text-wrap: nowrap;
+        }
+      }
+    }
+
+    .home__sub_content {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      p {
+        border-left: 3px solid var(--h4bred);
+        padding-left: 1rem;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: var(--body-font);
+        opacity: 0.8;
+        text-align: start;
+        word-break: break-all;
+        line-height: 1.5;
+
+        @media screen and (min-width: 885px) {
+          display: none;
+        }
+      }
+
+      .home__subtext {
+        p {
+          border-left: 3px solid var(--h4bred);
+          padding-left: 1rem;
+          font-weight: 400;
+          font-size: 13px;
+          opacity: 0.8;
+          text-align: start;
+          word-break: break-all;
+          line-height: 1.5;
+
+          @media screen and (min-width: 885px) {
+            display: none;
+          }
+        }
+      }
+      .home__buttons {
+        position: absolute;
+        transform: translateX(50%);
+        bottom: 2rem;
+        right: 25%;
+        display: flex;
+        gap: 2rem;
+
+        @media screen and (max-width: 576px) {
+          position: relative;
+          bottom: 0;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.2rem;
+          right: 50%;
+        }
+      }
+    }
+  }
+
+  .blob_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 78%;
+    height: 100%;
+    z-index: 2;
+
+    @media screen and (max-width: 850px) {
+      top: -272px;
+      left: -62px;
+      width: 127%;
+    }
+  }
+
+  .blob_right {
+    position: absolute;
+    top: 84px;
+    right: 0px;
+    width: 73%;
+    height: 100%;
+    z-index: 2;
+
+    @media screen and (max-width: 850px) {
+      right: 0px;
+      width: 99%;
+    }
+  }
+
+  .home__victoria {
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+    width: 100%;
+    height: 97%;
+    object-fit: cover;
+    z-index: 1;
+
+    @media screen and (max-width: 576px) {
+      width: 115%;
+    }
+  }
+}
+
+.color-primary {
+  color: var(--h4bred) !important;
+}

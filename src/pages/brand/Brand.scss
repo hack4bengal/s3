@@ -1,0 +1,21 @@
+.brand {
+  width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+  .heading {
+    margin: 4rem 0;
+  }
+  .brandCards__parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2.2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+
+@media (max-width: 743px) {
+  .brandCards__parent {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+  }
+}
