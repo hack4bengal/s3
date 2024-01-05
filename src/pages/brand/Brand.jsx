@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { brandContent } from "../../assets/data/BrandContent.js";
 import "./Brand.scss";
-import BrandCard from "./brandCard/BrandCard";
+import BrandCard from "./brandcard/BrandCard.jsx";
 function Brand() {
   useEffect(() => {
     window.scrollTo(0, 0);
