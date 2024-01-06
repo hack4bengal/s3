@@ -12,8 +12,8 @@ export default defineConfig({
       "name": "Hack for Bengal App",
       "icons": [
         {
-            "src": "/h4bog.png",
-            "type": "image/png",
+            "src": "/favicon.ico",
+            "type": "image/ico",
             "sizes": "1024x1024"
         }
     ],
