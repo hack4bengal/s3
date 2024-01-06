@@ -1,7 +1,36 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import svgr from "vite-plugin-svgr";
+import {VitePWA} from "vite-plugin-pwa";
 
-// https://vitejs.dev/config/
+
 export default defineConfig({
-  plugins: [react()],
+  plugins: [svgr(), react(),VitePWA(
+   {
+    manifest: {
+      "short_name": "Hack For Bengal",
+      "name": "Hack for Bengal App",
+      "icons": [
+        {
+            "src": "/favicon.ico",
+            "type": "image/ico",
+            "sizes": "1024x1024"
+        }
+    ],
+    "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+
+  }
+   }
+  )],
+  server: {
+    host: true,
+    strictPort: true,
+    port: 3000,
+  },
+  watch: {
+    usePolling: true,
+  },
 });
