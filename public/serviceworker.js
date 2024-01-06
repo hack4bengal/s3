@@ -104,7 +104,7 @@ self.addEventListener('install', (event) => {
                     
                     
                     
-                    // Add other URLs for your assets (stylesheets, scripts, images, etc.)
+                    
                 ]);
             })
     );
@@ -115,12 +115,12 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.match(event.request)
             .then((response) => {
-                // Cache hit - return the response
+                
                 if (response) {
                     return response;
                 }
 
-                // Clone the request to avoid consuming it
+                
                 const fetchRequest = event.request.clone();
 
                 return fetch(fetchRequest)
@@ -130,7 +130,7 @@ self.addEventListener('fetch', (event) => {
                             return response;
                         }
 
-                        // Clone the response to put it in the cache
+                       
                         const responseToCache = response.clone();
 
                         caches.open(CACHE_NAME)
@@ -140,7 +140,7 @@ self.addEventListener('fetch', (event) => {
 
                         return response;
                     })
-                    .catch(() => caches.match('/index.html')); // Adjust the default fallback page
+                    .catch(() => caches.match('/index.html')); 
             })
     );
 });
