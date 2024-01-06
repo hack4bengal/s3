@@ -7,7 +7,7 @@ const Sponsors = ({ refs }) => {
   return (
     <>
       <div className="sponsors__parent" ref={refs}>
-        <div className="sponsors__header">
+        <div className="sponsors__header disable-select">
           <h1>{window.innerWidth > 700 ? "Supporters" : "Backers"}</h1>
           <h2>Past Sponsors</h2>
         </div>

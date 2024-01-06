@@ -6,7 +6,7 @@ const Timeline = ({ refs }) => {
   return (
     <>
       <div className="timeline__parent" ref={refs}>
-        <div className="timeline__header">
+        <div className="timeline__header disable-select">
           <h1>{window.innerWidth > 700 ? "Roadmap" : "Plan"}</h1>
           <h2>{window.innerWidth > 700 && "Hackathon"} Timeline</h2>
         </div>

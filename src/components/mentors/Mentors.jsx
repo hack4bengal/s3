@@ -7,7 +7,7 @@ import "./Mentors.scss";
 function Mentors({ refs }) {
   return (
     <section className="mentors__parent" ref={refs}>
-      <div className="mentors__header">
+      <div className="mentors__header disable-select">
         <h1>Experts</h1>
         <h2>{window.innerWidth > 700 ? "Previous" : "Past"} Mentors</h2>
       </div>

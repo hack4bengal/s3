@@ -14,7 +14,7 @@ const Prizes = ({ refs }) => {
   return (
     <>
       <div className="prizes__parent" ref={refs}>
-        <div className="prizes__header">
+        <div className="prizes__header disable-select">
           <h1>Awards</h1>
           <h2>{window.innerWidth > 700 && "Hackathon"} Prizes</h2>
         </div>
