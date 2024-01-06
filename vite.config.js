@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [svgr(), react(),VitePWA(
    {
     manifest: {
-      "short_name": "Hack For Bengal",
+      "short_name": "Hack4Bengal",
       "name": "Hack for Bengal App",
       "icons": [
         {
