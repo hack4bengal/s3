@@ -7,7 +7,7 @@ function BrandCard({ brandItem }) {
   return (
     <div className="brand_card">
       <div className="brand_card__image">
-        <img src={image} alt="" />
+        <img src={image} alt="Hack4Bengal" />
       </div>
       <div className="brand_card__contents">
         <div className="brand_card__text">
