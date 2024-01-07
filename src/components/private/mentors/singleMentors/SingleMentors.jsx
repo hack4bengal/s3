@@ -8,7 +8,7 @@ const SingleMentors = ({ mentor }) => {
           <img
             className="tokenImage"
             src={mentor?.image}
-            alt="NFT"
+            alt={mentor?.name}
             loading="lazy"
           />
           <div className="mentor__info">

@@ -82,7 +82,6 @@ const Faq = () => {
           </div>
         </div>
       </div>
-      {/* <img className="faq__blob disable-select" src={blob} alt="blob" /> */}
     </div>
   );
 };

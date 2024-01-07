@@ -22,7 +22,7 @@ const Testimonials = () => {
               <p className="testimonials__text">{item?.testimonial}</p>
 
               <div className="testimonials__card_footer">
-                <img src={item?.img} alt="" loading="lazy" />
+                <img src={item?.img} alt={item?.name} loading="lazy" />
 
                 <div className="testimonials__card_author">
                   <h2>{item?.name}</h2>
@@ -47,7 +47,7 @@ const Testimonials = () => {
               <p className="testimonials__text">{item?.testimonial}</p>
 
               <div className="testimonials__card_footer">
-                <img src={item?.img} alt="" loading="lazy" />
+                <img src={item?.img} alt={item?.name} loading="lazy" />
 
                 <div className="testimonials__card_author">
                   <h2>{item?.name}</h2>

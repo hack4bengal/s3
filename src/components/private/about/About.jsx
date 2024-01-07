@@ -47,8 +47,8 @@ const About = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                 ></iframe> */}
-                <img src={two} alt="" className="mq_img" />
-                <img src={three} alt="" className="mq_img" />
+                <img src={two} alt="two" className="mq_img" />
+                <img src={three} alt="three" className="mq_img" />
               </Marquee>
 
               <Marquee
@@ -58,9 +58,9 @@ const About = () => {
                 speed={50}
                 direction="left"
               >
-                <img src={four} alt="" className="mq_img" />
-                <img src={five} alt="" className="mq_img" />
-                <img src={six} alt="" className="mq_img" />
+                <img src={four} alt="four" className="mq_img" />
+                <img src={five} alt="five" className="mq_img" />
+                <img src={six} alt="six" className="mq_img" />
               </Marquee>
             </div>
 
@@ -111,8 +111,8 @@ const About = () => {
                 src="https://www.youtube.com/embed/JbkBnTpfpmw"
                 title="The Hack4Bengal Recap | 2023"
               ></iframe>
-              <img src={two} alt="" className="mq_img" />
-              <img src={three} alt="" className="mq_img" />
+              <img src={two} alt="two" className="mq_img" />
+              <img src={three} alt="three" className="mq_img" />
             </Marquee>
 
             <Marquee
@@ -122,9 +122,9 @@ const About = () => {
               speed={50}
               direction="left"
             >
-              <img src={four} alt="" className="mq_img" />
-              <img src={seven} alt="" className="mq_img" />
-              <img src={eight} alt="" className="mq_img" />
+              <img src={four} alt="four" className="mq_img" />
+              <img src={seven} alt="four" className="mq_img" />
+              <img src={eight} alt="four" className="mq_img" />
             </Marquee>
           </div>
         </div>

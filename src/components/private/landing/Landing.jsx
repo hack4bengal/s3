@@ -37,15 +37,22 @@ const Landing = () => {
                 fm={"14px"}
                 to={"https://forms.gle/pXk7cvKB9CTvhCbQ9"}
               >
-                {/* {window.innerWidth > 600 ? "Check our socials" : "Check socials"} */}
                 Pre-register
               </Button>
             </div>
           </div>
         </div>
 
-        <img src={blob_left} alt="" className="blob_left" />
-        <img src={blob_right} alt="" className="blob_right" />
+        <img
+          src={blob_left}
+          alt="Left side red gradient"
+          className="blob_left"
+        />
+        <img
+          src={blob_right}
+          alt="Right side white gradient"
+          className="blob_right"
+        />
 
         <img
           src={victoria}
