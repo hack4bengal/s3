@@ -1,29 +1,21 @@
-import React, { useEffect, useState } from "react";
-import { ComingSoon } from "../../shared";
+import React from "react";
+import { ComingSoon, Header } from "../../shared";
 import "./Timeline.scss";
 
 const Timeline = ({ refs }) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <>
       <div className="timeline__parent" ref={refs}>
-        <div className="timeline__header disable-select">
+        {/* <div className="timeline__header disable-select">
           <h1>{windowWidth > 700 ? "Roadmap" : "Plan"}</h1>
           <h2>{windowWidth > 700 && "Hackathon"} Timeline</h2>
-        </div>
+        </div> */}
+        <Header
+          backWord={"Roadmap"}
+          backWordMobile={"Plan"}
+          frontWord={"Hackathon Timeline"}
+          frontWordMobile={"Timeline"}
+        />
 
         <ComingSoon />
       </div>

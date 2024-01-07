@@ -1,15 +1,13 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import testimonials from "../../../assets/data/TestimonialContent";
+import { Header } from "../../shared";
 import "./Testimonials.scss";
 
 const Testimonials = ({ refs }) => {
   return (
     <div className="testimonials__parent" ref={refs}>
-      <div className="testimonials__header disable-select">
-        <h1>Stories</h1>
-        <h2>Testimonials</h2>
-      </div>
+      <Header backWord={"Stories"} frontWord={"Testimonials"} />
       <Marquee
         autoFill={true}
         pauseOnHover={true}

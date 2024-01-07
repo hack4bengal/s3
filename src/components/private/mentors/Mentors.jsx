@@ -1,30 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Marquee from "react-fast-marquee";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { mentorContent } from "../../../assets/data/MentorsContent";
+import { Header } from "../../shared";
 import "./Mentors.scss";
 
 function Mentors({ refs }) {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <section className="mentors__parent" ref={refs}>
-      <div className="mentors__header disable-select">
-        <h1>Experts</h1>
-        <h2>{windowWidth > 700 ? "Previous" : "Past"} Mentors</h2>
-      </div>
+      <Header
+        backWord={"Experts"}
+        frontWord={"Previous Mentors"}
+        frontWordMobile={"Past Mentors"}
+      />
 
       <div className="mentors__container mentors__container_desktop">
         {mentorContent.map((mentor, index) => {

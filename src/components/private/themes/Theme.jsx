@@ -1,29 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { ComingSoon } from "../../shared";
+import React from "react";
+import { ComingSoon, Header } from "../../shared";
 import "./Theme.scss";
 
 const Theme = ({ refs }) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <>
       <div className="theme__parent" ref={refs}>
-        <div className="theme__header disable-select">
-          <h1>Tracks</h1>
-          <h2>{windowWidth > 700 && "Hackathon"} Themes</h2>
-        </div>
+        <Header
+          backWord={"Tracks"}
+          frontWord={"Hackathon Themes"}
+          frontWordMobile={"Themes"}
+        />
 
         <ComingSoon />
       </div>

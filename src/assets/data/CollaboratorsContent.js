@@ -15,31 +15,22 @@ import nftday from "../images/CollaboratorsImages/nftday.svg";
 import nordek from "../images/CollaboratorsImages/nordek.svg";
 import web3reinvent from "../images/CollaboratorsImages/web3reinvent.svg";
 
-const collaboratorsContent = {
-  title: {
-    main: "Past Collaborations",
-    back: {
-      main: "Collaborators",
-      alt: "Collab",
-    },
-  },
-  collaborators: [
-    wbgov,
-    wbgovcs,
-    nftday,
-    gccd2023,
-    brb,
-    hackthisfall,
-    kolkatafoss,
-    web3reinvent,
-    devfestsiliguri2023,
-    filbangalore,
-    nordek,
-    dataverseos,
-    flutterkolkata,
-    hackverse,
-    kolkatapolygonguild,
-  ],
-};
+const collaborators = [
+  wbgov,
+  wbgovcs,
+  nftday,
+  gccd2023,
+  brb,
+  hackthisfall,
+  kolkatafoss,
+  web3reinvent,
+  devfestsiliguri2023,
+  filbangalore,
+  nordek,
+  dataverseos,
+  flutterkolkata,
+  hackverse,
+  kolkatapolygonguild,
+];
 
-export default collaboratorsContent;
+export default collaborators;
