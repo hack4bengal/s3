@@ -9,11 +9,11 @@ export default defineConfig({
    {
     workbox: {
       // Adjust the globPatterns to match the output folder of your dynamic assets
-      globPatterns: ["dist/**/*"],
+      globPatterns: ["src/**/*"],
   },
   includeAssets: [
       // Adjust the includeAssets pattern to match your dynamic assets
-      "dist/**/*",
+      "src/**/*",
   ],
     manifest: {
       "short_name": "Hack4Bengal",
