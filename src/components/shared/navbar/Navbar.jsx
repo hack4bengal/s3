@@ -69,7 +69,6 @@ const Navbar = () => {
             onClick={() => {
               gotoElement(link?.link);
             }}
-            style={{ backgroundColor: "red" }}
           >
             <p className="navbar__link">{link?.text}</p>
           </li>

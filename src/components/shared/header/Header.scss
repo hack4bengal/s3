@@ -10,13 +10,11 @@
 
   h1 {
     font-weight: 900;
-    // font-size: 150px;
-    // letter-spacing: 0.8rem;
     color: rgba(255, 255, 255, 0.06);
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 18%;
+    top: 20%;
     z-index: 2;
 
     &::after {
@@ -24,20 +22,18 @@
       position: absolute;
       border: 1px solid var(--h4bred);
       width: 250px;
-      bottom: 10px;
+      bottom: -55px;
       left: 50%;
       transform: translate(-50%, -50%);
 
       @media screen and (max-width: 576px) {
-        bottom: -10px;
-        width: 200px;
+        bottom: -40px;
+        width: 160px;
       }
     }
 
     @media screen and (max-width: 576px) {
-      // font-size: 93px;
-      // letter-spacing: 0.5rem;
-      top: -13%;
+      top: 4%;
       left: 50%;
     }
   }

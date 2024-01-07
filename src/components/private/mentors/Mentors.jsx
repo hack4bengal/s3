@@ -8,7 +8,7 @@ import "./Mentors.scss";
 
 function Mentors() {
   return (
-    <section className="mentors__parent">
+    <section className="mentors__parent" id="mentors">
       <Header {...HeaderData.mentors} />
 
       <div className="mentors__container mentors__container_desktop">
