@@ -41,12 +41,12 @@ const About = () => {
                 speed={50}
                 direction="right"
               >
-                <iframe
+                {/* <iframe
                   src="https://www.youtube.com/embed/JbkBnTpfpmw"
                   title="The Hack4Bengal Recap | 2023"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
-                ></iframe>
+                ></iframe> */}
                 <img src={two} alt="" className="mq_img" />
                 <img src={three} alt="" className="mq_img" />
               </Marquee>
@@ -110,8 +110,6 @@ const About = () => {
                 height="315"
                 src="https://www.youtube.com/embed/JbkBnTpfpmw"
                 title="The Hack4Bengal Recap | 2023"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
               ></iframe>
               <img src={two} alt="" className="mq_img" />
               <img src={three} alt="" className="mq_img" />

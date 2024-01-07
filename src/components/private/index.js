@@ -1,11 +1,17 @@
-export { default as About } from "./about/About";
-export { default as Collaborators } from "./collaborators/Collaborators";
-export { default as Faq } from "./faq/FAQ";
-export { default as Landing } from "./landing/Landing";
-export { default as Mentors } from "./mentors/Mentors";
-export { default as Prizes } from "./prizes/Prizes";
-export { default as Sponsors } from "./sponsors/Sponsors";
-export { default as SingleSponsors } from "./sponsors/singlesponsors/SingleSponsors";
-export { default as Testimonials } from "./testimonials/Testimonials";
-export { default as Theme } from "./themes/Theme";
-export { default as Timeline } from "./timeline/Timeline";
+import { lazy } from "react";
+
+export const Landing = lazy(() => import("./landing/Landing"));
+export const About = lazy(() => import("./about/About"));
+export const Timeline = lazy(() => import("./timeline/Timeline"));
+export const Theme = lazy(() => import("./themes/Theme"));
+export const Prizes = lazy(() => import("./prizes/Prizes"));
+export const Sponsors = lazy(() => import("./sponsors/Sponsors"));
+export const SingleSponsors = lazy(() =>
+  import("./sponsors/singlesponsors/SingleSponsors")
+);
+export const Collaborators = lazy(() =>
+  import("./collaborators/Collaborators")
+);
+export const Mentors = lazy(() => import("./mentors/Mentors"));
+export const Testimonials = lazy(() => import("./testimonials/Testimonials"));
+export const FAQ = lazy(() => import("./faq/FAQ"));
