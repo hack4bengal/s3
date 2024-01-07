@@ -1,14 +1,13 @@
 import React from "react";
+import HeaderData from "../../../assets/data/HeaderContent";
+import { Header } from "../../shared";
 import "./FAQ.scss";
 
 const Faq = ({ refs }) => {
   return (
     <div className="faq" ref={refs}>
       <div className="faq__content">
-        <div className="faq__header disable-select">
-          <h1>FAQ</h1>
-          <h2>Questions</h2>
-        </div>
+        <Header {...HeaderData.faq} />
 
         <div className="faq__subheader">
           <p>

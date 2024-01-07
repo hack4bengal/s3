@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderData from "../../../assets/data/HeaderContent";
 import sponsors from "../../../assets/data/SponsorsContent";
 import { Header } from "../../shared";
 import "./Sponsors.scss";
@@ -8,11 +9,7 @@ const Sponsors = ({ refs }) => {
   return (
     <>
       <div className="sponsors__parent" ref={refs}>
-        <Header
-          backWord={"Supporters"}
-          backWordMobile={"Backers"}
-          frontWord={"Past Sponsor"}
-        />
+        <Header {...HeaderData.sponsors} />
 
         <div className="sponsors__flexbox">
           {sponsors.map((item, index) => {

@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderData from "../../../assets/data/HeaderContent";
 import { ComingSoon, Header } from "../../shared";
 import "./Theme.scss";
 
@@ -6,11 +7,7 @@ const Theme = ({ refs }) => {
   return (
     <>
       <div className="theme__parent" ref={refs}>
-        <Header
-          backWord={"Tracks"}
-          frontWord={"Hackathon Themes"}
-          frontWordMobile={"Themes"}
-        />
+        <Header {...HeaderData.theme} />
 
         <ComingSoon />
       </div>

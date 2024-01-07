@@ -10,8 +10,8 @@
 
   h1 {
     font-weight: 900;
-    font-size: 150px;
-    letter-spacing: 0.8rem;
+    // font-size: 150px;
+    // letter-spacing: 0.8rem;
     color: rgba(255, 255, 255, 0.06);
     position: absolute;
     transform: translate(-50%, -50%);
@@ -35,8 +35,8 @@
     }
 
     @media screen and (max-width: 576px) {
-      font-size: 93px;
-      letter-spacing: 0.5rem;
+      // font-size: 93px;
+      // letter-spacing: 0.5rem;
       top: -13%;
       left: 50%;
     }

@@ -1,6 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import HeaderData from "../../../assets/data/HeaderContent";
 import { mentorContent } from "../../../assets/data/MentorsContent";
 import { Header } from "../../shared";
 import "./Mentors.scss";
@@ -8,11 +9,7 @@ import "./Mentors.scss";
 function Mentors({ refs }) {
   return (
     <section className="mentors__parent" ref={refs}>
-      <Header
-        backWord={"Experts"}
-        frontWord={"Previous Mentors"}
-        frontWordMobile={"Past Mentors"}
-      />
+      <Header {...HeaderData.mentors} />
 
       <div className="mentors__container mentors__container_desktop">
         {mentorContent.map((mentor, index) => {

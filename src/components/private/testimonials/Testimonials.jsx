@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import HeaderData from "../../../assets/data/HeaderContent";
 import testimonials from "../../../assets/data/TestimonialContent";
 import { Header } from "../../shared";
 import "./Testimonials.scss";
@@ -7,7 +8,7 @@ import "./Testimonials.scss";
 const Testimonials = ({ refs }) => {
   return (
     <div className="testimonials__parent" ref={refs}>
-      <Header backWord={"Stories"} frontWord={"Testimonials"} />
+      <Header {...HeaderData.testimonials} />
       <Marquee
         autoFill={true}
         pauseOnHover={true}
