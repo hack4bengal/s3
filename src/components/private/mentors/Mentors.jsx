@@ -6,9 +6,9 @@ import { mentorContent } from "../../../assets/data/MentorsContent";
 import { Header } from "../../shared";
 import "./Mentors.scss";
 
-function Mentors({ refs }) {
+function Mentors() {
   return (
-    <section className="mentors__parent" ref={refs}>
+    <section className="mentors__parent">
       <Header {...HeaderData.mentors} />
 
       <div className="mentors__container mentors__container_desktop">

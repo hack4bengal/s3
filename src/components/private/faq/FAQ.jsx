@@ -3,9 +3,9 @@ import HeaderData from "../../../assets/data/HeaderContent";
 import { Header } from "../../shared";
 import "./FAQ.scss";
 
-const Faq = ({ refs }) => {
+const Faq = () => {
   return (
-    <div className="faq" ref={refs}>
+    <div className="faq" id="faq">
       <div className="faq__content">
         <Header {...HeaderData.faq} />
 

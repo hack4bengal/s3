@@ -4,9 +4,9 @@ import HeaderData from "../../../assets/data/HeaderContent";
 import { Header } from "../../shared";
 import "./Collaborators.scss";
 
-const Collaborators = ({ refs }) => {
+const Collaborators = () => {
   return (
-    <div className="collaborators__parent" ref={refs}>
+    <div className="collaborators__parent">
       <div className="collaborators__header disable-select">
         <Header {...HeaderData.collaborators} />
       </div>

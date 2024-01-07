@@ -5,9 +5,9 @@ import testimonials from "../../../assets/data/TestimonialContent";
 import { Header } from "../../shared";
 import "./Testimonials.scss";
 
-const Testimonials = ({ refs }) => {
+const Testimonials = () => {
   return (
-    <div className="testimonials__parent" ref={refs}>
+    <div className="testimonials__parent" id="testimonials">
       <Header {...HeaderData.testimonials} />
       <Marquee
         autoFill={true}

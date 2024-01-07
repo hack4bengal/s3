@@ -14,7 +14,7 @@ import {
 } from "../../components/private";
 import "./Home.scss";
 
-const Home = ({ refs }) => {
+const Home = () => {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 2,
@@ -30,17 +30,17 @@ const Home = ({ refs }) => {
 
   return (
     <>
-      <Landing refs={refs.home} />
+      <Landing />
       {/* {window.innerWidth < 600 && <Marquee />} */}
-      <About refs={refs.about} />
-      <Timeline refs={refs.timeline} />
-      <Prizes refs={refs.prizes} />
-      <Theme refs={refs.themes} />
-      <Sponsors refs={refs.sponsors} />
-      <Collaborators refs={refs.collaborators} />
-      <Mentors refs={refs.mentors} />
-      <Testimonials refs={refs.testimonials} />
-      <Faq refs={refs.faq} />
+      <About />
+      <Timeline />
+      <Prizes />
+      <Theme />
+      <Sponsors />
+      <Collaborators />
+      <Mentors />
+      <Testimonials />
+      <Faq />
     </>
   );
 };

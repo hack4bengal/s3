@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import navbarContent from "../../../assets/data/NavbarContent";
 import "./Navbar.scss";
 
-const Navbar = ({ refs }) => {
+const Navbar = () => {
   const [isActive, setIsActive] = React.useState(false);
   const [isDropdownActive, setIsDropdownActive] = React.useState(false);
 
@@ -22,20 +22,22 @@ const Navbar = ({ refs }) => {
       return;
     }
 
+    document
+      .getElementById(el)
+      .scrollIntoView({ behavior: "smooth" }, { block: "center" });
+
     if (window.location.pathname !== "/") {
       navigate("/");
 
       setTimeout(() => {
-        window.scrollTo({
-          top: refs[el].current.offsetTop,
-          behavior: "smooth",
-        });
+        document
+          .getElementById(el)
+          .scrollIntoView({ behavior: "smooth" }, { block: "center" });
       }, 500);
     } else {
-      window.scrollTo({
-        top: refs[el].current.offsetTop,
-        behavior: "smooth",
-      });
+      document
+        .getElementById(el)
+        .scrollIntoView({ behavior: "smooth" }, { block: "center" });
     }
   };
 
@@ -67,6 +69,7 @@ const Navbar = ({ refs }) => {
             onClick={() => {
               gotoElement(link?.link);
             }}
+            style={{ backgroundColor: "red" }}
           >
             <p className="navbar__link">{link?.text}</p>
           </li>

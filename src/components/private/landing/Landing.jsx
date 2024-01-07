@@ -5,10 +5,10 @@ import victoria from "../../../assets/images/LandingImages/victoria.png";
 import { Button } from "../../shared";
 import "./Landing.scss";
 
-const Landing = ({ refs }) => {
+const Landing = () => {
   return (
     <>
-      <div className="home" ref={refs}>
+      <div className="home" id="home">
         <div className="home__content">
           <div className="home__text">
             <p>Welcome To</p>

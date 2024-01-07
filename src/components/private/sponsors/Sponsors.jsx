@@ -5,10 +5,10 @@ import { Header } from "../../shared";
 import "./Sponsors.scss";
 import SingleSponsors from "./singlesponsors/SingleSponsors";
 
-const Sponsors = ({ refs }) => {
+const Sponsors = () => {
   return (
     <>
-      <div className="sponsors__parent" ref={refs}>
+      <div className="sponsors__parent" id="sponsors">
         <Header {...HeaderData.sponsors} />
 
         <div className="sponsors__flexbox">

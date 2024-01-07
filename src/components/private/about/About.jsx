@@ -10,10 +10,10 @@ import seven from "../../../assets/images/AboutImages/six.jpg";
 
 import "./About.scss";
 
-const About = ({ refs }) => {
+const About = () => {
   return (
     <>
-      <div className="about__container" ref={refs}>
+      <div className="about__container" id="about">
         <div className="about__header">
           <h1>Journey</h1>
           <h2>About</h2>
