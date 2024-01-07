@@ -20,6 +20,7 @@
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.17.0",
     "vite-plugin-svgr": "^4.2.0",
+    "workbox-build": "^7.0.0",
     "zustand": "^4.4.4"
   },
   "devDependencies": {

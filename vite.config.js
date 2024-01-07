@@ -2,69 +2,22 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 import {VitePWA} from "vite-plugin-pwa";
+// import generateSW from "workbox-build";
+import workboxConfig from "./workbox-config.cjs";
 
 
 export default defineConfig({
   plugins: [svgr(), react(),VitePWA(
    {
-    workbox: {
-      cleanupOutdatedCaches: true,
-      skipWaiting: true,
-      clientsClaim: true,
-
-      runtimeCaching: [
-        {
-          // Caches Google Fonts with a Cache First strategy.
-          urlPattern: new RegExp(
-            "^https://fonts.(?:googleapis|gstatic).com/(.*)",
-          ),
-          handler: "CacheFirst",
-          options: {
-            cacheName: "google-fonts",
-            expiration: {
-              maxEntries: 30,
-            },
-            cacheableResponse: {
-              statuses: [0, 200],
-            },
-          },
-        },
-        {
-          // Caches images with a Cache First strategy.
-          urlPattern: /\.(?:png|gif|jpg|jpeg|svg|webp)$/,
-          handler: "CacheFirst",
-          options: {
-            cacheName: "images",
-            expiration: {
-              maxEntries: 60,
-            },
-          },
-        },
-        {
-          // serves static resources with a Network First strategy.
-          urlPattern: /\.(?:js|css|jsx)$/,
-          handler: "NetworkFirst",
-          options: {
-            cacheName: "static-resources",
-            expiration: {
-              maxEntries: 60,
-            },
-          },
-        },
-        
-        
-      ],
-    },
+    workbox: workboxConfig,
     manifest: {
       "short_name": "Hack4Bengal",
       "name": "Hack for Bengal App",
-      icons: [
+      "icons": [
         {
-            src: "/pwalogo.png",
-            type: "image/png",
-            sizes: "1024x1024",
-            purpose: "maskable any",
-            
+            "src": "/pwalogo.png",
+            "type": "image/png",
+            "sizes": "1024x1024"
         }
     ],
     "start_url": ".",
@@ -73,8 +26,14 @@ export default defineConfig({
   "background_color": "#ffffff"
 
   }
+  
    }
-  )],
+   
+  ),
+  // async () => {
+  //   await generateSW(require("./workbox-config.cjs")); // Generate service worker
+  // },
+],
   server: {
     host: true,
     strictPort: true,
