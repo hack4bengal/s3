@@ -14,7 +14,14 @@ const Collaborators = () => {
       <div className="collaborators__flexbox__container">
         <div className="collaborators__flexbox">
           {collaborators.map((collaborator, index) => {
-            return <img src={collaborator} key={index} alt={collaborator} />;
+            return (
+              <img
+                src={collaborator}
+                key={index}
+                alt={collaborator}
+                loading="lazy"
+              />
+            );
           })}
         </div>
       </div>

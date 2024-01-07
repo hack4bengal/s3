@@ -5,7 +5,12 @@ const SingleMentors = ({ mentor }) => {
     <>
       <div className="nft">
         <div className="main">
-          <img className="tokenImage" src={mentor?.image} alt="NFT" />
+          <img
+            className="tokenImage"
+            src={mentor?.image}
+            alt="NFT"
+            loading="lazy"
+          />
           <div className="mentor__info">
             <h2>{mentor?.name}</h2>
             <p className="description">{mentor?.designation}</p>

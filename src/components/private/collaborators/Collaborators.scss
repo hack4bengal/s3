@@ -31,6 +31,7 @@
       img {
         width: 15rem;
         cursor: pointer;
+        border-radius: 16px;
 
         @media screen and (max-width: 900px) {
           width: 12rem;

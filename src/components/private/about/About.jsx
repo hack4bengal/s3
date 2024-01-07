@@ -1,12 +1,12 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import six from "../../../assets/images/AboutImages/35.jpg";
-import eight from "../../../assets/images/AboutImages/43.jpg";
-import five from "../../../assets/images/AboutImages/5.jpg";
-import four from "../../../assets/images/AboutImages/7.jpg";
-import three from "../../../assets/images/AboutImages/five.jpg";
-import two from "../../../assets/images/AboutImages/four.jpg";
-import seven from "../../../assets/images/AboutImages/six.jpg";
+import six from "../../../assets/images/AboutImages/35.webp";
+import eight from "../../../assets/images/AboutImages/43.webp";
+import five from "../../../assets/images/AboutImages/5.webp";
+import four from "../../../assets/images/AboutImages/7.webp";
+import three from "../../../assets/images/AboutImages/five.webp";
+import two from "../../../assets/images/AboutImages/four.webp";
+import seven from "../../../assets/images/AboutImages/six.webp";
 
 import "./About.scss";
 
