@@ -8,13 +8,53 @@ export default defineConfig({
   plugins: [svgr(), react(),VitePWA(
    {
     workbox: {
-      // Adjust the globPatterns to match the output folder of your dynamic assets
-      globPatterns: ["src/**/*"],
-  },
-  includeAssets: [
-      // Adjust the includeAssets pattern to match your dynamic assets
-      "src/**/*",
-  ],
+      cleanupOutdatedCaches: true,
+      skipWaiting: true,
+      clientsClaim: true,
+
+      runtimeCaching: [
+        {
+          // Caches Google Fonts with a Cache First strategy.
+          urlPattern: new RegExp(
+            "^https://fonts.(?:googleapis|gstatic).com/(.*)",
+          ),
+          handler: "CacheFirst",
+          options: {
+            cacheName: "google-fonts",
+            expiration: {
+              maxEntries: 30,
+            },
+            cacheableResponse: {
+              statuses: [0, 200],
+            },
+          },
+        },
+        {
+          // Caches images with a Cache First strategy.
+          urlPattern: /\.(?:png|gif|jpg|jpeg|svg|webp)$/,
+          handler: "CacheFirst",
+          options: {
+            cacheName: "images",
+            expiration: {
+              maxEntries: 60,
+            },
+          },
+        },
+        {
+          // serves static resources with a Network First strategy.
+          urlPattern: /\.(?:js|css|jsx)$/,
+          handler: "NetworkFirst",
+          options: {
+            cacheName: "static-resources",
+            expiration: {
+              maxEntries: 60,
+            },
+          },
+        },
+        
+        
+      ],
+    },
     manifest: {
       "short_name": "Hack4Bengal",
       "name": "Hack for Bengal App",
