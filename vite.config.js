@@ -7,6 +7,14 @@ import {VitePWA} from "vite-plugin-pwa";
 export default defineConfig({
   plugins: [svgr(), react(),VitePWA(
    {
+    workbox: {
+      globPatterns: ["**/*"],
+  },
+  // add this to cache all the
+  // static assets in the public folder
+  includeAssets: [
+      "**/*",
+  ],
     manifest: {
       "short_name": "Hack4Bengal",
       "name": "Hack for Bengal App",
