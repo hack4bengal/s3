@@ -6,7 +6,7 @@ import "./Testimonials.scss";
 const Testimonials = ({ refs }) => {
   return (
     <div className="testimonials__parent" ref={refs}>
-      <div className="testimonials__header">
+      <div className="testimonials__header disable-select">
         <h1>Stories</h1>
         <h2>Testimonials</h2>
       </div>

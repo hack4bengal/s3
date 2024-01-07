@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import white from "../../assets/images/LandingImages/blob_right.png";
 
 // import FirstPrize from "../../assets/images/PrizesImages/FirstPrize.png";
@@ -11,12 +11,26 @@ import ComingSoon from "../comingsoon/ComingSoon";
 import "./Prizes.scss";
 
 const Prizes = ({ refs }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className="prizes__parent" ref={refs}>
-        <div className="prizes__header">
+        <div className="prizes__header disable-select">
           <h1>Awards</h1>
-          <h2>{window.innerWidth > 700 && "Hackathon"} Prizes</h2>
+          <h2>{windowWidth > 700 && "Hackathon"} Prizes</h2>
         </div>
         {/* <img src={red} alt="" className="red__blob" /> */}
         {/* <img src={white} alt="" className="white__blob" /> */}
