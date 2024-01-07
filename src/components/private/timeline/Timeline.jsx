@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import ComingSoon from "../comingsoon/ComingSoon";
+import React, { useEffect, useState } from "react";
+import { ComingSoon } from "../../shared";
 import "./Timeline.scss";
 
 const Timeline = ({ refs }) => {

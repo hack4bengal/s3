@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import footerContent from "../../assets/data/FooterContent";
+import footerContent from "../../../assets/data/FooterContent";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -52,7 +52,7 @@ const Footer = () => {
             onClick={() => {
               window.scrollTo({
                 top: 0,
-                behavior: 'smooth'
+                behavior: "smooth",
               });
             }}
           >

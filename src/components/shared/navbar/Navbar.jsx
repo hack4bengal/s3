@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import React, { useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import navbarContent from "../../assets/data/NavbarContent";
+import navbarContent from "../../../assets/data/NavbarContent";
 import "./Navbar.scss";
 
 const Navbar = ({ refs }) => {

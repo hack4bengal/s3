@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import sponsors from "../../assets/data/SponsorsContent";
-import SingleSponsors from "../singlesponsors/SingleSponsors";
+import React, { useEffect, useState } from "react";
+import sponsors from "../../../assets/data/SponsorsContent";
 import "./Sponsors.scss";
+import SingleSponsors from "./singlesponsors/SingleSponsors";
 
 const Sponsors = ({ refs }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

@@ -1,0 +1,11 @@
+export { default as About } from "./about/About";
+export { default as Collaborators } from "./collaborators/Collaborators";
+export { default as Faq } from "./faq/Faq";
+export { default as Landing } from "./landing/Landing";
+export { default as Mentors } from "./mentors/Mentors";
+export { default as Prizes } from "./prizes/Prizes";
+export { default as Sponsors } from "./sponsors/Sponsors";
+export { default as SingleSponsors } from "./sponsors/singlesponsors/SingleSponsors";
+export { default as Testimonials } from "./testimonials/Testimonials";
+export { default as Theme } from "./themes/Theme";
+export { default as Timeline } from "./timeline/Timeline";

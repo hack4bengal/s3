@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
-import { mentorContent } from "../../assets/data/MentorsContent";
+import { mentorContent } from "../../../assets/data/MentorsContent";
 import "./Mentors.scss";
 
 function Mentors({ refs }) {

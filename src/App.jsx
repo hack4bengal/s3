@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Footer from "./components/footer/Footer";
+
 import Brand from "./pages/brand/Brand";
 import CodeofConduct from "./pages/coc/CodeofConduct";
 import Discord from "./pages/discord/Discord";
 import Home from "./pages/home/Home";
 
-import Navbar from "./components/navbar/Navbar";
+import { Footer, Navbar } from "./components/shared";
 import "./styles/Globals.scss";
 
 const App = () => {

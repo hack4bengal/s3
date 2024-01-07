@@ -1,9 +1,8 @@
 import React from "react";
-import blob_left from "../../assets/images/LandingImages/blob_left.png";
-import blob_right from "../../assets/images/LandingImages/blob_right.png";
-import victoria from "../../assets/images/LandingImages/victoria.png";
-import Button from "../button/Button";
-import Marquee from "../marquee/Marquee";
+import blob_left from "../../../assets/images/LandingImages/blob_left.png";
+import blob_right from "../../../assets/images/LandingImages/blob_right.png";
+import victoria from "../../../assets/images/LandingImages/victoria.png";
+import { Button } from "../../shared";
 import "./Landing.scss";
 
 const Landing = ({ refs }) => {
@@ -50,7 +49,7 @@ const Landing = ({ refs }) => {
 
         <img src={victoria} alt="" className="home__victoria" />
 
-        {window.innerWidth > 600 && <Marquee />}
+        {/* {window.innerWidth > 600 && <Marquee />} */}
       </div>
     </>
   );

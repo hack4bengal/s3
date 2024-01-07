@@ -1,6 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import testimonials from "../../assets/data/TestimonialContent";
+import testimonials from "../../../assets/data/TestimonialContent";
 import "./Testimonials.scss";
 
 const Testimonials = ({ refs }) => {
