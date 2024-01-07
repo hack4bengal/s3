@@ -5,7 +5,7 @@
         {
             "src": "/pwalogo.png",
             "type": "image/png",
-            "sizes": "1024x1024"
+            "sizes": "160x160"
         }
     ],
     "start_url": ".",

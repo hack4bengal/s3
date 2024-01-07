@@ -14,7 +14,7 @@ export default defineConfig({
           {
               "src": "/pwalogo.png",
               "type": "image/png",
-              "sizes": "1024x1024"
+              "sizes": "160x160"
           }
       ],
       "start_url": ".",
@@ -34,11 +34,9 @@ export default defineConfig({
           'src/**/*.gif', // Include GIF files from subdirectories
           'src/**/*.webp', // Include WebP files from subdirectories
         ],
-        // Additional configuration for Workbox GenerateSW
-        // You can customize the cacheId, skipWaiting, clientsClaim, etc.
-        // See: https://developers.google.com/web/tools/workbox/modules/workbox-build#full_generatesw_config
+        
       },
     }),
   ],
-  // Other Vite configurations
+ 
 });
