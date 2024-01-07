@@ -8,21 +8,23 @@ export default defineConfig({
   plugins: [svgr(), react(),VitePWA(
    {
     workbox: {
-      globPatterns: ["**/*"],
+      // Adjust the globPatterns to match the output folder of your dynamic assets
+      globPatterns: ["dist/**/*"],
   },
-  // add this to cache all the
-  // static assets in the public folder
   includeAssets: [
-      "**/*",
+      // Adjust the includeAssets pattern to match your dynamic assets
+      "dist/**/*",
   ],
     manifest: {
       "short_name": "Hack4Bengal",
       "name": "Hack for Bengal App",
-      "icons": [
+      icons: [
         {
-            "src": "/pwalogo.png",
-            "type": "image/png",
-            "sizes": "1024x1024"
+            src: "/pwalogo.png",
+            type: "image/png",
+            sizes: "1024x1024",
+            purpose: "maskable any",
+            
         }
     ],
     "start_url": ".",
