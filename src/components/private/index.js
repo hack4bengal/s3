@@ -1,6 +1,7 @@
 import { lazy } from "react";
 
 export const Landing = lazy(() => import("./landing/Landing"));
+export const Marquee = lazy(() => import("./marquee/Marquee"));
 export const About = lazy(() => import("./about/About"));
 export const Timeline = lazy(() => import("./timeline/Timeline"));
 export const Theme = lazy(() => import("./themes/Theme"));

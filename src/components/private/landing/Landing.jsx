@@ -2,6 +2,7 @@ import React from "react";
 import blob_left from "../../../assets/images/LandingImages/blob_left.webp";
 import blob_right from "../../../assets/images/LandingImages/blob_right.webp";
 import victoria from "../../../assets/images/LandingImages/victoria.png";
+import { Marquee } from "../../private";
 import { Button } from "../../shared";
 import "./Landing.scss";
 
@@ -61,7 +62,7 @@ const Landing = () => {
           fetchpriority="high"
         />
 
-        {/* {window.innerWidth > 600 && <Marquee />} */}
+        {window.innerWidth > 600 && <Marquee />}
       </div>
     </>
   );

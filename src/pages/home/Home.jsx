@@ -5,6 +5,7 @@ import {
   Collaborators,
   FAQ,
   Landing,
+  Marquee,
   Mentors,
   Prizes,
   Sponsors,
@@ -30,6 +31,7 @@ const Home = () => {
   return (
     <>
       <Landing />
+      {window.innerWidth < 600 && <Marquee />}
       <Suspense fallback={<div>Loading...</div>}>
         <About />
       </Suspense>

@@ -41,12 +41,6 @@ const About = () => {
                 speed={50}
                 direction="right"
               >
-                {/* <iframe
-                  src="https://www.youtube.com/embed/JbkBnTpfpmw"
-                  title="The Hack4Bengal Recap | 2023"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe> */}
                 <img src={two} alt="two" className="mq_img" />
                 <img src={three} alt="three" className="mq_img" />
               </Marquee>
@@ -105,12 +99,6 @@ const About = () => {
               speed={50}
               direction="right"
             >
-              {/* <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/JbkBnTpfpmw"
-                title="The Hack4Bengal Recap | 2023"
-              ></iframe> */}
               <img src={two} alt="two" className="mq_img" />
               <img src={three} alt="three" className="mq_img" />
             </Marquee>
