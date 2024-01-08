@@ -1,0 +1,11 @@
+.timeline__parent {
+  padding: 4rem 7rem;
+  margin-top: 8rem;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 576px) {
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+  }
+}

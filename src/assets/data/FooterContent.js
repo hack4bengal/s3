@@ -1,13 +1,11 @@
-import h4b_logo from "../images/FooterImages/footer_h4b_logo.svg";
-import footer_bg from "../images/FooterImages/footer_bg.svg";
+import facebook_logo from "../images/FooterImages/facebook_logo.svg";
+import footer_bg from "../images/FooterImages/footer_bg.webp";
 import github_logo from "../images/FooterImages/github_logo.svg";
 import instagram_logo from "../images/FooterImages/instagram_logo.svg";
-import twitter_logo from "../images/FooterImages/twitter_logo.svg";
-import facebook_logo from "../images/FooterImages/facebook_logo.svg";
 import linkedin_logo from "../images/FooterImages/linkedin_logo.svg";
+import twitter_logo from "../images/FooterImages/twitter_logo.svg";
 
 const footerContent = {
-  logo: h4b_logo,
   backgroundImage: footer_bg,
   socials: [
     {

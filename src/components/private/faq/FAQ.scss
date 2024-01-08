@@ -1,0 +1,606 @@
+.faq {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .faq__content {
+    margin-top: 12.1rem;
+    margin-bottom: 10rem;
+    width: 69.99475rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.625rem;
+
+    @media screen and (max-width: 576px) {
+      margin-top: 4rem;
+      gap: 3rem;
+    }
+
+    .faq__subheader {
+      p {
+        font-size: 1.3rem;
+        color: var(--text-color);
+        text-align: center;
+        font-family: var(--heading-font);
+        width: 80%;
+        margin: 0 auto;
+
+        @media screen and (max-width: 576px) {
+          width: 100%;
+          font-size: 0.9rem;
+          text-align: justify;
+        }
+      }
+    }
+
+    .faq__body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1.88rem;
+      flex: 1;
+      height: 100%;
+
+      .faq__body__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1.88rem;
+
+        .faq__body__left__top {
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 0.63rem;
+          padding-top: 1.62rem;
+          padding-bottom: 1.37rem;
+          padding-left: 2.63rem;
+          padding-right: 3.95rem;
+          width: 26.70325rem;
+          flex-shrink: 0;
+          border-radius: 1.9705rem;
+          background: #212020;
+          box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #a7a3a338,
+            0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #ff000073,
+              0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+            transition: all 0.3s ease-in-out;
+          }
+
+          h3 {
+            color: var(--alt-color);
+            font-family: var(--heading-font);
+            font-size: 1.60438rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            @media screen and (max-width: 1500px) {
+              font-size: 1.2rem;
+            }
+          }
+
+          p {
+            color: #646464;
+            font-family: var(--heading-font);
+            font-size: 0.93563rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            @media screen and (max-width: 1500px) {
+              font-size: 0.8rem;
+            }
+          }
+
+          @media screen and (max-width: 1500px) {
+            width: 20.105rem;
+          }
+        }
+
+        .faq__body__left__bottom {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 1.38rem;
+          width: 26.70325rem;
+          padding-top: 2.39rem;
+          padding-bottom: 2.13rem;
+          padding-left: 2.31rem;
+          padding-right: 3.33rem;
+          border-radius: 1.9705rem;
+          background: #212020;
+          box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #a7a3a338,
+            0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #ff000073,
+              0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+            transition: all 0.3s ease-in-out;
+          }
+
+          h3 {
+            color: var(--alt-color);
+            font-family: var(--heading-font);
+            font-size: 1.60438rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            @media screen and (max-width: 1500px) {
+              font-size: 1.2rem;
+            }
+          }
+
+          p {
+            color: #646464;
+            font-family: var(--heading-font);
+            font-size: 0.93563rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            @media screen and (max-width: 1500px) {
+              font-size: 0.8rem;
+            }
+          }
+
+          @media screen and (max-width: 1500px) {
+            width: 20.105rem;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          .faq__body__left__top {
+            padding-right: unset;
+            padding-left: unset;
+            padding-top: unset;
+            padding-bottom: unset;
+            padding: 2rem;
+          }
+
+          .faq__body__left__bottom {
+            padding-right: unset;
+            padding-left: unset;
+            padding-top: unset;
+            padding-bottom: unset;
+            padding: 2rem;
+          }
+        }
+      }
+
+      .faq__body__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2.4rem;
+
+        .faq__body__right__top {
+          display: flex;
+          gap: 2.875rem;
+
+          .faq__body__right__top__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1.875rem;
+
+            .faq__body__right__top__left__top {
+              flex-shrink: 0;
+              width: 26.70325rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 1.5rem;
+              border-radius: 1.9705rem;
+              background: #212020;
+              box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #a7a3a338,
+                0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+              padding-top: 1.56rem;
+              padding-bottom: 2.37rem;
+              padding-left: 1.97rem;
+              padding-right: 4.36rem;
+
+              transition: all 0.3s ease-in-out;
+              cursor: pointer;
+
+              &:hover {
+                box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #ff000073,
+                  0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+                transition: all 0.3s ease-in-out;
+              }
+
+              h3 {
+                color: var(--alt-color);
+                font-family: var(--heading-font);
+                font-size: 1.60438rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                @media screen and (max-width: 1500px) {
+                  font-size: 1.2rem;
+                }
+              }
+
+              p {
+                color: #646464;
+                font-family: var(--heading-font);
+                font-size: 0.93563rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                @media screen and (max-width: 1500px) {
+                  font-size: 0.8rem;
+                }
+              }
+
+              @media screen and (max-width: 1500px) {
+                width: 20rem;
+              }
+            }
+
+            .faq__body__right__top__left__bottom {
+              flex-shrink: 0;
+              width: 26.70325rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 0.31rem;
+              border-radius: 0.9375rem;
+              background: #212020;
+              box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #a7a3a338,
+                0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+              padding-top: 1.11rem;
+              padding-bottom: 0.98rem;
+              padding-left: 2.09rem;
+              padding-right: 1.36rem;
+
+              transition: all 0.3s ease-in-out;
+              cursor: pointer;
+
+              &:hover {
+                box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #ff000073,
+                  0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+                transition: all 0.3s ease-in-out;
+              }
+
+              h3 {
+                color: var(--alt-color);
+                font-family: var(--heading-font);
+                font-size: 1.60438rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                @media screen and (max-width: 1500px) {
+                  font-size: 1.2rem;
+                }
+              }
+
+              p {
+                color: #646464;
+                font-family: var(--heading-font);
+                font-size: 0.93563rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                @media screen and (max-width: 1500px) {
+                  font-size: 0.8rem;
+                }
+              }
+
+              @media screen and (max-width: 1500px) {
+                width: 20rem;
+              }
+            }
+          }
+
+          .faq__body__right__top__right {
+            width: 26.70325rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1.94rem;
+            padding-top: 2.31rem;
+            padding-bottom: 3.98rem;
+            padding-left: 2.02rem;
+            padding-right: 2.99rem;
+            flex-shrink: 0;
+            border-radius: 1.9705rem;
+            background: #212020;
+            box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #a7a3a338,
+              0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+              box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #ff000073,
+                0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+              transition: all 0.3s ease-in-out;
+            }
+
+            h3 {
+              color: var(--alt-color);
+              font-family: var(--heading-font);
+              font-size: 1.60438rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+
+              @media screen and (max-width: 1500px) {
+                font-size: 1.2rem;
+              }
+            }
+
+            p {
+              color: #646464;
+              font-family: var(--heading-font);
+              font-size: 0.93563rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+
+              @media screen and (max-width: 1500px) {
+                font-size: 0.8rem;
+              }
+            }
+
+            @media screen and (max-width: 1500px) {
+              width: 30rem;
+            }
+          }
+
+          @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: flex-start;
+
+            .faq__body__right__top__left {
+              width: 100%;
+              gap: 2rem;
+
+              .faq__body__right__top__left__top {
+                width: 100%;
+                padding-right: unset;
+                padding-left: unset;
+                padding-top: unset;
+                padding-bottom: unset;
+                padding: 2rem;
+              }
+
+              .faq__body__right__top__left__bottom {
+                width: 100%;
+                padding-right: unset;
+                padding-left: unset;
+                padding-top: unset;
+                padding-bottom: unset;
+                padding: 2rem;
+              }
+            }
+
+            .faq__body__right__top__right {
+              width: 100%;
+              padding-right: unset;
+              padding-left: unset;
+              padding-top: unset;
+              padding-bottom: unset;
+              padding: 2rem;
+            }
+          }
+        }
+
+        .faq__body__right__bottom {
+          flex: 1;
+          width: 56.46419rem;
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 0.69rem;
+          padding-top: 1.68rem;
+          padding-bottom: 1.12rem;
+          padding-left: 2.65rem;
+          padding-right: 8.56rem;
+          border-radius: 1.9705rem;
+          background: #212020;
+          box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #a7a3a338,
+            0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+          min-height: 11rem;
+
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #ff000073,
+              0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
+            transition: all 0.3s ease-in-out;
+          }
+
+          h3 {
+            color: var(--alt-color);
+            font-family: var(--heading-font);
+            font-size: 1.60438rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            @media screen and (max-width: 1500px) {
+              font-size: 1.2rem;
+            }
+          }
+
+          p {
+            color: #646464;
+            font-family: var(--heading-font);
+            font-size: 0.93563rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            @media screen and (max-width: 1500px) {
+              font-size: 0.8rem;
+            }
+
+            a {
+              color: #646464;
+              font-family: var(--heading-font);
+              font-size: 0.93563rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+
+              &:hover {
+                text-decoration: underline;
+              }
+
+              @media screen and (max-width: 1500px) {
+                font-size: 0.8rem;
+              }
+            }
+          }
+
+          @media screen and (max-width: 1500px) {
+            width: 53rem;
+            min-height: 10rem;
+          }
+
+          @media screen and (max-width: 768px) {
+            padding-right: unset;
+            padding-left: unset;
+            padding-top: unset;
+            padding-bottom: unset;
+            padding: 2rem;
+
+            p {
+              min-width: unset;
+              width: 100%;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 1340px) {
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+
+        .faq__body__left {
+          flex-direction: row;
+          gap: 2rem;
+          width: 100%;
+          justify-content: center;
+          min-height: 15rem;
+          height: 15rem;
+
+          .faq__body__left__top {
+            max-width: 30rem;
+            flex: 1;
+            min-height: 100%;
+            gap: 0.69rem;
+          }
+
+          .faq__body__left__bottom {
+            max-width: 30rem;
+            flex: 1;
+            height: 100%;
+            gap: 0.69rem;
+          }
+        }
+
+        .faq__body__right {
+          width: 100%;
+          gap: 2rem;
+
+          .faq__body__right__top {
+            width: 100%;
+            gap: 2rem;
+
+            .faq__body__right__top__left {
+              gap: 2rem;
+
+              .faq__body__right__top__left__top {
+                gap: 0.69rem;
+              }
+
+              .faq__body__right__top__left__bottom {
+                gap: 0.69rem;
+              }
+            }
+
+            .faq__body__right__top__right {
+              flex: 1;
+              gap: 0.69rem;
+            }
+          }
+
+          .faq__body__right__bottom {
+            width: 100%;
+            gap: 0.69rem;
+          }
+        }
+      }
+
+      @media screen and (max-width: 885px) {
+        .faq__body__left {
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          max-height: unset;
+          height: unset;
+
+          .faq__body__left__bottom {
+            max-width: unset;
+            width: 100%;
+          }
+
+          .faq__body__left__top {
+            max-width: unset;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1340px) {
+      max-width: 67rem;
+      width: 100%;
+      padding-inline: 4rem;
+    }
+
+    @media screen and (max-width: 576px) {
+      padding-inline: 2rem;
+    }
+  }
+
+  .faq__blob {
+    position: absolute;
+    width: 9.64481rem;
+    height: 9.54356rem;
+    flex-shrink: 0;
+    top: 3rem;
+    left: 12rem;
+  }
+}

@@ -1,9 +1,9 @@
-import ag from "../images/TestimonialImages/ag.png";
-import dc from "../images/TestimonialImages/dc.png";
-import ds from "../images/TestimonialImages/ds.png";
-import rd from "../images/TestimonialImages/rd.png";
-import sc from "../images/TestimonialImages/sc.png";
-import skd from "../images/TestimonialImages/skd.png";
+import ag from "../images/TestimonialImages/ag.webp";
+import dc from "../images/TestimonialImages/dc.webp";
+import ds from "../images/TestimonialImages/ds.webp";
+import rd from "../images/TestimonialImages/rd.webp";
+import sc from "../images/TestimonialImages/sc.webp";
+import skd from "../images/TestimonialImages/skd.webp";
 
 const testimonials = [
   {
