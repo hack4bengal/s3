@@ -61,6 +61,7 @@ export default defineConfig({
               },
             },
           },
+          
           {
             // serves static resources with a Network First strategy.
             urlPattern: /\.(?:js|css|jsx)$/,
@@ -69,6 +70,19 @@ export default defineConfig({
               cacheName: "static-resources",
               expiration: {
                 maxEntries: 60,
+              },
+            },
+          },
+          {
+            urlPattern: new RegExp("^http://localhost:5000/(.*)"),
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "api-dev",
+              expiration: {
+                maxAgeSeconds: 86400,
+              },
+              cacheableResponse: {
+                statuses: [0, 200, 201],
               },
             },
           },
