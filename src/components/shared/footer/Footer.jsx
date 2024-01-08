@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import footerContent from "../../../assets/data/FooterContent";
+import h4b from "../../../assets/images/FooterImages/hack4bengalbrand.webp";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -21,7 +22,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <img src={footerContent.logo} alt="logo" />
+          <img src={h4b} alt="logo" />
         </div>
         <div className="footer__content__bottom">
           <div className="footer__content__bottom__links">
