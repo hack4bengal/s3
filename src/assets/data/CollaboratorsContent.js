@@ -1,6 +1,3 @@
-import wbgov from "../images/CollaboratorsImages/wbgov.webp";
-import wbgovcs from "../images/CollaboratorsImages/wbgovcs.webp";
-
 import brb from "../images/CollaboratorsImages/brb.webp";
 import dataverseos from "../images/CollaboratorsImages/dataverseos.webp";
 import devfestsiliguri2023 from "../images/CollaboratorsImages/devfestsiliguri2023.webp";
@@ -13,6 +10,8 @@ import kolkatafoss from "../images/CollaboratorsImages/kolkatafoss.webp";
 import kolkatapolygonguild from "../images/CollaboratorsImages/kolkatapolygonguild.webp";
 import nftday from "../images/CollaboratorsImages/nftday.webp";
 import nordek from "../images/CollaboratorsImages/nordek.webp";
+import wbgov from "../images/CollaboratorsImages/wbgov.webp";
+import wbgovcs from "../images/CollaboratorsImages/wbgovcs.webp";
 import web3reinvent from "../images/CollaboratorsImages/web3reinvent.webp";
 
 const collaborators = [
