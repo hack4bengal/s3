@@ -55,7 +55,7 @@ export default defineConfig({
             urlPattern: /\.(?:png|gif|jpg|jpeg|svg|webp)$/,
             handler: "CacheFirst",
             options: {
-              cacheName: "images",
+              cacheName: "version-1",
               expiration: {
                 maxEntries: 60,
               },
@@ -67,7 +67,7 @@ export default defineConfig({
             urlPattern: /\.(?:js|css|jsx)$/,
             handler: "NetworkFirst",
             options: {
-              cacheName: "static-resources",
+              cacheName: "version-1",
               expiration: {
                 maxEntries: 60,
               },
@@ -77,7 +77,7 @@ export default defineConfig({
             urlPattern: new RegExp("^http://localhost:5000/(.*)"),
             handler: "StaleWhileRevalidate",
             options: {
-              cacheName: "api-dev",
+              cacheName: "version-1",
               expiration: {
                 maxAgeSeconds: 86400,
               },
