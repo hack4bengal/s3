@@ -105,12 +105,12 @@ const About = () => {
               speed={50}
               direction="right"
             >
-              <iframe
+              {/* <iframe
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/JbkBnTpfpmw"
                 title="The Hack4Bengal Recap | 2023"
-              ></iframe>
+              ></iframe> */}
               <img src={two} alt="two" className="mq_img" />
               <img src={three} alt="three" className="mq_img" />
             </Marquee>
