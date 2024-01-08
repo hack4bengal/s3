@@ -1,42 +1,89 @@
-// vite.config.js
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import { VitePWA } from 'vite-plugin-pwa';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import svgr from "vite-plugin-svgr";
+import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
   plugins: [
+    svgr(),
     react(),
     VitePWA({
+      registerType: "autoUpdate",
+      includeAssets: ["favicon.svg", "robots.txt"],
+      injectRegister: "auto",
       manifest: {
-        "short_name": "Hack4Bengal",
-        "name": "Hack for Bengal App",
-        "icons": [
+        short_name: "Hack4Bengal",
+        name: "Hack4Bengal",
+        start_url: ".",
+        display: "standalone",
+        theme_color: "#000000",
+        background_color: "#ffffff",
+        icons: [
           {
-              "src": "/pwalogo.png",
-              "type": "image/png",
-              "sizes": "160x160"
-          }
-      ],
-      "start_url": ".",
-    "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#ffffff"
-  
-      },
-      generateSW: {
-        // Cache assets from the 'src' folder, including images and subdirectories
-        globPatterns: [
-          '**/*.{js,css,html}', 
-          'src/**/*.{js,jsx,ts,tsx,css}',
-          'src/**/*.png', // Include PNG files from subdirectories
-          'src/**/*.jpg', // Include JPG files from subdirectories
-          'src/**/*.jpeg', // Include JPEG files from subdirectories
-          'src/**/*.gif', // Include GIF files from subdirectories
-          'src/**/*.webp', // Include WebP files from subdirectories
+            src: "pwalogo.png",
+            sizes: "160x160",
+            type: "image/png",
+            purpose: "maskable any",
+          },
+         
         ],
-        
+      },
+      workbox: {
+        cleanupOutdatedCaches: true,
+        skipWaiting: true,
+        clientsClaim: true,
+
+        runtimeCaching: [
+          {
+            // Caches Google Fonts with a Cache First strategy.
+            urlPattern: new RegExp(
+              "^https://fonts.(?:googleapis|gstatic).com/(.*)",
+            ),
+            handler: "CacheFirst",
+            options: {
+              cacheName: "google-fonts",
+              expiration: {
+                maxEntries: 30,
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+          {
+            // Caches images with a Cache First strategy.
+            urlPattern: /\.(?:png|gif|jpg|jpeg|svg|webp)$/,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "images",
+              expiration: {
+                maxEntries: 60,
+              },
+            },
+          },
+          {
+            // serves static resources with a Network First strategy.
+            urlPattern: /\.(?:js|css|jsx)$/,
+            handler: "NetworkFirst",
+            options: {
+              cacheName: "static-resources",
+              expiration: {
+                maxEntries: 60,
+              },
+            },
+          },
+         
+         
+        ],
       },
     }),
   ],
- 
+  server: {
+    host: true,
+    strictPort: true,
+    port: 3000,
+  },
+  watch: {
+    usePolling: true,
+  },
 });
