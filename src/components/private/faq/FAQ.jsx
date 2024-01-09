@@ -75,7 +75,7 @@ const Faq = () => {
                   rel="noopener noreferrer"
                   
                 >
-                  Join our Discord community for support in #🎫ticket-support
+                  in #🎫ticket-support
                 </a>
                 ) or email us at <a href="mailto:hack4bengal@gmail.com">hack4bengal@gmail.com</a>!
               </p>

@@ -22,7 +22,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <img src={h4b} alt="a black and white logo" />
+          <img src={h4b} alt="A black and white logo representing Hack4Bengal" />
         </div>
         <div className="footer__content__bottom">
           <div className="footer__content__bottom__links">
@@ -44,7 +44,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="footer__content__bottom__mail"
             >
-            Contact us: {footerContent.mail.address}
+            Email us: {footerContent.mail.address}
             </a>
 
           </div>
