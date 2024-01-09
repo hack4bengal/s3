@@ -41,8 +41,8 @@ const About = () => {
                 speed={50}
                 direction="right"
               >
-                <img src={two} alt="two" className="mq_img" />
-                <img src={three} alt="three" className="mq_img" />
+                <img src={two} alt="a large group of people sitting in a room" className="mq_img" />
+                <img src={three} alt="a group of people standing on a stage" className="mq_img" />
               </Marquee>
 
               <Marquee
@@ -52,9 +52,9 @@ const About = () => {
                 speed={50}
                 direction="left"
               >
-                <img src={four} alt="four" className="mq_img" />
-                <img src={five} alt="five" className="mq_img" />
-                <img src={six} alt="six" className="mq_img" />
+                <img src={four} alt="a group of people posing for a photo" className="mq_img" />
+                <img src={five} alt="a group of people standing on a stage" className="mq_img" />
+                <img src={six} alt="a group of people standing in a room" className="mq_img" />
               </Marquee>
             </div>
 
@@ -99,8 +99,8 @@ const About = () => {
               speed={50}
               direction="right"
             >
-              <img src={two} alt="two" className="mq_img" />
-              <img src={three} alt="three" className="mq_img" />
+              <img src={two} alt="a large group of people sitting in a room" className="mq_img" />
+              <img src={three} alt="a group of people standing on a stage" className="mq_img" />
             </Marquee>
 
             <Marquee
@@ -110,9 +110,9 @@ const About = () => {
               speed={50}
               direction="left"
             >
-              <img src={four} alt="four" className="mq_img" />
-              <img src={seven} alt="four" className="mq_img" />
-              <img src={eight} alt="four" className="mq_img" />
+              <img src={four} alt="a group of people posing for a photo" className="mq_img" />
+              <img src={seven} alt="a group of people sitting in a room with computers" className="mq_img" />
+              <img src={eight} alt="a sign on a building" className="mq_img" />
             </Marquee>
           </div>
         </div>

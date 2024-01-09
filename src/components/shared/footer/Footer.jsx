@@ -22,7 +22,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <img src={h4b} alt="logo" />
+          <img src={h4b} alt="a black and white logo" />
         </div>
         <div className="footer__content__bottom">
           <div className="footer__content__bottom__links">
@@ -93,7 +93,7 @@ const Footer = () => {
       <span className="footer__bg_overlay" />
       <div className="footer__bg">
         <img
-          className="footer_bg__img"
+          className="footer_image"
           src="https://www.hack4bengal.tech/assets/footer_bg-5b4bb7e1.svg"
           alt="footer_bg"
         />
