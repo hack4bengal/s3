@@ -44,8 +44,9 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="footer__content__bottom__mail"
             >
-              {footerContent.mail.address}
+            Contact us: {footerContent.mail.address}
             </a>
+
           </div>
 
           <div
