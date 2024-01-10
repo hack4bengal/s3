@@ -73,6 +73,7 @@
 
         &:nth-of-type(1) {
           color: var(--h4bred);
+          margin-bottom: 1rem;
         }
       }
 
@@ -81,6 +82,7 @@
         margin-top: 2rem;
         font-weight: 700;
         margin-bottom: 2rem;
+        font-size: 34px;
       }
 
       .about__metrics {

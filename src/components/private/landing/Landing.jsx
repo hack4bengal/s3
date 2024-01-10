@@ -27,17 +27,10 @@ const Landing = () => {
               <Button
                 type="solid"
                 to={"https://discord.gg/hack4bengal-2-0-920970750154899476"}
-                fs={"19px"}
-                fm={"14px"}
               >
                 Join Discord
               </Button>
-              <Button
-                type="outline"
-                fs={"1.2rem"}
-                fm={"14px"}
-                to={"https://forms.gle/pXk7cvKB9CTvhCbQ9"}
-              >
+              <Button type="outline" to={"https://forms.gle/pXk7cvKB9CTvhCbQ9"}>
                 Pre-register
               </Button>
             </div>
