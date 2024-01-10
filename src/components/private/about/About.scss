@@ -47,6 +47,8 @@
     }
   }
 
+  
+
   .about__content {
     display: flex;
     align-items: start;
@@ -63,11 +65,14 @@
 
         p {
           font-size: 1rem;
+
+          &:nth-of-type(1) {
+            color:#FF6161;
+            margin-bottom: 1rem;
+          }
         }
 
-        .light_red{
-          color: #FF6161;
-        }
+       
       }
 
       p {
