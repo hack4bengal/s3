@@ -5,7 +5,7 @@ import "./FAQ.scss";
 
 const Faq = () => {
   return (
-    <div className="faq" id="faq">
+    <div className="faq" id="faq"> 
       <div className="faq__content">
         <Header {...HeaderData.faq} />
 
