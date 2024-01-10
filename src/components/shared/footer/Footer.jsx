@@ -18,7 +18,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="disable-select"
               >
-                <img src={social?.icon} alt={social?.name} />
+                <img src={social?.icon} alt={social?.name}  />
               </a>
             ))}
           </div>
