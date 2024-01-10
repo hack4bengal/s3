@@ -5,7 +5,7 @@
   margin-top: 8rem;
 
   @media screen and (max-width: 576px) {
-    margin-top: 4rem;
+    margin-top: 4rem; 
   }
 
   h1 {
@@ -15,7 +15,7 @@
     text-align: center;
     letter-spacing: 0em;
     font-family: var(--heading-font);
-    color: var(--h4bred);
+    color: #F00000;
 
     @media screen and (max-width: 576px) {
       font-size: 1.5rem;
