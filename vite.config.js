@@ -8,6 +8,12 @@ export default defineConfig({
     react(),
     VitePWA({
       manifest: {
+        short_name: "Hack4Bengal",
+        name: "Hack4Bengal",
+        start_url: ".",
+        display: "standalone",
+        theme_color: "#000000",
+        background_color: "#ffffff",
         icons: [
           {
             src: "/pwalogo.png",
@@ -29,6 +35,24 @@ export default defineConfig({
               cacheableResponse: {
                 statuses: [0, 200],
               },
+            },
+          },
+          {
+            urlPattern: /\.(png|jpg|jpeg|svg|gif)$/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "image-cache",
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+          // Add more patterns for other asset types if needed
+          {
+            urlPattern: /\.(css|js)$/i,
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "css-js-cache",
             },
           },
         ],
