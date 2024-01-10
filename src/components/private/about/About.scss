@@ -47,6 +47,11 @@
     }
   }
 
+
+
+  .light{
+    color: rgba(240, 0, 0);
+  }
   
 
   .about__content {
@@ -65,13 +70,11 @@
 
         p {
           font-size: 1rem;
-
-          &:nth-of-type(1) {
-            color:#FF6161;
-            margin-bottom: 1rem;
-          }
         }
 
+        .light{
+          color: #FF6161;
+        }
        
       }
 
@@ -80,10 +83,8 @@
         font-weight: 500;
         font-family: var(--body-font);
 
-        &:nth-of-type(1) {
-          color: rgba(240, 0, 0);
-          margin-bottom: 1rem;
-        }
+        
+        
       }
 
       h2 {

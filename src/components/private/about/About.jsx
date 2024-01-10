@@ -21,11 +21,11 @@ const About = () => {
 
         <div className="about__content">
           <div className="about__desc">
-            <p >
+            <p className="light">
               Hack4Bengal empowers all fields to showcase creativity in solving
               real-life problems for a brighter future.
             </p>
-            <p>
+            <p >
               Join us for the reinvigorated Hack4Bengal! From three enthusiasts
               in 2021 to a thriving community of over 3000 developers, our
               mission is to empower tech talents. This time, we're taking it
