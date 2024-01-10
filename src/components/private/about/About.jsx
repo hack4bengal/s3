@@ -21,7 +21,7 @@ const About = () => {
 
         <div className="about__content">
           <div className="about__desc">
-            <p>
+            <p className="light_red">
               Hack4Bengal empowers all fields to showcase creativity in solving
               real-life problems for a brighter future.
             </p>
