@@ -73,7 +73,7 @@ const Navbar = () => {
             <p className="navbar__link">{link?.text}</p>
           </li>
         ))}
-
+        <li>
         <div
           className="navbar__dropdown"
           onClick={() =>
@@ -100,6 +100,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+        </li>
         <svg className="navbar__dropdown__down__svg">
           <filter el="goo">
             <feGaussianBlur
