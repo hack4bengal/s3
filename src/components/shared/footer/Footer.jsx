@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__content__top">
-          <div className="footer__content__top__socials">
+          <div className="footer__content__top__socials"> 
             {footerContent.socials.map((social, index) => (
               <a
                 key={index}
