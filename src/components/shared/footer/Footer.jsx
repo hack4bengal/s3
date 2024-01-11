@@ -93,11 +93,7 @@ const Footer = () => {
       </div>
       <span className="footer__bg_overlay" />
       <div className="footer__bg">
-        <img
-          className="footer_image"
-          src="https://www.hack4bengal.tech/assets/footer_bg-5b4bb7e1.svg"
-          alt="footer_bg"
-        />
+        
         {/* <img className="footer_bg__img" src={footer_bg} alt="footer_bg" /> */}
         <span className="footer__bg__left" />
         <span className="footer__bg__right" />
