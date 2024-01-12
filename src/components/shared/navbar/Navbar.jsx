@@ -59,7 +59,7 @@ const Navbar = () => {
   return (
     <nav className="navbar" ref={menuRef}>
       <Link to="/" className="navbar__logo_link">
-        <img src={navbarContent.logo} alt="logo" className="navbar__logo" />
+        <img src={navbarContent.logo} alt="hack4bengal_logo" className="navbar__logo" />
       </Link>
 
       <ul>
@@ -73,7 +73,7 @@ const Navbar = () => {
             <p className="navbar__link">{link?.text}</p>
           </li>
         ))}
-
+        <li>
         <div
           className="navbar__dropdown"
           onClick={() =>
@@ -100,6 +100,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+        </li>
         <svg className="navbar__dropdown__down__svg">
           <filter el="goo">
             <feGaussianBlur
@@ -188,7 +189,7 @@ const Navbar = () => {
             </div>
             <div className="navbar__mobile__menu__h4b__logo" el="lmao">
               <span>Developed By</span>
-              <img src={navbarContent.logo} alt="logo" />
+              <img src={navbarContent.logo} alt="hack4bengal_logo" />
             </div>
           </div>
         </div>

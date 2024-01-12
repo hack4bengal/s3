@@ -11,22 +11,27 @@ const footerContent = {
     {
       icon: github_logo,
       link: "https://github.com/hack4bengal",
+      name:"github_logo"
     },
     {
       icon: instagram_logo,
       link: "https://www.instagram.com/hack4bengal",
+      name:"instagram_logo"
     },
     {
       icon: twitter_logo,
       link: "https://twitter.com/hack4bengal",
+      name:"twitter_logo"
     },
     {
       icon: facebook_logo,
       link: "https://www.facebook.com/Hack4Bengal",
+      name:"facebook_logo"
     },
     {
       icon: linkedin_logo,
       link: "https://www.linkedin.com/company/hack4bengal",
+      name:"linkedin_logo"
     },
   ],
   links: [

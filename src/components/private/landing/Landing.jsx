@@ -50,7 +50,7 @@ const Landing = () => {
 
         <img
           src={victoria}
-          alt=""
+          alt="a building with a dome and a statue on top"
           className="home__victoria"
           fetchpriority="high"
         />
