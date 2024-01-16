@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__content__top">
-          <div className="footer__content__top__socials">
+          <div className="footer__content__top__socials"> 
             {footerContent.socials.map((social, index) => (
               <a
                 key={index}
@@ -18,11 +18,11 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="disable-select"
               >
-                <img src={social?.icon} alt={social?.name} />
+                <img src={social?.icon} alt={social?.name}  />
               </a>
             ))}
           </div>
-          <img src={h4b} alt="logo" />
+          <img src={h4b} alt="A black and white logo representing Hack4Bengal" />
         </div>
         <div className="footer__content__bottom">
           <div className="footer__content__bottom__links">
@@ -44,8 +44,9 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="footer__content__bottom__mail"
             >
-              {footerContent.mail.address}
+            Email us: {footerContent.mail.address}
             </a>
+
           </div>
 
           <div
@@ -92,6 +93,7 @@ const Footer = () => {
       </div>
       <span className="footer__bg_overlay" />
       <div className="footer__bg">
+        
         {/* <img className="footer_bg__img" src={footer_bg} alt="footer_bg" /> */}
         <span className="footer__bg__left" />
         <span className="footer__bg__right" />

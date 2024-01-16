@@ -15,7 +15,7 @@ function BrandCard({ brandItem }) {
         </div>
         <div className="brand_card__download-button">
           <a href={image} download>
-            PNG
+            Download PNG
           </a>
         </div>
       </div>

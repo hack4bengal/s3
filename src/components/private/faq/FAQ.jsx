@@ -5,7 +5,7 @@ import "./FAQ.scss";
 
 const Faq = () => {
   return (
-    <div className="faq" id="faq">
+    <div className="faq" id="faq"> 
       <div className="faq__content">
         <Header {...HeaderData.faq} />
 
@@ -73,10 +73,11 @@ const Faq = () => {
                   href="https://discord.com/invite/hack4bengal-2-0-920970750154899476"
                   target="_blank"
                   rel="noopener noreferrer"
+                  
                 >
-                  https://discord.com/invite/hack4bengal-2-0-920970750154899476
+                  in #🎫ticket-support
                 </a>
-                ) in #🎫ticket-support or email us at hack4bengal@gmail.com!
+                ) or email us at <a href="mailto:hack4bengal@gmail.com">hack4bengal@gmail.com</a>!
               </p>
             </div>
           </div>
