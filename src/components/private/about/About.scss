@@ -21,7 +21,7 @@
     h1 {
       font-weight: 900;
       font-size: 120px;
-      color: rgba(112, 112, 112);
+      color: rgba(255, 255, 255, 0.06);
       position: absolute;
       transform: translate(-50%, -50%);
       left: 259px;
@@ -47,12 +47,9 @@
     }
   }
 
-
-
-  .light{
+  .light {
     color: rgba(240, 0, 0);
   }
-  
 
   .about__content {
     display: flex;
@@ -72,19 +69,15 @@
           font-size: 1rem;
         }
 
-        .light{
-          color: #FF6161;
+        .light {
+          color: #ff6161;
         }
-       
       }
 
       p {
         font-size: 1.1rem;
         font-weight: 500;
         font-family: var(--body-font);
-
-        
-        
       }
 
       h2 {
