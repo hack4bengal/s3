@@ -5,7 +5,7 @@ const SingleSponsors = ({ sponsor }) => {
   return (
     <>
       <div className="single__sponsor">
-        <img src={sponsor?.img} alt={sponsor?.img} loading="lazy" />
+        <img src={sponsor?.img} alt={sponsor?.name} loading="lazy" />
       </div>
     </>
   );
