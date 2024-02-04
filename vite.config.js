@@ -25,18 +25,7 @@ export default defineConfig({
       },
       workbox: {
         runtimeCaching: [
-          // {
-          //   urlPattern: ({ url }) => {
-          //     return url.pathname.startsWith("/api");
-          //   },
-          //   handler: "CacheFirst",
-          //   options: {
-          //     cacheName: "api-cache",
-          //     cacheableResponse: {
-          //       statuses: [0, 200],
-          //     },
-          //   },
-          // },
+          
           {
             urlPattern: /\.(png|jpg|jpeg|svg|gif)$/i,
             handler: "CacheFirst",
@@ -47,14 +36,7 @@ export default defineConfig({
               },
             },
           },
-          // Add more patterns for other asset types if needed
-          // {
-          //   urlPattern: /\.(css|js)$/i,
-          //   handler: "StaleWhileRevalidate",
-          //   options: {
-          //     cacheName: "css-js-cache",
-          //   },
-          // },
+         
         ],
       },
     }),
