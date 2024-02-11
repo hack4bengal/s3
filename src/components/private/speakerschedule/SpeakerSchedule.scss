@@ -1,0 +1,28 @@
+.speakerschedule {
+  background-image: url("../../../assets/images/EventsImages/SpeakerScheduleBackground.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 7rem;
+  padding-inline: 2rem;
+  gap: 7rem;
+
+  .speakerschedule__title {
+    margin-top: 4rem;
+    font-family: var(--heading-font);
+    font-weight: 500;
+  }
+
+  .speakerschedule__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100rem;
+    gap: 4rem;
+  }
+}
