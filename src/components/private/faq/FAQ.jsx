@@ -5,7 +5,7 @@ import "./FAQ.scss";
 
 const Faq = () => {
   return (
-    <div className="faq" id="faq"> 
+    <div className="faq" id="faq">
       <div className="faq__content">
         <Header {...HeaderData.faq} />
 
@@ -43,8 +43,9 @@ const Faq = () => {
                 <div className="faq__body__right__top__left__top">
                   <h3>Who can participate?</h3>
                   <p>
-                    Hack4Bengal 3.0 is an in-person hackathon. So remote
-                    participation is not applicable.
+                    Students in college, schools can apply. If you can innovate
+                    or just want to have a fun learning weekend, you are most
+                    welcome.
                   </p>
                 </div>
                 <div className="faq__body__right__top__left__bottom">
@@ -72,12 +73,12 @@ const Faq = () => {
                 <a
                   href="https://discord.com/invite/hack4bengal-2-0-920970750154899476"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  
-                >
+                  rel="noopener noreferrer">
                   in #🎫ticket-support
                 </a>
-                ) or email us at <a href="mailto:hack4bengal@gmail.com">hack4bengal@gmail.com</a>!
+                ) or email us at{" "}
+                <a href="mailto:hack4bengal@gmail.com">hack4bengal@gmail.com</a>
+                !
               </p>
             </div>
           </div>
