@@ -1,0 +1,117 @@
+.team__container {
+    margin-top: 5rem;
+
+    .team__organizers__container {
+        // margin: 0 10rem;
+        margin: clamp(.8rem, 10%, 10rem) .7rem;
+
+        .team__organizers__header {
+            margin: 5rem 0;
+            font-size: clamp(3rem, 7vw, 5rem);
+            line-height: 3rem;
+            text-align: center;
+            letter-spacing: 0em;
+            font-family: var(--heading-font);
+            position: relative;
+            z-index: 2;
+            text-wrap: nowrap;
+
+            h2 {
+                font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+                font-weight: 700;
+                width: 100%;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border: 1px solid var(--h4bred);
+                    width: clamp(280px, 30%, 250px);
+                    bottom: -16px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                }
+            }
+        }
+
+        .team__organizers__child__container {
+            margin-top: 7rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 5rem;
+
+            @media screen and (max-width: 1100px) {
+                column-gap: 3.2rem;
+            }
+        }
+
+    }
+
+    .team__core__container {
+        // margin: 0 10rem;
+        margin: clamp(.8rem, 10%, 10rem) .7rem;
+
+        .team__core__header {
+            margin: 5rem 0;
+            font-size: clamp(3rem, 7vw, 5rem);
+            line-height: 3rem;
+            text-align: center;
+            letter-spacing: 0em;
+            font-family: var(--heading-font);
+            position: relative;
+            z-index: 2;
+            text-wrap: nowrap;
+
+            h1 {
+                font-weight: 900;
+                font-size: 130px;
+                letter-spacing: 0.5rem;
+                width: clamp(280px, 30%, 250px);
+                color: rgba(255, 255, 255, 0.06);
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 18%;
+                z-index: 2;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 75px;
+                    letter-spacing: 0.2rem;
+                    top: -20%;
+                    left: 50%;
+                }
+            }
+
+            h2 {
+                font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+                font-weight: 700;
+                width: 100%;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border: 1px solid var(--h4bred);
+                    width: clamp(280px, 30%, 250px);
+                    bottom: -16px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                }
+            }
+        }
+
+        .team__core__child__container {
+            margin-top: 7rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 5rem;
+
+            @media screen and (max-width: 1100px) {
+                column-gap: 3.2rem;
+            }
+        }
+
+    }
+}

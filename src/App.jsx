@@ -7,6 +7,7 @@ const Home = lazy(() => import("./pages/home/Home"));
 const Discord = lazy(() => import("./pages/discord/Discord"));
 const CodeofConduct = lazy(() => import("./pages/coc/CodeofConduct"));
 const Brand = lazy(() => import("./pages/brand/Brand"));
+const Team = lazy(() => import("./pages/team/Team"));
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route exact path="/discord" element={<Discord />} />
             <Route exact path="/coc" element={<CodeofConduct />} />
             <Route exact path="/brand" element={<Brand />} />
+            <Route exact path="/team" element={<Team />} />
           </Routes>
         </Suspense>
       </main>
