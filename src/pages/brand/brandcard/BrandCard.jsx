@@ -2,8 +2,8 @@
 import React from "react";
 import "./BrandCard.scss";
 
-function BrandCard({ brandItem }) {
-  const { image, name } = brandItem;
+function BrandCard({brandItem}) {
+  const {image, name} = brandItem;
   return (
     <div className="brand_card">
       <div className="brand_card__image">
@@ -15,7 +15,7 @@ function BrandCard({ brandItem }) {
         </div>
         <div className="brand_card__download-button">
           <a href={image} download>
-            Download PNG
+            Download File
           </a>
         </div>
       </div>
