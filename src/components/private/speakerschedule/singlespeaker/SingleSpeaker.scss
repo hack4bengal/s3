@@ -1,14 +1,17 @@
 .singlespeaker {
   display: flex;
-  width: 28rem;
+  width: 25rem;
   height: 10rem;
-
   background: linear-gradient(170deg,
       #b50a0a -100%,
       black 100%);
   border-radius: 4rem 0;
   overflow: hidden;
   box-shadow: 0 0.1rem 0.1rem 0rem #660000;
+
+  @media screen and (max-width: 512px){
+    width: 100%;
+  }
 
   .singlespeaker__left {
     width: 12rem;
@@ -20,6 +23,12 @@
     justify-content: flex-end;
     align-items: center;
     padding-bottom: 0.2rem;
+    padding-inline: 0.2rem;
+
+    @media screen and (max-width: 512px){
+      width: 40%;
+      flex-grow: 1;
+    }
 
     h4 {
       background-color: #00000066;
@@ -40,6 +49,10 @@
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
+
+    @media screen and (max-width: 512px){
+      padding-inline: 0.7rem;
+    }
 
     h3 {
       font-family: var(--heading-font);
