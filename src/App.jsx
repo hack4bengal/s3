@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components/shared";
+import Telegram from "./pages/telegram/Telegram";
 import "./styles/Globals.scss";
 
 const Home = lazy(() => import("./pages/home/Home"));
@@ -21,6 +22,7 @@ const App = () => {
             <Route exact path="/coc" element={<CodeofConduct />} />
             <Route exact path="/brand" element={<Brand />} />
             <Route exact path="/team" element={<Team />} />
+            <Route exact path="/tg" element={<Telegram />} />
           </Routes>
         </Suspense>
       </main>

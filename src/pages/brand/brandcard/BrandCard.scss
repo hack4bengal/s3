@@ -9,9 +9,13 @@
     margin: auto;
     border-radius: 10px;
     min-height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     img {
       width: 100%;
-      height: 100%;
+      height: 7rem;
       object-fit: contain;
     }
   }
@@ -19,7 +23,12 @@
   .brand_card__contents {
     margin: 1rem 0;
     font-family: var(--body-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .brand_card__text {
+      min-height: 5rem;
       p {
         font-size: 17px;
         font-weight: 600;
@@ -28,7 +37,8 @@
     }
 
     .brand_card__download-button {
-      margin: 2rem 0 1rem 0;
+      margin: 2rem 0 0rem 0;
+
       a {
         color: #ffffff;
         text-decoration: none;
