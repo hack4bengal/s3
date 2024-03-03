@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-import {brandContent} from "../../assets/data/BrandContent.js";
+import React, { useEffect } from "react";
+import { brandContent } from "../../assets/data/BrandContent.js";
 import "./Brand.scss";
 import BrandCard from "./brandcard/BrandCard.jsx";
 function Brand() {
