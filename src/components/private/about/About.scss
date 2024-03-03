@@ -31,7 +31,7 @@
       @media screen and (max-width: 576px) {
         font-size: 73px;
         letter-spacing: 0.2rem;
-        top: -30%;
+        top: 5px;
         left: 50%;
       }
     }
@@ -68,16 +68,16 @@
         p {
           font-size: 1rem;
         }
-
-        .light {
-          color: #ff6161;
-        }
       }
 
       p {
         font-size: 1.1rem;
         font-weight: 500;
         font-family: var(--body-font);
+
+        @media screen and (max-width: 576px) {
+          font-size: 1rem;
+        }
       }
 
       h2 {
@@ -85,7 +85,7 @@
         margin-top: 2rem;
         font-weight: 700;
         margin-bottom: 2rem;
-        font-size: 34px;
+        font-size: 30px;
       }
 
       .about__metrics {
@@ -96,25 +96,13 @@
         grid-template-columns: repeat(3, 1fr);
 
         @media screen and (max-width: 576px) {
-          grid-column-gap: 2rem;
+          grid-column-gap: 4rem;
           grid-template-columns: repeat(2, 1fr);
         }
 
         .about__metrics_item {
           display: flex;
           flex-direction: column;
-
-          @media screen and (max-width: 576px) {
-            p {
-              font-size: 29px;
-              font-weight: 600;
-              font-family: var(--heading-font);
-            }
-
-            span {
-              font-size: 23px;
-            }
-          }
 
           p {
             margin: 0;
@@ -123,12 +111,23 @@
             font-weight: 700;
             font-family: var(--heading-font);
             color: rgba(240, 0, 0);
+
+            @media screen and (max-width: 576px) {
+              font-size: 32px;
+              font-weight: 700;
+              font-family: var(--heading-font);
+            }
           }
 
           span {
             font-size: 25px;
             font-family: var(--heading-font);
             line-height: 1;
+
+            @media screen and (max-width: 576px) {
+              font-size: 20px;
+              white-space: nowrap;
+            }
           }
         }
       }
