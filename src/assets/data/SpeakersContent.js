@@ -5,7 +5,7 @@ const speakers = [
   {
     id: 1,
     name: "Saurabh Kumar Jha",
-    topic: "Designing for Diversity",
+    topic: "Breaking Barriers in Design",
     date: "Dec 23, 2023",
     time: "18:00 IST",
     button: {
@@ -18,7 +18,7 @@ const speakers = [
   {
     id: 2,
     name: "Saurabh Kumar Jha",
-    topic: "Designing for Diversity",
+    topic: "Breaking Barriers in Design",
     date: "Dec 23, 2023",
     time: "18:00 IST",
     button: {
@@ -31,7 +31,7 @@ const speakers = [
   {
     id: 3,
     name: "Saurabh Kumar Jha",
-    topic: "Designing for Diversity",
+    topic: "Breaking Barriers in Design",
     date: "Dec 23, 2023",
     time: "18:00 IST",
     button: {
@@ -44,7 +44,7 @@ const speakers = [
   {
     id: 4,
     name: "Saurabh Kumar Jha",
-    topic: "Designing for Diversity",
+    topic: "Breaking Barriers in Design",
     date: "Dec 23, 2023",
     time: "18:00 IST",
     button: {
@@ -57,7 +57,7 @@ const speakers = [
   {
     id: 5,
     name: "Saurabh Kumar Jha",
-    topic: "Designing for Diversity",
+    topic: "Breaking Barriers in Design",
     date: "Dec 23, 2023",
     time: "18:00 IST",
     button: {
@@ -70,7 +70,7 @@ const speakers = [
   {
     id: 6,
     name: "Saurabh Kumar Jha",
-    topic: "Designing for Diversity",
+    topic: "Breaking Barriers in Design",
     date: "Dec 23, 2023",
     time: "18:00 IST",
     button: {

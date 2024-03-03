@@ -22,6 +22,7 @@ const App = () => {
             <Route exact path="/coc" element={<CodeofConduct />} />
             <Route exact path="/brand" element={<Brand />} />
             <Route exact path="/tg" element={<Telegram />} />
+            <Route exact path="/events" element={<Events />} />
           </Routes>
         </Suspense>
       </main>

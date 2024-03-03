@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./Events.scss";
 import SpeakerSchedule from "../../components/private/speakerschedule/SpeakerSchedule";
-import speakers from "../../assets/data/SpeakersContent";
 
 const Events = () => {
   useEffect(() => {
