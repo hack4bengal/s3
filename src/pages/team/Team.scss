@@ -2,7 +2,6 @@
     margin-top: 5rem;
 
     .team__organizers__container {
-        // margin: 0 10rem;
         margin: clamp(.8rem, 10%, 10rem) .7rem;
 
         .team__organizers__header {
@@ -35,22 +34,19 @@
         }
 
         .team__organizers__child__container {
+            padding: 4rem 9rem;
             margin-top: 7rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            row-gap: 5rem;
-
-            @media screen and (max-width: 1100px) {
-                column-gap: 3.2rem;
-            }
+            align-items: center;
+            gap: 3.5rem;
         }
 
     }
 
     .team__core__container {
-        // margin: 0 10rem;
-        margin: clamp(.8rem, 10%, 10rem) .7rem;
+        overflow: hidden;
 
         .team__core__header {
             margin: 5rem 0;
@@ -65,26 +61,33 @@
 
             h1 {
                 font-weight: 900;
-                font-size: 130px;
-                letter-spacing: 0.5rem;
-                width: clamp(280px, 30%, 250px);
-                color: rgba(255, 255, 255, 0.06);
-                position: absolute;
-                transform: translate(-50%, -50%);
-                left: 50%;
-                top: 18%;
-                z-index: 2;
+                font-size: 86px;
 
-                @media screen and (max-width: 576px) {
-                    font-size: 75px;
-                    letter-spacing: 0.2rem;
-                    top: -20%;
-                    left: 50%;
+                letter-spacing: 0em;
+                color: rgba(255, 255, 255, 0.09);
+                position: absolute;
+                left: 50%;
+                top: -20%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                &:nth-child(2) {
+                    top: 4.2rem;
+
                 }
+                @media screen and (max-width: 900px) {
+                    font-size: 90px;
+
+                    &:nth-child(2) {
+                        top: 4rem;
+
+                    }
+                }
+
             }
 
+
             h2 {
-                font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+                font-size: clamp(2.2rem, 2.5vw, 2.8rem);
                 font-weight: 700;
                 width: 100%;
 
@@ -102,15 +105,13 @@
         }
 
         .team__core__child__container {
-            margin-top: 7rem;
+            margin-top: 9rem;
             display: flex;
+            padding: 4rem 10rem;
+            gap: 3.5rem;
             flex-wrap: wrap;
             justify-content: center;
-            row-gap: 5rem;
-
-            @media screen and (max-width: 1100px) {
-                column-gap: 3.2rem;
-            }
+            align-items: center;
         }
 
     }

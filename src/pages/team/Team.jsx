@@ -1,23 +1,9 @@
 import teamContent from '../../assets/data/TeamContent';
-import { useState, useEffect } from "react";
 import './Team.scss';
 import { TeamCard } from '../../components/private';
 
 
 const Team = ({ refs }) => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
 
     return (
         <div className="team__container" ref={refs}>
@@ -39,7 +25,9 @@ const Team = ({ refs }) => {
             </section>
             <section className='team__core__container'>
                 <div className="team__core__header disable-select">
-                <h1>{windowWidth > 1280 ? teamContent.title.core.back : ""}</h1>
+                    
+                    <h1>The Soul and Heart </h1>
+                    <h1>of Hack4Bengal</h1>
                     <h2>{teamContent.title.core.main}</h2>
                 </div>
                 <div className="team__core__child__container">

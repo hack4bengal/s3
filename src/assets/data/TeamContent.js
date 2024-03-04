@@ -1,19 +1,14 @@
-import twitter_logo from '../../assets/images/TeamCardImages/twitter_logo.svg';
-import linkedIn_logo from '../../assets/images/TeamCardImages/linkedin_logo.svg';
 
 const teamContent = {
     title: {
         organizers: "Our Lead Organizers",
         core: {
             main: "Core Team",
-            back: "The Soul and Heart of Hack4Bengal"
         }
     },
-    twitterIcon: twitter_logo,
-    linkedInIcon: linkedIn_logo,
     organizers: [
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img:"http://surl.li/repuj" ,
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
@@ -21,7 +16,7 @@ const teamContent = {
             twitter: "https://twitter.com/sourav_saha_"
         },
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img: "http://surl.li/repuj",
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
@@ -29,7 +24,7 @@ const teamContent = {
             twitter: "https://twitter.com/sourav_saha_"
         },
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img: "http://surl.li/repuj",
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
@@ -37,7 +32,7 @@ const teamContent = {
             twitter: "https://twitter.com/sourav_saha_"
         },
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img: "http://surl.li/repuj",
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
@@ -45,7 +40,7 @@ const teamContent = {
             twitter: "https://twitter.com/sourav_saha_"
         },
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img: "http://surl.li/repuj",
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
@@ -55,7 +50,7 @@ const teamContent = {
     ],
     core: [
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img: "http://surl.li/repuj",
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
@@ -63,7 +58,7 @@ const teamContent = {
             twitter: "https://twitter.com/sourav_saha_"
         },
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img: "http://surl.li/repuj",
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
@@ -71,7 +66,7 @@ const teamContent = {
             twitter: "https://twitter.com/sourav_saha_"
         },
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img: "http://surl.li/repuj",
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
@@ -79,7 +74,7 @@ const teamContent = {
             twitter: "https://twitter.com/sourav_saha_"
         },
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img: "http://surl.li/repuj",
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
@@ -87,7 +82,7 @@ const teamContent = {
             twitter: "https://twitter.com/sourav_saha_"
         },
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img: "http://surl.li/repuj",
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
@@ -95,7 +90,7 @@ const teamContent = {
             twitter: "https://twitter.com/sourav_saha_"
         },
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img: "http://surl.li/repuj",
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
@@ -103,7 +98,7 @@ const teamContent = {
             twitter: "https://twitter.com/sourav_saha_"
         },
         {
-            img: "https://avatars.githubusercontent.com/u/45361911?v=4",
+            img: "http://surl.li/repuj",
             imgAlt: "Sourav Saha",
             name: "Sourav Saha",
             title: "Lead Organizer",
