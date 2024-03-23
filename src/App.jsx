@@ -7,6 +7,7 @@ import Discord from "./pages/discord/Discord";
 import CodeofConduct from "./pages/coc/CodeofConduct";
 import Home from "./pages/home/Home";
 import Brand from "./pages/brand/Brand";
+import Events from "./pages/events/Events";
 
 // const Home = lazy(() => import("./pages/home/Home"));
 // const Discord = lazy(() => import("./pages/discord/Discord"));
@@ -24,6 +25,7 @@ const App = () => {
           <Route exact path="/coc" element={<CodeofConduct />} />
           <Route exact path="/brand" element={<Brand />} />
           <Route exact path="/tg" element={<Telegram />} />
+          <Route exact path="/events" element={<Events />} />
         </Routes>
       </main>
       <Footer />
