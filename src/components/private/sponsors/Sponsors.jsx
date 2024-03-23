@@ -11,10 +11,12 @@ const Sponsors = () => {
       <div className="sponsors__parent" id="sponsors">
         <Header {...HeaderData.sponsors} />
 
-        <div className="sponsors__flexbox">
-          {sponsors.map((item, index) => {
-            return <SingleSponsors key={index} sponsor={item} />;
-          })}
+        <div className="sponsors__container">
+          <div className="sponsors__flexbox">
+            {sponsors.map((item, index) => {
+              return <SingleSponsors key={index} sponsor={item} />;
+            })}
+          </div>
         </div>
       </div>
     </>

@@ -9,20 +9,27 @@
     margin-top: 2rem;
   }
 
-  .sponsors__flexbox {
+  .sponsors__container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6rem;
-    gap: 1.5rem;
-    max-width: 1400px;
-    margin: auto;
-    margin-top: 6rem;
+    flex-direction: column;
 
-    @media screen and (max-width: 576px) {
-      margin-top: 3rem;
-      gap: 1rem;
+    .sponsors__flexbox {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 6rem;
+      gap: 1.5rem;
+      max-width: 1400px;
+      margin: auto;
+      margin-top: 6rem;
+
+      @media screen and (max-width: 576px) {
+        display: grid;
+        grid-row-gap: 1rem;
+        grid-column-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 }
