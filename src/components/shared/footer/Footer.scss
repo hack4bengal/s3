@@ -64,6 +64,18 @@
           text-decoration: none;
         }
 
+        .footer__content__bottom__general__links {
+          display: flex;
+          flex-direction: column;
+          gap: 1.0625rem;
+          align-items: flex-start;
+
+          @media screen and (max-width: 576px) {
+            flex-direction: row;
+            align-items: center;
+          }
+        }
+
         .footer__content__bottom__link {
           color: var(--alt-color);
           text-transform: capitalize;
@@ -107,7 +119,7 @@
         }
       }
 
-      .footer__prev_season {
+      .footer__prev__season {
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -134,6 +146,10 @@
           @media screen and (max-width: 576px) {
             text-align: center;
           }
+        }
+
+        @media screen and (max-width: 576px){
+          flex-direction: row;
         }
       }
 
