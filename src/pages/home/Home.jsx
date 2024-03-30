@@ -1,4 +1,3 @@
-import Lenis from "@studio-freight/lenis";
 import React, { Suspense, useEffect } from "react";
 import {
   About,
@@ -15,19 +14,6 @@ import {
 import "./Home.scss";
 
 const Home = () => {
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 2,
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
-
   return (
     <>
       <Landing />

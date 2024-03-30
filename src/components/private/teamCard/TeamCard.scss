@@ -1,47 +1,62 @@
-.team__card__container {
+.team__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+
+  cursor: pointer;
+  position: relative;
+
+  img {
+    height: 85%;
+    width: 85%;
+    object-fit: cover;
+  }
+
+  .content {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 
-    .team__card__img__container{
-        border-radius: 45% 50% 45% 50%;
-        height: 200px;
-        width: 200px;
-        .team__card__img {
-            height: 100%; 
-            width: 100%;
-           border-radius: 50% 5% 50% 5%;
-           object-fit: cover;
-        }
+    h2 {
+      margin-top: 0.5rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: center;
+      color: var(--h4bred);
+      font-family: var(--body-font);
+      color: white;
     }
-    .team__card__content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .team__card__name {
-            margin-top: 0.8rem;
-            font-size: 1.5rem;
-            font-weight: 700;
-            text-align: center;
-            color: var(--h4bred);
-            font-family: var(--heading-font);
-        }
-    
-        .team__card__title {
-            font-size: 15px;
-            font-weight: light;
-            font-family: var(--body-font);
-        }
-    
-        .team__card__social__icon__container {
-            margin-top: 0.2rem;
-            display: flex;
-            justify-content: center;
-            gap: .5rem;
-        }
-    
+
+    h3 {
+      font-size: 17px;
+      margin-top: 0.2rem;
+      margin-bottom: 0.3rem;
+      font-weight: normal;
+      font-family: var(--body-font);
+      opacity: 0.8;
     }
-    
+
+    .socials {
+      margin-top: 0.2rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      opacity: 0;
+      transition: opacity 0.4s;
+
+      .linkedin {
+        &:hover {
+          color: #0077b5;
+        }
+      }
+    }
+  }
+
+  &:hover .socials {
+    opacity: 1;
+    transition: opacity 0.4s;
+  }
 }
