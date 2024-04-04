@@ -1,16 +1,19 @@
+import adarsh from "../images/TeamCardImages/adarsh.png";
 import aditya from "../images/TeamCardImages/aditya.webp";
 import aksh from "../images/TeamCardImages/aksh.webp";
 import amandeep from "../images/TeamCardImages/amandeep.webp";
 import anirban from "../images/TeamCardImages/anirban.webp";
-import ankita from "../images/TeamCardImages/ankita.webp";
+import ankita from "../images/TeamCardImages/ankita.png";
 import anurag from "../images/TeamCardImages/anurag.webp";
 import arindam from "../images/TeamCardImages/arindam.webp";
-import kajal from "../images/TeamCardImages/kajal.webp";
+import arkapravo from "../images/TeamCardImages/arkapravo.png";
+import kajal from "../images/TeamCardImages/kajal.png";
 import kiran from "../images/TeamCardImages/kiran.webp";
 import manish from "../images/TeamCardImages/manish.webp";
 import pallavi from "../images/TeamCardImages/pallavi.webp";
-import prachi from "../images/TeamCardImages/prachi.webp";
+import prachi from "../images/TeamCardImages/prachi.png";
 import rajdeep from "../images/TeamCardImages/rajdeep.webp";
+import rinki from "../images/TeamCardImages/rinki.png";
 import rohit from "../images/TeamCardImages/rohit.webp";
 import sagnik from "../images/TeamCardImages/sagnik.webp";
 import sanyukta from "../images/TeamCardImages/sanyukta.webp";
@@ -86,10 +89,25 @@ const teamMember = {
       twitter: null,
     },
     {
-      img: kajal,
+      img: arkapravo,
       name: "Arkapravo",
       title: "Lead Engineer @RevMaxx",
       linkedIn: "https://www.linkedin.com/in/arkapravo-ghosh",
+      twitter: null,
+    },
+    {
+      img: rinki,
+      name: "Rinki",
+      title: "Web dev",
+      linkedIn:
+        "https://www.linkedin.com/in/rinki-shaw-689a2121b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      twitter: null,
+    },
+    {
+      img: adarsh,
+      name: "Adarsh",
+      title: "Freelancer",
+      linkedIn: "https://twitter.com/thatsmeadarsh",
       twitter: null,
     },
     {
