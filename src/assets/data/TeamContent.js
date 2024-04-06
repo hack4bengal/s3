@@ -1,24 +1,26 @@
-import adarsh from "../images/TeamCardImages/adarsh.png";
+import adarsh from "../images/TeamCardImages/adarsh.webp";
 import aditya from "../images/TeamCardImages/aditya.webp";
 import aksh from "../images/TeamCardImages/aksh.webp";
 import amandeep from "../images/TeamCardImages/amandeep.webp";
 import anirban from "../images/TeamCardImages/anirban.webp";
-import ankita from "../images/TeamCardImages/ankita.png";
+import ankita from "../images/TeamCardImages/ankita.webp";
 import anurag from "../images/TeamCardImages/anurag.webp";
 import arindam from "../images/TeamCardImages/arindam.webp";
-import arkapravo from "../images/TeamCardImages/arkapravo.png";
-import kajal from "../images/TeamCardImages/kajal.png";
+import arkapravo from "../images/TeamCardImages/arkapravo.webp";
+import kajal from "../images/TeamCardImages/kajal.webp";
 import kiran from "../images/TeamCardImages/kiran.webp";
 import manish from "../images/TeamCardImages/manish.webp";
 import pallavi from "../images/TeamCardImages/pallavi.webp";
-import prachi from "../images/TeamCardImages/prachi.png";
+import prachi from "../images/TeamCardImages/prachi.webp";
 import rajdeep from "../images/TeamCardImages/rajdeep.webp";
-import rinki from "../images/TeamCardImages/rinki.png";
+import rinki from "../images/TeamCardImages/rinki.webp";
 import rohit from "../images/TeamCardImages/rohit.webp";
 import sagnik from "../images/TeamCardImages/sagnik.webp";
 import sanyukta from "../images/TeamCardImages/sanyukta.webp";
+import sanmoy from "../images/TeamCardImages/sanmoy.webp";
 import saswata from "../images/TeamCardImages/saswata.webp";
 import satya from "../images/TeamCardImages/satya.webp";
+import shubham from "../images/TeamCardImages/shubham.webp";
 import saurabh from "../images/TeamCardImages/saurabh.webp";
 import sayanabha from "../images/TeamCardImages/sayanabha.webp";
 import shruti from "../images/TeamCardImages/shruti.webp";
@@ -32,24 +34,23 @@ const teamMember = {
       img: manish,
       name: "Manish",
       title: "GitHub Campus Expert",
-      linkedIn: "https://www.linkedin.com/in/sourav-saha-9a7b5b1a7/",
-      twitter: "https://twitter.com/sourav_saha_",
+      linkedIn: "https://www.linkedin.com/in/imanishbarnwal/",
+      twitter: "https://twitter.com/imanishbarnwal  ",
     },
     {
       img: sagnik,
 
       name: "Sagnik",
       title: "SDE @Odessa",
-      linkedIn: "https://www.linkedin.com/in/sourav-saha-9a7b5b1a7/",
-      twitter: "https://twitter.com/sourav_saha_",
+      linkedIn: "https://www.linkedin.com/in/sagnikmitra/",
+      twitter: "https://twitter.com/MitraSagnik",
     },
     {
-      img: kajal,
-
+      img: shubham,
       name: "Shubham",
       title: "Sales & Marketing @ Dynopii",
-      linkedIn: "https://www.linkedin.com/in/sourav-saha-9a7b5b1a7/",
-      twitter: "https://twitter.com/sourav_saha_",
+      linkedIn: "https://www.linkedin.com/in/shubham-tribedi/",
+      twitter: "https://twitter.com/shubham_tribedi",
     },
     {
       img: kajal,
@@ -59,11 +60,11 @@ const teamMember = {
       twitter: "https://twitter.com/kajal_1801",
     },
     {
-      img: kajal,
+      img: sanmoy,
       name: "Sanmoy",
       title: "Community Aficionado",
-      linkedIn: "https://www.linkedin.com/in/sourav-saha-9a7b5b1a7/",
-      twitter: "https://twitter.com/sourav_saha_",
+      linkedIn: "https://www.linkedin.com/in/sanmoydam/",
+      twitter: "https://twitter.com/sanmoydam",
     },
     {
       img: ankita,
@@ -86,29 +87,29 @@ const teamMember = {
       name: "Souradeep",
       title: "PR Lead @GDSC SNU",
       linkedIn: "https://www.linkedin.com/in/souradeep-mukherjee-a07379224",
-      twitter: null,
+      twitter: "https://twitter.com/souradeep_03",
     },
     {
       img: arkapravo,
       name: "Arkapravo",
       title: "Lead Engineer @RevMaxx",
       linkedIn: "https://www.linkedin.com/in/arkapravo-ghosh",
-      twitter: null,
+      twitter: "https://x.com/ArkapravoGhosh1",
     },
     {
       img: rinki,
       name: "Rinki",
-      title: "Web dev",
+      title: "Web Team @H4B",
       linkedIn:
         "https://www.linkedin.com/in/rinki-shaw-689a2121b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      twitter: null,
+      twitter: "https://twitter.com/RinkiSh90922853",
     },
     {
       img: adarsh,
       name: "Adarsh",
       title: "Freelancer",
       linkedIn: "https://twitter.com/thatsmeadarsh",
-      twitter: null,
+      twitter:"https://twitter.com/thatsmeadarsh",
     },
     {
       img: prachi,
@@ -241,7 +242,7 @@ const teamMember = {
     {
       img: saurabh,
       name: "Saurabh",
-      title: "Android Developer",
+      title: "Web Designer",
       linkedIn: "https://in.linkedin.com/in/communicatewithsaurabh",
       twitter: "https://x.com/SaurabhKJha_Dev",
     },
