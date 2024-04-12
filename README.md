@@ -1,8 +1,8 @@
 # Hack4Bengal Season 3
 
-This is the development repo for Hack4Bengal season 3. The website is built Vite(React), Twitter Bootstrap. The backend (if any) will be built with NodeJS.
+This is the development repo for Hack4Bengal season 3. The website is built Vite(React), and Twitter Bootstrap.
 
- - This will be deployed to `hack4bengal.tech` once we have finazlied the design and the content.
+ - This will be deployed to `hack4bengal.tech` once we have finalized the design and the content.
  - Until then development workflow will contibue here.
  - The `main` branch will be deployed to `dev.hack4bengal.tech` for testing purposes.
  - **NO-ONE** except the leads, owners are allowed to push directly to `main` branch. Please create a PR and get it reviewed before merging to `main` branch.

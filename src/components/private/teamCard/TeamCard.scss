@@ -1,0 +1,62 @@
+.team__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+
+  cursor: pointer;
+  position: relative;
+
+  img {
+    height: 85%;
+    width: 85%;
+    object-fit: cover;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      margin-top: 0.5rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: center;
+      color: var(--h4bred);
+      font-family: var(--body-font);
+      color: white;
+    }
+
+    h3 {
+      font-size: 17px;
+      margin-top: 0.2rem;
+      margin-bottom: 0.3rem;
+      font-weight: normal;
+      font-family: var(--body-font);
+      opacity: 0.8;
+    }
+
+    .socials {
+      margin-top: 0.2rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      opacity: 0;
+      transition: opacity 0.4s;
+
+      .linkedin {
+        &:hover {
+          color: #0077b5;
+        }
+      }
+    }
+  }
+
+  &:hover .socials {
+    opacity: 1;
+    transition: opacity 0.4s;
+  }
+}
