@@ -59,6 +59,26 @@ const HeaderData = {
     backWordSpacing_mobile: "0.5rem",
     frontWord: "Questions",
   },
+  team: {
+    backWord: "Led by 7",
+    backWordSpacing: "0rem",
+    backWordSize: "130px",
+    backWordMobile: "Leaders",
+    backWordSize_mobile: "80px",
+    backWordSpacing_mobile: "0rem",
+    frontWord: "The Organizers",
+
+    customClass: "core_header",
+  },
+  core: {
+    backWord: "H4B",
+    backWordSpacing: "0.1rem",
+    backWordSize: "130px",
+    backWordSize_mobile: "100px",
+    backWordSpacing_mobile: "0rem",
+    frontWord: "The Core Team",
+    customClass: "core_header",
+  },
 };
 
 export default HeaderData;

@@ -1,44 +1,62 @@
-.team__card__container {
+.team__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+
+  cursor: pointer;
+  position: relative;
+
+  img {
+    height: 85%;
+    width: 85%;
+    object-fit: cover;
+  }
+
+  .content {
     display: flex;
-    flex-basis: 33.333333%;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 
-    .team__card__img {
-        width: 270px;
-        height: 270px;
-        border-radius: 50% 10% 50% 10%;
+    h2 {
+      margin-top: 0.5rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: center;
+      color: var(--h4bred);
+      font-family: var(--body-font);
+      color: white;
     }
 
-    .team__card__name {
-        margin-top: 0.8rem;
-        font-size: 1.7rem;
-        font-weight: 700;
-        text-align: center;
-        color: var(--h4bred);
+    h3 {
+      font-size: 17px;
+      margin-top: 0.2rem;
+      margin-bottom: 0.3rem;
+      font-weight: normal;
+      font-family: var(--body-font);
+      opacity: 0.8;
     }
 
-    .team__card__title {
-        font-size: .9rem;
-        font-weight: light;
-        text-align: center;
-    }
+    .socials {
+      margin-top: 0.2rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      opacity: 0;
+      transition: opacity 0.4s;
 
-    .team__card__social__icon__container {
-        margin-top: 0.2rem;
-        display: flex;
-        justify-content: center;
-        gap: .5rem;
-
-        .team__card__social__icon__linkedin {
-            height: 20px;
-            width: 20px;
+      .linkedin {
+        &:hover {
+          color: #0077b5;
         }
-
-        .team__card__social__icon__twitter {
-            height: 14px;
-            width: 14px;
-        }
+      }
     }
+  }
 
+  &:hover .socials {
+    opacity: 1;
+    transition: opacity 0.4s;
+  }
 }
