@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import React, { useEffect, useState } from "react";
 import "./Header.scss";
 
@@ -28,7 +29,7 @@ const Header = ({ ...data }) => {
   };
 
   return (
-    <div className="header__parent disable-select">
+    <div className={clsx("header__parent disable-select", data?.customClass)}>
       <h1 style={backWordStyles}>
         {windowWidth > 700
           ? data.backWord

@@ -16,3 +16,4 @@ export const Collaborators = lazy(() =>
 export const Mentors = lazy(() => import("./mentors/Mentors"));
 export const Testimonials = lazy(() => import("./testimonials/Testimonials"));
 export const FAQ = lazy(() => import("./faq/FAQ"));
+export const TeamCard = lazy(() => import("./teamCard/TeamCard"));

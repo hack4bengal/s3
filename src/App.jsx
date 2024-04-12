@@ -8,7 +8,7 @@ import Evangelist from "./pages/evangelist/Evangelist";
 import Home from "./pages/home/Home";
 import Telegram from "./pages/telegram/Telegram";
 import "./styles/Globals.scss";
-
+import Team from "./pages/team/Team";
 // const Home = lazy(() => import("./pages/home/Home"));
 // const Discord = lazy(() => import("./pages/discord/Discord"));
 // const CodeofConduct = lazy(() => import("./pages/coc/CodeofConduct"));
@@ -27,6 +27,7 @@ const App = () => {
           <Route exact path="/brand" element={<Brand />} />
           <Route exact path="/tg" element={<Telegram />} />
           <Route exact path="/evangelist" element={<Evangelist />} />
+          <Route exact path="/teams" element={<Team/>}/>
         </Routes>
       </main>
       <Footer />
