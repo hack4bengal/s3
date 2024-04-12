@@ -69,7 +69,7 @@ const teamMember = {
     {
       img: ankita,
       name: "Ankita",
-      title: "President, GFG_SNU Chapter",
+      title: "President, GFGSNU Chapter",
       linkedIn: "https://www.linkedin.com/in/iankitapanda",
       twitter: "https://x.com/iankitap?t=pDRhcbcwm-kgm0t9hw7m_A&s=08",
     },

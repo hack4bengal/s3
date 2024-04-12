@@ -4,7 +4,6 @@
   justify-content: center;
   flex-direction: column;
   width: fit-content;
-
   cursor: pointer;
   position: relative;
 
@@ -54,9 +53,14 @@
       }
     }
   }
-
   &:hover .socials {
     opacity: 1;
     transition: opacity 0.4s;
   }
+  &:last-child {
+    @media screen and (max-width: 900px){
+      margin-bottom: 2.2rem;
+    }
+  }
 }
+
