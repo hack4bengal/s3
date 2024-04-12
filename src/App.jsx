@@ -6,6 +6,8 @@ import CodeofConduct from "./pages/coc/CodeofConduct";
 import Discord from "./pages/discord/Discord";
 import Evangelist from "./pages/evangelist/Evangelist";
 import Home from "./pages/home/Home";
+import Brand from "./pages/brand/Brand";
+import Events from "./pages/events/Events";
 import Telegram from "./pages/telegram/Telegram";
 import "./styles/Globals.scss";
 import Team from "./pages/team/Team";
@@ -26,6 +28,7 @@ const App = () => {
           <Route exact path="/coc" element={<CodeofConduct />} />
           <Route exact path="/brand" element={<Brand />} />
           <Route exact path="/tg" element={<Telegram />} />
+          <Route exact path="/events" element={<Events />} />
           <Route exact path="/evangelist" element={<Evangelist />} />
           <Route exact path="/teams" element={<Team/>}/>
         </Routes>
