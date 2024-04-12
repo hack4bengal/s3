@@ -20,7 +20,7 @@ body:
       label: Proposed Solution
       description: Write a solution which you think can fix this issue.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: screenshots
     attributes:

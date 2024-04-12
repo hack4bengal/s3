@@ -69,11 +69,12 @@ const Faq = () => {
             <div className="faq__body__right__bottom">
               <h3>I have more questions, where and how can i reach out</h3>
               <p>
-                You can reach out to us on our Discord Server (
+                Reach out on our Discord Server (
                 <a
                   href="https://discord.com/invite/hack4bengal-2-0-920970750154899476"
                   target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                >
                   in #🎫ticket-support
                 </a>
                 ) or email us at{" "}

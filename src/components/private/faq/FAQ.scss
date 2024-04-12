@@ -419,15 +419,16 @@
           justify-content: center;
           align-items: flex-start;
           gap: 0.69rem;
-          padding-top: 1.68rem;
-          padding-bottom: 1.12rem;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
           padding-left: 2.65rem;
-          padding-right: 8.56rem;
+          padding-right: 6.56rem;
           border-radius: 1.9705rem;
           background: #212020;
           box-shadow: -0.2038rem -0.2038rem 1.1755rem 0.0679rem #a7a3a338,
             0.3397rem 0.2718rem 0.6999rem 0.1359rem #000000c9;
-          min-height: 11rem;
+          min-height: 10.5rem;
+          margin-top: -10px;
 
           transition: all 0.3s ease-in-out;
           cursor: pointer;
