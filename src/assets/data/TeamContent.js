@@ -22,6 +22,7 @@ import saswata from "../images/TeamCardImages/saswata.webp";
 import satya from "../images/TeamCardImages/satya.webp";
 import shubham from "../images/TeamCardImages/shubham.webp";
 import saurabh from "../images/TeamCardImages/saurabh.webp";
+import samrat from "../images/TeamCardImages/samrat.webp";
 import sayanabha from "../images/TeamCardImages/sayanabha.webp";
 import shruti from "../images/TeamCardImages/shruti.webp";
 import souradeep from "../images/TeamCardImages/souradeep.webp";
@@ -69,7 +70,7 @@ const teamMember = {
     {
       img: ankita,
       name: "Ankita",
-      title: "President, GFG_SNU Chapter",
+      title: "President, GFG SNU Chapter",
       linkedIn: "https://www.linkedin.com/in/iankitapanda",
       twitter: "https://x.com/iankitap?t=pDRhcbcwm-kgm0t9hw7m_A&s=08",
     },
@@ -204,7 +205,7 @@ const teamMember = {
       twitter: "https://x.com/Saswata_200?t=x8Qk_xRflggGmFJXnxQdcQ&s=09",
     },
     {
-      img: kajal,
+      img: samrat,
       name: "Samrat",
       title: "Intern @Asiana Times",
       linkedIn: "https://www.linkedin.com/in/colddsam/",
