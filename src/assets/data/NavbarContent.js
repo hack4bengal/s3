@@ -5,7 +5,7 @@ const navbarContent = {
   links: [
     {
       text: "Home",
-      link: "home",
+      link: "/",
     },
     {
       text: "About",
@@ -15,10 +15,10 @@ const navbarContent = {
       text: "Timeline",
       link: "timeline",
     },
-    {
-      text: "Themes",
-      link: "themes",
-    },
+    // {
+    //   text: "Themes",
+    //   link: "themes",
+    // },
     {
       text: "Prizes",
       link: "prizes",
@@ -45,7 +45,7 @@ const navbarContent = {
       },
       {
         text: "Team",
-        link: "/team",
+        link: "/teams",
       },
     ],
   },

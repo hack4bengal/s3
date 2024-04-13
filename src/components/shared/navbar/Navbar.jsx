@@ -22,9 +22,9 @@ const Navbar = () => {
       return;
     }
 
-    document
-      .getElementById(el)
-      .scrollIntoView({ behavior: "smooth" }, { block: "center" });
+    // document
+    //   .getElementById(el)
+    //   .scrollIntoView({ behavior: "smooth" }, { block: "center" });
 
     if (window.location.pathname !== "/") {
       navigate("/");
