@@ -17,7 +17,7 @@ import rinki from "../images/TeamCardImages/rinki.webp";
 import rohit from "../images/TeamCardImages/rohit.webp";
 import sagnik from "../images/TeamCardImages/sagnik.webp";
 import sanyukta from "../images/TeamCardImages/sanyukta.webp";
-import sanmoy from "../images/TeamCardImages/sanmoy.webp";
+import sanmoy from "../images/TeamCardImages/Sanmoy.webp";
 import saswata from "../images/TeamCardImages/saswata.webp";
 import satya from "../images/TeamCardImages/satya.webp";
 import shubham from "../images/TeamCardImages/shubham.webp";

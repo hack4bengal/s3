@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components/shared";
-import Brand from "./pages/brand/Brand";
 import CodeofConduct from "./pages/coc/CodeofConduct";
 import Discord from "./pages/discord/Discord";
 import Evangelist from "./pages/evangelist/Evangelist";

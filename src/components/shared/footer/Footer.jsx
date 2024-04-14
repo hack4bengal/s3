@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__content__top">
-          <div className="footer__content__top__socials"> 
+          <div className="footer__content__top__socials">
             {footerContent.socials.map((social, index) => (
               <a
                 key={index}
@@ -18,7 +18,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="disable-select"
               >
-                <img src={social?.icon} alt={social?.name}  />
+                <img src={social?.icon} alt={social?.name} />
               </a>
             ))}
           </div>
@@ -26,15 +26,17 @@ const Footer = () => {
         </div>
         <div className="footer__content__bottom">
           <div className="footer__content__bottom__links">
-            {footerContent.links.map((link, index) => (
-              <Link
-                key={index}
-                className="footer__content__bottom__link"
-                to={link?.link}
-              >
-                {link?.text}
-              </Link>
-            ))}
+            <div className="footer__content__bottom__general__links">
+              {footerContent.links.map((link, index) => (
+                <Link
+                  key={index}
+                  className="footer__content__bottom__link"
+                  to={link?.link}
+                >
+                  {link?.text}
+                </Link>
+              ))}
+            </div>
             <div className="footer__content__bottom__mailhead">
               {footerContent.mail.text}
             </div>
@@ -44,7 +46,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="footer__content__bottom__mail"
             >
-            Email us: {footerContent.mail.address}
+              {footerContent.mail.address}
             </a>
 
           </div>
@@ -71,7 +73,7 @@ const Footer = () => {
             </svg>
           </div>
 
-          <div className="footer__prev_season">
+          <div className="footer__prev__season">
             <Link
               to={"https://s1.hack4bengal.tech"}
               className="footer__content__bottom__prevseason"
@@ -93,7 +95,7 @@ const Footer = () => {
       </div>
       <span className="footer__bg_overlay" />
       <div className="footer__bg">
-        
+
         {/* <img className="footer_bg__img" src={footer_bg} alt="footer_bg" /> */}
         <span className="footer__bg__left" />
         <span className="footer__bg__right" />
