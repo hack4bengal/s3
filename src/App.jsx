@@ -1,15 +1,15 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components/shared";
+import Brand from "./pages/brand/Brand";
 import CodeofConduct from "./pages/coc/CodeofConduct";
 import Discord from "./pages/discord/Discord";
 import Evangelist from "./pages/evangelist/Evangelist";
-import Home from "./pages/home/Home";
-import Brand from "./pages/brand/Brand";
 import Events from "./pages/events/Events";
+import Home from "./pages/home/Home";
+import Team from "./pages/team/Team";
 import Telegram from "./pages/telegram/Telegram";
 import "./styles/Globals.scss";
-import Team from "./pages/team/Team";
 // const Home = lazy(() => import("./pages/home/Home"));
 // const Discord = lazy(() => import("./pages/discord/Discord"));
 // const CodeofConduct = lazy(() => import("./pages/coc/CodeofConduct"));
@@ -29,7 +29,7 @@ const App = () => {
           <Route exact path="/tg" element={<Telegram />} />
           <Route exact path="/events" element={<Events />} />
           <Route exact path="/evangelist" element={<Evangelist />} />
-          <Route exact path="/teams" element={<Team/>}/>
+          <Route exact path="/team" element={<Team />} />
         </Routes>
       </main>
       <Footer />

@@ -12,36 +12,42 @@ const Team = ({ refs }) => {
         <Header {...HeaderData.team} />
 
         <div className="org_cards org_cards_1">
-          {teamContent.organizers.slice(0, 4).map((organizer, index) => {
-            return (
-              <TeamCard
-                key={index}
-                img={organizer.img}
-                name={organizer.name}
-                title={organizer.title}
-                linkedIn={organizer.linkedIn}
-                twitter={organizer.twitter}
-                linkedInIcon={teamContent.linkedInIcon}
-                twitterIcon={teamContent.twitterIcon}
-              />
-            );
-          })}
+          {teamContent.organizers
+            .slice(0, 3)
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((organizer, index) => {
+              return (
+                <TeamCard
+                  key={index}
+                  img={organizer.img}
+                  name={organizer.name}
+                  title={organizer.title}
+                  linkedIn={organizer.linkedIn}
+                  twitter={organizer.twitter}
+                  linkedInIcon={teamContent.linkedInIcon}
+                  twitterIcon={teamContent.twitterIcon}
+                />
+              );
+            })}
         </div>
         <div className="org_cards org_cards_2">
-          {teamContent.organizers.slice(4).map((organizer, index) => {
-            return (
-              <TeamCard
-                key={index}
-                img={organizer.img}
-                name={organizer.name}
-                title={organizer.title}
-                linkedIn={organizer.linkedIn}
-                twitter={organizer.twitter}
-                linkedInIcon={teamContent.linkedInIcon}
-                twitterIcon={teamContent.twitterIcon}
-              />
-            );
-          })}
+          {teamContent.organizers
+            .slice(3)
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((organizer, index) => {
+              return (
+                <TeamCard
+                  key={index}
+                  img={organizer.img}
+                  name={organizer.name}
+                  title={organizer.title}
+                  linkedIn={organizer.linkedIn}
+                  twitter={organizer.twitter}
+                  linkedInIcon={teamContent.linkedInIcon}
+                  twitterIcon={teamContent.twitterIcon}
+                />
+              );
+            })}
         </div>
       </section>
 
@@ -51,20 +57,23 @@ const Team = ({ refs }) => {
         <Header {...HeaderData.core} />
 
         <div className="core_cards">
-          {teamContent.core.map((organizer, index) => {
-            return (
-              <TeamCard
-                key={index}
-                img={organizer.img}
-                name={organizer.name}
-                title={organizer.title}
-                linkedIn={organizer.linkedIn}
-                twitter={organizer.twitter}
-                linkedInIcon={teamContent.linkedInIcon}
-                twitterIcon={teamContent.twitterIcon}
-              />
-            );
-          })}
+          {teamContent.core
+            .slice(4)
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((organizer, index) => {
+              return (
+                <TeamCard
+                  key={index}
+                  img={organizer.img}
+                  name={organizer.name}
+                  title={organizer.title}
+                  linkedIn={organizer.linkedIn}
+                  twitter={organizer.twitter}
+                  linkedInIcon={teamContent.linkedInIcon}
+                  twitterIcon={teamContent.twitterIcon}
+                />
+              );
+            })}
         </div>
       </section>
     </div>

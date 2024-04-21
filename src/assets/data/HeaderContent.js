@@ -60,7 +60,7 @@ const HeaderData = {
     frontWord: "Questions",
   },
   team: {
-    backWord: "Led by 7",
+    backWord: "Led by 6",
     backWordSpacing: "0rem",
     backWordSize: "130px",
     backWordMobile: "Leaders",

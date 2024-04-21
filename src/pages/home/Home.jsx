@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from "react";
+import React, { Suspense } from "react";
 import {
   About,
   Collaborators,
@@ -19,10 +19,10 @@ const Home = () => {
       <Landing />
       {window.innerWidth < 600 && <Marquee />}
       <Suspense fallback={<div>Loading...</div>}>
-        <About />
+        <Timeline />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        <Timeline />
+        <About />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <Prizes />

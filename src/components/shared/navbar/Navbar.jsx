@@ -22,10 +22,6 @@ const Navbar = () => {
       return;
     }
 
-    // document
-    //   .getElementById(el)
-    //   .scrollIntoView({ behavior: "smooth" }, { block: "center" });
-
     if (window.location.pathname !== "/") {
       navigate("/");
 
@@ -59,7 +55,11 @@ const Navbar = () => {
   return (
     <nav className="navbar" ref={menuRef}>
       <Link to="/" className="navbar__logo_link">
-        <img src={navbarContent.logo} alt="hack4bengal_logo" className="navbar__logo" />
+        <img
+          src={navbarContent.logo}
+          alt="hack4bengal_logo"
+          className="navbar__logo"
+        />
       </Link>
 
       <ul>
@@ -74,32 +74,34 @@ const Navbar = () => {
           </li>
         ))}
         <li>
-        <div
-          className="navbar__dropdown"
-          onClick={() =>
-            setIsDropdownActive((prevIsDropdownActive) => !prevIsDropdownActive)
-          }
-        >
-          <span className="navbar__link">More</span>
-          <ul
-            className={`navbar__dropdown__items ${
-              isDropdownActive ? "navbar__dropdown__items__active" : ""
-            }`}
+          <div
+            className="navbar__dropdown"
+            onClick={() =>
+              setIsDropdownActive(
+                (prevIsDropdownActive) => !prevIsDropdownActive
+              )
+            }
           >
-            {navbarContent.dropdown.links.map((link, index) => (
-              <li
-                key={index}
-                onClick={() => {
-                  gotoElement(link?.link);
-                }}
-              >
-                <p to={link?.link} className="navbar__dropdown__link">
-                  {link?.text}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
+            <span className="navbar__link">More</span>
+            <ul
+              className={`navbar__dropdown__items ${
+                isDropdownActive ? "navbar__dropdown__items__active" : ""
+              }`}
+            >
+              {navbarContent.dropdown.links.map((link, index) => (
+                <li
+                  key={index}
+                  onClick={() => {
+                    gotoElement(link?.link);
+                  }}
+                >
+                  <p to={link?.link} className="navbar__dropdown__link">
+                    {link?.text}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </li>
         <svg className="navbar__dropdown__down__svg">
           <filter el="goo">

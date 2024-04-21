@@ -1,3 +1,4 @@
+import sanmoy from "../images/TeamCardImages/Sanmoy.webp";
 import adarsh from "../images/TeamCardImages/adarsh.webp";
 import aditya from "../images/TeamCardImages/aditya.webp";
 import aksh from "../images/TeamCardImages/aksh.webp";
@@ -7,24 +8,21 @@ import ankita from "../images/TeamCardImages/ankita.webp";
 import anurag from "../images/TeamCardImages/anurag.webp";
 import arindam from "../images/TeamCardImages/arindam.webp";
 import arkapravo from "../images/TeamCardImages/arkapravo.webp";
-import kajal from "../images/TeamCardImages/kajal.webp";
 import kiran from "../images/TeamCardImages/kiran.webp";
 import manish from "../images/TeamCardImages/manish.webp";
-import pallavi from "../images/TeamCardImages/pallavi.webp";
 import prachi from "../images/TeamCardImages/prachi.webp";
 import rajdeep from "../images/TeamCardImages/rajdeep.webp";
 import rinki from "../images/TeamCardImages/rinki.webp";
 import rohit from "../images/TeamCardImages/rohit.webp";
 import sagnik from "../images/TeamCardImages/sagnik.webp";
+import samrat from "../images/TeamCardImages/samrat.webp";
 import sanyukta from "../images/TeamCardImages/sanyukta.webp";
-import sanmoy from "../images/TeamCardImages/Sanmoy.webp";
 import saswata from "../images/TeamCardImages/saswata.webp";
 import satya from "../images/TeamCardImages/satya.webp";
-import shubham from "../images/TeamCardImages/shubham.webp";
 import saurabh from "../images/TeamCardImages/saurabh.webp";
-import samrat from "../images/TeamCardImages/samrat.webp";
 import sayanabha from "../images/TeamCardImages/sayanabha.webp";
 import shruti from "../images/TeamCardImages/shruti.webp";
+import shubham from "../images/TeamCardImages/shubham.webp";
 import souradeep from "../images/TeamCardImages/souradeep.webp";
 import tushar from "../images/TeamCardImages/tushar.webp";
 import utkarsh from "../images/TeamCardImages/utkarsh.webp";
@@ -52,13 +50,6 @@ const teamMember = {
       title: "Sales & Marketing @ Dynopii",
       linkedIn: "https://www.linkedin.com/in/shubham-tribedi/",
       twitter: "https://twitter.com/shubham_tribedi",
-    },
-    {
-      img: kajal,
-      name: "Kajal",
-      title: "SDE Intern @Amazon",
-      linkedIn: "https://linkedin.com/in/kajal1801",
-      twitter: "https://twitter.com/kajal_1801",
     },
     {
       img: sanmoy,
@@ -110,7 +101,7 @@ const teamMember = {
       name: "Adarsh",
       title: "Freelancer",
       linkedIn: "https://twitter.com/thatsmeadarsh",
-      twitter:"https://twitter.com/thatsmeadarsh",
+      twitter: "https://twitter.com/thatsmeadarsh",
     },
     {
       img: prachi,
@@ -224,14 +215,6 @@ const teamMember = {
       title: "Web Designer @H4B",
       linkedIn: "https://www.linkedin.com/in/kaialan/",
       twitter: "https://twitter.com/KaiAlan_",
-    },
-    {
-      img: pallavi,
-      name: "Pallavi",
-      title: "PR Team @H4B",
-      linkedIn:
-        "https://www.linkedin.com/in/pallavi-prasad-277b741b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      twitter: "https://x.com/1149Prasad?t=Tnjx7s0gmGpAxcfmCBl2Rw&s=09",
     },
     {
       img: aditya,

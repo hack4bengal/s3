@@ -25,7 +25,7 @@ const About = () => {
               Hack4Bengal empowers all fields to showcase creativity in solving
               real-life problems for a brighter future.
             </p>
-            <p >
+            <p>
               Join us for the reinvigorated Hack4Bengal! From three enthusiasts
               in 2021 to a thriving community of over 3000 developers, our
               mission is to empower tech talents. This time, we're taking it
@@ -41,8 +41,16 @@ const About = () => {
                 speed={50}
                 direction="right"
               >
-                <img src={two} alt="a large group of people sitting in a room" className="mq_img" />
-                <img src={three} alt="a group of people standing on a stage" className="mq_img" />
+                <img
+                  src={two}
+                  alt="a large group of people sitting in a room"
+                  className="mq_img"
+                />
+                <img
+                  src={three}
+                  alt="a group of people standing on a stage"
+                  className="mq_img"
+                />
               </Marquee>
 
               <Marquee
@@ -52,9 +60,21 @@ const About = () => {
                 speed={50}
                 direction="left"
               >
-                <img src={four} alt="a group of people posing for a photo" className="mq_img" />
-                <img src={five} alt="a group of people standing on a stage" className="mq_img" />
-                <img src={six} alt="a group of people standing in a room" className="mq_img" />
+                <img
+                  src={four}
+                  alt="a group of people posing for a photo"
+                  className="mq_img"
+                />
+                <img
+                  src={five}
+                  alt="a group of people standing on a stage"
+                  className="mq_img"
+                />
+                <img
+                  src={six}
+                  alt="a group of people standing in a room"
+                  className="mq_img"
+                />
               </Marquee>
             </div>
 
@@ -99,8 +119,16 @@ const About = () => {
               speed={50}
               direction="right"
             >
-              <img src={two} alt="a large group of people sitting in a room" className="mq_img" />
-              <img src={three} alt="a group of people standing on a stage" className="mq_img" />
+              <img
+                src={two}
+                alt="a large group of people sitting in a room"
+                className="mq_img"
+              />
+              <img
+                src={three}
+                alt="a group of people standing on a stage"
+                className="mq_img"
+              />
             </Marquee>
 
             <Marquee
@@ -110,8 +138,16 @@ const About = () => {
               speed={50}
               direction="left"
             >
-              <img src={four} alt="a group of people posing for a photo" className="mq_img" />
-              <img src={seven} alt="a group of people sitting in a room with computers" className="mq_img" />
+              <img
+                src={four}
+                alt="a group of people posing for a photo"
+                className="mq_img"
+              />
+              <img
+                src={seven}
+                alt="a group of people sitting in a room with computers"
+                className="mq_img"
+              />
               <img src={eight} alt="a sign on a building" className="mq_img" />
             </Marquee>
           </div>

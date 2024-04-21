@@ -45,7 +45,7 @@ const navbarContent = {
       },
       {
         text: "Team",
-        link: "/teams",
+        link: "/team",
       },
     ],
   },
