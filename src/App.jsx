@@ -10,10 +10,6 @@ import Home from "./pages/home/Home";
 import Team from "./pages/team/Team";
 import Telegram from "./pages/telegram/Telegram";
 import "./styles/Globals.scss";
-// const Home = lazy(() => import("./pages/home/Home"));
-// const Discord = lazy(() => import("./pages/discord/Discord"));
-// const CodeofConduct = lazy(() => import("./pages/coc/CodeofConduct"));
-// const Brand = lazy(() => import("./pages/brand/Brand"));
 
 const App = () => {
   return (

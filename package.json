@@ -12,6 +12,7 @@
   "dependencies": {
     "@studio-freight/lenis": "^1.0.33",
     "@studio-freight/react-lenis": "^0.0.38",
+    "@vercel/analytics": "^1.2.2",
     "clsx": "^2.1.0",
     "node-modules": "^1.0.1",
     "react": "^18.2.0",

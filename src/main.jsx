@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
@@ -8,6 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <SmoothScrolling>
       <Suspense fallback={<div>Loading... </div>}>
         <App />
+        <Analytics />
       </Suspense>
     </SmoothScrolling>
   </React.StrictMode>
