@@ -26,6 +26,8 @@ import shubham from "../images/TeamCardImages/shubham.webp";
 import souradeep from "../images/TeamCardImages/souradeep.webp";
 import tushar from "../images/TeamCardImages/tushar.webp";
 import utkarsh from "../images/TeamCardImages/utkarsh.webp";
+import swarup from "../images/TeamCardImages/swarup.webp";
+
 
 const teamMember = {
   organizers: [
@@ -72,6 +74,13 @@ const teamMember = {
       linkedIn: "https://linkedin.com/in/snowstorm003",
       twitter: "https://twitter.com/snowstorm003",
     },
+  ],
+  advisor: [
+    {
+      img:swarup,
+      name:"Dr. Swarup Kumar Ghosh",
+      title:"Associate Prof., Department of CSE, SNU",
+    }
   ],
   core: [
     {
@@ -140,6 +149,14 @@ const teamMember = {
       title: "ML Engineer",
       linkedIn: "http://www.linkedin.com/in/amandeep404",
       twitter: "https://twitter.com/amandeep_404",
+    },
+    {
+      img: rinki,
+      name: "Rinki",
+      title: "Web Team @H4B",
+      linkedIn:
+        "https://www.linkedin.com/in/rinki-shaw-689a2121b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      twitter: "https://twitter.com/RinkiSh90922853",
     },
     {
       img: arindam,
