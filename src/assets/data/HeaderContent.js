@@ -51,7 +51,7 @@ const HeaderData = {
     backWord: "Stories",
     backWordSize_mobile: "78px",
     backWordSpacing_mobile: "0.5rem",
-    frontWord: "Testimonials",
+    frontWord: "Testimonial",
   },
   faq: {
     backWord: "FAQ",
