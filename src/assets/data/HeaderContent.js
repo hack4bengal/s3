@@ -66,9 +66,17 @@ const HeaderData = {
     backWordMobile: "Leaders",
     backWordSize_mobile: "80px",
     backWordSpacing_mobile: "0rem",
-    frontWord: "The Organizers",
+    frontWord: "Organizers",
 
     customClass: "core_header",
+  },
+  advisor:{
+    backWord:"H4B",
+    backWordSpacing: "0rem",
+    backWordSize: "130px",
+    backWordSize_mobile: "80px",
+    backWordSpacing_mobile: "0rem",
+    frontWord: "Advisor",
   },
   core: {
     backWord: "H4B",
@@ -76,7 +84,7 @@ const HeaderData = {
     backWordSize: "130px",
     backWordSize_mobile: "100px",
     backWordSpacing_mobile: "0rem",
-    frontWord: "The Core Team",
+    frontWord: "Core Team",
     customClass: "core_header",
   },
 };

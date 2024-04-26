@@ -51,6 +51,27 @@ const Team = ({ refs }) => {
         </div>
       </section>
 
+      {/* Advisor */}
+
+      <section className="advisor_section">
+          <Header {...HeaderData.advisor}/>
+
+          <div className="advisors_card">
+            {teamContent.advisor
+            .map((advisor,index)=>{
+              return(
+                <TeamCard
+                key={index}
+                img={advisor.img}
+                name={advisor.name}
+                title={advisor.title}
+                />
+              )
+            })
+            }
+          </div>
+      </section>
+
       {/* CORE */}
 
       <section className="core_section">
