@@ -32,9 +32,29 @@
       margin-top: 2rem;
     }
   }
+  
+  .advisor_section {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .advisors_card {
+      margin-top: 4rem;
+      padding: 4rem 9rem;
+
+      @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 
   .core_section {
-    margin-top: 10rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
