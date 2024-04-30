@@ -9,7 +9,6 @@ import {
   Prizes,
   Sponsors,
   Testimonials,
-  Timeline,
 } from "../../components/private";
 import "./Home.scss";
 
@@ -18,9 +17,9 @@ const Home = () => {
     <>
       <Landing />
       {window.innerWidth < 600 && <Marquee />}
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <Timeline />
-      </Suspense>
+      </Suspense> */}
       <Suspense fallback={<div>Loading...</div>}>
         <About />
       </Suspense>
