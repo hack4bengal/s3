@@ -24,21 +24,6 @@ export default defineConfig({
           },
         ],
       },
-      workbox: {
-        cleanupOutdatedCaches: true,
-        runtimeCaching: [
-          {
-            urlPattern: /\.(png|jpg|jpeg|svg|gif)$/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "image-cache",
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
-        ],
-      },
     }),
   ],
 });
