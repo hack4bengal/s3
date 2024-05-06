@@ -26,7 +26,7 @@ const Landing = () => {
             <div className="home__buttons">
               <Button
                 type="solid"
-                to={"https://discord.gg/hack4bengal-2-0-920970750154899476"}
+                to={"https://discord.gg/hack4bengal"}
               >
                 Join Discord
               </Button>
