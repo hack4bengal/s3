@@ -50,7 +50,7 @@ const teamMember = {
     {
       img: shubham,
       name: "Shubham",
-      title: "Sales & Marketing @ Dynopii",
+      title: "Sales & Marketing @Dynopii",
       linkedIn: "https://www.linkedin.com/in/shubham-tribedi/",
       twitter: "https://twitter.com/shubham_tribedi",
     },
