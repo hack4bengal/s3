@@ -27,7 +27,8 @@ import souradeep from "../images/TeamCardImages/souradeep.webp";
 import tushar from "../images/TeamCardImages/tushar.webp";
 import utkarsh from "../images/TeamCardImages/utkarsh.webp";
 import swarup from "../images/TeamCardImages/swarup.webp";
-
+import tamal from  "../images/TeamCardImages/tamal.webp";
+import rabishankar from "../images/TeamCardImages/rabishankar.webp"
 
 const teamMember = {
   organizers: [
@@ -49,7 +50,7 @@ const teamMember = {
     {
       img: shubham,
       name: "Shubham",
-      title: "Sales & Marketing @ Dynopii",
+      title: "Sales & Marketing @Dynopii",
       linkedIn: "https://www.linkedin.com/in/shubham-tribedi/",
       twitter: "https://twitter.com/shubham_tribedi",
     },
@@ -89,28 +90,6 @@ const teamMember = {
       title: "PR Lead @GDSC SNU",
       linkedIn: "https://www.linkedin.com/in/souradeep-mukherjee-a07379224",
       twitter: "https://twitter.com/souradeep_03",
-    },
-    {
-      img: arkapravo,
-      name: "Arkapravo",
-      title: "Lead Engineer @RevMaxx",
-      linkedIn: "https://www.linkedin.com/in/arkapravo-ghosh",
-      twitter: "https://x.com/ArkapravoGhosh1",
-    },
-    {
-      img: rinki,
-      name: "Rinki",
-      title: "Web Team @H4B",
-      linkedIn:
-        "https://www.linkedin.com/in/rinki-shaw-689a2121b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      twitter: "https://twitter.com/RinkiSh90922853",
-    },
-    {
-      img: adarsh,
-      name: "Adarsh",
-      title: "Freelancer",
-      linkedIn: "https://twitter.com/thatsmeadarsh",
-      twitter: "https://twitter.com/thatsmeadarsh",
     },
     {
       img: prachi,
@@ -153,7 +132,7 @@ const teamMember = {
     {
       img: rinki,
       name: "Rinki",
-      title: "Web Team @H4B",
+      title: "Intern @N3Clouds",
       linkedIn:
         "https://www.linkedin.com/in/rinki-shaw-689a2121b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       twitter: "https://twitter.com/RinkiSh90922853",
@@ -252,7 +231,28 @@ const teamMember = {
       name: "Rohit",
       title: "GDSC Blockchain Lead",
       linkedIn: "https://www.linkedin.com/in/roy-rohit/",
-      twitter: "https://twitter.com/rohitroy_R",
+      twitter: "https://twitter.com/rohitroy_R",  
+    },
+    {
+      img: rabishankar,
+      name: "Rabishankar",
+      title: "Graphics Team @H4B",
+      linkedIn: "https://www.linkedin.com/in/rabisankar-mishra-8418a5225",
+      twitter: "https://x.com/Rabisankar21?t=O8FH-ya57mY-LjS5-TN7oQ&s=09",  
+    },
+    {
+      img: tamal,
+      name: "Tamal",
+      title: "Lead Engineer @RevMaxx",
+      linkedIn: "https://www.linkedin.com/in/tamalcodes/",
+      twitter: "https://twitter.com/tamalCodes",
+    },
+    {
+      img: arkapravo,
+      name: "Arkapravo",
+      title: "Lead Engineer @RevMaxx",
+      linkedIn: "https://www.linkedin.com/in/arkapravo-ghosh",
+      twitter: "https://x.com/ArkapravoGhosh1",
     },
   ],
 };
