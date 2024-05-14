@@ -87,6 +87,14 @@ const HeaderData = {
     frontWord: "Core Team",
     customClass: "core_header",
   },
+  events: {
+    backWord: "Events",
+    frontWord: "Events",
+    backWordSpacing: "0rem",
+    backWordSize: "130px",
+    backWordSize_mobile: "80px",
+    backWordSpacing_mobile: "0rem",
+  }
 };
 
 export default HeaderData;
