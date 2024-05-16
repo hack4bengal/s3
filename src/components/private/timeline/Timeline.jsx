@@ -1,56 +1,37 @@
-import React from "react";
-import ghori from "../../../assets/images/timer/ghori.png";
-import letters from "../../../assets/images/timer/letters.png";
-import mask from "../../../assets/images/timer/mask.png";
+import React, { useState, useEffect } from "react";
 import "./Timeline.scss";
+import HeaderData from "../../../assets/data/HeaderContent";
+import { Header } from "../../shared";
+import { EventTimeline } from "../../../assets/data/Timeline";
 
 const Timeline = () => {
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentDate(new Date());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <>
-      <div className="timeline__parent" id="timeline">
-        {/* <Header {...HeaderData.timeline} /> */}
-        {/* <ComingSoon /> */}
-
-        <div className="body">
-          <img src={ghori} alt="" className="ghori" />
-
-          <div className="timer">
-            <h1 className="header_1">
-              Journey <br /> Begins In
-            </h1>
-
-            <div className="countdown">
-              <div className="time">
-                <p>25</p>
-                <p>Days</p>
-              </div>
-
-              <p className="colon">:</p>
-
-              <div className="time">
-                <p>25</p>
-                <p>Hours</p>
-              </div>
-
-              <p className="colon">:</p>
-
-              <div className="time">
-                <p>25</p>
-                <p>Mins</p>
-              </div>
-              {/* <p className="colon">:</p>
-
-              <div className="time">
-                <p>25</p>
-                <p>Secs</p>
-              </div> */}
+    <div className="timeline">
+      <Header {...HeaderData.timeline} />
+      <div className="timeline__content">
+        {EventTimeline.map((event, index) => (
+          <div key={index} className="timeline__event">
+            <div className="timeline__image-container">
+              <img
+                src={currentDate > event.date ? event.activeImage : event.inactiveImage}
+                alt={event.alt}
+              />
             </div>
+            <p className="timeline__date">{event.displayDate}</p>
           </div>
-        </div>
-        <img src={mask} alt="" className="mask" />
-        <img src={letters} alt="" className="letters" />
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
