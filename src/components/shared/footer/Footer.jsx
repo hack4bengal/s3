@@ -1,15 +1,38 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import footerContent from "../../../assets/data/FooterContent";
+import gradient from "../../../assets/images/FooterImages/gradient.png";
 import h4b from "../../../assets/images/FooterImages/hack4bengalbrand.webp";
+import taxi from "../../../assets/images/FooterImages/taxi.png";
+import tram from "../../../assets/images/FooterImages/tram.png";
 import "./Footer.scss";
 
 const Footer = () => {
+  const [hover, setHover] = useState({
+    applyCss: false,
+    showText: false,
+  });
+
   return (
     <footer className="footer">
-      <div className="footer__content">
-        <div className="footer__content__top">
-          <div className="footer__content__top__socials">
+      <div>
+        <div className="footer_flexdiv">
+          <img src={h4b} alt="" className="h4b_logo" />
+          <img src={h4b} alt="" className="opacity-0 h4b_logo_2" />
+        </div>
+        <div className="footer_flexdiv">
+          <div className="footer_content">
+            <div className="footer_policy">
+              <p>Brand Assets</p>
+              <p>Code Of Conduct</p>
+            </div>
+
+            <div className="footer_email">
+              <p>Email Us for more details</p>
+              <a href="mailto:hack4bengal@gmail.com">hack4bengal@gmail.com</a>
+            </div>
+          </div>
+
+          <div className="footer_socials">
             {footerContent.socials.map((social, index) => (
               <a
                 key={index}
@@ -22,83 +45,51 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <img src={h4b} alt="A black and white logo representing Hack4Bengal" />
         </div>
-        <div className="footer__content__bottom">
-          <div className="footer__content__bottom__links">
-            <div className="footer__content__bottom__general__links">
-              {footerContent.links.map((link, index) => (
-                <Link
-                  key={index}
-                  className="footer__content__bottom__link"
-                  to={link?.link}
-                >
-                  {link?.text}
-                </Link>
-              ))}
-            </div>
-            <div className="footer__content__bottom__mailhead">
-              {footerContent.mail.text}
-            </div>
-            <a
-              href={`mailto:${footerContent.mail.address}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footer__content__bottom__mail"
-            >
-              {footerContent.mail.address}
-            </a>
 
-          </div>
-
-          <div
-            className="foooter__backtotop"
-            onClick={() => {
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-              });
-            }}
-          >
-            <p>Back to top</p>
-            <svg
-              fill="#ff1717"
-              height="20"
-              width="20"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512"
-              style={{ marginLeft: "6px", transform: "translateX(2px)" }}
-            >
-              <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
-            </svg>
-          </div>
-
-          <div className="footer__prev__season">
-            <Link
-              to={"https://s1.hack4bengal.tech"}
-              className="footer__content__bottom__prevseason"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visit Season 1
-            </Link>
-            <Link
-              to={footerContent.prevSeason.url}
-              className="footer__content__bottom__prevseason"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {footerContent.prevSeason.text}
-            </Link>
-          </div>
-        </div>
+        <img src={gradient} alt="" className="footer_gradient" />
+        <img src={tram} alt="" className="footer_tram" />
       </div>
-      <span className="footer__bg_overlay" />
-      <div className="footer__bg">
 
-        {/* <img className="footer_bg__img" src={footer_bg} alt="footer_bg" /> */}
-        <span className="footer__bg__left" />
-        <span className="footer__bg__right" />
+      <div
+        className={`footer_previousSeasons ${
+          hover.applyCss ? "move-taxi" : ""
+        }`}
+        onMouseEnter={() => {
+          setHover({
+            applyCss: true,
+            showText: false,
+          });
+
+          setTimeout(() => {
+            setHover({
+              applyCss: true,
+              showText: true,
+            });
+          }, 850);
+        }}
+        onMouseLeave={() => {
+          setHover({
+            applyCss: false,
+            showText: false,
+          });
+
+          setTimeout(() => {
+            setHover({
+              applyCss: false,
+              showText: false,
+            });
+          }, 850);
+        }}
+      >
+        <img src={taxi} alt="Taxi" />
+        <div className="text-container">
+          <p className={hover.showText ? "hidden" : ""}>
+            Checkout our Previous Seasons
+          </p>
+          <p className={hover.showText ? "" : "hidden"}>Season 1</p>
+          <p className={hover.showText ? "" : "hidden"}>Season 2</p>
+        </div>
       </div>
     </footer>
   );
