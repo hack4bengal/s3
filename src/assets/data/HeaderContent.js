@@ -51,7 +51,7 @@ const HeaderData = {
     backWord: "Stories",
     backWordSize_mobile: "78px",
     backWordSpacing_mobile: "0.5rem",
-    frontWord: "Testimonials",
+    frontWord: "Testimonial",
   },
   faq: {
     backWord: "FAQ",
@@ -87,6 +87,14 @@ const HeaderData = {
     frontWord: "Core Team",
     customClass: "core_header",
   },
+  events: {
+    backWord: "Events",
+    frontWord: "Events",
+    backWordSpacing: "0rem",
+    backWordSize: "130px",
+    backWordSize_mobile: "80px",
+    backWordSpacing_mobile: "0rem",
+  }
 };
 
 export default HeaderData;

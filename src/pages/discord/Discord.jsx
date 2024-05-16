@@ -5,8 +5,7 @@ const Discord = () => {
   useEffect(() => {
     if (window.location.pathname === "/discord") {
       setTimeout(() => {
-        window.location.href =
-          "https://discord.gg/hack4bengal-2-0-920970750154899476";
+        window.location.href = "https://discord.gg/hack4bengal";
       }, 800);
     }
   }, []);

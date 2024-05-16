@@ -24,10 +24,7 @@ const Landing = () => {
             </p>
 
             <div className="home__buttons">
-              <Button
-                type="solid"
-                to={"https://discord.gg/hack4bengal-2-0-920970750154899476"}
-              >
+              <Button type="solid" to={"https://discord.gg/hack4bengal"}>
                 Join Discord
               </Button>
               <Button type="outline" to={"https://forms.gle/pXk7cvKB9CTvhCbQ9"}>
