@@ -82,13 +82,13 @@ const Footer = () => {
           }, 850);
         }}
       >
-        <img src={taxi} alt="Taxi" />
+        <img src={taxi} alt="Taxi" className={hover.showText ? "hidden" : ""} />
         <div className="text-container">
           <p className={hover.showText ? "hidden" : ""}>
             Checkout our Previous Seasons
           </p>
-          <p className={hover.showText ? "" : "hidden"}>Season 1</p>
-          <p className={hover.showText ? "" : "hidden"}>Season 2</p>
+          <a className={hover.showText ? "footer__previous__season__link" : "hidden"} href="https://s1.hack4bengal.tech/" >Season 1</a>
+          <a className={hover.showText ? "footer__previous__season__link" : "hidden"} href="https://s2.hack4bengal.tech/" >Season 2</a>
         </div>
       </div>
     </footer>

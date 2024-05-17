@@ -181,10 +181,10 @@
 
     .text-container {
       display: flex;
-      gap: 0.3rem;
+      gap: 1rem;
     }
 
-    p {
+    p, a {
       font-size: 1.1rem;
       font-weight: 600;
       cursor: pointer;
@@ -199,13 +199,25 @@
       }
 
       &:nth-of-type(2) {
-        text-decoration: underline;
+        // text-decoration: underline;
         offset: 0.5rem;
       }
     }
 
     .hidden {
       display: none;
+    }
+
+    .footer__previous__season__link {
+      color: var(--h4bred);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .footer__previous__season__link:hover {
+      text-decoration: underline;
     }
 
     .second-text {
