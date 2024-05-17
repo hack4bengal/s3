@@ -5,12 +5,22 @@ import HeaderData from "../../../assets/data/HeaderContent";
 import { Header } from "../../shared";
 import "./FAQ.scss";
 
+import messageVector from "../../../assets/images/FAQImages/message.svg";
+import questionMark1Vector from "../../../assets/images/FAQImages/question_mark_1.svg";
+import questionMark2Vector from "../../../assets/images/FAQImages/question_mark_2.svg";
+import randomShape1Vector from "../../../assets/images/FAQImages/random_shape_vector_1.svg";
+import squareVector from "../../../assets/images/FAQImages/square.svg";
+import triangleVector from "../../../assets/images/FAQImages/triangle.svg";
+import zigZak1Vector from "../../../assets/images/FAQImages/zig_zak_1.svg";
+import zigZak2Vector from "../../../assets/images/FAQImages/zig_zak_2.svg";
+
+
 const Faq = () => {
   const faqContent = [
     {
       question: "What is a Hackathon?",
       answer:
-        "A hackathon is social coding event where programmers, designers, and developers collaborate to solve a problem and compete for cash prizes. It’s one part party, one part work-hard overnight battle against the clock and the competition.",
+        "A hackathon is social coding event where programmers, designers, and developers collaborate to solve a problem and compete for cash prizes. It's one part party, one part work-hard overnight battle against the clock and the competition.",
     },
     {
       question: "Who can participate?",
@@ -20,7 +30,7 @@ const Faq = () => {
     {
       question: "How much does it cost to participate?",
       answer:
-        "Nothing, participation in Hack4Bengal 3.0 is absolutely FREE!!🎉 We’ll have meals, snacks, and beverages onsite at the hackathon, in addition to swags, prizes, fun mini-events and more.",
+        "Nothing, participation in Hack4Bengal 3.0 is absolutely FREE!!🎉 We'll have meals, snacks, and beverages onsite at the hackathon, in addition to swags, prizes, fun mini-events and more.",
     },
     {
       question: "What is the maximum/minimum team size?",
@@ -117,6 +127,16 @@ const Faq = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="faq__vector__container">
+        <img src={messageVector} alt="message vector" className="faq__message__vector faq__emojis" />
+        <img src={questionMark1Vector} alt="question mark vector" className="faq__question_mark_1__vector faq__emojis" />
+        <img src={questionMark2Vector} alt="question mark vector" className="faq__question_mark_2__vector faq__emojis" />
+        <img src={randomShape1Vector} alt="random shape vector" className="faq__random_shape_1__vector faq__emojis" />
+        <img src={squareVector} alt="square vector" className="faq__square__vector faq__emojis" />
+        <img src={triangleVector} alt="triangle vector" className="faq__triangle__vector faq__emojis" />
+        <img src={zigZak1Vector} alt="zig zag vector" className="faq__zig_zak_1__vector faq__emojis" />
+        <img src={zigZak2Vector} alt="zig zag vector" className="faq__zig_zak_2__vector faq__emojis" />
       </div>
     </div>
   );

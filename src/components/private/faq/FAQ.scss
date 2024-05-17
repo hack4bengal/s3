@@ -145,4 +145,61 @@
     top: 3rem;
     left: 12rem;
   }
+
+  .faq__vector__container {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .faq__emojis {
+      position: absolute;
+    }
+
+    .faq__message__vector {
+      top: 223px;
+      left: 107px;
+
+      @media screen and (max-width: 1556px){
+        display: none;
+      }
+    }
+
+    .faq__question_mark_1__vector {
+      top: 913px;
+      left: 691px;
+    }
+
+    .faq__question_mark_2__vector {
+      top: 103px;
+      left: 1198px;
+    }
+
+    .faq__random_shape_1__vector {
+      top: 574px;
+      left: 1382px;
+    }
+
+    .faq__square__vector {
+      top: 392px;
+      left: 1519px;
+    }
+
+    .faq__triangle__vector {
+      top: 942px;
+      left: 142px;
+    }
+
+    .faq__zig_zak_1__vector {
+      top: 1132px;
+      left: 1009px;
+    }
+
+    .faq__zig_zak_2__vector {
+      top: 666px;
+      left: 354px;
+    }
+  }
 }
