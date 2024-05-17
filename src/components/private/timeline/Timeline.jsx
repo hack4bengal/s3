@@ -5,40 +5,40 @@ import mask from "../../../assets/images/timer/mask.png";
 import "./Timeline.scss";
 
 const Timeline = () => {
-  const [days, setDays] = useState(0);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const targetDateTime = new Date(2024, 6, 28, 18);
-
-  const updateTime = () => {
+  const calculateTimeLeft = () => {
+    const targetDate = new Date("2024-06-28T18:00:00");
     const now = new Date();
-    const difference = targetDateTime - now;
+    const difference = targetDate - now;
 
-    // Check if target date has passed
-    if (difference <= 0) {
-      setDays(0);
-      setHours(0);
-      setMinutes(0);
-      return;
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    } else {
+      timeLeft = {
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      };
     }
 
-    const remainingDays = Math.floor(difference / (1000 * 60 * 60 * 24));
-    const remainingHours = Math.floor(
-      (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const remainingMinutes = Math.floor(
-      (difference % (1000 * 60 * 60)) / (1000 * 60)
-    );
-
-    setDays(remainingDays);
-    setHours(remainingHours);
-    setMinutes(remainingMinutes);
+    return timeLeft;
   };
 
-  useEffect(() => {
-    const intervalId = setInterval(updateTime, 1000); // Update time every second
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-    return () => clearInterval(intervalId); // Cleanup function to stop timer on unmount
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
   }, []);
 
   return (
@@ -54,21 +54,21 @@ const Timeline = () => {
 
             <div className="countdown">
               <div className="time">
-                <p>{days}</p>
+                <p>{timeLeft.days}</p>
                 <p>Days</p>
               </div>
 
               <p className="colon">:</p>
 
               <div className="time">
-                <p>{hours.toString().padStart(2, "0")}</p>
+                <p>{timeLeft.hours}</p>
                 <p>Hours</p>
               </div>
 
               <p className="colon">:</p>
 
               <div className="time">
-                <p>{minutes.toString().padStart(2, "0")}</p>
+                <p>{timeLeft.minutes}</p>
                 <p>Mins</p>
               </div>
             </div>
