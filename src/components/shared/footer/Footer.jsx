@@ -5,6 +5,7 @@ import h4b from "../../../assets/images/FooterImages/hack4bengalbrand.webp";
 import taxi from "../../../assets/images/FooterImages/taxi.png";
 import tram from "../../../assets/images/FooterImages/tram.png";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [hover, setHover] = useState({
@@ -22,8 +23,8 @@ const Footer = () => {
         <div className="footer_flexdiv">
           <div className="footer_content">
             <div className="footer_policy">
-              <p>Brand Assets</p>
-              <p>Code Of Conduct</p>
+              <Link to="/brand" target="_blank">Brand Assets</Link>
+              <Link to="/coc" target="_blank">Code Of Conduct</Link>
             </div>
 
             <div className="footer_email">

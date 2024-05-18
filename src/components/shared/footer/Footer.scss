@@ -55,12 +55,13 @@
         align-items: center;
         gap: 1.1rem;
 
-        p {
+        a {
           font-size: 15px;
           font-weight: 500;
           color: var(--alt-color);
           transition: all 0.2s ease-in-out;
           font-family: var(--heading-font);
+          text-decoration: none;
 
           &:hover {
             cursor: pointer;
