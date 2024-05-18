@@ -94,7 +94,8 @@
     .accordion button .icon {
       display: inline-block;
       position: absolute;
-      top: 18px;
+      top: 0;
+      transform: translateY(130%);
       right: 0;
       width: 29px;
       height: 29px;
