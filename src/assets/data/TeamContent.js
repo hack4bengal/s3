@@ -233,7 +233,7 @@ const teamMember = {
     },
     {
       img: tamal,
-      name: "Tamals",
+      name: "Tamal",
       title: "Just a developer",
       linkedIn: "https://www.linkedin.com/in/tamalcodes/",
       twitter: "https://twitter.com/tamalCodes",
