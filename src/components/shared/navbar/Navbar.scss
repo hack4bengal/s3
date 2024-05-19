@@ -129,6 +129,9 @@
 
       &.navbar__mobile_ham__active {
         transform: rotate(45deg);
+        position: fixed;
+        top: 1.5rem;
+        right: 1.5rem;
       }
 
       &.navbar__mobile_ham__hamRotate180.navbar__mobile_ham__active {
@@ -174,7 +177,7 @@
       left: 0;
       z-index: 99998;
       width: 100%;
-      height: 100vh;
+      height: 100dvh;
       background-color: #1b1b1b60;
       backdrop-filter: blur(10px);
       display: flex;
