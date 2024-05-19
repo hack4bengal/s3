@@ -158,7 +158,9 @@
   .footer_previousSeasons {
     position: absolute;
     bottom: 0.3rem;
-    height: 100px;
+    height: 130px;
+    width: 40vw;
+    justify-content: center;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -181,23 +183,36 @@
       gap: 1rem;
     }
 
-    p, a {
+    p,
+    a {
       font-size: 1.1rem;
       font-weight: 600;
       cursor: pointer;
       color: var(--h4bred);
-      transition: color 0.2s ease-in-out;
+      transition: all 0.8s ease-in-out;
       font-family: var(--heading-font);
       font-size: 1rem;
       margin: 0;
+      text-decoration: none;
 
       &:hover {
         color: var(--h4bred);
       }
 
       &:nth-of-type(2) {
-        // text-decoration: underline;
-        offset: 0.5rem;
+        margin-left: 2rem;
+      }
+    }
+
+    .season_linkdiv {
+      position: absolute;
+    }
+
+    a {
+      opacity: 0;
+
+      &:hover {
+        color: #ffff;
       }
     }
 
@@ -205,19 +220,7 @@
       display: none;
     }
 
-    .footer__previous__season__link {
-      color: var(--h4bred);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: all 0.2s ease-in-out;
-    }
-
-    .footer__previous__season__link:hover {
-      text-decoration: underline;
-    }
-
-    .second-text {
+    .footer__previous__season__link .second-text {
       margin-left: 0.5rem;
       opacity: 1;
       transition: opacity 0.5s ease-in-out; /* Smooth transition for text */
@@ -225,6 +228,34 @@
 
     .second-text.hidden {
       opacity: 0;
+    }
+
+    &:hover {
+      img {
+        transform: translateX(calc(300% + 0.9rem));
+        opacity: 0;
+      }
+
+      p {
+        transition: all 0.8s ease-in-out;
+        opacity: 0;
+      }
+
+      a {
+        // color: var(--h4bred);
+        // text-decoration: none;
+        // font-weight: 600;
+        // font-size: 1rem;
+        // transition: all 0.8s ease-in-out;
+        // opacity: 0;
+
+        // &:hover {
+        //   text-decoration: underline;
+        //   offset: 0.5rem;
+        // }
+        transition: all 0.8s ease-in-out;
+        opacity: 1;
+      }
     }
 
     &.move-taxi img {

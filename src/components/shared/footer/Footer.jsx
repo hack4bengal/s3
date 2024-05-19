@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import footerContent from "../../../assets/data/FooterContent";
 import gradient from "../../../assets/images/FooterImages/gradient.png";
 import h4b from "../../../assets/images/FooterImages/hack4bengalbrand.webp";
 import taxi from "../../../assets/images/FooterImages/taxi.png";
 import tram from "../../../assets/images/FooterImages/tram.png";
 import "./Footer.scss";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [hover, setHover] = useState({
@@ -23,8 +23,12 @@ const Footer = () => {
         <div className="footer_flexdiv">
           <div className="footer_content">
             <div className="footer_policy">
-              <Link to="/brand" target="_blank">Brand Assets</Link>
-              <Link to="/coc" target="_blank">Code Of Conduct</Link>
+              <Link to="/brand" target="_blank">
+                Brand Assets
+              </Link>
+              <Link to="/coc" target="_blank">
+                Code Of Conduct
+              </Link>
             </div>
 
             <div className="footer_email">
@@ -56,40 +60,16 @@ const Footer = () => {
         className={`footer_previousSeasons ${
           hover.applyCss ? "move-taxi" : ""
         }`}
-        onMouseEnter={() => {
-          setHover({
-            applyCss: true,
-            showText: false,
-          });
-
-          setTimeout(() => {
-            setHover({
-              applyCss: true,
-              showText: true,
-            });
-          }, 850);
-        }}
-        onMouseLeave={() => {
-          setHover({
-            applyCss: false,
-            showText: false,
-          });
-
-          setTimeout(() => {
-            setHover({
-              applyCss: false,
-              showText: false,
-            });
-          }, 850);
-        }}
       >
         <img src={taxi} alt="Taxi" className={hover.showText ? "hidden" : ""} />
         <div className="text-container">
           <p className={hover.showText ? "hidden" : ""}>
             Checkout our Previous Seasons
           </p>
-          <a className={hover.showText ? "footer__previous__season__link" : "hidden"} href="https://s1.hack4bengal.tech/" >Season 1</a>
-          <a className={hover.showText ? "footer__previous__season__link" : "hidden"} href="https://s2.hack4bengal.tech/" >Season 2</a>
+          <div className="season_linkdiv">
+            <a href="https://s1.hack4bengal.tech/">Season 1</a>
+            <a href="https://s2.hack4bengal.tech/">Season 2</a>
+          </div>
         </div>
       </div>
     </footer>
