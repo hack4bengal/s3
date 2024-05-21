@@ -23,6 +23,9 @@ export default defineConfig({
           },
         ],
       },
+      injectManifest: {
+        swSrc: "src/sw.js", // Relative path to your sw.js file
+      },
       workbox: {
         cleanupOutdatedCaches: true,
         skipWaiting: true,
