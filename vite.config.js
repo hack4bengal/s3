@@ -2,7 +2,6 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
@@ -25,41 +24,6 @@ export default defineConfig({
       },
       injectManifest: {
         swSrc: "src/sw.js", // Relative path to your sw.js file
-      },
-      workbox: {
-        cleanupOutdatedCaches: true,
-        skipWaiting: true,
-        clientsClaim: true,
-
-        runtimeCaching: [
-          {
-            // Caches Google Fonts with a Cache First strategy.
-            urlPattern: new RegExp(
-              "^https://fonts.(?:googleapis|gstatic).com/(.*)"
-            ),
-            handler: "CacheFirst",
-            options: {
-              cacheName: "google-fonts",
-              expiration: {
-                maxEntries: 30,
-              },
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
-          {
-            // Caches images with a Cache First strategy.
-            urlPattern: /\.(?:png|gif|jpg|jpeg|svg|webp)$/,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "images",
-              expiration: {
-                maxEntries: 60,
-              },
-            },
-          },
-        ],
       },
     }),
   ],

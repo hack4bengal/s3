@@ -1,20 +1,25 @@
-// sw.js
 self.addEventListener("install", (event) => {
-  self.skipWaiting();
+  event.waitUntil(self.skipWaiting());
 });
 
 self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    clients.claim().then(async () => {
-      const allClients = await clients.matchAll({ includeUncontrolled: true });
-      allClients.forEach((client) =>
-        client.postMessage({ type: "SW_UPDATED" })
-      );
-    })
-  );
+  event.waitUntil(clients.claim());
 });
 
-// Add other event listeners as needed
 self.addEventListener("fetch", (event) => {
-  // Handle fetch events if needed
+  event.respondWith(
+    fetch(event.request)
+      .then((response) => {
+        // Clone the response for caching
+        const responseClone = response.clone();
+        caches.open("dynamic-cache").then((cache) => {
+          cache.put(event.request, responseClone);
+        });
+        return response;
+      })
+      .catch(() => {
+        // Try serving from cache if network fetch fails
+        return caches.match(event.request);
+      })
+  );
 });
