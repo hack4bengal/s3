@@ -211,12 +211,12 @@
       }
 
       ul {
-        height: 570px;
+        height: 500px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-evenly;
-        gap: 1.4rem;
+        justify-content: space-between;
+        gap: 1rem;
       }
 
       ul li {
@@ -228,7 +228,7 @@
         text-decoration: none;
         color: var(--text-color);
         padding-left: 15px;
-        font-size: 1rem;
+        font-size: 13px;
         transition: color 0.4s ease-in-out;
 
         &:hover {

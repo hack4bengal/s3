@@ -11,13 +11,15 @@ const Navbar = () => {
   const handleClick = () => {
     setIsActive((prevIsActive) => !prevIsActive);
 
-    // Disable body scrolling
     if (isActive) {
-      document.body.style.overflow = "auto";
-      document.body.style.position = "relative";
+      document.getElementsByClassName("main_parent")[0].style.height = "auto";
+      document.getElementsByClassName("main_parent")[0].style.overflow = "auto";
+      document.getElementsByClassName("footer")[0].style.display = "block";
     } else {
-      document.body.style.overflow = "hidden";
-      document.body.style.position = "fixed";
+      document.getElementsByClassName("main_parent")[0].style.height = "100vh";
+      document.getElementsByClassName("main_parent")[0].style.overflow =
+        "hidden";
+      document.getElementsByClassName("footer")[0].style.display = "none";
     }
   };
 
@@ -93,8 +95,9 @@ const Navbar = () => {
           >
             <span className="navbar__link">More</span>
             <ul
-              className={`navbar__dropdown__items ${isDropdownActive ? "navbar__dropdown__items__active" : ""
-                }`}
+              className={`navbar__dropdown__items ${
+                isDropdownActive ? "navbar__dropdown__items__active" : ""
+              }`}
             >
               {navbarContent.dropdown.links.map((link, index) => (
                 <li
@@ -130,8 +133,9 @@ const Navbar = () => {
       </ul>
       <div className="navbar__mobile">
         <svg
-          className={`navbar__mobile__ham navbar__mobile_ham__hamRotate ${isActive ? "navbar__mobile_ham__active" : ""
-            } navbar__mobile_ham__ham1`}
+          className={`navbar__mobile__ham navbar__mobile_ham__hamRotate ${
+            isActive ? "navbar__mobile_ham__active" : ""
+          } navbar__mobile_ham__ham1`}
           viewBox="0 0 100 100"
           width="70"
           onClick={handleClick}
@@ -150,12 +154,14 @@ const Navbar = () => {
           />
         </svg>
         <div
-          className={`navbar__mobile__menu ${isActive ? "" : "navbar__mobile__menu__hidden"
-            }`}
+          className={`navbar__mobile__menu ${
+            isActive ? "" : "navbar__mobile__menu__hidden"
+          }`}
         >
           <div
-            className={`navbar__mobile__sidebar ${isActive ? "navbar__mobile__sidebar__active" : ""
-              }`}
+            className={`navbar__mobile__sidebar ${
+              isActive ? "navbar__mobile__sidebar__active" : ""
+            }`}
           >
             <div className="navbar__mobile__menu__h4b">
               <svg

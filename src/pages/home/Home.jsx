@@ -15,7 +15,7 @@ import "./Home.scss";
 
 const Home = () => {
   return (
-    <>
+    <div className="main_parent">
       <Landing />
       {window.innerWidth < 600 && <Marquee />}
       <Suspense fallback={<div>Loading...</div>}>
@@ -42,7 +42,7 @@ const Home = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <FAQ />
       </Suspense>
-    </>
+    </div>
   );
 };
 
