@@ -101,6 +101,31 @@
         }
       }
     }
+
+    .footer_mobile_season_link_container {
+      display: none;
+
+      @media screen and (max-width: 430px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        transition: all 0.2s ease-in-out;
+      }
+
+      a:hover {
+        color: var(--h4bred);
+      }
+    }
   }
 
   .footer_flexdiv:nth-of-type(2) {
@@ -140,7 +165,7 @@
     right: 0;
     height: 30rem;
     width: 45%;
-    z-index:-1;
+    z-index: -1;
   }
 
   .footer_tram {
@@ -182,7 +207,8 @@
       gap: 1rem;
     }
 
-    p, a {
+    p,
+    a {
       font-size: 1.1rem;
       font-weight: 600;
       cursor: pointer;

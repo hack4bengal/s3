@@ -50,6 +50,11 @@ const Footer = () => {
               </a>
             ))}
           </div>
+
+          <div className="footer_mobile_season_link_container">
+            <a href="https://s1.hack4bengal.tech/">Visit Season 1</a>
+            <a href="https://s2.hack4bengal.tech/">Visit Season 2</a>
+          </div>
         </div>
 
         <img src={gradient} alt="" className="footer_gradient" />
@@ -57,9 +62,8 @@ const Footer = () => {
       </div>
 
       <div
-        className={`footer_previousSeasons ${
-          hover.applyCss ? "move-taxi" : ""
-        }`}
+        className={`footer_previousSeasons ${hover.applyCss ? "move-taxi" : ""
+          }`}
       >
         <img src={taxi} alt="Taxi" className={hover.showText ? "hidden" : ""} />
         <div className="text-container">
