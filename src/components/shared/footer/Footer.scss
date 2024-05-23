@@ -12,6 +12,7 @@
 
   @media screen and (max-width: 430px) {
     height: auto;
+    padding-bottom: 3rem;
   }
 
   .footer_flexdiv {
@@ -103,12 +104,126 @@
     }
   }
 
+  .previous_season {
+    .footer_content {
+      .footer_policy {
+        a {
+          background-color: #131313;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          transition: all 0.2s ease-in-out;
+          border: 1px solid var(--h4bred);
+        }
+      }
+    }
+  }
+
   .footer_flexdiv:nth-of-type(2) {
     margin-top: 4rem;
 
     @media screen and (max-width: 430px) {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-top: 0rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .footer_flexdiv_special {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    position: absolute;
+    bottom: 1rem;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+    left: 46%;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 430px) {
+      display: none;
+    }
+
+    p {
+      padding-top: 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--h4bred);
+      transition: all 1.3s ease-in-out;
+      font-family: var(--heading-font);
+      text-decoration: none;
+    }
+
+    img {
+      width: 30%;
+      opacity: 0;
+      transition: all 2s ease-in-out;
+    }
+
+    .season_linkdiv {
+      position: absolute;
+      bottom: 15px;
+      left: 63%;
+      width: 100%;
+      transform: translateX(-50%);
+
+      display: flex;
+      gap: 1.2rem;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        color: var(--h4bred);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 17px;
+        transition: all 1.5s ease-in-out;
+        opacity: 0;
+        &:hover {
+          color: var(--h4bred);
+        }
+      }
+    }
+
+    &:hover {
+      img {
+        animation: taxiAnimation 2s ease-in-out forwards;
+      }
+
+      p {
+        transition: all 1.3s ease-in-out;
+        opacity: 0;
+      }
+
+      .season_linkdiv {
+        a {
+          transition: all 1.5s ease-in-out;
+          opacity: 1;
+          z-index: 99;
+        }
+      }
+    }
+
+    @keyframes taxiAnimation {
+      0% {
+        opacity: 0;
+        transform: translateX(0);
+      }
+      33.33% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      66.66% {
+        opacity: 1;
+        transform: translateX(calc(300% + 0.9rem));
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(calc(300% + 0.9rem));
+      }
     }
   }
 
@@ -121,6 +236,7 @@
 
     @media screen and (max-width: 430px) {
       gap: 1rem;
+      margin-top: 1.5rem;
     }
 
     img {
@@ -140,7 +256,11 @@
     right: 0;
     height: 30rem;
     width: 45%;
-    z-index:-1;
+    z-index: -1;
+
+    @media screen and (max-width: 430px) {
+      width: 105%;
+    }
   }
 
   .footer_tram {
@@ -153,119 +273,6 @@
 
     @media screen and (max-width: 430px) {
       display: none;
-    }
-  }
-
-  .footer_previousSeasons {
-    position: absolute;
-    bottom: 0.3rem;
-    height: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    overflow: hidden; /* To handle text overflow */
-
-    @media screen and (max-width: 430px) {
-      display: none;
-    }
-
-    img {
-      width: 6.8rem;
-      height: 4rem;
-      transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smoother transition */
-    }
-
-    .text-container {
-      display: flex;
-      gap: 1rem;
-    }
-
-    p, a {
-      font-size: 1.1rem;
-      font-weight: 600;
-      cursor: pointer;
-      color: var(--h4bred);
-      transition: color 0.2s ease-in-out;
-      font-family: var(--heading-font);
-      font-size: 1rem;
-      margin: 0;
-
-      &:hover {
-        color: var(--h4bred);
-      }
-
-      &:nth-of-type(2) {
-        // text-decoration: underline;
-        offset: 0.5rem;
-      }
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    .footer__previous__season__link {
-      color: var(--h4bred);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: all 0.2s ease-in-out;
-    }
-
-    .footer__previous__season__link:hover {
-      text-decoration: underline;
-    }
-
-    .second-text {
-      margin-left: 0.5rem;
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out; /* Smooth transition for text */
-    }
-
-    .second-text.hidden {
-      opacity: 0;
-    }
-
-    &.move-taxi img {
-      transform: translateX(
-        calc(100% + 0.9rem)
-      ); /* Moves taxi to the right side of the text */
-      opacity: 0; /* Fades the taxi out */
-    }
-  }
-
-  @keyframes moveTaxi {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(
-        calc(100% + 0.5rem)
-      ); /* Moves taxi to the right side of the text */
-    }
-  }
-
-  @keyframes moveTaxi {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(
-        calc(100% + 0.5rem)
-      ); /* Moves taxi to the right side of the text */
-    }
-  }
-
-  @keyframes moveTaxi {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(
-        calc(100% + 0.5rem)
-      ); /* Moves taxi to the right side of the text */
     }
   }
 }

@@ -28,7 +28,7 @@ const HeaderData = {
     backWordSpacing: "0.5rem",
     backWordSize_mobile: "75px",
     backWordSpacing_mobile: "0.2rem",
-    frontWord: "Past Sponsors",
+    frontWord: "Sponsors",
   },
   collaborators: {
     backWord: "Collaborators",
@@ -70,8 +70,8 @@ const HeaderData = {
 
     customClass: "core_header",
   },
-  advisor:{
-    backWord:"H4B",
+  advisor: {
+    backWord: "H4B",
     backWordSpacing: "0rem",
     backWordSize: "130px",
     backWordSize_mobile: "80px",
@@ -94,7 +94,7 @@ const HeaderData = {
     backWordSize: "130px",
     backWordSize_mobile: "80px",
     backWordSpacing_mobile: "0rem",
-  }
+  },
 };
 
 export default HeaderData;
