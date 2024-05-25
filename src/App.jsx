@@ -1,7 +1,9 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components/shared";
+import Notfound from "./pages/404/Notfound";
 import Brand from "./pages/brand/Brand";
+import Cloud from "./pages/cloud101/Cloud101";
 import CodeofConduct from "./pages/coc/CodeofConduct";
 import Discord from "./pages/discord/Discord";
 import Evangelist from "./pages/evangelist/Evangelist";
@@ -14,8 +16,11 @@ import "./styles/Globals.scss";
 const App = () => {
   return (
     <Router basename={import.meta.env.BASE_URL}>
-      {!window.location.pathname.includes("/tg") &&
-        !window.location.pathname.includes("/evangelist") && <Navbar />}
+      {(window.location.pathname === "/" ||
+        window.location.pathname === "/coc" ||
+        window.location.pathname === "brand" ||
+        window.location.pathname === "/events" ||
+        window.location.pathname === "team") && <Navbar />}
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -23,9 +28,11 @@ const App = () => {
           <Route exact path="/coc" element={<CodeofConduct />} />
           <Route exact path="/brand" element={<Brand />} />
           <Route exact path="/tg" element={<Telegram />} />
+          <Route exact path="/cloud-101" element={<Cloud />} />
           <Route exact path="/events" element={<Events />} />
           <Route exact path="/evangelist" element={<Evangelist />} />
           <Route exact path="/team" element={<Team />} />
+          <Route exact path="/*" element={<Notfound />} />
         </Routes>
       </main>
       <Footer />

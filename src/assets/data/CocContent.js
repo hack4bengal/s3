@@ -2,7 +2,7 @@ export const rules = [
   {
     title: "Respect: ",
     description:
-      "All participants must respect each other's opinions, beliefs, and values. Discriminatory language or behavior will not be tolerated. This includes, but is not limited to, sexism, racism, homophobia, and ableism.",
+      "All participants must respect each other's opinions, beliefs, and values. Discriminatory language or behavior will not be tolerated. This includes, but is not limited to, sexism, racism, and homophobia, and ableism.",
   },
   {
     title: "Collaboration: ",

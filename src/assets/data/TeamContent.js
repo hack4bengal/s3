@@ -1,16 +1,16 @@
 import sanmoy from "../images/TeamCardImages/Sanmoy.webp";
-import adarsh from "../images/TeamCardImages/adarsh.webp";
 import aditya from "../images/TeamCardImages/aditya.webp";
 import aksh from "../images/TeamCardImages/aksh.webp";
 import amandeep from "../images/TeamCardImages/amandeep.webp";
 import anirban from "../images/TeamCardImages/anirban.webp";
 import ankita from "../images/TeamCardImages/ankita.webp";
-import anurag from "../images/TeamCardImages/anurag.webp";
 import arindam from "../images/TeamCardImages/arindam.webp";
 import arkapravo from "../images/TeamCardImages/arkapravo.webp";
 import kiran from "../images/TeamCardImages/kiran.webp";
+import krishnendu from "../images/TeamCardImages/krishnendu.webp";
 import manish from "../images/TeamCardImages/manish.webp";
 import prachi from "../images/TeamCardImages/prachi.webp";
+import rabishankar from "../images/TeamCardImages/rabishankar.webp";
 import rajdeep from "../images/TeamCardImages/rajdeep.webp";
 import rinki from "../images/TeamCardImages/rinki.webp";
 import rohit from "../images/TeamCardImages/rohit.webp";
@@ -24,11 +24,10 @@ import sayanabha from "../images/TeamCardImages/sayanabha.webp";
 import shruti from "../images/TeamCardImages/shruti.webp";
 import shubham from "../images/TeamCardImages/shubham.webp";
 import souradeep from "../images/TeamCardImages/souradeep.webp";
+import swarup from "../images/TeamCardImages/swarup.webp";
+import tamal from "../images/TeamCardImages/tamal.webp";
 import tushar from "../images/TeamCardImages/tushar.webp";
 import utkarsh from "../images/TeamCardImages/utkarsh.webp";
-import swarup from "../images/TeamCardImages/swarup.webp";
-import tamal from  "../images/TeamCardImages/tamal.webp";
-import rabishankar from "../images/TeamCardImages/rabishankar.webp"
 
 const teamMember = {
   organizers: [
@@ -78,10 +77,10 @@ const teamMember = {
   ],
   advisor: [
     {
-      img:swarup,
-      name:"Dr. Swarup Kumar Ghosh",
-      title:"Associate Prof., Department of CSE, SNU",
-    }
+      img: swarup,
+      name: "Dr. Swarup Kumar Ghosh",
+      title: "Associate Prof., Department of CSE, SNU",
+    },
   ],
   core: [
     {
@@ -162,13 +161,6 @@ const teamMember = {
       twitter: "https://x.com/kiranmishra1706?t=jKakFAb5NRjRp6qLCl8BYA&s=09",
     },
     {
-      img: anurag,
-      name: "Anurag",
-      title: "MLSA BETA",
-      linkedIn: "https://www.linkedin.com/in/anuragroy485/",
-      twitter: "https://twitter.com/AnuragRoy485/",
-    },
-    {
       img: sayanabha,
       name: "Sayanabha",
       title: "Content Team @H4B",
@@ -231,19 +223,19 @@ const teamMember = {
       name: "Rohit",
       title: "GDSC Blockchain Lead",
       linkedIn: "https://www.linkedin.com/in/roy-rohit/",
-      twitter: "https://twitter.com/rohitroy_R",  
+      twitter: "https://twitter.com/rohitroy_R",
     },
     {
       img: rabishankar,
       name: "Rabishankar",
       title: "Graphics Team @H4B",
       linkedIn: "https://www.linkedin.com/in/rabisankar-mishra-8418a5225",
-      twitter: "https://x.com/Rabisankar21?t=O8FH-ya57mY-LjS5-TN7oQ&s=09",  
+      twitter: "https://x.com/Rabisankar21?t=O8FH-ya57mY-LjS5-TN7oQ&s=09",
     },
     {
       img: tamal,
       name: "Tamal",
-      title: "Lead Engineer @RevMaxx",
+      title: "Just a developer",
       linkedIn: "https://www.linkedin.com/in/tamalcodes/",
       twitter: "https://twitter.com/tamalCodes",
     },
@@ -253,6 +245,13 @@ const teamMember = {
       title: "Lead Engineer @RevMaxx",
       linkedIn: "https://www.linkedin.com/in/arkapravo-ghosh",
       twitter: "https://x.com/ArkapravoGhosh1",
+    },
+    {
+      img: krishnendu,
+      name: "Krishnendu",
+      title: "Media lead @GDSC SNU",
+      linkedIn:
+        "https://www.linkedin.com/in/krishnendu-samanta-25302a238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   ],
 };

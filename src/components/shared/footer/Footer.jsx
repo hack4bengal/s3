@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import footerContent from "../../../assets/data/FooterContent";
 import gradient from "../../../assets/images/FooterImages/gradient.png";
 import h4b from "../../../assets/images/FooterImages/hack4bengalbrand.webp";
@@ -19,11 +20,27 @@ const Footer = () => {
           <img src={h4b} alt="" className="h4b_logo" />
           <img src={h4b} alt="" className="opacity-0 h4b_logo_2" />
         </div>
+
+        {window?.innerWidth <= 430 && (
+          <div className="footer_flexdiv previous_season">
+            <div className="footer_content">
+              <div className="footer_policy">
+                <a href="https://s1.hack4bengal.tech/">1</a>
+                <a href="https://s2.hack4bengal.tech/">2</a>
+              </div>
+            </div>
+          </div>
+        )}
+
         <div className="footer_flexdiv">
           <div className="footer_content">
             <div className="footer_policy">
-              <p>Brand Assets</p>
-              <p>Code Of Conduct</p>
+              <Link to="/brand" target="_blank">
+                Brand Assets
+              </Link>
+              <Link to="/coc" target="_blank">
+                Code Of Conduct
+              </Link>
             </div>
 
             <div className="footer_email">
@@ -51,44 +68,12 @@ const Footer = () => {
         <img src={tram} alt="" className="footer_tram" />
       </div>
 
-      <div
-        className={`footer_previousSeasons ${
-          hover.applyCss ? "move-taxi" : ""
-        }`}
-        onMouseEnter={() => {
-          setHover({
-            applyCss: true,
-            showText: false,
-          });
-
-          setTimeout(() => {
-            setHover({
-              applyCss: true,
-              showText: true,
-            });
-          }, 850);
-        }}
-        onMouseLeave={() => {
-          setHover({
-            applyCss: false,
-            showText: false,
-          });
-
-          setTimeout(() => {
-            setHover({
-              applyCss: false,
-              showText: false,
-            });
-          }, 850);
-        }}
-      >
+      <div className="footer_flexdiv_special">
         <img src={taxi} alt="Taxi" />
-        <div className="text-container">
-          <p className={hover.showText ? "hidden" : ""}>
-            Checkout our Previous Seasons
-          </p>
-          <p className={hover.showText ? "" : "hidden"}>Season 1</p>
-          <p className={hover.showText ? "" : "hidden"}>Season 2</p>
+        <p>Checkout our Previous Seasons</p>
+        <div className="season_linkdiv">
+          <a href="https://s1.hack4bengal.tech/">Season 1</a>
+          <a href="https://s2.hack4bengal.tech/">Season 2</a>
         </div>
       </div>
     </footer>
