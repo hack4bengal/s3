@@ -3,35 +3,64 @@ import "./Timeline.scss";
 import HeaderData from "../../../assets/data/HeaderContent";
 import { Header } from "../../shared";
 import { EventTimeline } from "../../../assets/data/Timeline";
+import Modal from "./Modal";
 
 const Timeline = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentDate(new Date());
     }, 1000);
-
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className="timeline">
-      <Header {...HeaderData.timeline} />
-      <div className="timeline__content">
-        {EventTimeline.map((event, index) => (
-          <div key={index} className="timeline__event">
-            <div className="timeline__image-container">
-              <img
-                src={currentDate > event.date ? event.activeImage : event.inactiveImage}
-                alt={event.alt}
-              />
+    <>
+      {isModalOpen && <Modal closeModal={closeModal} />}
+      <div className="timeline">
+        <Header {...HeaderData.timeline} />
+        <div className="timeline__content">
+          {EventTimeline.map((event, index) => (
+            <div key={index} className="timeline__event">
+              <div className="timeline__d-flex">
+                <p
+                  className={`timeline__number ${
+                    currentDate > event.date ? "active" : "inactive"
+                  }`}
+                  onClick={() => {
+                    console.log("Clicked on event number");
+                    setIsModalOpen(true);
+                  }}
+                >
+                  {event.number}
+                </p>
+                <div
+                  className={`timeline__circle_details ${
+                    index === 0 ? "first-circle" : ""
+                  }`}
+                  onClick={() => {
+                    console.log("Clicked on circle details");
+                    setIsModalOpen(true);
+                  }}
+                >
+                  <img src={event.ringImg} alt="timeline" />
+                  <p>{event.circleText}</p>
+                </div>
+              </div>
+              <p className="timeline__date">{event.displayDate}</p>
             </div>
-            <p className="timeline__date">{event.displayDate}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

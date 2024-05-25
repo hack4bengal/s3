@@ -1,39 +1,43 @@
-import Inactive1 from "../images/timeline/Inactive1.png";
-import Inactive2 from "../images/timeline/Inactive2.png";
-import Inactive3 from "../images/timeline/Inactive3.png";
-import Inactive4 from "../images/timeline/Inactive4.png";
-import Active1 from "../images/timeline/Active1.png";
-import Active2 from "../images/timeline/Active2.png";
-import Active3 from "../images/timeline/Active3.png";
-import Active4 from "../images/timeline/Active4.png";
+import Ring_1 from "../images/timeline/Ring_1.png"
+import Ring_2 from "../images/timeline/Ring_2.png"
+import Ring_3 from "../images/timeline/Ring_3.png"
+import Ring_4 from "../images/timeline/Ring_4.png"
 
 export const EventTimeline = [
   {
     date: new Date('2024-06-01'),
-    activeImage: Active1,
-    inactiveImage: Inactive1,
+    number:1,
+    circleText:"Registration begins",
+    modelText:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     alt: "Registration Start Date",
-    displayDate: "1st June 2024"
+    displayDate: "1st June 2024",
+    ringImg:Ring_1
   },
   {
     date: new Date('2024-06-28'),
-    activeImage: Active2,
-    inactiveImage: Inactive2,
+    number:2,
+    circleText:"Hackathon Starts",
+    modelText:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     alt: "Hackathon Start Date",
-    displayDate: "28th June 2024"
+    displayDate: "28th June 2024",
+    ringImg:Ring_2
   },
   {
     date: new Date('2024-06-30'),
-    activeImage: Active3,
-    inactiveImage: Inactive3,
+    number:3,
+    circleText:"Hackathon In Progress",
     alt: "Hackathon Progress Date",
-    displayDate: "28th - 30th June 2024"
+    modelText:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    displayDate: "28th - 30th June 2024",
+    ringImg:Ring_3
   },
   {
     date: new Date('2024-07-01'),
-    activeImage: Active4,
-    inactiveImage: Inactive4,
+    number:4,
+    circleText:"Hackathon Ends",
+    modelText:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     alt: "Hackathon End Date",
-    displayDate: "30th June 2024"
+    displayDate: "30th June 2024",
+    ringImg:Ring_4
   },
 ];
