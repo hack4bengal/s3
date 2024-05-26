@@ -20,6 +20,18 @@ const Footer = () => {
           <img src={h4b} alt="" className="h4b_logo" />
           <img src={h4b} alt="" className="opacity-0 h4b_logo_2" />
         </div>
+
+        {window?.innerWidth <= 430 && (
+          <div className="footer_flexdiv previous_season">
+            <div className="footer_content">
+              <div className="footer_policy">
+                <a href="https://s1.hack4bengal.tech/">1</a>
+                <a href="https://s2.hack4bengal.tech/">2</a>
+              </div>
+            </div>
+          </div>
+        )}
+
         <div className="footer_flexdiv">
           <div className="footer_content">
             <div className="footer_policy">
@@ -61,19 +73,12 @@ const Footer = () => {
         <img src={tram} alt="" className="footer_tram" />
       </div>
 
-      <div
-        className={`footer_previousSeasons ${hover.applyCss ? "move-taxi" : ""
-          }`}
-      >
-        <img src={taxi} alt="Taxi" className={hover.showText ? "hidden" : ""} />
-        <div className="text-container">
-          <p className={hover.showText ? "hidden" : ""}>
-            Checkout our Previous Seasons
-          </p>
-          <div className="season_linkdiv">
-            <a href="https://s1.hack4bengal.tech/">Season 1</a>
-            <a href="https://s2.hack4bengal.tech/">Season 2</a>
-          </div>
+      <div className="footer_flexdiv_special">
+        <img src={taxi} alt="Taxi" />
+        <p>Checkout our Previous Seasons</p>
+        <div className="season_linkdiv">
+          <a href="https://s1.hack4bengal.tech/">Season 1</a>
+          <a href="https://s2.hack4bengal.tech/">Season 2</a>
         </div>
       </div>
     </footer>
