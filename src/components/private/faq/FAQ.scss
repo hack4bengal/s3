@@ -9,11 +9,12 @@
   .faq__content {
     margin-top: 8.1rem;
     margin-bottom: 3rem;
-    width: 69.99475rem;
+    width: 80%;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     gap: 5.625rem;
+    max-width: 1000px;
 
     @media screen and (max-width: 576px) {
       margin-top: 4rem;
@@ -49,7 +50,8 @@
     .container {
       margin: 0 auto;
       padding: 0 4rem 4rem 4rem;
-      width: 48rem;
+      width: 100%;
+
       @media screen and (max-width: 576px) {
         max-width: 95vw;
         padding: 1rem;
@@ -111,12 +113,13 @@
       }
     }
 
-    .accordion button[aria-expanded="true"] + .accordion-content {
+    .accordion button[aria-expanded="true"]+.accordion-content {
       opacity: 1;
       max-height: 9em;
       transition: all 200ms linear;
       will-change: opacity, max-height;
     }
+
     .accordion .accordion-content {
       opacity: 0;
       max-height: 0;
@@ -124,6 +127,7 @@
       transition: opacity 200ms linear, max-height 200ms linear;
       will-change: opacity, max-height;
     }
+
     .accordion .accordion-content p {
       font-size: 15px;
       font-weight: 300;
@@ -165,7 +169,7 @@
       top: 223px;
       left: 107px;
 
-      @media screen and (max-width: 1556px){
+      @media screen and (max-width: 1556px) {
         display: none;
       }
     }
