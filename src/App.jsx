@@ -2,10 +2,10 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components/shared";
 import Notfound from "./pages/404/Notfound";
+import Forward from "./pages/Forward";
 import Brand from "./pages/brand/Brand";
 import Cloud from "./pages/cloud101/Cloud101";
 import CodeofConduct from "./pages/coc/CodeofConduct";
-import Discord from "./pages/discord/Discord";
 import Evangelist from "./pages/evangelist/Evangelist";
 import Events from "./pages/events/Events";
 import Home from "./pages/home/Home";
@@ -24,7 +24,17 @@ const App = () => {
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/discord" element={<Discord />} />
+          <Route
+            exact
+            path="/discord"
+            element={
+              <Forward
+                pathname={"/discord"}
+                title={"Discord"}
+                url={"https://discord.gg/hack4bengal"}
+              />
+            }
+          />
           <Route exact path="/coc" element={<CodeofConduct />} />
           <Route exact path="/brand" element={<Brand />} />
           <Route exact path="/tg" element={<Telegram />} />
