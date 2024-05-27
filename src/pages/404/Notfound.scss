@@ -1,0 +1,113 @@
+.notfound__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100dvh;
+  width: 100%;
+  padding: 0 200px;
+  gap: 40px;
+  position: relative;
+  cursor: none;
+
+  @media screen and (max-width: 576px) {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 1556px) {
+    flex-direction: column;
+    padding: 89px 42px;
+  }
+
+  .notfound__content__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 800px;
+
+    @media screen and (max-width: 1556px) {
+      align-items: center;
+    }
+
+    span,
+    p {
+      font-size: 3em;
+      font-weight: 700;
+      font-family: var(--heading-font);
+    }
+
+    .notfound__title {
+      color: #1b1b1b;
+      text-shadow: rgb(255, 255, 255) 1px 0px 0px,
+        rgb(255, 255, 255) 0.540302px 0.841471px 0px,
+        rgb(255, 255, 255) -0.416147px 0.909297px 0px,
+        rgb(255, 255, 255) -0.989992px 0.14112px 0px,
+        rgb(255, 255, 255) -0.653644px -0.756802px 0px,
+        rgb(255, 255, 255) 0.283662px -0.958924px 0px,
+        rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+    }
+
+    .notfound__description {
+      color: white;
+
+      @media screen and (max-width: 1556px) {
+        text-align: center;
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: 2em;
+      }
+    }
+
+    .notfound__homepage_link {
+      font-size: 1em;
+      font-weight: 500;
+      color: var(--h4bred);
+      text-decoration: none;
+      font-family: var(--heading-font);
+      border-bottom: 1px solid var(--h4bred);
+      padding-bottom: 2px;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+        @media screen and (max-width: 1556px) {
+            margin-top: 1.5em;
+        }
+    }
+  }
+
+  .notfound__img__container {
+    img {
+      width: 100%;
+      height: auto;
+      pointer-events: none;
+    }
+  }
+
+  .notfound__pet__cursor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 100%;
+    background-color: var(--h4bred);
+    height: 110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
+
+    span {
+      font-size: 1em;
+      font-weight: 500;
+      font-family: var(--heading-font);
+    }
+  }
+}
