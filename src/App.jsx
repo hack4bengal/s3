@@ -35,6 +35,17 @@ const App = () => {
               />
             }
           />
+          <Route
+            exact
+            path="/register"
+            element={
+              <Forward
+                pathname={"/register"}
+                title={"Registration"}
+                url={"https://discord.gg/hack4bengal"}
+              />
+            }
+          />
           <Route exact path="/coc" element={<CodeofConduct />} />
           <Route exact path="/brand" element={<Brand />} />
           <Route exact path="/tg" element={<Telegram />} />
