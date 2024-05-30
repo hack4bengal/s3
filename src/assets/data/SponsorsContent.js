@@ -20,7 +20,7 @@ import graph from "../images/SponsorImages/graph.png";
 // import shardeum from "../images/SponsorImages/shardeum.webp";
 // import snu from "../images/SponsorImages/snu.webp";
 // import solana from "../images/SponsorImages/solana.webp";
-// import xyz from "../images/SponsorImages/xyz.webp";
+import xyz from "../images/SponsorImages/xyz.webp";
 // import zeeve from "../images/SponsorImages/zeeve.webp";
 
 const sponsors = {
@@ -62,6 +62,13 @@ const sponsors = {
     //   img: ff,
     //   link: "https://www.flow.com",
     // },
+  ],
+  Domain: [
+    {
+      name: "xyz",
+      img: xyz,
+      link: "https://www.xyz.com",
+    },
   ],
 };
 // {
@@ -162,9 +169,5 @@ const sponsors = {
 //   link: "https://www.fvm.com",
 // },
 // {
-//   name: "Go Daddy",
-//   img: xyz,
-//   link: "https://www.flow.com",
-// },
 
 export default sponsors;
