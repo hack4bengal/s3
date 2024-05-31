@@ -105,6 +105,10 @@
   }
 
   .previous_season {
+    @media screen and (min-width: 430px) {
+      display: none;
+    }
+
     .footer_content {
       .footer_policy {
         a {
@@ -265,11 +269,11 @@
 
   .footer_tram {
     position: absolute;
-    top: 1.7rem;
+    top: 200px;
     right: 0;
-    height: 25rem;
-    width: 52%;
-    opacity: 0.8;
+    height: 334px;
+    width: 720px;
+    opacity: 0.65;
 
     @media screen and (max-width: 430px) {
       display: none;

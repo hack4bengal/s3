@@ -14,7 +14,6 @@ import triangleVector from "../../../assets/images/FAQImages/triangle.svg";
 import zigZak1Vector from "../../../assets/images/FAQImages/zig_zak_1.svg";
 import zigZak2Vector from "../../../assets/images/FAQImages/zig_zak_2.svg";
 
-
 const Faq = () => {
   const faqContent = [
     {
@@ -58,14 +57,6 @@ const Faq = () => {
           </p>
         </div>
 
-        {/* <div className="faq_content">
-          {faqContent.map((item, index) => {
-            return <div className="faq_item">
-
-            </div>;
-          })}
-        </div> */}
-
         <div className="container">
           <div className="accordion">
             {faqContent.map((item, index) => {
@@ -79,7 +70,7 @@ const Faq = () => {
                     }}
                   >
                     <p className="accordion-title">{item?.question}</p>
-                    {/* <span className="icon"></span> */}
+
                     <div className="icon">
                       {openFaq !== index ? <MdAdd /> : <FiMinus />}
                     </div>
@@ -102,7 +93,7 @@ const Faq = () => {
                 <p className="accordion-title">
                   I have more questions, where and how can i reach out ?
                 </p>
-                {/* <span className="icon"></span> */}
+
                 <div className="icon">
                   {openFaq !== 5 ? <MdAdd /> : <FiMinus />}
                 </div>
@@ -129,14 +120,46 @@ const Faq = () => {
         </div>
       </div>
       <div className="faq__vector__container">
-        <img src={messageVector} alt="message vector" className="faq__message__vector faq__emojis" />
-        <img src={questionMark1Vector} alt="question mark vector" className="faq__question_mark_1__vector faq__emojis" />
-        <img src={questionMark2Vector} alt="question mark vector" className="faq__question_mark_2__vector faq__emojis" />
-        <img src={randomShape1Vector} alt="random shape vector" className="faq__random_shape_1__vector faq__emojis" />
-        <img src={squareVector} alt="square vector" className="faq__square__vector faq__emojis" />
-        <img src={triangleVector} alt="triangle vector" className="faq__triangle__vector faq__emojis" />
-        <img src={zigZak1Vector} alt="zig zag vector" className="faq__zig_zak_1__vector faq__emojis" />
-        <img src={zigZak2Vector} alt="zig zag vector" className="faq__zig_zak_2__vector faq__emojis" />
+        <img
+          src={messageVector}
+          alt="message vector"
+          className="faq__message__vector faq__emojis"
+        />
+        <img
+          src={questionMark1Vector}
+          alt="question mark vector"
+          className="faq__question_mark_1__vector faq__emojis"
+        />
+        <img
+          src={questionMark2Vector}
+          alt="question mark vector"
+          className="faq__question_mark_2__vector faq__emojis"
+        />
+        <img
+          src={randomShape1Vector}
+          alt="random shape vector"
+          className="faq__random_shape_1__vector faq__emojis"
+        />
+        <img
+          src={squareVector}
+          alt="square vector"
+          className="faq__square__vector faq__emojis"
+        />
+        <img
+          src={triangleVector}
+          alt="triangle vector"
+          className="faq__triangle__vector faq__emojis"
+        />
+        <img
+          src={zigZak1Vector}
+          alt="zig zag vector"
+          className="faq__zig_zak_1__vector faq__emojis"
+        />
+        <img
+          src={zigZak2Vector}
+          alt="zig zag vector"
+          className="faq__zig_zak_2__vector faq__emojis"
+        />
       </div>
     </div>
   );

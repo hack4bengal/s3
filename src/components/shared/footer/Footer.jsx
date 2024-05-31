@@ -21,16 +21,14 @@ const Footer = () => {
           <img src={h4b} alt="" className="opacity-0 h4b_logo_2" />
         </div>
 
-        {window?.innerWidth <= 430 && (
-          <div className="footer_flexdiv previous_season">
-            <div className="footer_content">
-              <div className="footer_policy">
-                <a href="https://s1.hack4bengal.tech/">1</a>
-                <a href="https://s2.hack4bengal.tech/">2</a>
-              </div>
+        <div className="footer_flexdiv previous_season">
+          <div className="footer_content">
+            <div className="footer_policy">
+              <a href="https://s1.hack4bengal.tech/">1</a>
+              <a href="https://s2.hack4bengal.tech/">2</a>
             </div>
           </div>
-        )}
+        </div>
 
         <div className="footer_flexdiv">
           <div className="footer_content">
