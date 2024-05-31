@@ -37,6 +37,17 @@ const App = () => {
           />
           <Route
             exact
+            path="/cp"
+            element={
+              <Forward
+                pathname={"/cp"}
+                title={"Community Partners"}
+                url={"https://lu.ma/H4B-community-partners"}
+              />
+            }
+          />
+          <Route
+            exact
             path="/register"
             element={
               <Forward
