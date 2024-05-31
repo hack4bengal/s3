@@ -40,7 +40,7 @@ const App = () => {
             path="/cp"
             element={
               <Forward
-                pathname={"/cp"}
+                pathname={"/community"}
                 title={"Community Partners"}
                 url={"https://lu.ma/H4B-community-partners"}
               />
