@@ -37,7 +37,7 @@ const App = () => {
           />
           <Route
             exact
-            path="/cp"
+            path="/community"
             element={
               <Forward
                 pathname={"/community"}
