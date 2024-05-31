@@ -9,9 +9,9 @@ import {
   Prizes,
   Sponsors,
   Testimonials,
-  Timeline,
 } from "../../components/private";
 import "./Home.scss";
+import Timer from "../../components/private/timer/Timer";
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       <Landing />
       {window.innerWidth < 600 && <Marquee />}
       <Suspense fallback={<div>Loading...</div>}>
-        <Timeline />
+        <Timer />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <About />
@@ -30,9 +30,9 @@ const Home = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Sponsors />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <Collaborators />
-      </Suspense>
+      </Suspense> */}
       <Suspense fallback={<div>Loading...</div>}>
         <Mentors />
       </Suspense>

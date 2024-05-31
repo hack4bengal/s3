@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import ghori from "../../../assets/images/timer/ghori.png";
 import letters from "../../../assets/images/timer/letters.png";
 import mask from "../../../assets/images/timer/mask.png";
-import "./Timeline.scss";
+import "./Timer.scss";
 
-const Timeline = () => {
+const Timer = () => {
   const calculateTimeLeft = () => {
     const targetDate = new Date("2024-06-28T18:00:00");
     const now = new Date();
@@ -61,14 +61,14 @@ const Timeline = () => {
               <p className="colon">:</p>
 
               <div className="time">
-                <p>{timeLeft.hours}</p>
+                <p>{timeLeft.hours === 0 ? "00" : timeLeft.hours}</p>
                 <p>Hours</p>
               </div>
 
               <p className="colon">:</p>
 
               <div className="time">
-                <p>{timeLeft.minutes}</p>
+                <p>{timeLeft.minutes === 0 ? "00" : timeLeft?.minutes}</p>
                 <p>Mins</p>
               </div>
             </div>
@@ -81,4 +81,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default Timer;

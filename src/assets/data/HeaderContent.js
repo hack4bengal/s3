@@ -44,8 +44,8 @@ const HeaderData = {
     backWordMobile: "Experts",
     backWordSize_mobile: "78px",
     backWordSpacing_mobile: "0.2rem",
-    frontWord: "Previous Mentors",
-    frontWordMobile: "Past Mentors",
+    frontWord: "Mentors/Judges",
+    frontWordMobile: "Mentors/Judges",
   },
   testimonials: {
     backWord: "Stories",
