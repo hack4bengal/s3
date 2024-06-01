@@ -1,3 +1,4 @@
+/* Modal Styles */
 .modal {
     position: fixed;
     top: 0;
@@ -9,49 +10,48 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    animation: fadeIn 0.3s ease-in-out; 
-    
+    animation: fadeIn 0.3s ease-in-out;
+
     &__content {
-        background: #fff;
+        background: #393939;
         padding: 10px 10px 10px 30px;
         border-radius: 10px;
         position: relative;
         height: 400px;
         width: 300px;
-        transform: scale(0.7); 
+        transform: scale(0.7);
         animation: scaleIn 0.3s ease-in-out forwards;
-        @media screen and (max-width: 334px){
+        // animation: slideUpFadeOut 0.3s ease-in-out forwards;
+        @media screen and (max-width: 334px) {
             width: 250px;
         }
     }
 
-    &__close{
+    &__close {
         display: flex;
         justify-content: flex-end;
-        button{
-            padding: 10px 20px;
-            border-radius: 10px;
-            border: 0;
+        button {
+            background: transparent;
+            border: none;
+            outline: none;
             cursor: pointer;
-            font-weight: 500;
-            font-family: var(--body-font);
-            &:hover{
-                color: red;
-            }
         }
     }
-    
+
 
     ol {
         :nth-child(1) {
             margin-top: 10px;
         }
         li {
-            color: black;
+            color: #fff;
             font-family: var(--body-font);
             padding: 10px 5px;
         }
     }
+}
+.closing{
+    animation: fadeOut 0.3s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -71,3 +71,17 @@
         transform: scale(1);
     }
 }
+
+
+
+@keyframes slideUpFadeOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
