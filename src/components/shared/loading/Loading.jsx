@@ -2,8 +2,6 @@ import React from "react";
 import "./Loading.css";
 
 const Loading = () => {
-  console.log(document.referrer);
-
   return (
     <div className="loading_parent">
       <div className="hexagon" aria-label="Animated hexagonal ripples">

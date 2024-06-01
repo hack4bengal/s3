@@ -27,8 +27,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/check-discord", (req, res) => {
-  const referer = req.get("Referer");
-  if (referer && referer.includes("discord.com")) {
+  console.log("🚀 ~ app.get ~ req:", req);
+  const referrer = req.headers["Referer"] || null;
+  console.log("🚀 ~ app.get ~ referer:", referrer);
+
+  if (referrer && referrer.includes("discord.com")) {
     res.json({ fromDiscord: true });
   } else {
     res.json({ fromDiscord: false });

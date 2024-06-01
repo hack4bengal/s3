@@ -6,6 +6,8 @@ import { checkDiscord } from "../../services/api";
 
 const Surprise = () => {
   const [isFromDiscord, setIsFromDiscord] = useState(false);
+  const referrer = window.document.referrer;
+  console.log("🚀 ~ Surprise ~ referrer:", referrer);
 
   const { data, isLoading } = useQuery({
     queryKey: ["checkdc"],
