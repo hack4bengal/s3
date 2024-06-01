@@ -17,21 +17,22 @@
     gap: 6rem;
     margin-top: 4rem;
 
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 900px) {
       padding: 2rem;
-      gap: 4rem;
+      gap:4rem 9rem ;
+    }
+    @media screen and (max-width: 412px) {
+      padding: 2rem 1rem;
+      gap: 2rem 4rem ;
     }
     @media screen and (max-width: 540px) {
-      gap: 3rem;
+      gap: 2rem 6rem;
+    }
+    @media screen and (max-width: 400px) {
+      gap: 2rem 4rem;
     }
 
-    @media screen and (max-width: 376px) {
-      padding: 2rem 1rem;
-      gap: 3rem;
-    }
-    @media screen and (max-width: 350px) {
-      gap: 2rem;
-    }
+
 
     .timeline__event {
       display: flex;
@@ -114,7 +115,7 @@
           }
         }
       }
-
+     
       .timeline__date {
         padding: 0.5rem;
         text-align: center;
@@ -122,8 +123,8 @@
         width: 100%;
         border-radius: 5px;
         font-family: var(--body-font);
-        font-size: 0.875rem;
-        font-weight: 600;
+        font-size: 12px;
+        // font-weight: 600;
         cursor: pointer;
         color: #ffffff;
         border: none;
@@ -133,6 +134,26 @@
           padding: 0.25rem;
         }
       }
+      .active__btn{
+        padding: 0.5rem;
+        text-align: center;
+        background-color:#fff;
+        width: 100%;
+        border-radius: 5px;
+        font-family: var(--body-font);
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        color: black;
+        border: none;
+        outline:none;
+        @media screen and (max-width: 576px) {
+          font-size: 0.75rem;
+          padding: 0.25rem;
+        }
+      }
+     
+
     }
   }
 }

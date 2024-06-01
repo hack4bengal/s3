@@ -10,7 +10,7 @@ export const EventTimeline = [
     circleText:"Registration begins",
     modelText:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     alt: "Registration Start Date",
-    displayDate: "1st June 2024",
+    displayDate: "1st June",
     ringImg:Ring_1
   },
   {
@@ -19,7 +19,7 @@ export const EventTimeline = [
     circleText:"Hackathon Starts",
     modelText:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     alt: "Hackathon Start Date",
-    displayDate: "28th June 2024",
+    displayDate: "28th June",
     ringImg:Ring_2
   },
   {
@@ -28,7 +28,7 @@ export const EventTimeline = [
     circleText:"Hackathon In Progress",
     alt: "Hackathon Progress Date",
     modelText:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    displayDate: "28th - 30th June 2024",
+    displayDate: "28-30th June",
     ringImg:Ring_3
   },
   {
@@ -37,7 +37,7 @@ export const EventTimeline = [
     circleText:"Hackathon Ends",
     modelText:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     alt: "Hackathon End Date",
-    displayDate: "30th June 2024",
+    displayDate: "30th June",
     ringImg:Ring_4
   },
 ];

@@ -1,4 +1,4 @@
-/* Modal Styles */
+
 .modal {
     position: fixed;
     top: 0;
@@ -17,18 +17,33 @@
         padding: 10px 10px 10px 30px;
         border-radius: 10px;
         position: relative;
-        height: 400px;
-        width: 300px;
+        height: 480px;
+        width: 480px;
         transform: scale(0.7);
         animation: scaleIn 0.3s ease-in-out forwards;
-        @media screen and (max-width: 334px) {
-            width: 250px;
+        @media screen and (max-width: 549px) {
+            height: 400px;
+            width: 400px;
         }
+        @media screen and (max-width: 400px) {
+            height: 400px;
+            width: 350px;
+        }
+        @media screen and (max-width: 370px) {
+            height: 400px;
+            width: 300px;
+        }
+        @media screen and (max-width: 300px) {
+            height: 400px;
+            width: 280px;
+        }
+   
     }
 
     &__close {
         display: flex;
         justify-content: flex-end;
+        padding: 20px 20px 5px 20px;
         button {
             background: transparent;
             border: none;
