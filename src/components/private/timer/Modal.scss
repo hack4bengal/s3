@@ -21,7 +21,6 @@
         width: 300px;
         transform: scale(0.7);
         animation: scaleIn 0.3s ease-in-out forwards;
-        // animation: slideUpFadeOut 0.3s ease-in-out forwards;
         @media screen and (max-width: 334px) {
             width: 250px;
         }
@@ -50,9 +49,7 @@
         }
     }
 }
-.closing{
-    animation: fadeOut 0.3s ease-in-out forwards;
-}
+
 
 @keyframes fadeIn {
     from {
@@ -74,14 +71,5 @@
 
 
 
-@keyframes slideUpFadeOut {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-}
+
 
