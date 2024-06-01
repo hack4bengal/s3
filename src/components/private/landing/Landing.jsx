@@ -2,8 +2,8 @@ import React from "react";
 import blob_left from "../../../assets/images/LandingImages/blob_left.webp";
 import blob_right from "../../../assets/images/LandingImages/blob_right.webp";
 import victoria from "../../../assets/images/LandingImages/victoria.png";
-import {Marquee} from "../../private";
-import {Button} from "../../shared";
+import { Marquee } from "../../private";
+import { Button } from "../../shared";
 import "./Landing.scss";
 
 const Landing = () => {
@@ -27,7 +27,7 @@ const Landing = () => {
               <Button type="solid" to={"https://discord.gg/hack4bengal"}>
                 Join Discord
               </Button>
-              <Button type="outline" to={"https://forms.gle/pXk7cvKB9CTvhCbQ9"}>
+              <Button type="outline" to={"/"} isDisabled={true}>
                 Pre-register
               </Button>
             </div>
