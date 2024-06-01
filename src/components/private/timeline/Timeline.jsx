@@ -1,58 +1,81 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import ghori from "../../../assets/images/timer/ghori.png";
+import letters from "../../../assets/images/timer/letters.png";
+import mask from "../../../assets/images/timer/mask.png";
 import "./Timeline.scss";
-import HeaderData from "../../../assets/data/HeaderContent";
-import { Header } from "../../shared";
-import { EventTimeline } from "../../../assets/data/Timeline";
-import Modal from "./Modal";
 
 const Timeline = () => {
-  const [currentDate, setCurrentDate] = useState(new Date());
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const calculateTimeLeft = () => {
+    const targetDate = new Date("2024-06-28T18:00:00");
+    const now = new Date();
+    const difference = targetDate - now;
+
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    } else {
+      timeLeft = {
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentDate(new Date());
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <>
-      {isModalOpen && <Modal closeModal={closeModal} />}
-      <div className="timeline">
-        <Header {...HeaderData.timeline} />
-        <div className="timeline__content">
-          {EventTimeline.map((event, index) => (
-            <div key={index} className="timeline__event">
-              <div className="timeline__d-flex">
-                <p
-                  className={`timeline__number ${currentDate > event.date ? "active" : "inactive"
-                    }`}
-                >
-                  {event.number}
-                </p>
-                <div
-                  className={`timeline__circle_details ${index === 0 ? "first-circle" : ""
-                    }`}
-                >
-                  <img src={event.ringImg} alt="timeline" />
-                  <p>{event.circleText}</p>
-                </div>
+      <div className="timeline__parent" id="timeline">
+        <div className="body">
+          <img src={ghori} alt="" className="ghori" />
+
+          <div className="timer">
+            <h1 className="header_1">
+              Journey <br /> Begins In
+            </h1>
+
+            <div className="countdown">
+              <div className="time">
+                <p>{timeLeft.days}</p>
+                <p>Days</p>
               </div>
-              <button className="timeline__date"
-              onClick={() => {setIsModalOpen(true)}}
-              >
-                {event.displayDate}
-                </button>
+
+              <p className="colon">:</p>
+
+              <div className="time">
+                <p>{timeLeft.hours}</p>
+                <p>Hours</p>
+              </div>
+
+              <p className="colon">:</p>
+
+              <div className="time">
+                <p>{timeLeft.minutes}</p>
+                <p>Mins</p>
+              </div>
             </div>
-          ))}
+          </div>
         </div>
+        <img src={mask} alt="" className="mask" />
+        <img src={letters} alt="" className="letters" />
       </div>
     </>
   );

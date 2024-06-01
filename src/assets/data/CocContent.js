@@ -71,7 +71,6 @@ export const breachContents = {
         { name: "Shubham Tribedi: ", email: "shubham@hack4bengal.tech" },
         { name: "Sagnik Mitra: ", email: "sagnik@hack4bengal.tech" },
         { name: "Manish Kumar Barnwal: ", email: "manish@hack4bengal.tech" },
-        { name: "Kajal Jaiswal: ", email: "kajalj181101@gmail.com" },
         { name: "Sanmoy Dam: ", email: "sdam27022002@gmail.com" },
         { name: "Tushar Mukhopadhyay: ", email: "connectme@tusharm.in" },
         { name: "Ankita Panda: ", email: "connectankitapanda@gmail.com" },

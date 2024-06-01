@@ -1,6 +1,5 @@
 import sanmoy from "../images/TeamCardImages/Sanmoy.webp";
 import aditya from "../images/TeamCardImages/aditya.webp";
-import aksh from "../images/TeamCardImages/aksh.webp";
 import amandeep from "../images/TeamCardImages/amandeep.webp";
 import anirban from "../images/TeamCardImages/anirban.webp";
 import ankita from "../images/TeamCardImages/ankita.webp";
@@ -97,14 +96,7 @@ const teamMember = {
       linkedIn: "https://linkedin.com/in/-prachi1710",
       twitter: "https://twitter.com/_prachi1710",
     },
-    {
-      img: aksh,
-      name: "Aksh",
-      title: "PR Team @H4B",
-      linkedIn:
-        "https://www.linkedin.com/in/aksh-bhardwaj-6125a81b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      twitter: "https://x.com/akshbhardwaj7?t=JmH0G4iBOJIMhoT2gaiCpg&s=09",
-    },
+
     {
       img: sanyukta,
       name: "Sanyukta",
@@ -214,7 +206,7 @@ const teamMember = {
     {
       img: saurabh,
       name: "Saurabh",
-      title: "Web Designer",
+      title: "Web Designer @H4B",
       linkedIn: "https://in.linkedin.com/in/communicatewithsaurabh",
       twitter: "https://x.com/SaurabhKJha_Dev",
     },
