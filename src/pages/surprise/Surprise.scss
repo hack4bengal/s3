@@ -1,0 +1,96 @@
+.surprise_landing {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  justify-items: center;
+  font-weight: 600;
+  font-family: sans-serif;
+  height: 100vh;
+
+  .surprise_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    justify-items: center;
+    font-weight: 600;
+    font-family: sans-serif;
+    height: 100vh;
+    font-family: var(--body-font);
+    p {
+      font-size: 1.5rem;
+    }
+    h1 {
+      font-size: 3rem;
+      span {
+        color: var(--h4bred);
+      }
+    }
+
+    // .red_chatbox {
+    //   background-color: var(--h4bred); /* Background color */
+    //   color: white; /* Text color */
+    //   padding: 1rem; /* Padding inside the chatbox */
+    //   border-radius: 10px; /* Rounded corners */
+    //   margin-top: 1rem; /* Margin on top */
+    //   font-size: 1.5rem; /* Font size */
+
+    //   /* Notch at the bottom */
+    // }
+
+    .talk-bubble {
+      display: inline-block;
+      position: relative;
+      width: 250px;
+      height: auto;
+      background-color: var(--h4bred);
+      padding: 1rem;
+      border-radius: 10px;
+      position: absolute;
+      .talktext {
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .border {
+      border: 8px solid #666;
+    }
+    .round {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+    }
+
+    .tri-right.border.btm-left:before {
+      content: " ";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: -8px;
+      right: auto;
+      top: auto;
+      bottom: -40px;
+      border: 32px solid;
+      border-color: transparent transparent transparent #666;
+    }
+    .tri-right.btm-left:after {
+      content: " ";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: -21px;
+      right: auto;
+      top: auto;
+      bottom: -27px;
+      border: 33px solid;
+
+      border-color: var(--h4bred) transparent transparent transparent;
+    }
+  }
+}
