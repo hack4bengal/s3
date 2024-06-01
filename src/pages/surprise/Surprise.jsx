@@ -13,6 +13,7 @@ const Surprise = () => {
     queryKey: ["checkdc"],
     queryFn: () => checkDiscord(),
     onSuccess: (data) => {
+      console.log("🚀 ~ Surprise ~ data:", data);
       setIsFromDiscord(data?.fromDiscord);
     },
     refetchOnMount: true,

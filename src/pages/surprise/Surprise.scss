@@ -2,6 +2,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -15,8 +16,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     margin: auto;
     justify-items: center;
+    position: relative;
     font-weight: 600;
     font-family: sans-serif;
     height: 100vh;
@@ -51,6 +54,9 @@
       padding: 1rem;
       border-radius: 10px;
       position: absolute;
+      top: 36%;
+      left: 81%;
+      transform: translate(-50%, -50%);
       .talktext {
         p {
           font-size: 1.2rem;
@@ -84,10 +90,11 @@
       position: absolute;
       width: 0;
       height: 0;
-      left: -21px;
+      left: -20px;
       right: auto;
       top: auto;
-      bottom: -27px;
+      rotate: -43deg;
+      bottom: -32.6px;
       border: 33px solid;
 
       border-color: var(--h4bred) transparent transparent transparent;
