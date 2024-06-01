@@ -45,7 +45,7 @@ const Timer = () => {
                   <p>{event.circleText}</p>
                 </div>
               </div>
-              <button className={` ${currentDate > event.date ? "active__btn" : "timeline__date"}`}
+              <button className="timeline__date"
               onClick={() => {setIsModalOpen(true)}}
               >
                 {event.displayDate}
