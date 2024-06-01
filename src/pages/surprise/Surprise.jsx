@@ -1,21 +1,28 @@
 // src/App.jsx
-import React, { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import React, { useState } from "react";
+import Loading from "../../components/shared/loading/Loading";
+import { checkDiscord } from "../../services/api";
 
 const Surprise = () => {
   const [isFromDiscord, setIsFromDiscord] = useState(false);
 
-  useEffect(() => {
-    const referrer = document.referrer;
-    console.log("🚀 ~ useEffect ~ document:", document);
-    console.log("Document Referrer:", referrer); // Log the referrer to the console
-    if (referrer.includes("discord.com")) {
-      setIsFromDiscord(true);
-    }
-  }, []);
+  const { data, isLoading } = useQuery({
+    queryKey: ["checkdc"],
+    queryFn: () => checkDiscord(),
+    onSuccess: (data) => {
+      setIsFromDiscord(data?.fromDiscord);
+    },
+    refetchOnMount: true,
+    refetchOnWindowFocus: false,
+    retry: 2,
+  });
 
   return (
     <div>
-      {isFromDiscord ? (
+      {isFromDiscord === null || isLoading ? (
+        <Loading />
+      ) : isFromDiscord ? (
         <h1>Surprise! You came from Discord!</h1>
       ) : (
         <h1>Unauthorized access</h1>
