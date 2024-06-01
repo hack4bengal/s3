@@ -10,6 +10,7 @@ import CodeofConduct from "./pages/coc/CodeofConduct";
 import Evangelist from "./pages/evangelist/Evangelist";
 import Events from "./pages/events/Events";
 import Home from "./pages/home/Home";
+import Surprise from "./pages/surprise/Surprise";
 import Team from "./pages/team/Team";
 import Telegram from "./pages/telegram/Telegram";
 import "./styles/Globals.scss";
@@ -67,6 +68,7 @@ const App = () => {
             <Route exact path="/evangelist" element={<Evangelist />} />
             <Route exact path="/team" element={<Team />} />
             <Route exact path="/load" element={<Loading />} />
+            <Route exact path="/surprise" element={<Surprise />} />
             <Route exact path="/*" element={<Notfound />} />
           </Routes>
         </main>
