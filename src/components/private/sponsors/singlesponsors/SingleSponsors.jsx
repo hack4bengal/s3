@@ -2,7 +2,7 @@ import React from "react";
 import "./SingleSponsors.scss";
 
 const SingleSponsors = ({ sponsor, type }) => {
-  const style = sponsor?.name === "xyz" ? { minWidth: "100px" } : {};
+  const style = {};
 
   return (
     <a href={sponsor?.link} target="_blank" rel="noopener noreferrer">
