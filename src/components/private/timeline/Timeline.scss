@@ -137,11 +137,22 @@
           cursor: pointer;
           color: #ffffff;
           border: none;
-          width:90px;
+          width:120px;
           outline:none;
+          @media screen and (max-width: 900px) {
+            width: 100px;
+          }
           @media screen and (max-width: 576px) {
             font-size: 0.75rem;
             padding: 0.25rem;
+          }
+          @media screen and (max-width: 320px) {
+            width: 90px;
+          }
+          @media screen and (max-width: 250px) {
+            width: auto;
+            padding-left:7px ;
+            padding-right: 7px;
           }
         }
       }
