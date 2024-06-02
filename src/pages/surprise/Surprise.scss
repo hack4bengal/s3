@@ -129,7 +129,12 @@
       color: var(--h4bred);
       font-size: 1.2rem;
       font-weight: 600;
+      display: none !important;
       margin-top: 1rem;
+
+      @media screen and (max-width: 576px) {
+        display: block !important;
+      }
     }
   }
 }
