@@ -1,5 +1,5 @@
 // src/App.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import mascot from "../../assets/images/misc/mascot.png";
 import letters from "../../assets/images/timer/letters.png";
 import "./Surprise.scss";
