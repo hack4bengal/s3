@@ -72,7 +72,8 @@ const App = () => {
             <Route exact path="/*" element={<Notfound />} />
           </Routes>
         </main>
-        <Footer />
+
+        {window.location.pathname !== "/surprise" && <Footer />}
       </Suspense>
     </Router>
   );

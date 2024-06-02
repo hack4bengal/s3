@@ -27,7 +27,7 @@ const Landing = () => {
               <Button type="solid" to={"https://discord.gg/hack4bengal"}>
                 Join Discord
               </Button>
-              <Button type="outline" to={"/"} isDisabled={true}>
+              <Button type="outline" isDisabled={true}>
                 Pre-register
               </Button>
             </div>
