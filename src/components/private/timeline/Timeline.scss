@@ -1,5 +1,5 @@
 .timeline {
-    margin-top: 6rem;
+    margin-top: 2rem;
     padding: 4rem 5rem 8rem 5rem;
   
     @media screen and (max-width: 768px) {
@@ -8,14 +8,23 @@
     @media screen and (max-width: 344px) {
       padding: 1rem;
     }
-  
+  .header__parent{
+    position: relative;
+    h1{
+      letter-spacing: 0.2rem !important;
+    }
+    h2{
+      position: absolute;
+      // top: 5px;
+    }
+  }
     .timeline__content {
       display: flex;
       justify-content: center;
       align-items: flex-start;
       flex-wrap: wrap;
       gap: 8rem;
-      margin-top: 4rem;
+      margin-top: 8rem;
   
       @media screen and (max-width: 900px) {
         padding: 2rem;
