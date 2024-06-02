@@ -44,14 +44,14 @@ const HeaderData = {
     backWordMobile: "Experts",
     backWordSize_mobile: "78px",
     backWordSpacing_mobile: "0.2rem",
-    frontWord: "Mentors/Judges",
-    frontWordMobile: "Mentors/Judges",
+    frontWord: "Mentors/ Judges",
+    frontWordMobile: "Mentors/ Judges",
   },
   testimonials: {
     backWord: "Stories",
     backWordSize_mobile: "78px",
     backWordSpacing_mobile: "0.5rem",
-    frontWord: "Testimonial",
+    frontWord: "Testimonials",
   },
   faq: {
     backWord: "FAQ",
