@@ -27,6 +27,7 @@ import swarup from "../images/TeamCardImages/swarup.webp";
 import tamal from "../images/TeamCardImages/tamal.webp";
 import tushar from "../images/TeamCardImages/tushar.webp";
 import utkarsh from "../images/TeamCardImages/utkarsh.webp";
+import priya from "../images/TeamCardImages/priya.webp";
 
 const teamMember = {
   organizers: [
@@ -195,6 +196,13 @@ const teamMember = {
       title: "Web Designer @H4B",
       linkedIn: "https://www.linkedin.com/in/kaialan/",
       twitter: "https://twitter.com/KaiAlan_",
+    },
+    {
+      img: priya,
+      name: "Priya",
+      title: "Java Developer",
+      linkedIn: "https://www.linkedin.com/in/priya-singh-271488222/",
+      twitter: "https://x.com/PriyaSi77289347",
     },
     {
       img: aditya,
