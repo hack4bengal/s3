@@ -28,7 +28,7 @@ const Landing = () => {
                 Join Discord
               </Button>
               <Button type="outline" isDisabled={true}>
-                Pre-register
+                Register Now
               </Button>
             </div>
           </div>

@@ -140,7 +140,7 @@ const teamMember = {
     {
       img: utkarsh,
       name: "Utkarsh",
-      title: "2nd Year Undergrad",
+      title: "Marketing team @H4B",
       linkedIn:
         "https://www.linkedin.com/in/utkarsh-jaiswal-6170b5258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       twitter: "https://x.com/utkxrsh_jaiswal/",

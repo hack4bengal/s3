@@ -5,7 +5,7 @@
 // import foss from "../images/SponsorImages/foss.webp";
 // import gdg from "../images/SponsorImages/gdg.webp";
 import circle from "../images/SponsorImages/circle.svg";
-import ef from "../images/SponsorImages/ef.svg";
+import devcon from "../images/SponsorImages/devcon.png";
 import filecoin from "../images/SponsorImages/filecoin.png";
 import github from "../images/SponsorImages/github.png";
 import graph from "../images/SponsorImages/graph.png";
@@ -20,7 +20,7 @@ import graph from "../images/SponsorImages/graph.png";
 // import shardeum from "../images/SponsorImages/shardeum.webp";
 // import snu from "../images/SponsorImages/snu.webp";
 // import solana from "../images/SponsorImages/solana.webp";
-import xyz from "../images/SponsorImages/xyz.webp";
+import xyz from "../images/SponsorImages/xyz.png";
 // import zeeve from "../images/SponsorImages/zeeve.webp";
 
 const sponsors = {
@@ -47,11 +47,7 @@ const sponsors = {
       img: graph,
       link: "https://thegraph.com/",
     },
-    {
-      name: "Ethereum Foundation",
-      img: ef,
-      link: "https://ethereum.foundation/",
-    },
+
     // {
     //   name: "Filecoin Virtual Machine",
     //   img: fvm,
@@ -62,6 +58,13 @@ const sponsors = {
     //   img: ff,
     //   link: "https://www.flow.com",
     // },
+  ],
+  Silver: [
+    {
+      name: "Road To DevCon",
+      img: devcon,
+      link: "https://devcon.org/en/",
+    },
   ],
   Domain: [
     {

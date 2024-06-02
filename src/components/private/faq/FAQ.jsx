@@ -32,7 +32,7 @@ const Faq = () => {
         "Nothing, participation in Hack4Bengal 3.0 is absolutely FREE!!🎉 We'll have meals, snacks, and beverages onsite at the hackathon, in addition to swags, prizes, fun mini-events and more.",
     },
     {
-      question: "What is the maximum/minimum team size?",
+      question: "What is the maximum/ minimum team size?",
       answer:
         "We encourage you to make a team of minimum 2 and maximum 4 members. If you are a Solo Hacker and do not have a team, you can still register and we will help you find a team on our Discord Server.",
     },
