@@ -59,7 +59,7 @@ const App = () => {
             <Route exact path="/evangelist" element={<Evangelist />} />
             <Route exact path="/team" element={<Team />} />
             <Route exact path="/load" element={<Loading />} />
-            <Route exact path="/surprise" element={<Register />} />
+            {/* <Route exact path="/surprise" element={<Register />} /> */}
             <Route exact path="/*" element={<Notfound />} />
           </Routes>
         </main>
