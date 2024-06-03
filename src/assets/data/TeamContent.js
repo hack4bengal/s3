@@ -240,7 +240,7 @@ const teamMember = {
     {
       img: arkapravo,
       name: "Arkapravo",
-      title: "Lead Engineer @RevMaxx",
+      title: "Just a Tech",
       linkedIn: "https://www.linkedin.com/in/arkapravo-ghosh",
       twitter: "https://x.com/ArkapravoGhosh1",
     },
