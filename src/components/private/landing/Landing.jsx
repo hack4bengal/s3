@@ -24,10 +24,13 @@ const Landing = () => {
             </p>
 
             <div className="home__buttons">
-              <Button type="solid" to={"https://discord.gg/hack4bengal"}>
+              <Button type="outline" to={"https://discord.gg/hack4bengal"}>
                 Join Discord
               </Button>
-              <Button type="outline" isDisabled={true}>
+              <Button
+                type="solid"
+                to={"https://lu.ma/0nruupo3?utm_source=website"}
+              >
                 Register Now
               </Button>
             </div>
