@@ -1,15 +1,20 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
 .pageNotFound__container {
   padding: 4rem 7rem;
-  padding-bottom: 0;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   position: relative;
   overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
 
   @media screen and (max-width: 576px) {
     padding: 2rem 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 
   .pageNotFound__content {
@@ -18,13 +23,22 @@
     gap: 5rem;
 
     @media screen and (max-width: 576px) {
-      display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1rem;
+    }
+
+    @media screen and (min-width: 1800px) {
+      gap: 5rem;
     }
 
     .pageNotFound__desc {
-      width: 60%;
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      justify-content: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
 
       @media screen and (max-width: 576px) {
         width: 100%;
@@ -40,13 +54,16 @@
         font-weight: 800;
         color: transparent;
         -webkit-text-stroke: 1px white;
-        margin-top: 3rem;
         margin-bottom: 2rem;
 
         @media screen and (max-width: 576px) {
           font-size: 50px;
           font-weight: 700;
-          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        @media screen and (min-width: 1800px) {
+          font-size: 75px;
         }
       }
 
@@ -59,30 +76,25 @@
         @media screen and (max-width: 576px) {
           font-size: 25px;
           font-weight: 700;
-        }
-      }
-
-      .notfound__petDogeCircle {
-        margin-top: 0rem;
-        display: flex;
-        justify-content: flex-end;
-
-        @media screen and (max-width: 576px) {
-          display: none;
+          margin-bottom: 2rem;
         }
 
         @media screen and (min-width: 1800px) {
-          margin-top: 5rem;
+          font-size: 70px;
         }
+      }
+
+      .back_to_home_page_btn {
+        display: inline-block;
       }
     }
 
     .notfound__doge_container {
+      width: 45%;
       display: flex;
-      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      width: 40%;
-      height: 100%;
+      position: relative;
 
       @media screen and (max-width: 576px) {
         margin-top: 2rem;
@@ -93,40 +105,56 @@
         width: 50%;
       }
 
-      .notfound__petDogeCircle_mobile {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: -4rem;
-
-        @media screen and (min-width: 1200px) {
-          display: none;
-        }
-
-        img {
-          width: 30%;
-        }
-      }
-
       .doge__image {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
+        height: auto;
+        cursor: none;
+
+        @media screen and (max-width: 576px) {
+          width: 100%;
+          height: auto;
+        }
 
         img {
           width: 100%;
           height: auto;
-          display: block;
+          object-fit: cover;
 
           @media screen and (max-width: 576px) {
-            width: 80%;
+            width: 85%;
             height: auto;
             display: block;
           }
 
           @media screen and (min-width: 1800px) {
-            width: 75%;
+            width: 80%;
           }
+        }
+      }
+
+      .notfound__petDogeCircle {
+        margin-top: 0rem;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1;
+
+        img {
+          width: 100%;
+
+          @media screen and (max-width: 576px) {
+            width: 85%;
+          }
+
+          @media screen and (min-width: 1800px) {
+            width: 100%;
+          }
+        }
+
+        @media screen and (min-width: 1800px) {
+          margin-top: 5rem;
         }
       }
     }
