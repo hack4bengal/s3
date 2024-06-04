@@ -76,6 +76,22 @@ const Team = ({ refs }) => {
         <Header {...HeaderData.core} />
 
         <div className="core_cards">
+          {teamContent.lead
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((organizer, index) => {
+              return (
+                <TeamCard
+                  key={index}
+                  img={organizer.img}
+                  name={organizer.name}
+                  title={organizer.title}
+                  linkedIn={organizer.linkedIn}
+                  twitter={organizer.twitter}
+                  linkedInIcon={teamContent.linkedInIcon}
+                  twitterIcon={teamContent.twitterIcon}
+                />
+              );
+            })}
           {teamContent.core
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((organizer, index) => {

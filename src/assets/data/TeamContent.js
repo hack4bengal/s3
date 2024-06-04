@@ -1,33 +1,33 @@
 import sanmoy from "../images/TeamCardImages/Sanmoy.webp";
-import aditya from "../images/TeamCardImages/aditya.webp";
-import amandeep from "../images/TeamCardImages/amandeep.webp";
+import aditya from "../images/TeamCardImages/aditya.png";
+import amandeep from "../images/TeamCardImages/amandeep.png";
 import anirban from "../images/TeamCardImages/anirban.webp";
 import ankita from "../images/TeamCardImages/ankita.webp";
-import arindam from "../images/TeamCardImages/arindam.webp";
-import arkapravo from "../images/TeamCardImages/arkapravo.webp";
-import kiran from "../images/TeamCardImages/kiran.webp";
-import krishnendu from "../images/TeamCardImages/krishnendu.webp";
+import arindam from "../images/TeamCardImages/arindam.png";
+import arkapravo from "../images/TeamCardImages/arkapravo.png";
+import kiran from "../images/TeamCardImages/kiran.png";
+import krishnendu from "../images/TeamCardImages/krishnendu.png";
 import manish from "../images/TeamCardImages/manish.webp";
-import prachi from "../images/TeamCardImages/prachi.webp";
-import rabishankar from "../images/TeamCardImages/rabishankar.webp";
-import rajdeep from "../images/TeamCardImages/rajdeep.webp";
-import rinki from "../images/TeamCardImages/rinki.webp";
-import rohit from "../images/TeamCardImages/rohit.webp";
+import prachi from "../images/TeamCardImages/prachi.png";
+import rabishankar from "../images/TeamCardImages/rabishankar.png";
+import rajdeep from "../images/TeamCardImages/rajdeep.png";
+import rinki from "../images/TeamCardImages/rinki.png";
+import rohit from "../images/TeamCardImages/rohit.png";
 import sagnik from "../images/TeamCardImages/sagnik.webp";
-import samrat from "../images/TeamCardImages/samrat.webp";
-import sanyukta from "../images/TeamCardImages/sanyukta.webp";
-import saswata from "../images/TeamCardImages/saswata.webp";
+import samrat from "../images/TeamCardImages/samrat.png";
+import sanyukta from "../images/TeamCardImages/sanyukta.png";
+import saswata from "../images/TeamCardImages/saswata.png";
 import satya from "../images/TeamCardImages/satya.webp";
-import saurabh from "../images/TeamCardImages/saurabh.webp";
+import saurabh from "../images/TeamCardImages/saurabh.png";
 import sayanabha from "../images/TeamCardImages/sayanabha.webp";
-import shruti from "../images/TeamCardImages/shruti.webp";
+import shruti from "../images/TeamCardImages/shruti.png";
 import shubham from "../images/TeamCardImages/shubham.webp";
-import souradeep from "../images/TeamCardImages/souradeep.webp";
+import souradeep from "../images/TeamCardImages/souradeep.png";
 import swarup from "../images/TeamCardImages/swarup.webp";
-import tamal from "../images/TeamCardImages/tamal.webp";
+import tamal from "../images/TeamCardImages/tamal.png";
 import tushar from "../images/TeamCardImages/tushar.webp";
-import utkarsh from "../images/TeamCardImages/utkarsh.webp";
 import priya from "../images/TeamCardImages/priya.webp";
+import utkarsh from "../images/TeamCardImages/utkarsh.png";
 
 const teamMember = {
   organizers: [
@@ -82,6 +82,37 @@ const teamMember = {
       title: "Associate Prof., Department of CSE, SNU",
     },
   ],
+  lead: [
+    {
+      img: aditya,
+      name: "Aditya",
+      title: "Marketing @autopilott.co",
+      linkedIn: "https://linkedin.com/in/withadityya",
+      twitter: "https://twitter.com/withadityya",
+    },
+    {
+      img: amandeep,
+      name: "Amandeep",
+      title: "ML Engineer",
+      linkedIn: "http://www.linkedin.com/in/amandeep404",
+      twitter: "https://twitter.com/amandeep_404",
+    },
+    {
+      img: kiran,
+      name: "Kiran",
+      title: "Content Lead, @H4B",
+      linkedIn:
+        "https://www.linkedin.com/in/kiranmishra21?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      twitter: "https://x.com/kiranmishra1706?t=jKakFAb5NRjRp6qLCl8BYA&s=09",
+    },
+    {
+      img: tamal,
+      name: "Tamal",
+      title: "You See The Site? Thanks.",
+      linkedIn: "https://www.linkedin.com/in/tamalcodes/",
+      twitter: "https://twitter.com/tamalCodes",
+    },
+  ],
   core: [
     {
       img: souradeep,
@@ -114,13 +145,7 @@ const teamMember = {
         "https://www.linkedin.com/in/rajdeepde?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       twitter: "https://x.com/rajdeep_de_?t=VT6KpaywrWPfslnDWCJWTA&s=09",
     },
-    {
-      img: amandeep,
-      name: "Amandeep",
-      title: "ML Engineer",
-      linkedIn: "http://www.linkedin.com/in/amandeep404",
-      twitter: "https://twitter.com/amandeep_404",
-    },
+
     {
       img: rinki,
       name: "Rinki",
@@ -145,14 +170,7 @@ const teamMember = {
         "https://www.linkedin.com/in/utkarsh-jaiswal-6170b5258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       twitter: "https://x.com/utkxrsh_jaiswal/",
     },
-    {
-      img: kiran,
-      name: "Kiran",
-      title: "Content Lead, @H4B",
-      linkedIn:
-        "https://www.linkedin.com/in/kiranmishra21?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      twitter: "https://x.com/kiranmishra1706?t=jKakFAb5NRjRp6qLCl8BYA&s=09",
-    },
+
     {
       img: sayanabha,
       name: "Sayanabha",
@@ -205,13 +223,6 @@ const teamMember = {
       twitter: "https://x.com/PriyaSi77289347",
     },
     {
-      img: aditya,
-      name: "Aditya",
-      title: "Marketing @autopilott.co",
-      linkedIn: "https://linkedin.com/in/withadityya",
-      twitter: "https://twitter.com/withadityya",
-    },
-    {
       img: saurabh,
       name: "Saurabh",
       title: "Web Designer @H4B",
@@ -232,13 +243,7 @@ const teamMember = {
       linkedIn: "https://www.linkedin.com/in/rabisankar-mishra-8418a5225",
       twitter: "https://x.com/Rabisankar21?t=O8FH-ya57mY-LjS5-TN7oQ&s=09",
     },
-    {
-      img: tamal,
-      name: "Tamal",
-      title: "Just a developer",
-      linkedIn: "https://www.linkedin.com/in/tamalcodes/",
-      twitter: "https://twitter.com/tamalCodes",
-    },
+
     {
       img: arkapravo,
       name: "Arkapravo",

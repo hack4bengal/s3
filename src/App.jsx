@@ -14,6 +14,7 @@ import Surprise from "./pages/surprise/Surprise";
 import Team from "./pages/team/Team";
 import Telegram from "./pages/telegram/Telegram";
 import "./styles/Globals.scss";
+import Register from "./pages/registration/Register";
 
 const App = () => {
   return (
@@ -51,15 +52,18 @@ const App = () => {
             />
             <Route
               exact
-              path="/register"
+              path="/howto"
               element={
                 <Forward
-                  pathname={"/register"}
-                  title={"Registration"}
-                  url={"https://discord.gg/hack4bengal"}
+                  pathname={"/howto"}
+                  title={"Registration Walkthrough"}
+                  url={
+                    "https://www.instagram.com/reel/C7y9O1Ly4nk/?igsh=amYyamVtMDVlcmRi"
+                  }
                 />
               }
             />
+            <Route exact path="/register" element={<Register />} />
             <Route exact path="/coc" element={<CodeofConduct />} />
             <Route exact path="/brand" element={<Brand />} />
             <Route exact path="/tg" element={<Telegram />} />
@@ -68,12 +72,13 @@ const App = () => {
             <Route exact path="/evangelist" element={<Evangelist />} />
             <Route exact path="/team" element={<Team />} />
             <Route exact path="/load" element={<Loading />} />
-            <Route exact path="/surprise" element={<Surprise />} />
+            {/* <Route exact path="/surprise" element={<Register />} /> */}
             <Route exact path="/*" element={<Notfound />} />
           </Routes>
         </main>
 
-        {window.location.pathname !== "/surprise" && <Footer />}
+        {window.location.pathname !== "/surprise" &&
+          window.location.pathname !== "/register" && <Footer />}
       </Suspense>
     </Router>
   );
