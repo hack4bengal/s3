@@ -23,7 +23,7 @@ const App = () => {
         <main>
           {(window.location.pathname === "/" ||
             window.location.pathname === "/coc" ||
-            window.location.pathname === "brand" ||
+            window.location.pathname === "/brand" ||
             window.location.pathname === "/events" ||
             window.location.pathname === "team") && <Navbar />}
           <Routes>
