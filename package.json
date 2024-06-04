@@ -12,13 +12,17 @@
   "dependencies": {
     "@studio-freight/lenis": "^1.0.33",
     "@studio-freight/react-lenis": "^0.0.38",
+    "@tanstack/react-query": "^5.40.0",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
+    "axios": "^1.7.2",
     "clsx": "^2.1.0",
     "node-modules": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.2",
+    "react-icons": "^5.2.1",
+    "react-loading-skeleton": "^3.4.0",
     "react-router-dom": "^6.17.0"
   },
   "devDependencies": {

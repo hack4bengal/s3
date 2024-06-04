@@ -1,23 +1,78 @@
 .single__sponsor {
-  background-color: var(--text-color);
+  background-color: #171717;
   padding: 0.5rem 1rem;
-  border-radius: 50px;
+  border-radius: 12px;
   width: min-content;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
-  height: 72px;
+  width: 250px;
+  height: 100px;
 
   @media screen and (max-width: 576px) {
-    width: 143px;
-    height: 43px;
+    width: 200px;
+    height: 80;
   }
 
   img {
-    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
+    object-fit: cover;
+    min-width: 200px;
+
+    @media screen and (max-width: 576px) {
+      min-width: 170px;
+    }
   }
+}
+
+.gold {
+  border: 1px solid #efc230;
+  transition: all 0.3s ease;
+}
+
+.gold:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px rgba(239, 194, 48, 1);
+  -moz-box-shadow: inset 0px 0px 13px -2px rgba(239, 194, 48, 1);
+  box-shadow: inset 0px 0px 13px -2px rgba(239, 194, 48, 1);
+  transition: all 0.3s ease;
+}
+
+.platinum {
+  border: 1px solid #e5e4e2;
+  transition: all 0.3s ease;
+}
+
+.platinum:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px rgba(229, 228, 226, 1);
+  -moz-box-shadow: inset 0px 0px 13px -2px rgba(229, 228, 226, 1);
+  box-shadow: inset 0px 0px 13px -2px rgba(229, 228, 226, 1);
+  transition: all 0.3s ease;
+}
+
+.silver {
+  border: 1px solid #c0c0c0;
+  transition: all 0.3s ease;
+}
+
+.silver:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px rgba(192, 192, 192, 1);
+  -moz-box-shadow: inset 0px 0px 13px -2px rgba(192, 192, 192, 1);
+  box-shadow: inset 0px 0px 13px -2px rgba(192, 192, 192, 1);
+  transition: all 0.3s ease;
+}
+
+.bronze,
+.domain {
+  border: 1px solid #cd7f32;
+  transition: all 0.3s ease;
+}
+
+.bronze:hover,
+.domain:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px rgba(205, 127, 50, 1);
+  -moz-box-shadow: inset 0px 0px 13px -2px rgba(205, 127, 50, 1);
+  box-shadow: inset 0px 0px 13px -2px rgba(205, 127, 50, 1);
+  transition: all 0.3s ease;
 }

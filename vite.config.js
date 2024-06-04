@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
+      selfDestroying: true,
       manifest: {
         short_name: "Hack4Bengal",
         name: "Hack4Bengal",
@@ -24,16 +25,36 @@ export default defineConfig({
           },
         ],
       },
+
       workbox: {
         cleanupOutdatedCaches: true,
+        skipWaiting: true,
+        clientsClaim: true,
+
         runtimeCaching: [
           {
-            urlPattern: /\.(png|jpg|jpeg|svg|gif)$/i,
+            urlPattern: new RegExp(
+              "^https://fonts.(?:googleapis|gstatic).com/(.*)"
+            ),
             handler: "CacheFirst",
             options: {
-              cacheName: "image-cache",
+              cacheName: "google-fonts",
+              expiration: {
+                maxEntries: 30,
+              },
               cacheableResponse: {
                 statuses: [0, 200],
+              },
+            },
+          },
+
+          {
+            urlPattern: /\.(?:png|gif|jpg|jpeg|svg|webp)$/,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "images",
+              expiration: {
+                maxEntries: 60,
               },
             },
           },

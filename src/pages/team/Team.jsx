@@ -54,22 +54,20 @@ const Team = ({ refs }) => {
       {/* Advisor */}
 
       <section className="advisor_section">
-          <Header {...HeaderData.advisor}/>
+        <Header {...HeaderData.advisor} />
 
-          <div className="advisors_card">
-            {teamContent.advisor
-            .map((advisor,index)=>{
-              return(
-                <TeamCard
+        <div className="advisors_card">
+          {teamContent.advisor.map((advisor, index) => {
+            return (
+              <TeamCard
                 key={index}
                 img={advisor.img}
                 name={advisor.name}
                 title={advisor.title}
-                />
-              )
-            })
-            }
-          </div>
+              />
+            );
+          })}
+        </div>
       </section>
 
       {/* CORE */}
@@ -78,8 +76,23 @@ const Team = ({ refs }) => {
         <Header {...HeaderData.core} />
 
         <div className="core_cards">
+          {teamContent.lead
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((organizer, index) => {
+              return (
+                <TeamCard
+                  key={index}
+                  img={organizer.img}
+                  name={organizer.name}
+                  title={organizer.title}
+                  linkedIn={organizer.linkedIn}
+                  twitter={organizer.twitter}
+                  linkedInIcon={teamContent.linkedInIcon}
+                  twitterIcon={teamContent.twitterIcon}
+                />
+              );
+            })}
           {teamContent.core
-            .slice(4)
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((organizer, index) => {
               return (

@@ -2,16 +2,18 @@ import React from "react";
 import "./SpeakerSchedule.scss";
 import SingleSpeaker from "./singlespeaker/SingleSpeaker";
 import speakers from "../../../assets/data/SpeakersContent";
+import { Header } from "../../shared";
+import HeaderData from "../../../assets/data/HeaderContent";
 
 const SpeakerSchedule = () => {
   return (
     <div className="speakerschedule">
-      <h1 className="speakerschedule__title">Online Speaker Schedule</h1>
+      <Header {...HeaderData.events} />
       <div className="speakerschedule__container">
         {
           speakers.map(
-            (speaker) => (
-              <SingleSpeaker key={speaker.id} speaker={speaker} />
+            (speaker, index) => (
+              <SingleSpeaker key={index} speaker={speaker} />
             )
           )
         }

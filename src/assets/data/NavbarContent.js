@@ -40,6 +40,10 @@ const navbarContent = {
         link: "testimonials",
       },
       {
+        text: "Events",
+        link: "/events",
+      },
+      {
         text: "FAQ",
         link: "faq",
       },

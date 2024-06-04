@@ -5,7 +5,8 @@ const Evangelist = () => {
   useEffect(() => {
     if (window.location.pathname === "/evangelist") {
       setTimeout(() => {
-        window.location.href = "https://lu.ma/evangelist";
+        window.location.href =
+          "https://www.notion.so/Hackathon-Evangelist-Program-Hack4Bengal-3-0-1cad5373b52640ed89e88e6d5ab3f34c";
       }, 800);
     }
   }, []);

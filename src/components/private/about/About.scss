@@ -1,12 +1,13 @@
 .about__container {
   padding: 4rem 7rem;
-  margin-top: 8rem;
+  padding-top: 2rem;
+
   position: relative;
   overflow: hidden;
 
   @media screen and (max-width: 576px) {
     padding: 2rem 1.5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .about__header {
@@ -27,6 +28,13 @@
       left: 259px;
       top: 16px;
       z-index: -2;
+
+      @media screen and (max-width: 1120px) {
+        font-size: 100px;
+        letter-spacing: 0.2rem;
+        top: 5px;
+        left: 50%;
+      }
 
       @media screen and (max-width: 576px) {
         font-size: 73px;
@@ -61,7 +69,7 @@
     .about__desc {
       width: 50%;
 
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 1120px) {
         width: 100%;
         text-align: justify;
 
@@ -95,7 +103,7 @@
         grid-column-gap: unset;
         grid-template-columns: repeat(3, 1fr);
 
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 1120px) {
           grid-column-gap: 4rem;
           grid-template-columns: repeat(2, 1fr);
         }
@@ -146,7 +154,7 @@
         display: none;
       }
 
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 1120px) {
         margin-top: 2rem;
         width: 100%;
 

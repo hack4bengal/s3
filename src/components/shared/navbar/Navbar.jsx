@@ -10,6 +10,17 @@ const Navbar = () => {
 
   const handleClick = () => {
     setIsActive((prevIsActive) => !prevIsActive);
+
+    // if (isActive) {
+    //   document.getElementsByClassName("main_parent")[0].style.height = "auto";
+    //   document.getElementsByClassName("main_parent")[0].style.overflow = "auto";
+    //   document.getElementsByClassName("footer")[0].style.display = "block";
+    // } else {
+    //   document.getElementsByClassName("main_parent")[0].style.height = "100vh";
+    //   document.getElementsByClassName("main_parent")[0].style.overflow =
+    //     "hidden";
+    //   document.getElementsByClassName("footer")[0].style.display = "none";
+    // }
   };
 
   const navigate = useNavigate();
@@ -151,6 +162,7 @@ const Navbar = () => {
             className={`navbar__mobile__sidebar ${
               isActive ? "navbar__mobile__sidebar__active" : ""
             }`}
+            // style={{ zIndex: 99999 }}
           >
             <div className="navbar__mobile__menu__h4b">
               <svg

@@ -24,11 +24,11 @@ const HeaderData = {
   sponsors: {
     backWord: "Supporters",
     backWordMobile: "Backers",
-    backWordSize: "130px",
-    backWordSpacing: "0.5rem",
+    backWordSize: "120px",
+    backWordSpacing: "0.3rem",
     backWordSize_mobile: "75px",
     backWordSpacing_mobile: "0.2rem",
-    frontWord: "Past Sponsors",
+    frontWord: "Sponsors",
   },
   collaborators: {
     backWord: "Collaborators",
@@ -44,14 +44,14 @@ const HeaderData = {
     backWordMobile: "Experts",
     backWordSize_mobile: "78px",
     backWordSpacing_mobile: "0.2rem",
-    frontWord: "Previous Mentors",
-    frontWordMobile: "Past Mentors",
+    frontWord: "Mentors/ Judges",
+    frontWordMobile: "Mentors/ Judges",
   },
   testimonials: {
     backWord: "Stories",
     backWordSize_mobile: "78px",
     backWordSpacing_mobile: "0.5rem",
-    frontWord: "Testimonial",
+    frontWord: "Testimonials",
   },
   faq: {
     backWord: "FAQ",
@@ -70,8 +70,8 @@ const HeaderData = {
 
     customClass: "core_header",
   },
-  advisor:{
-    backWord:"H4B",
+  advisor: {
+    backWord: "H4B",
     backWordSpacing: "0rem",
     backWordSize: "130px",
     backWordSize_mobile: "80px",
@@ -86,6 +86,14 @@ const HeaderData = {
     backWordSpacing_mobile: "0rem",
     frontWord: "Core Team",
     customClass: "core_header",
+  },
+  events: {
+    backWord: "Events",
+    frontWord: "Events",
+    backWordSpacing: "0rem",
+    backWordSize: "130px",
+    backWordSize_mobile: "80px",
+    backWordSpacing_mobile: "0rem",
   },
 };
 

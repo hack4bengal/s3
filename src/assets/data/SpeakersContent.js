@@ -1,84 +1,27 @@
-import instagram_icon from "../images/EventsImages/Icons/instagram.svg";
-import sample from "../images/EventsImages/SpeakerImages/sample.webp";
+import link_icon from "../images/EventsImages/Icons/link.svg";
+import ml101 from "../images/EventsImages/ml101.webp";
+import uiux101 from "../images/EventsImages/uiux101.webp";
 
 const speakers = [
   {
-    id: 1,
-    name: "Saurabh Kumar Jha",
-    topic: "Breaking Barriers in Design",
-    date: "Dec 23, 2023",
-    time: "18:00 IST",
+    topic: "UI/UX 101 | Hack4Bengal 3.0",
+    date: "Apr 27, 2024",
     button: {
-      text: "Watch Now",
-      link: "#",
-      icon: instagram_icon,
+      text: "Learn More",
+      link: "https://x.com/hack4bengal/status/1784566736127164703",
+      icon: link_icon,
     },
-    image: sample,
+    image: uiux101,
   },
   {
-    id: 2,
-    name: "Saurabh Kumar Jha",
-    topic: "Breaking Barriers in Design",
-    date: "Dec 23, 2023",
-    time: "18:00 IST",
+    topic: "ML 101 | Hack4Bengal 3.0",
+    date: "Mar 17, 2024",
     button: {
-      text: "Watch Now",
-      link: "#",
-      icon: instagram_icon,
+      text: "Learn More",
+      link: "https://x.com/hack4bengal/status/1769654472643625243",
+      icon: link_icon,
     },
-    image: sample,
-  },
-  {
-    id: 3,
-    name: "Saurabh Kumar Jha",
-    topic: "Breaking Barriers in Design",
-    date: "Dec 23, 2023",
-    time: "18:00 IST",
-    button: {
-      text: "Watch Now",
-      link: "#",
-      icon: instagram_icon,
-    },
-    image: sample,
-  },
-  {
-    id: 4,
-    name: "Saurabh Kumar Jha",
-    topic: "Breaking Barriers in Design",
-    date: "Dec 23, 2023",
-    time: "18:00 IST",
-    button: {
-      text: "Watch Now",
-      link: "#",
-      icon: instagram_icon,
-    },
-    image: sample,
-  },
-  {
-    id: 5,
-    name: "Saurabh Kumar Jha",
-    topic: "Breaking Barriers in Design",
-    date: "Dec 23, 2023",
-    time: "18:00 IST",
-    button: {
-      text: "Watch Now",
-      link: "#",
-      icon: instagram_icon,
-    },
-    image: sample,
-  },
-  {
-    id: 6,
-    name: "Saurabh Kumar Jha",
-    topic: "Breaking Barriers in Design",
-    date: "Dec 23, 2023",
-    time: "18:00 IST",
-    button: {
-      text: "Watch Now",
-      link: "#",
-      icon: instagram_icon,
-    },
-    image: sample,
+    image: ml101,
   },
 ];
 

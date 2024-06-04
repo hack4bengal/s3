@@ -1,140 +1,161 @@
-.timeline__parent {
-  padding: 0rem 0rem;
-  margin-top: 0rem;
-  position: relative;
-  overflow: hidden;
-
-  @media screen and (max-width: 576px) {
-    padding: 3rem 1.5rem;
-  }
-
-  .body {
-    display: flex;
-    align-items: center;
-
-    @media screen and (max-width: 576px) {
-      justify-content: center;
+.timeline {
+    margin-top: 2rem;
+    padding: 4rem 5rem 8rem 5rem;
+  
+    @media screen and (max-width: 768px) {
+      padding: 1rem;
     }
-
-    .timer {
+    @media screen and (max-width: 344px) {
+      padding: 1rem;
+    }
+  .header__parent{
+    position: relative;
+    h1{
+      letter-spacing: 0.2rem !important;
+    }
+    h2{
+      position: absolute;
+      // top: 5px;
+    }
+  }
+    .timeline__content {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
-      gap: 4rem;
-      margin-top: -4rem;
-
-      @media screen and (max-width: 576px) {
-        margin-top: 0rem;
-        gap: 3rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 8rem;
+      margin-top: 8rem;
+  
+      @media screen and (max-width: 900px) {
+        padding: 2rem;
+        gap:4rem 9rem ;
       }
-
-      .header_1 {
-        font-family: "Montserrat", sans-serif;
-        letter-spacing: 2px;
-        font-size: 100px;
-        text-align: center;
-        color: white;
-        font-weight: 800;
-        line-height: 1;
-        z-index: 1;
-
-        @media screen and (max-width: 576px) {
-          font-size: 48px;
-        }
+      @media screen and (max-width: 412px) {
+        padding: 2rem 1rem;
+        gap: 2rem 4rem ;
       }
-
-      .countdown {
+      @media screen and (max-width: 540px) {
+        gap: 2rem 6rem;
+      }
+      @media screen and (max-width: 400px) {
+        gap: 2rem 4rem;
+      }
+  
+  
+  
+      .timeline__event {
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 1rem;
-        z-index: 1;
-
-        @media screen and (max-width: 576px) {
-          gap: 10px;
-        }
-
-        .time {
-          font-family: "Montserrat", sans-serif;
-          font-size: 60px;
-          text-align: center;
-          color: white;
-          font-weight: 800;
-          line-height: 1;
-          background-color: #2a2727;
-          padding: 1rem;
-          border-radius: 18px;
-
-          @media screen and (max-width: 576px) {
-            font-size: 28px;
+        flex-direction: column;
+        justify-content: center;
+  
+        .timeline__d-flex {
+          display: flex;
+          align-items: center;
+          position: relative;
+          justify-content: space-between;
+  
+          .timeline__number {
+            font-size: clamp(5rem, 12vw, 12rem);
+            font-weight: bolder;
+            font-family: var(--body-font);
+            position: relative;
+            margin-right: 2rem;
+  
+            &.active {
+              color: #ffffff;
+            }
+  
+            &.inactive {
+              color: #646464;
+            }
           }
-
-          p:nth-child(2) {
-            font-size: 18px;
-            font-weight: 600;
-
-            @media screen and (max-width: 576px) {
-              font-size: 15px;
+         
+  
+          .timeline__circle_details {
+            position: absolute;
+            border-radius: 50%;
+            width: 7rem;
+            height: 7rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 96%;
+            transform: translateX(-50%);
+            overflow: hidden;
+  
+            @media screen and (max-width: 1024px) {
+              left: 103%;
+            }
+            @media screen and (max-width: 860px) {
+              left: 109%;
+            }
+            @media screen and (max-width: 820px) {
+              width: 6rem;
+              height: 6rem;
+              left: 100%;
+            }
+            
+            @media screen and (max-width: 540px) {
+              width: 5rem;
+              left: 108%;
+              height: 5rem;
+              left: 93%;
+            }
+            img {
+              height: 100%;
+              width: 100%;
+              display: block;
+              border-radius: 50%;
+              background-color: #1b1b1b;
+            }
+  
+            p {
+              font-family: var(--body-font);
+              font-size: 1rem;
+              position: absolute;
+              color: white;
+              padding: 5px;
+  
+              @media screen and (max-width: 853px) {
+                font-size: 0.7rem;
+              }
             }
           }
         }
-
-        .colon {
-          font-size: 60px;
+       
+        .timeline__date {
+          padding: 0.5rem;
+          text-align: center;
+          background-color: red;
+          width: 100%;
+          border-radius: 5px;
+          font-family: var(--body-font);
+          font-size: 12px;
+          font-weight: 600;
+          cursor: pointer;
+          color: #ffffff;
+          border: none;
+          width:120px;
+          outline:none;
+          @media screen and (max-width: 900px) {
+            width: 100px;
+          }
+          @media screen and (max-width: 576px) {
+            font-size: 0.75rem;
+            padding: 0.25rem;
+          }
+          @media screen and (max-width: 320px) {
+            width: 90px;
+          }
+          @media screen and (max-width: 250px) {
+            width: auto;
+            padding-left:7px ;
+            padding-right: 7px;
+          }
         }
       }
     }
   }
-
-  .mask {
-    right: 0;
-    top: 0;
-    position: absolute;
-    width: 40%;
-
-    @media screen and (max-width: 576px) {
-      width: 100%;
-    }
-  }
-
-  .letters {
-    width: 50%;
-    opacity: 0.7;
-    right: 9rem;
-    top: 6rem;
-    position: absolute;
-
-    @media screen and (max-width: 576px) {
-      display: none;
-    }
-  }
-
-  .ghori {
-    width: 55%;
-
-    @media screen and (max-width: 576px) {
-      display: none;
-    }
-  }
-
-  .text {
-    width: 35%;
-  }
-}
-
-.colon {
-  animation: blink 2s infinite; // Adjust the animation duration as needed
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+  

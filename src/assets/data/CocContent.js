@@ -2,7 +2,7 @@ export const rules = [
   {
     title: "Respect: ",
     description:
-      "All participants must respect each other's opinions, beliefs, and values. Discriminatory language or behavior will not be tolerated. This includes, but is not limited to, sexism, racism, homophobia, and ableism.",
+      "All participants must respect each other's opinions, beliefs, and values. Discriminatory language or behavior will not be tolerated. This includes, but is not limited to, sexism, racism, and homophobia, and ableism.",
   },
   {
     title: "Collaboration: ",
@@ -71,7 +71,6 @@ export const breachContents = {
         { name: "Shubham Tribedi: ", email: "shubham@hack4bengal.tech" },
         { name: "Sagnik Mitra: ", email: "sagnik@hack4bengal.tech" },
         { name: "Manish Kumar Barnwal: ", email: "manish@hack4bengal.tech" },
-        { name: "Kajal Jaiswal: ", email: "kajalj181101@gmail.com" },
         { name: "Sanmoy Dam: ", email: "sdam27022002@gmail.com" },
         { name: "Tushar Mukhopadhyay: ", email: "connectme@tusharm.in" },
         { name: "Ankita Panda: ", email: "connectankitapanda@gmail.com" },

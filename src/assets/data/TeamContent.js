@@ -1,33 +1,33 @@
 import sanmoy from "../images/TeamCardImages/Sanmoy.webp";
-import adarsh from "../images/TeamCardImages/adarsh.webp";
-import aditya from "../images/TeamCardImages/aditya.webp";
-import aksh from "../images/TeamCardImages/aksh.webp";
-import amandeep from "../images/TeamCardImages/amandeep.webp";
+import aditya from "../images/TeamCardImages/aditya.png";
+import amandeep from "../images/TeamCardImages/amandeep.png";
 import anirban from "../images/TeamCardImages/anirban.webp";
 import ankita from "../images/TeamCardImages/ankita.webp";
-import anurag from "../images/TeamCardImages/anurag.webp";
-import arindam from "../images/TeamCardImages/arindam.webp";
-import arkapravo from "../images/TeamCardImages/arkapravo.webp";
-import kiran from "../images/TeamCardImages/kiran.webp";
+import arindam from "../images/TeamCardImages/arindam.png";
+import arkapravo from "../images/TeamCardImages/arkapravo.png";
+import kiran from "../images/TeamCardImages/kiran.png";
+import krishnendu from "../images/TeamCardImages/krishnendu.png";
 import manish from "../images/TeamCardImages/manish.webp";
-import prachi from "../images/TeamCardImages/prachi.webp";
-import rajdeep from "../images/TeamCardImages/rajdeep.webp";
-import rinki from "../images/TeamCardImages/rinki.webp";
-import rohit from "../images/TeamCardImages/rohit.webp";
+import prachi from "../images/TeamCardImages/prachi.png";
+import rabishankar from "../images/TeamCardImages/rabishankar.png";
+import rajdeep from "../images/TeamCardImages/rajdeep.png";
+import rinki from "../images/TeamCardImages/rinki.png";
+import rohit from "../images/TeamCardImages/rohit.png";
 import sagnik from "../images/TeamCardImages/sagnik.webp";
-import samrat from "../images/TeamCardImages/samrat.webp";
-import sanyukta from "../images/TeamCardImages/sanyukta.webp";
-import saswata from "../images/TeamCardImages/saswata.webp";
+import samrat from "../images/TeamCardImages/samrat.png";
+import sanyukta from "../images/TeamCardImages/sanyukta.png";
+import saswata from "../images/TeamCardImages/saswata.png";
 import satya from "../images/TeamCardImages/satya.webp";
-import saurabh from "../images/TeamCardImages/saurabh.webp";
+import saurabh from "../images/TeamCardImages/saurabh.png";
 import sayanabha from "../images/TeamCardImages/sayanabha.webp";
-import shruti from "../images/TeamCardImages/shruti.webp";
+import shruti from "../images/TeamCardImages/shruti.png";
 import shubham from "../images/TeamCardImages/shubham.webp";
-import souradeep from "../images/TeamCardImages/souradeep.webp";
-import tushar from "../images/TeamCardImages/tushar.webp";
-import utkarsh from "../images/TeamCardImages/utkarsh.webp";
+import souradeep from "../images/TeamCardImages/souradeep.png";
 import swarup from "../images/TeamCardImages/swarup.webp";
-
+import tamal from "../images/TeamCardImages/tamal.png";
+import tushar from "../images/TeamCardImages/tushar.webp";
+import priya from "../images/TeamCardImages/priya.webp";
+import utkarsh from "../images/TeamCardImages/utkarsh.png";
 
 const teamMember = {
   organizers: [
@@ -49,7 +49,7 @@ const teamMember = {
     {
       img: shubham,
       name: "Shubham",
-      title: "Sales & Marketing @ Dynopii",
+      title: "Sales & Marketing @Dynopii",
       linkedIn: "https://www.linkedin.com/in/shubham-tribedi/",
       twitter: "https://twitter.com/shubham_tribedi",
     },
@@ -77,10 +77,41 @@ const teamMember = {
   ],
   advisor: [
     {
-      img:swarup,
-      name:"Dr. Swarup Kumar Ghosh",
-      title:"Associate Prof., Department of CSE, SNU",
-    }
+      img: swarup,
+      name: "Dr. Swarup Kumar Ghosh",
+      title: "Associate Prof., Department of CSE, SNU",
+    },
+  ],
+  lead: [
+    {
+      img: aditya,
+      name: "Aditya",
+      title: "Marketing @autopilott.co",
+      linkedIn: "https://linkedin.com/in/withadityya",
+      twitter: "https://twitter.com/withadityya",
+    },
+    {
+      img: amandeep,
+      name: "Amandeep",
+      title: "ML Engineer",
+      linkedIn: "http://www.linkedin.com/in/amandeep404",
+      twitter: "https://twitter.com/amandeep_404",
+    },
+    {
+      img: kiran,
+      name: "Kiran",
+      title: "Content Lead, @H4B",
+      linkedIn:
+        "https://www.linkedin.com/in/kiranmishra21?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      twitter: "https://x.com/kiranmishra1706?t=jKakFAb5NRjRp6qLCl8BYA&s=09",
+    },
+    {
+      img: tamal,
+      name: "Tamal",
+      title: "You See The Site? Thanks.",
+      linkedIn: "https://www.linkedin.com/in/tamalcodes/",
+      twitter: "https://twitter.com/tamalCodes",
+    },
   ],
   core: [
     {
@@ -91,42 +122,13 @@ const teamMember = {
       twitter: "https://twitter.com/souradeep_03",
     },
     {
-      img: arkapravo,
-      name: "Arkapravo",
-      title: "Lead Engineer @RevMaxx",
-      linkedIn: "https://www.linkedin.com/in/arkapravo-ghosh",
-      twitter: "https://x.com/ArkapravoGhosh1",
-    },
-    {
-      img: rinki,
-      name: "Rinki",
-      title: "Web Team @H4B",
-      linkedIn:
-        "https://www.linkedin.com/in/rinki-shaw-689a2121b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      twitter: "https://twitter.com/RinkiSh90922853",
-    },
-    {
-      img: adarsh,
-      name: "Adarsh",
-      title: "Freelancer",
-      linkedIn: "https://twitter.com/thatsmeadarsh",
-      twitter: "https://twitter.com/thatsmeadarsh",
-    },
-    {
       img: prachi,
       name: "Prachi",
       title: "Content team @H4B",
       linkedIn: "https://linkedin.com/in/-prachi1710",
       twitter: "https://twitter.com/_prachi1710",
     },
-    {
-      img: aksh,
-      name: "Aksh",
-      title: "PR Team @H4B",
-      linkedIn:
-        "https://www.linkedin.com/in/aksh-bhardwaj-6125a81b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      twitter: "https://x.com/akshbhardwaj7?t=JmH0G4iBOJIMhoT2gaiCpg&s=09",
-    },
+
     {
       img: sanyukta,
       name: "Sanyukta",
@@ -143,17 +145,11 @@ const teamMember = {
         "https://www.linkedin.com/in/rajdeepde?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       twitter: "https://x.com/rajdeep_de_?t=VT6KpaywrWPfslnDWCJWTA&s=09",
     },
-    {
-      img: amandeep,
-      name: "Amandeep",
-      title: "ML Engineer",
-      linkedIn: "http://www.linkedin.com/in/amandeep404",
-      twitter: "https://twitter.com/amandeep_404",
-    },
+
     {
       img: rinki,
       name: "Rinki",
-      title: "Web Team @H4B",
+      title: "Intern @N3Clouds",
       linkedIn:
         "https://www.linkedin.com/in/rinki-shaw-689a2121b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       twitter: "https://twitter.com/RinkiSh90922853",
@@ -169,26 +165,12 @@ const teamMember = {
     {
       img: utkarsh,
       name: "Utkarsh",
-      title: "2nd Year Undergrad",
+      title: "Marketing team @H4B",
       linkedIn:
         "https://www.linkedin.com/in/utkarsh-jaiswal-6170b5258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       twitter: "https://x.com/utkxrsh_jaiswal/",
     },
-    {
-      img: kiran,
-      name: "Kiran",
-      title: "Content Lead, @H4B",
-      linkedIn:
-        "https://www.linkedin.com/in/kiranmishra21?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      twitter: "https://x.com/kiranmishra1706?t=jKakFAb5NRjRp6qLCl8BYA&s=09",
-    },
-    {
-      img: anurag,
-      name: "Anurag",
-      title: "MLSA BETA",
-      linkedIn: "https://www.linkedin.com/in/anuragroy485/",
-      twitter: "https://twitter.com/AnuragRoy485/",
-    },
+
     {
       img: sayanabha,
       name: "Sayanabha",
@@ -234,16 +216,16 @@ const teamMember = {
       twitter: "https://twitter.com/KaiAlan_",
     },
     {
-      img: aditya,
-      name: "Aditya",
-      title: "Marketing @autopilott.co",
-      linkedIn: "https://linkedin.com/in/withadityya",
-      twitter: "https://twitter.com/withadityya",
+      img: priya,
+      name: "Priya",
+      title: "Java Developer",
+      linkedIn: "https://www.linkedin.com/in/priya-singh-271488222/",
+      twitter: "https://x.com/PriyaSi77289347",
     },
     {
       img: saurabh,
       name: "Saurabh",
-      title: "Web Designer",
+      title: "Web Designer @H4B",
       linkedIn: "https://in.linkedin.com/in/communicatewithsaurabh",
       twitter: "https://x.com/SaurabhKJha_Dev",
     },
@@ -253,6 +235,28 @@ const teamMember = {
       title: "GDSC Blockchain Lead",
       linkedIn: "https://www.linkedin.com/in/roy-rohit/",
       twitter: "https://twitter.com/rohitroy_R",
+    },
+    {
+      img: rabishankar,
+      name: "Rabishankar",
+      title: "Graphics Team @H4B",
+      linkedIn: "https://www.linkedin.com/in/rabisankar-mishra-8418a5225",
+      twitter: "https://x.com/Rabisankar21?t=O8FH-ya57mY-LjS5-TN7oQ&s=09",
+    },
+
+    {
+      img: arkapravo,
+      name: "Arkapravo",
+      title: "Just a Tech",
+      linkedIn: "https://www.linkedin.com/in/arkapravo-ghosh",
+      twitter: "https://x.com/ArkapravoGhosh1",
+    },
+    {
+      img: krishnendu,
+      name: "Krishnendu",
+      title: "Media lead @GDSC SNU",
+      linkedIn:
+        "https://www.linkedin.com/in/krishnendu-samanta-25302a238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   ],
 };
