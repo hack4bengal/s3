@@ -11,17 +11,6 @@ const Sponsors = () => {
       <div className="sponsors__parent" id="sponsors">
         <Header {...HeaderData.sponsors} />
 
-        <div className="sponsors__container platinum_container">
-          <h1>Platinum Sponsor</h1>
-          <div className="sponsors__flexbox">
-            {sponsors["Platinum"].map((item, index) => {
-              return (
-                <SingleSponsors key={index} sponsor={item} type="platinum" />
-              );
-            })}
-          </div>
-        </div>
-
         <div className="sponsors__container gold_container">
           <h1>Gold Sponsors</h1>
           <div className="sponsors__flexbox">
