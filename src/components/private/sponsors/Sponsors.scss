@@ -14,6 +14,20 @@
     gap: 4rem;
   }
 
+  .sponsors__container_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: auto;
+
+    @media screen and (max-width: 576px) {
+      gap: 1rem;
+    }
+  }
+
   .sponsors__container {
     display: flex;
     flex-direction: column;

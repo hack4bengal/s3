@@ -24,8 +24,8 @@ const HeaderData = {
   sponsors: {
     backWord: "Supporters",
     backWordMobile: "Backers",
-    backWordSize: "130px",
-    backWordSpacing: "0.5rem",
+    backWordSize: "120px",
+    backWordSpacing: "0.3rem",
     backWordSize_mobile: "75px",
     backWordSpacing_mobile: "0.2rem",
     frontWord: "Sponsors",

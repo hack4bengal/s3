@@ -42,14 +42,27 @@ const Sponsors = () => {
           </div>
         </div>
 
-        <div className="sponsors__container domain_container">
-          <h1>Domain Partners</h1>
-          <div className="sponsors__flexbox">
-            {sponsors["Domain"].map((item, index) => {
-              return (
-                <SingleSponsors key={index} sponsor={item} type="domain" />
-              );
-            })}
+        <div className="sponsors__container_flex">
+          {/* <div className="sponsors__container">
+            <h1>Venue Partner</h1>
+            <div className="sponsors__flexbox">
+              {sponsors["Venue"].map((item, index) => {
+                return (
+                  <SingleSponsors key={index} sponsor={item} type="silver" />
+                );
+              })}
+            </div>
+          </div> */}
+
+          <div className="sponsors__container domain_container">
+            <h1>Domain Partner</h1>
+            <div className="sponsors__flexbox">
+              {sponsors["Domain"].map((item, index) => {
+                return (
+                  <SingleSponsors key={index} sponsor={item} type="domain" />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

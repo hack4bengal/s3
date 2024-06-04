@@ -54,23 +54,44 @@ const Timer = () => {
 
             <div className="countdown">
               <div className="time">
-                <p>{timeLeft.days}</p>
+                <p>
+                  {timeLeft?.days < 10 ? `0${timeLeft?.days}` : timeLeft?.days}
+                </p>
                 <p>Days</p>
               </div>
 
               <p className="colon">:</p>
 
               <div className="time">
-                <p>{timeLeft.hours === 0 ? "00" : timeLeft.hours}</p>
+                <p>
+                  {timeLeft?.hours < 10
+                    ? `0${timeLeft?.hours}`
+                    : timeLeft?.hours}
+                </p>
                 <p>Hours</p>
               </div>
 
               <p className="colon">:</p>
 
               <div className="time">
-                <p>{timeLeft.minutes === 0 ? "00" : timeLeft?.minutes}</p>
+                <p>
+                  {timeLeft?.minutes < 10
+                    ? `0${timeLeft?.minutes}`
+                    : timeLeft?.minutes}
+                </p>
                 <p>Mins</p>
               </div>
+
+              {/* <p className="colon">:</p>
+
+              <div className="time">
+                <p>
+                  {timeLeft?.seconds < 10
+                    ? `0${timeLeft?.seconds}`
+                    : timeLeft?.seconds}
+                </p>
+                <p>Secs</p>
+              </div> */}
             </div>
           </div>
         </div>
