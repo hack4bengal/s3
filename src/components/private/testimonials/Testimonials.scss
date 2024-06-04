@@ -5,6 +5,10 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width: 1000px) {
+    padding-inline: 4rem;
+  }
+
   @media screen and (max-width: 576px) {
     padding: 2.4rem 1.5rem;
     margin-top: 2rem;

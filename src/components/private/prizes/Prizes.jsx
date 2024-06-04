@@ -15,16 +15,28 @@ const Prizes = () => {
         {/* <ComingSoon /> */}
 
         <div className="prizes_container">
-          <div className="second_prize prize_box">
+          <div className="second_prize prize_box desktop">
             <img src={second} className="prize_logo first_prize_logo" alt="" />
             <h1>TBD</h1>
             <p>1st Runner Up</p>
           </div>
-          <div className="first_prize prize_box">
+          <div className="first_prize prize_box desktop">
             <img src={first} className="prize_logo first_prize_logo" alt="" />
             {/* <img src={agun} className="prize_logo first_prize_logo" alt="" /> */}
             <h1>TBD</h1>
             <p>Winner</p>
+          </div>
+          <div className="third_prize prize_box desktop">
+            <img src={third} className="prize_logo first_prize_logo" alt="" />
+            <h1>TBD</h1>
+            <p>2nd Runner Up</p>
+          </div>
+        </div>
+        <div className="prizes_container mobile">
+          <div className="second_prize prize_box">
+            <img src={second} className="prize_logo first_prize_logo" alt="" />
+            <h1>TBD</h1>
+            <p>1st Runner Up</p>
           </div>
           <div className="third_prize prize_box">
             <img src={third} className="prize_logo first_prize_logo" alt="" />
