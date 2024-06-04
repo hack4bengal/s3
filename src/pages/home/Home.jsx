@@ -19,7 +19,7 @@ const Home = () => {
       <Landing />
       {window.innerWidth < 600 && <Marquee />}
       <Timer />
-      <Timeline/>
+      {/* <Timeline/> */}
       <About />
       <Prizes />
       <Sponsors />
