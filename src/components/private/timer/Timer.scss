@@ -60,8 +60,14 @@
         @media screen and (max-width: 576px) {
           gap: 10px;
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          margin-left: auto;
+          grid-template-columns: repeat(3, 1fr);
+          width: 90%;
+          row-gap: 20px;
+          justify-content: center;
+          .colon {
+            justify-content: center;
+            display: flex;
+          }
         }
 
         .time {
@@ -78,7 +84,11 @@
           height: 115px;
 
           @media screen and (max-width: 576px) {
-            font-size: 28px;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0.5rem;
           }
 
           p:nth-child(2) {
@@ -93,6 +103,12 @@
 
         .colon {
           font-size: 60px;
+        }
+
+        .hidecolon {
+          @media screen and (max-width: 576px) {
+            display: none;
+          }
         }
       }
     }

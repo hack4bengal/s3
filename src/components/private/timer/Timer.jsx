@@ -71,7 +71,7 @@ const Timer = () => {
                 <p>Hours</p>
               </div>
 
-              <p className="colon">:</p>
+              <p className="colon hidecolon">:</p>
 
               <div className="time">
                 <p>
@@ -82,7 +82,7 @@ const Timer = () => {
                 <p>Mins</p>
               </div>
 
-              {/* <p className="colon">:</p>
+              <p className="colon">:</p>
 
               <div className="time">
                 <p>
@@ -91,7 +91,7 @@ const Timer = () => {
                     : timeLeft?.seconds}
                 </p>
                 <p>Secs</p>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
