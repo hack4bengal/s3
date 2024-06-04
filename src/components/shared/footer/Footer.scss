@@ -5,7 +5,7 @@
   overflow: hidden;
   margin: auto;
   font-family: var(--heading-font);
-  height: 75vh;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,7 +236,7 @@
     gap: 1.4rem;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 3;
 
     @media screen and (max-width: 850px) {
       gap: 1rem;
@@ -257,10 +257,10 @@
   .footer_gradient {
     position: absolute;
     bottom: 0;
-    right: 0;
-    height: 30rem;
-    width: 45%;
-    z-index: -1;
+    right: -2px;
+    width: 46%;
+    height: 111%;
+    z-index: 1;
 
     @media screen and (max-width: 850px) {
       width: 105%;
@@ -273,7 +273,7 @@
     right: 0;
     height: 334px;
     width: 720px;
-    opacity: 0.65;
+    z-index: 2;
 
     @media screen and (max-width: 1120px) {
       top: 200px;

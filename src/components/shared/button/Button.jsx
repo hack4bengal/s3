@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import "./Button.scss";
 
-const Button = ({ type, isLoading, isDisabled, to, onClick, children }) => {
+const Button = ({type, isLoading, isDisabled, to, onClick, children}) => {
   const buttonClass = `button ${type} ${isLoading ? "loading" : ""}`;
 
   if (to) {

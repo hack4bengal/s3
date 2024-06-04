@@ -24,7 +24,7 @@ const Faq = () => {
     {
       question: "Who can participate?",
       answer:
-        "Students in college, schools can apply. If you can innovate or just want to have a fun learning weekend, you are most welcome.",
+        "Students currently enrolled in any course in High School or College can participate in Hack4Bengal. Along with that current year passouts can participate too.",
     },
     {
       question: "How much does it cost to participate?",

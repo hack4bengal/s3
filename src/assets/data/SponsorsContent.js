@@ -21,16 +21,10 @@ import graph from "../images/SponsorImages/graph.png";
 // import snu from "../images/SponsorImages/snu.webp";
 // import solana from "../images/SponsorImages/solana.webp";
 import xyz from "../images/SponsorImages/xyz.png";
+import jis from "../images/SponsorImages/jis.png";
 // import zeeve from "../images/SponsorImages/zeeve.webp";
 
 const sponsors = {
-  Platinum: [
-    {
-      name: "Circle",
-      img: circle,
-      link: "https://www.circle.com/",
-    },
-  ],
   Gold: [
     {
       name: "Github",

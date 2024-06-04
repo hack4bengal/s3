@@ -10,6 +10,7 @@ import {
   Testimonials,
 } from "../../components/private";
 import Timer from "../../components/private/timer/Timer";
+import Timeline from "../../components/private/timeline/Timeline";
 import "./Home.scss";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Landing />
       {window.innerWidth < 600 && <Marquee />}
       <Timer />
+      {/* <Timeline/> */}
       <About />
       <Prizes />
       <Sponsors />

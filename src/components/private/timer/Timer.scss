@@ -41,12 +41,17 @@
       .header_1 {
         font-family: "Montserrat", sans-serif;
         letter-spacing: 2px;
-        font-size: 100px;
+        font-size: 77px;
         text-align: center;
         color: white;
         font-weight: 800;
-        line-height: 1;
+
         z-index: 1;
+
+        background: #ffffff;
+        background: linear-gradient(to right, #ffffff 0%, #ff0000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
         @media screen and (max-width: 1120px) {
           font-size: 60px;
@@ -70,6 +75,15 @@
 
         @media screen and (max-width: 576px) {
           gap: 10px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          width: 90%;
+          row-gap: 20px;
+          justify-content: center;
+          .colon {
+            justify-content: center;
+            display: flex;
+          }
         }
 
         .time {
@@ -82,13 +96,19 @@
           background-color: #2a2727;
           padding: 1rem;
           border-radius: 18px;
+          width: 115px;
+          height: 115px;
 
           @media screen and (max-width: 1120px) {
             font-size: 30px;
           }
 
           @media screen and (max-width: 576px) {
-            font-size: 28px;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0.5rem;
           }
 
           p:nth-child(2) {
@@ -103,6 +123,12 @@
 
         .colon {
           font-size: 60px;
+        }
+
+        .hidecolon {
+          @media screen and (max-width: 576px) {
+            display: none;
+          }
         }
       }
     }

@@ -50,6 +50,19 @@ const App = () => {
                 />
               }
             />
+            <Route
+              exact
+              path="/howto"
+              element={
+                <Forward
+                  pathname={"/howto"}
+                  title={"Registration Walkthrough"}
+                  url={
+                    "https://www.instagram.com/reel/C7y9O1Ly4nk/?igsh=amYyamVtMDVlcmRi"
+                  }
+                />
+              }
+            />
             <Route exact path="/register" element={<Register />} />
             <Route exact path="/coc" element={<CodeofConduct />} />
             <Route exact path="/brand" element={<Brand />} />

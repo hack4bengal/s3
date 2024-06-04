@@ -122,6 +122,12 @@
               align-items: center;
               border-radius: 50%;
 
+              svg {
+                width: 1em;
+                height: 1em;
+                fill: #ff1717;
+              }
+
               @media screen and (max-width: 576px) {
                 top: 50%;
                 transform: translateY(-50%);
