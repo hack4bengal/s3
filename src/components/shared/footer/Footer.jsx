@@ -70,8 +70,8 @@ const Footer = () => {
         <img src={taxi} alt="Taxi" />
         <p>Checkout our Previous Seasons</p>
         <div className="season_linkdiv">
-          <a target="_blank" href="https://s1.hack4bengal.tech/">Season 1</a>
-          <a target="_blank" href="https://s2.hack4bengal.tech/">Season 2</a>
+          <a href="https://s1.hack4bengal.tech/">Season 1</a>
+          <a href="https://s2.hack4bengal.tech/">Season 2</a>
         </div>
       </div>
     </footer>
