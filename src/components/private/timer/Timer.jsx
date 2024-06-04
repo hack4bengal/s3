@@ -44,7 +44,7 @@ const Timer = () => {
   return (
     <>
       <div className="timeline__parent" id="timeline">
-        <div className="body">
+        <div className="timeline_body">
           <img src={ghori} alt="" className="ghori" />
 
           <div className="timer">
