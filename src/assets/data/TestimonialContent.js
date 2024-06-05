@@ -87,7 +87,7 @@ const testimonials = [
     github: "",
     email: "",
     testimonial:
-      "Kudos to Hack4Bengal for fostering innovation! As the Join Secretary of IT Ministry, I applaud the organizers for the seamless execution of Season 2 promising a bright future for Bengal's tech landscape.",
+      "Kudos to Hack4Bengal for fostering innovation! As the Joint Secretary of IT Ministry, I applaud the organizers for the seamless execution of Season 2 promising a bright future for Bengal's tech landscape.",
   },
 ];
 

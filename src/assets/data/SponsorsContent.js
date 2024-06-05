@@ -25,17 +25,20 @@ import jis from "../images/SponsorImages/jis.png";
 // import zeeve from "../images/SponsorImages/zeeve.webp";
 
 const sponsors = {
+  Platinum: [
+    {
+      name: "Filecoin",
+      img: filecoin,
+      link: "https://filecoin.io/",
+    },
+  ],
   Gold: [
     {
       name: "Github",
       img: github,
       link: "https://github.com/",
     },
-    {
-      name: "Filecoin",
-      img: filecoin,
-      link: "https://filecoin.io/",
-    },
+
     {
       name: "Graph",
       img: graph,
