@@ -19,10 +19,9 @@ const Header = ({ ...data }) => {
 
   const backWordStyles = {
     fontSize:
-      windowWidth < 900
-        ? "100px"
+      windowWidth > 900 ? data.backWordSize || "150px"
         : windowWidth > 700
-          ? data.backWordSize || "150px"
+          ? "100px"
           : data.backWordSize_mobile,
     letterSpacing:
       windowWidth > 700
