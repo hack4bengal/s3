@@ -18,10 +18,33 @@
     margin: 0 auto;
     margin-top: 6rem;
 
-    @media screen and (max-width: 576px) {
+    &.mobile {
+      display: none;
+    }
+
+    @media screen and (max-width: 1200px) {
       margin-top: 4rem;
       flex-direction: column;
       gap: 3rem;
+      width: 100%;
+      align-items: center;
+
+      &.mobile {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .second_prize {
+        &.desktop {
+          display: none;
+        }
+      }
+
+      .third_prize {
+        &.desktop {
+          display: none;
+        }
+      }
     }
 
     .prize_box {
@@ -30,6 +53,7 @@
       align-items: center;
       justify-content: center;
       width: 30%;
+      text-align: center;
 
       h1,
       p {
@@ -76,6 +100,7 @@
         background: linear-gradient(to right, #ffffff 0%, #554c4c 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
         @media screen and (max-width: 576px) {
           font-size: 2.5rem;
         }
@@ -86,6 +111,7 @@
         font-weight: 700;
       }
     }
+
     .third_prize {
       h1 {
         font-size: 2.5rem;
@@ -94,6 +120,7 @@
         background: linear-gradient(to right, #ffffff 0%, #ec8423 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
         @media screen and (max-width: 576px) {
           font-size: 2.5rem;
         }
