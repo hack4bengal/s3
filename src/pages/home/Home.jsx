@@ -12,6 +12,7 @@ import {
 import Timer from "../../components/private/timer/Timer";
 import Timeline from "../../components/private/timeline/Timeline";
 import "./Home.scss";
+import Venue from "../../components/private/venue/Venue";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Timer />
       {/* <Timeline/> */}
       <About />
+      <Venue />
       <Prizes />
       <Sponsors />
       <Mentors />

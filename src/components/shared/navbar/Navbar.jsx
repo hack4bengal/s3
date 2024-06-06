@@ -10,17 +10,6 @@ const Navbar = () => {
 
   const handleClick = () => {
     setIsActive((prevIsActive) => !prevIsActive);
-
-    // if (isActive) {
-    //   document.getElementsByClassName("main_parent")[0].style.height = "auto";
-    //   document.getElementsByClassName("main_parent")[0].style.overflow = "auto";
-    //   document.getElementsByClassName("footer")[0].style.display = "block";
-    // } else {
-    //   document.getElementsByClassName("main_parent")[0].style.height = "100vh";
-    //   document.getElementsByClassName("main_parent")[0].style.overflow =
-    //     "hidden";
-    //   document.getElementsByClassName("footer")[0].style.display = "none";
-    // }
   };
 
   const navigate = useNavigate();
