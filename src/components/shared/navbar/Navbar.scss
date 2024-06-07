@@ -184,7 +184,8 @@
       justify-content: flex-end;
 
       .navbar__mobile__sidebar {
-        width: 70%;
+        width: 40%;
+        min-width: 18rem;
         height: 100%;
         background-color: #1b1b1b;
         border-radius: 20px 0px 0px 20px;
@@ -241,6 +242,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        gap: 1rem;
 
         span {
           color: var(--h4bred);
@@ -250,6 +252,7 @@
 
         img {
           object-fit: contain;
+          width: 200px;
         }
       }
     }
