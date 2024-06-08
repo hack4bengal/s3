@@ -9,4 +9,298 @@
     padding: 2rem 1.5rem;
     margin-top: 2rem;
   }
+
+  .themes_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 6rem;
+    gap: 40px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .themesection_title {
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .color-white {
+    color: #fff;
+  }
+
+  .box-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .box-container2 {
+    align-items: center;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1380px) {
+    .box-container,
+    .box-container2 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }
+
+  .box-item {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    width: 360px;
+    height: 420px;
+    margin-bottom: 3px;
+    max-width: 100%;
+    cursor: pointer;
+    /* 8 */
+  }
+
+  .flip-box {
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    margin-bottom: 10px;
+  }
+
+  .flip-box-front,
+  .flip-box-back {
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 420px;
+    -ms-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    // box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
+  .flip-box-front {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-front {
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-back {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box .inner {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    -ms-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+  }
+
+  .flipbox_desc {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.142);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .inner > h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .flip-box-icon {
+    width: 75px;
+    margin-bottom: 30px;
+  }
+
+  .flip-box-header {
+    font-size: 34px;
+  }
+
+  .flip-box p {
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: start;
+    word-break: break-word;
+    letter-spacing: 1px;
+  }
+
+  .flip-box-img {
+    margin-top: 25px;
+    width: 50px;
+  }
+
+  .flip-box-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    color: #ff1717;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 768px) {
+    .box-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .box-item {
+      /*  margin-bottom: 25px; */
+      min-width: calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+    }
+
+    .box-container2 {
+      padding-top: 0px;
+    }
+
+    .flip-box .inner {
+      padding: 15px;
+    }
+
+    .flip-box-img {
+      margin-top: 0px;
+      width: 30px;
+    }
+
+    .inner > h3 {
+      font-size: 20px !important;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flip-box p {
+      color: white;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+      /*  background-color: rgb(34, 34, 34); */
+      border: 2px solid #ffffff;
+      border-radius: 5px;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      min-height: 290px;
+      max-height: 290px;
+      -ms-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -webkit-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .box-container {
+      gap: 10px;
+      padding: 0 1rem;
+    }
+
+    .box-item {
+      margin-bottom: 0px;
+    }
+
+    .flip-box .inner {
+      padding: 5px;
+    }
+
+    .inner > h3 {
+      font-size: 18px !important;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }

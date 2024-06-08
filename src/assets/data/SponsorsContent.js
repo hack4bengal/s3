@@ -22,6 +22,7 @@ import graph from "../images/SponsorImages/graph.png";
 // import solana from "../images/SponsorImages/solana.webp";
 import xyz from "../images/SponsorImages/xyz.png";
 import jis from "../images/SponsorImages/jis.png";
+
 // import zeeve from "../images/SponsorImages/zeeve.webp";
 
 const sponsors = {
@@ -68,6 +69,13 @@ const sponsors = {
       name: "xyz",
       img: xyz,
       link: "https://www.xyz.com",
+    },
+  ],
+  Education: [
+    {
+      name: "JIS",
+      img: jis,
+      link: "https://www.jis.com",
     },
   ],
 };

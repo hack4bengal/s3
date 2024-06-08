@@ -31,6 +31,10 @@ const navbarContent = {
       text: "Sponsors",
       link: "sponsors",
     },
+    {
+      text: "Team",
+      link: "/team",
+    },
   ],
   dropdown: {
     text: "More",
@@ -50,10 +54,6 @@ const navbarContent = {
       {
         text: "FAQ",
         link: "faq",
-      },
-      {
-        text: "Team",
-        link: "/team",
       },
     ],
   },
