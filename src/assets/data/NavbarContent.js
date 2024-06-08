@@ -7,22 +7,23 @@ const navbarContent = {
       text: "Home",
       link: "/",
     },
+    // {
+    //   text: "About",
+    //   link: "about",
+    // },
+
     {
-      text: "About",
-      link: "about",
+      text: "Timeline",
+      link: "timeline",
     },
     {
       text: "Venue",
       link: "venue",
     },
     {
-      text: "Timeline",
-      link: "timeline",
+      text: "Themes",
+      link: "themes",
     },
-    // {
-    //   text: "Themes",
-    //   link: "themes",
-    // },
     {
       text: "Prizes",
       link: "prizes",
