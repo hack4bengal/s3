@@ -27,13 +27,24 @@ const Venue = () => {
         </p>
 
         <div className="location__btn_div">
-          <a
-            href="https://www.jiscollege.ac.in/virtual-tour/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="location__btn">View in 360°</button>
-          </a>
+          <div className="location_btn_div_mobile">
+            <a
+              href="https://www.jiscollege.ac.in/virtual-tour/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="location__btn">View in 360°</button>
+            </a>
+
+            <a
+              href="https://drive.google.com/file/d/1MJNxqZn4uNjKHJN9k8zBx7m6h7PS7aK7/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="location_howtoreach_mobile"
+            >
+              <button className="location__btn">How to reach</button>
+            </a>
+          </div>
 
           <a
             href="https://maps.app.goo.gl/1LtTmtADW2hcJoBX9"
@@ -46,6 +57,7 @@ const Venue = () => {
             href="https://drive.google.com/file/d/1MJNxqZn4uNjKHJN9k8zBx7m6h7PS7aK7/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
+            className="location_howtoreach"
           >
             <button className="location__btn">How to reach</button>
           </a>
