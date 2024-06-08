@@ -6,6 +6,13 @@ const HeaderData = {
     frontWord: "Hackathon Prizes",
     frontWordMobile: "Prizes",
   },
+  venue: {
+    backWord: "Venue",
+    backWordSize_mobile: "85px",
+    backWordSpacing_mobile: "0.2rem",
+    frontWord: "Location",
+    frontWordMobile: "Location",
+  },
   timeline: {
     backWord: "Roadmap",
     backWordMobile: "Plan",

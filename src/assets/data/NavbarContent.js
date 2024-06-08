@@ -12,6 +12,10 @@ const navbarContent = {
       link: "about",
     },
     {
+      text: "Venue",
+      link: "venue",
+    },
+    {
       text: "Timeline",
       link: "timeline",
     },

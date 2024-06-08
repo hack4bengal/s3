@@ -63,6 +63,17 @@ const App = () => {
                 />
               }
             />
+            <Route
+              exact
+              path="/call-for-mentors"
+              element={
+                <Forward
+                  pathname={"/call-for-mentors"}
+                  title={"Call for Mentors"}
+                  url={"https://lu.ma/9fkggmb3"}
+                />
+              }
+            />
             <Route exact path="/register" element={<Register />} />
             <Route exact path="/coc" element={<CodeofConduct />} />
             <Route exact path="/brand" element={<Brand />} />
