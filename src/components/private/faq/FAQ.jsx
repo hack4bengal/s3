@@ -37,6 +37,22 @@ const Faq = () => {
         "We encourage you to make a team of minimum 2 and maximum 4 members. If you are a Solo Hacker and do not have a team, you can still register and we will help you find a team on our Discord Server.",
     },
     {
+      question: "Will hardware toolkits be available on-site?",
+      answer:
+        "No, hardware toolkits will not be available on-site for the Hardware Track. You'll need to bring your own.",
+    },
+    {
+      question:
+        "What are the guidelines for the teams participating in the Hardware track?",
+      answer:
+        "It is important to remember that you need to bring your own toolkits, although power sockets and an internet connection will be readily available on-site.",
+    },
+    {
+      question: "What will be provided for participants at the venue?",
+      answer:
+        "We will be providing the following: separate rest areas for both male and female participants, complimentary meals throughout the duration of the event, and tech support, including a stable internet connection and readily available power sockets on-site. Please note that you need to bring your own laptops and any other electronic devices you may need during the hackathon.",
+    },
+    {
       question: "Can I participate remotely?",
       answer:
         "Hack4Bengal 3.0 is an in-person hackathon. So remote participation is not applicable.",
@@ -85,9 +101,9 @@ const Faq = () => {
             <div className="accordion-item">
               <button
                 id="accordion-button-1"
-                aria-expanded={openFaq === 5 ? "true" : "false"}
+                aria-expanded={openFaq === 8 ? "true" : "false"}
                 onClick={() => {
-                  setOpenFaq(openFaq === 5 ? null : 5);
+                  setOpenFaq(openFaq === 8 ? null : 8);
                 }}
               >
                 <p className="accordion-title">
@@ -95,7 +111,7 @@ const Faq = () => {
                 </p>
 
                 <div className="icon">
-                  {openFaq !== 5 ? <MdAdd /> : <FiMinus />}
+                  {openFaq !== 8 ? <MdAdd /> : <FiMinus />}
                 </div>
               </button>
               <div className="accordion-content">
