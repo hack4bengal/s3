@@ -51,6 +51,10 @@
         }
 
         .testimonials__card_author {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
           h2 {
             font-size: 1.2rem;
             font-weight: 700;
