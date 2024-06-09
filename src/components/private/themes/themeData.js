@@ -1,14 +1,7 @@
-// import edu from "../../assets/themes/education.png";
-// import acess from "../../assets/themes/access.png";
-// import climate from "../../assets/themes/climate.png";
-// import health from "../../assets/themes/health.png";
-// import fintech from "../../assets/themes/fintech.png";
-// import innovation from "../../assets/themes/innovation.png";
-import theme1 from "../../../assets/images/themes/theme3.png";
-import fintech from "../../../assets/images/themes/fintech2.png";
+import fintech from "../../../assets/images/themes/fintech.png";
 import inclusive from "../../../assets/images/themes/inclusive.png";
-import sustainability from "../../../assets/images/themes/sustainability3.png";
-import health from "../../../assets/images/themes/health3.png";
+import greentech from "../../../assets/images/themes/greentech.png";
+import health from "../../../assets/images/themes/health.png";
 import open from "../../../assets/images/themes/open.png";
 import edu from "../../../assets/images/themes/edu.png";
 
@@ -24,7 +17,7 @@ const themedata = [
     desc: "Develop apps supporting mental wellness, improving healthcare access, and promoting healthier lifestyles. Empower individuals to prioritize their well-being and lead fulfilling lives.",
   },
   {
-    img: sustainability,
+    img: greentech,
     name: "Sustainability and \n Environment",
     desc: "Address climate change, promote renewable energy, and manage waste effectively to create a sustainable future. Drive initiatives for a greener planet and ensure environmental preservation for generations to come.",
   },
