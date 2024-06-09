@@ -18,18 +18,7 @@ const Theme = () => {
                   <div
                     className="flip-box-front text-center"
                     style={{ backgroundImage: `url(${item.img})` }}
-                  >
-                    {/* <div className="inner color-white">
-                      <h3 className="flip-box-header">
-                        {item.name.split("\n").map((str, index) => (
-                          <span key={index}>
-                            {str}
-                            <br />
-                          </span>
-                        ))}
-                      </h3>
-                    </div> */}
-                  </div>
+                  ></div>
                   <div
                     className="flip-box-back text-center"
                     style={{ backgroundImage: `url(${item.img})` }}

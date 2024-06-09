@@ -1,11 +1,7 @@
 import React from "react";
 import HeaderData from "../../../assets/data/HeaderContent";
-import { ComingSoon, Header } from "../../shared";
+import { Header } from "../../shared";
 import "./Venue.scss";
-import first from "../../../assets/images/PrizesImages/first.png";
-import second from "../../../assets/images/PrizesImages/second.png";
-import third from "../../../assets/images/PrizesImages/third.png";
-import agun from "../../../assets/images/PrizesImages/agun.png";
 
 const Venue = () => {
   return (

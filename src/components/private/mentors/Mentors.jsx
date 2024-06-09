@@ -11,23 +11,6 @@ function Mentors() {
     <section className="mentors__parent" id="mentors">
       <Header {...HeaderData.mentors} />
       <ComingSoon />
-      {/* <div className="mentors__container mentors__container_desktop">
-        {mentorContent.map((mentor, index) => {
-          return <SingleMentors mentor={mentor} key={index} />;
-        })}
-      </div> */}
-
-      {/* <Marquee
-        autoFill={true}
-        pauseOnHover={true}
-        speed={50}
-        direction="right"
-        className="mentors__container mentors__container_mobile"
-      >
-        {mentorContent.map((mentor, index) => {
-          return <SingleMentors mentor={mentor} key={index} />;
-        })}
-      </Marquee> */}
     </section>
   );
 }

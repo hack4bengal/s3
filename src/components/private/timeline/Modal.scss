@@ -1,90 +1,81 @@
-
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+
+  &__content {
+    background: #393939;
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+    position: relative;
+    height: 480px;
+    width: 480px;
+    transform: scale(0.7);
+    animation: scaleIn 0.3s ease-in-out forwards;
+    @media screen and (max-width: 549px) {
+      height: 400px;
+      width: 400px;
+    }
+    @media screen and (max-width: 400px) {
+      height: 400px;
+      width: 350px;
+    }
+    @media screen and (max-width: 370px) {
+      height: 400px;
+      width: 300px;
+    }
+    @media screen and (max-width: 300px) {
+      height: 400px;
+      width: 280px;
+    }
+  }
+
+  &__close {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    animation: fadeIn 0.3s ease-in-out;
-
-    &__content {
-        background: #393939;
-        padding: 10px 10px 10px 30px;
-        border-radius: 10px;
-        position: relative;
-        height: 480px;
-        width: 480px;
-        transform: scale(0.7);
-        animation: scaleIn 0.3s ease-in-out forwards;
-        @media screen and (max-width: 549px) {
-            height: 400px;
-            width: 400px;
-        }
-        @media screen and (max-width: 400px) {
-            height: 400px;
-            width: 350px;
-        }
-        @media screen and (max-width: 370px) {
-            height: 400px;
-            width: 300px;
-        }
-        @media screen and (max-width: 300px) {
-            height: 400px;
-            width: 280px;
-        }
-   
+    justify-content: flex-end;
+    padding: 20px 20px 5px 20px;
+    button {
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
     }
+  }
 
-    &__close {
-        display: flex;
-        justify-content: flex-end;
-        padding: 20px 20px 5px 20px;
-        button {
-            background: transparent;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
+  ol {
+    :nth-child(1) {
+      margin-top: 10px;
     }
-
-
-    ol {
-        :nth-child(1) {
-            margin-top: 10px;
-        }
-        li {
-            color: #fff;
-            font-family: var(--body-font);
-            padding: 10px 5px;
-        }
+    li {
+      color: #fff;
+      font-family: var(--body-font);
+      padding: 10px 5px;
     }
+  }
 }
 
-
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-    from {
-        transform: scale(0.9);
-    }
-    to {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
 }
-
-
-
-
-
