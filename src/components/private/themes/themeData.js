@@ -4,6 +4,7 @@ import greentech from "../../../assets/images/themes/greentech.png";
 import health from "../../../assets/images/themes/health.png";
 import open from "../../../assets/images/themes/open.png";
 import edu from "../../../assets/images/themes/edu.png";
+import iot from "../../../assets/images/themes/iot.png";
 
 const themedata = [
   {
@@ -36,6 +37,11 @@ const themedata = [
     img: open,
     name: "Open Innovation",
     desc: "AR-VR, AIML, Bitcoin Blockchain or Maggi Masala? Create what you want and drive groundbreaking solutions and shape the future of technology through open innovation and idea exchange.",
+  },
+  {
+    img: iot,
+    name: "Open Innovation",
+    desc: "Get hands-on and bring your concepts to life! Dive into the Hardware Track and transform your inventive ideas into real, functional prototypes.",
   },
 ];
 
