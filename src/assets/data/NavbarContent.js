@@ -7,22 +7,23 @@ const navbarContent = {
       text: "Home",
       link: "/",
     },
+    // {
+    //   text: "About",
+    //   link: "about",
+    // },
+
     {
-      text: "About",
-      link: "about",
+      text: "Timeline",
+      link: "timeline",
     },
     {
       text: "Venue",
       link: "venue",
     },
     {
-      text: "Timeline",
-      link: "timeline",
+      text: "Themes",
+      link: "themes",
     },
-    // {
-    //   text: "Themes",
-    //   link: "themes",
-    // },
     {
       text: "Prizes",
       link: "prizes",
@@ -30,6 +31,10 @@ const navbarContent = {
     {
       text: "Sponsors",
       link: "sponsors",
+    },
+    {
+      text: "Team",
+      link: "/team",
     },
   ],
   dropdown: {
@@ -50,10 +55,6 @@ const navbarContent = {
       {
         text: "FAQ",
         link: "faq",
-      },
-      {
-        text: "Team",
-        link: "/team",
       },
     ],
   },

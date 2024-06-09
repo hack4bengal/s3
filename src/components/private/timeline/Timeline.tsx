@@ -32,24 +32,29 @@ const Timeline = () => {
             <div key={index} className="timeline__event">
               <div className="timeline__d-flex">
                 <p
-                  className={`timeline__number ${currentDate > event.date ? "active" : "inactive"
-                    }`}
+                  className={`timeline__number ${
+                    currentDate > event.date ? "active" : "inactive"
+                  }`}
                 >
                   {event.number}
                 </p>
                 <div
-                  className={`timeline__circle_details ${index === 0 ? "first-circle" : ""
-                    }`}
+                  className={`timeline__circle_details ${
+                    index === 0 ? "first-circle" : ""
+                  }`}
                 >
                   <img src={event.ringImg} alt="timeline" />
                   <p>{event.circleText}</p>
                 </div>
               </div>
-              <button className="timeline__date"
-              onClick={() => {setIsModalOpen(true)}}
+              <button
+                className="timeline__date"
+                onClick={() => {
+                  setIsModalOpen(true);
+                }}
               >
                 {event.displayDate}
-                </button>
+              </button>
             </div>
           ))}
         </div>
