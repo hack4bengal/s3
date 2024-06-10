@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 900px) {
       justify-content: center;
     }
 
@@ -24,12 +24,17 @@
       align-items: center;
       gap: 4rem;
       margin-top: -4rem;
+      position: relative;
+
+      @media screen and (max-width: 1400px) {
+        margin-right: 0rem;
+      }
 
       @media screen and (max-width: 1120px) {
         margin-top: 0rem;
       }
 
-      @media screen and (max-width: 850px) {
+      @media screen and (max-width: 900px) {
         margin-top: 5rem;
       }
 
@@ -51,6 +56,7 @@
         background: #ffffff;
         background: linear-gradient(to right, #ffffff 0%, #ff0000 100%);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
 
         @media screen and (max-width: 1120px) {
@@ -80,6 +86,7 @@
           width: 90%;
           row-gap: 20px;
           justify-content: center;
+
           .colon {
             justify-content: center;
             display: flex;
@@ -87,6 +94,13 @@
         }
 
         .time {
+          $size: 115px;
+          width: $size;
+          height: $size;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           font-family: "Montserrat", sans-serif;
           font-size: 60px;
           text-align: center;
@@ -96,11 +110,12 @@
           background-color: #2a2727;
           padding: 1rem;
           border-radius: 18px;
-          width: 115px;
-          height: 115px;
 
           @media screen and (max-width: 1120px) {
             font-size: 30px;
+            $size: 100px;
+            width: $size;
+            height: $size;
           }
 
           @media screen and (max-width: 576px) {
@@ -109,6 +124,9 @@
             justify-content: center;
             flex-direction: column;
             padding: 0.5rem;
+            $size: 90px;
+            width: $size;
+            height: $size;
           }
 
           p:nth-child(2) {
@@ -160,11 +178,11 @@
   .ghori {
     width: 55%;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1400px) {
       width: 45%;
     }
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 900px) {
       display: none;
     }
   }
