@@ -3,6 +3,7 @@ import filecoin from "../images/SponsorImages/filecoin.png";
 import github from "../images/SponsorImages/github.png";
 import graph from "../images/SponsorImages/graph.png";
 import xyz from "../images/SponsorImages/xyz.png";
+import router from "../images/SponsorImages/router.png";
 import jis from "../images/SponsorImages/jis.png";
 
 const sponsors = {
@@ -19,7 +20,6 @@ const sponsors = {
       img: github,
       link: "https://github.com/",
     },
-
     {
       name: "Graph",
       img: graph,
@@ -31,6 +31,13 @@ const sponsors = {
       name: "Road To DevCon",
       img: devcon,
       link: "https://devcon.org/en/",
+    },
+  ],
+  Bronze: [
+    {
+      name: "Router Protocol",
+      img: router,
+      link: "https://www.routerprotocol.com/",
     },
   ],
   Domain: [
