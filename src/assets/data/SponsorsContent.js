@@ -2,6 +2,7 @@ import devcon from "../images/SponsorImages/devcon.png";
 import filecoin from "../images/SponsorImages/filecoin.png";
 import github from "../images/SponsorImages/github.png";
 import graph from "../images/SponsorImages/graph.png";
+import hackquest from "../images/SponsorImages/hackquest.png";
 import xyz from "../images/SponsorImages/xyz.png";
 import router from "../images/SponsorImages/router.png";
 import jis from "../images/SponsorImages/jis.png";
@@ -24,6 +25,11 @@ const sponsors = {
       name: "Graph",
       img: graph,
       link: "https://thegraph.com/",
+    },
+    {
+      name: "HackQuest",
+      img: hackquest,
+      link: "https://www.hackquest.io/",
     },
   ],
   Silver: [
