@@ -149,6 +149,7 @@
     transition: all 2s ease-in-out;
     left: 46%;
     transform: translateX(-50%);
+    z-index: 2;
 
     @media screen and (max-width: 850px) {
       display: none;
@@ -184,10 +185,6 @@
       transition: opacity 1.5s ease-in-out;
       opacity: 0;
 
-      &:hover {
-        opacity: 1;
-      }
-
       a {
         color: var(--h4bred);
         text-decoration: none;
@@ -212,9 +209,10 @@
       }
 
       .season_linkdiv {
+        opacity: 1;
+
         a {
           transition: all 1.5s ease-in-out;
-          opacity: 1;
           z-index: 99;
         }
       }
