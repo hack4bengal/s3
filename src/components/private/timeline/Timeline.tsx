@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import "./Timeline.scss";
 import HeaderData from "../../../assets/data/HeaderContent";
-import { Header } from "../../shared";
-import { EventTimeline } from "../../../assets/data/Timeline";
+import {Header} from "../../shared";
+import {EventTimeline} from "../../../assets/data/Timeline";
 import Modal from "./Modal";
 
 const Timeline = () => {

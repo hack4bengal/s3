@@ -11,22 +11,26 @@
   z-index: 1000;
   animation: fadeIn 0.3s ease-in-out;
 
-  &__content {
-    background: #393939;
-    padding: 10px 10px 10px 30px;
+  .modal__content {
+    background: #303030;
+    border: 3px solid var(--h4bred);
+    padding: 35px 35px 35px 55px;
     border-radius: 10px;
     position: relative;
-    height: 480px;
-    width: 480px;
+    min-height: 350px;
+    width: 500px;
     transform: scale(0.7);
     animation: scaleIn 0.3s ease-in-out forwards;
+
     @media screen and (max-width: 549px) {
-      height: 400px;
-      width: 400px;
+      min-height: 350px;
+      width: 350px;
+      padding: 27px 27px 27px 50px;
     }
     @media screen and (max-width: 400px) {
       height: 400px;
       width: 350px;
+      padding: 30px 30px 30px 52.5px;
     }
     @media screen and (max-width: 370px) {
       height: 400px;
@@ -38,10 +42,9 @@
     }
   }
 
-  &__close {
+  .modal__close {
     display: flex;
     justify-content: flex-end;
-    padding: 20px 20px 5px 20px;
     button {
       background: transparent;
       border: none;

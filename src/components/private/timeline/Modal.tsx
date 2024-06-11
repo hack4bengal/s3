@@ -1,7 +1,7 @@
 import React from "react";
 import "./Modal.scss";
 
-const Modal = ({ closeModal }) => {
+const Modal = ({closeModal}) => {
   return (
     <div className="modal">
       <div className="modal__content">
@@ -33,14 +33,14 @@ const Modal = ({ closeModal }) => {
         </div>
         <ol type="1">
           <li>
-            Registration opens on June 1, 2024, and closes on June 24, 2024.
+            Registration opens on June 1, 2024, and closes on June 11, 2024.
           </li>
           <li>
-            The hackathon takes place from June 28, 2024, to June 30, 2024.
+            The Hackathon will take place from June 28, 2024, to June 30, 2024.
           </li>
           <li>
-            The judging round, winner announcement, and closing ceremony will
-            all occur on June 30, 2024.
+            The Judging round, Winner Announcement, and Closing Ceremony will
+            all occur on June 30, 2024.
           </li>
         </ol>
       </div>

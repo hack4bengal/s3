@@ -18,7 +18,7 @@ const HeaderData = {
     backWordMobile: "Plan",
     backWordSize_mobile: "93px",
     backWordSpacing_mobile: "0.5rem",
-    frontWord: "Hackathon Timeline",
+    frontWord: "Timeline",
     frontWordMobile: "Timeline",
   },
   theme: {
