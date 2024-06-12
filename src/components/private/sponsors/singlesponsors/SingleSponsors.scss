@@ -27,6 +27,14 @@
   }
 }
 
+.gdg > img {
+  min-width: 230px !important;
+
+  @media screen and (max-width: 576px) {
+    min-width: 190px !important;
+  }
+}
+
 .gold {
   border: 1px solid #efc230;
   transition: all 0.3s ease;

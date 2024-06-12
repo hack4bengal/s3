@@ -6,7 +6,11 @@ const SingleSponsors = ({ sponsor, type }) => {
 
   return (
     <a href={sponsor?.link} target="_blank" rel="noopener noreferrer">
-      <div className={`single__sponsor ${type}`}>
+      <div
+        className={`single__sponsor ${type} ${
+          sponsor?.name === "GDG Cloud Kolkata" && "gdg"
+        }`}
+      >
         <img
           src={sponsor?.img}
           alt={sponsor?.name}
