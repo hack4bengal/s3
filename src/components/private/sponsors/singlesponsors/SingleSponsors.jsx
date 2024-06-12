@@ -1,7 +1,7 @@
 import React from "react";
 import "./SingleSponsors.scss";
 
-const SingleSponsors = ({ sponsor, type }) => {
+const SingleSponsors = ({sponsor, type}) => {
   const style = {};
 
   return (

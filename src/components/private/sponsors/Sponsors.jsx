@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderData from "../../../assets/data/HeaderContent";
 import sponsors from "../../../assets/data/SponsorsContent";
-import { Header } from "../../shared";
+import {Header} from "../../shared";
 import "./Sponsors.scss";
 import SingleSponsors from "./singlesponsors/SingleSponsors";
 

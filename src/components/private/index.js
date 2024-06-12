@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import {lazy} from "react";
 
 export const Landing = lazy(() => import("./landing/Landing"));
 export const Marquee = lazy(() => import("./marquee/Marquee"));
