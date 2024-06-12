@@ -74,7 +74,7 @@ const App = () => {
                 />
               }
             />
-            <Route exact path="/register" element={<Register />} />
+
             <Route exact path="/coc" element={<CodeofConduct />} />
             <Route exact path="/brand" element={<Brand />} />
             <Route exact path="/tg" element={<Telegram />} />
