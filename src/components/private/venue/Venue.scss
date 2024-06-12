@@ -44,6 +44,7 @@
     margin-top: 2rem;
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
 
     @media screen and (max-width: 576px) {
       text-align: center;
@@ -75,7 +76,7 @@
         display: none;
       }
 
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 720px) {
         display: flex;
         gap: 1rem;
 
@@ -85,16 +86,20 @@
       }
     }
 
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 720px) {
       .location_howtoreach {
         display: none;
       }
+
       flex-direction: column;
       gap: 0;
     }
 
     .location__btn {
-      padding: 1rem 1.4rem;
+      $padding-block: 1rem;
+      $padding-inline: 1.4rem;
+      $border-size: 2px;
+      padding: $padding-block $padding-inline;
       margin: 0 1rem;
       font-size: 1rem;
       font-weight: 600;
@@ -106,14 +111,15 @@
       cursor: pointer;
       font-size: 1rem;
       font-family: var(--heading-font);
-
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: #ff0000;
+        padding: calc(#{$padding-block} - #{$border-size}) calc(#{$padding-inline} - #{$border-size});
+        background-color: #1b1b1b;
+        border: 2px inset #ff1717;
       }
 
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 720px) {
         margin: 0.5rem 0;
       }
     }

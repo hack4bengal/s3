@@ -29,9 +29,8 @@ const Sponsors = () => {
             })}
           </div>
         </div>
-
         <div className="sponsors__container_flex">
-          <div className="sponsors__container domain_container">
+          <div className="sponsors__container domain_container silv">
             <h1>Silver Sponsor</h1>
             <div className="sponsors__flexbox">
               {sponsors["Silver"].map((item, index) => {
@@ -41,7 +40,7 @@ const Sponsors = () => {
               })}
             </div>
           </div>
-          <div className="sponsors__container">
+          <div className="sponsors__container silv">
             <h1>Education Partner</h1>
             <div className="sponsors__flexbox">
               {sponsors["Education"].map((item, index) => {

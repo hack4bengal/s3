@@ -83,7 +83,7 @@ const About = () => {
 
             <div className="about__metrics">
               <div className="about__metrics_item">
-                <p>2000+</p>
+                <p>5000+</p>
                 <span>Hackers</span>
               </div>
               <div className="about__metrics_item">
@@ -92,7 +92,7 @@ const About = () => {
               </div>
 
               <div className="about__metrics_item">
-                <p>36+</p>
+                <p>70+</p>
                 <span>Hack hours</span>
               </div>
 
@@ -106,7 +106,7 @@ const About = () => {
                 <span>Projects</span>
               </div>
               <div className="about__metrics_item">
-                <p>40+</p>
+                <p>50+</p>
                 <span>Mentors</span>
               </div>
             </div>

@@ -17,7 +17,7 @@
   .sponsors__container_flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 4rem;
     max-width: 1400px;
@@ -31,6 +31,14 @@
   .sponsors__container {
     display: flex;
     flex-direction: column;
+
+    &.silv {
+      width: 20rem;
+
+      @media screen and (max-width: 576px) {
+        max-width: 15rem;
+      }
+    }
 
     h1 {
       font-size: 2rem;
