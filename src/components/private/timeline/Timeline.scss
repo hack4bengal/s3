@@ -117,6 +117,11 @@
             font-weight: 600;
             position: absolute;
             color: white;
+            padding: 15px;
+
+            @media screen and (max-width: 500px) {
+              padding: 10px;
+            }
 
             @media screen and (max-width: 853px) {
               font-size: 0.6rem;
