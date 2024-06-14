@@ -89,7 +89,8 @@ const App = () => {
         </main>
 
         {window.location.pathname !== "/surprise" &&
-          window.location.pathname !== "/register" && <Footer />}
+          window.location.pathname !== "/register" &&
+          window.location.pathname !== "/discord" && <Footer />}
       </Suspense>
     </Router>
   );
