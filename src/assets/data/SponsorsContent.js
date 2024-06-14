@@ -8,6 +8,9 @@ import xyz from "../images/SponsorImages/xyz.png";
 import router from "../images/SponsorImages/router.png";
 import jis from "../images/SponsorImages/jis.png";
 import gdg from "../images/SponsorImages/gdg.png";
+import superteam from "../images/SponsorImages/superteam.png";
+import callchimp from "../images/SponsorImages/callchimp.png";
+import tezos from "../images/SponsorImages/tezos.png";
 
 const sponsors = {
   Platinum: [
@@ -66,6 +69,23 @@ const sponsors = {
       name: "xyz",
       img: xyz,
       link: "https://www.xyz.com",
+    },
+  ],
+  Track: [
+    {
+      name: "Superteam India",
+      img: superteam,
+      link: "https://in.superteam.fun",
+    },
+    {
+      name: "Tezos India",
+      img: tezos,
+      link: "https://tezosindia.org.in/",
+    },
+    {
+      name: "Callchimp",
+      img: callchimp,
+      link: "https://callchimp.ai/",
     },
   ],
   Education: [
