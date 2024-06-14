@@ -46,7 +46,7 @@ const Sponsors = () => {
             <div className="sponsors__flexbox">
               {sponsors["Education"].map((item, index) => {
                 return (
-                  <SingleSponsors key={index} sponsor={item} type="silver" />
+                  <SingleSponsors key={index} sponsor={item} type="education" />
                 );
               })}
             </div>
@@ -59,7 +59,7 @@ const Sponsors = () => {
             <div className="sponsors__flexbox">
               {sponsors["Bronze"].map((item, index) => {
                 return (
-                  <SingleSponsors key={index} sponsor={item} type="domain" />
+                  <SingleSponsors key={index} sponsor={item} type="bronze" />
                 );
               })}
             </div>
@@ -72,6 +72,16 @@ const Sponsors = () => {
               {sponsors["Domain"].map((item, index) => {
                 return (
                   <SingleSponsors key={index} sponsor={item} type="domain" />
+                );
+              })}
+            </div>
+          </div>
+          <div className="sponsors__container domain_container">
+            <h1>Track Partner</h1>
+            <div className="sponsors__flexbox">
+              {sponsors["Track"].map((item, index) => {
+                return (
+                  <SingleSponsors key={index} sponsor={item} type="track" />
                 );
               })}
             </div>

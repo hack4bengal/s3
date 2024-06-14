@@ -60,27 +60,61 @@
 }
 
 .silver {
-  border: 1px solid #c0c0c0;
+  border: 1px solid #BCC6CC;
   transition: all 0.3s ease;
 }
 
 .silver:hover {
-  -webkit-box-shadow: inset 0px 0px 13px -2px rgba(192, 192, 192, 1);
-  -moz-box-shadow: inset 0px 0px 13px -2px rgba(192, 192, 192, 1);
-  box-shadow: inset 0px 0px 13px -2px rgba(192, 192, 192, 1);
+  -webkit-box-shadow: inset 0px 0px 13px -2px #BCC6CC;
+  -moz-box-shadow: inset 0px 0px 13px -2px #BCC6CC;
+  box-shadow: inset 0px 0px 13px -2px #BCC6CC;
   transition: all 0.3s ease;
 }
 
-.bronze,
-.domain {
+.education {
+  border: 3px solid #253c7f;
+  transition: all 0.3s ease;
+}
+
+.education:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px #253c7f;
+  -moz-box-shadow: inset 0px 0px 13px -2px #253c7f;
+  box-shadow: inset 0px 0px 13px -2px #253c7f;
+  transition: all 0.3s ease;
+}
+
+.bronze {
   border: 1px solid #cd7f32;
   transition: all 0.3s ease;
 }
 
-.bronze:hover,
-.domain:hover {
+.domain {
+  border: 3px solid #471754;
+  transition: all 0.3s ease;
+}
+
+.track {
+  border: 1px solid #7230FF;
+  transition: all 0.3s ease;
+}
+
+.bronze:hover {
   -webkit-box-shadow: inset 0px 0px 13px -2px rgba(205, 127, 50, 1);
   -moz-box-shadow: inset 0px 0px 13px -2px rgba(205, 127, 50, 1);
   box-shadow: inset 0px 0px 13px -2px rgba(205, 127, 50, 1);
+  transition: all 0.3s ease;
+}
+
+.domain:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px #471754;
+  -moz-box-shadow: inset 0px 0px 13px -2px #471754;
+  box-shadow: inset 0px 0px 13px -2px #471754;
+  transition: all 0.3s ease;
+}
+
+.track:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px #7230FF;
+  -moz-box-shadow: inset 0px 0px 13px -2px #7230FF;
+  box-shadow: inset 0px 0px 13px -2px #7230FF;
   transition: all 0.3s ease;
 }
