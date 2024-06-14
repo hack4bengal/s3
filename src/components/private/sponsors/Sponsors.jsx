@@ -1,9 +1,10 @@
 import React from "react";
 import HeaderData from "../../../assets/data/HeaderContent";
 import sponsors from "../../../assets/data/SponsorsContent";
-import {Header} from "../../shared";
+import { Header } from "../../shared";
 import "./Sponsors.scss";
 import SingleSponsors from "./singlesponsors/SingleSponsors";
+import Marquee from "react-fast-marquee";
 
 const Sponsors = () => {
   return (
@@ -76,7 +77,27 @@ const Sponsors = () => {
             </div>
           </div>
         </div>
-      </div>
+        <div className="sponsors__container_flex">
+          <div className="sponsors__container domain_container">
+            <h1>Community Partners</h1>
+            <div className="sponsors__flexbox community">
+              <Marquee
+                autoFill={true}
+                pauseOnHover={true}
+                className="testimonials__container"
+                speed={50}
+                direction="right"
+              >
+                {sponsors["Community"].map((item, index) => {
+                  return (
+                    <SingleSponsors key={index} sponsor={item} type="silver" />
+                  );
+                })}
+              </Marquee>
+            </div>
+          </div>
+        </div>
+      </div >
     </>
   );
 };
