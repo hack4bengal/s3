@@ -68,6 +68,7 @@
         }
       }
     }
+
     .sponsors__flexbox {
       display: flex;
       flex-wrap: wrap;
@@ -77,6 +78,17 @@
       gap: 1.5rem;
       max-width: 1400px;
       margin: auto;
+
+      &.community {
+        .rfm-marquee-container {
+          .rfm-marquee {
+            .rfm-child {
+              $gap: 1.5rem;
+              margin-left: $gap;
+            }
+          }
+        }
+      }
 
       @media screen and (max-width: 576px) {
         gap: 1rem;
