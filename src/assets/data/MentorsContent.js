@@ -33,6 +33,7 @@ export const mentorContent = [
     designation: "Co-Founder",
     company: "Dynopii",
     linkedin: "https://www.linkedin.com/in/haquekazi",
+    twitter: "https://x.com/imkazi23",
     image: kazi_haque,
   },
 ];

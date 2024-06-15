@@ -11,26 +11,40 @@ import gdg from "../images/SponsorImages/gdg.png";
 import superteam from "../images/SponsorImages/superteam.png";
 import callchimp from "../images/SponsorImages/callchimp.png";
 import tezos from "../images/SponsorImages/tezos.png";
+import coding_catalyst from "../images/CommunityImages/coding_catalyst.webp";
+import ddc from "../images/CommunityImages/ddc.webp";
+import gdsc_nsec from "../images/CommunityImages/gdsc_nsec.webp";
+import gdsc_msit from "../images/CommunityImages/gdsc_msit.webp";
+import bytemonk from "../images/CommunityImages/bytemonk.webp";
+import resourcio_community from "../images/CommunityImages/resourcio_community.webp";
+import os_community from "../images/CommunityImages/os_community.webp";
+import gdsc_fiem from "../images/CommunityImages/gdsc_fiem.webp";
+import skepsis from "../images/CommunityImages/skepsis.webp";
+import noobcode from "../images/CommunityImages/noobcode.webp";
+import polygon_guild_kolkata from "../images/CommunityImages/polygon_guild_kolkata.webp";
+import iei_students_chapter_cse_aot from "../images/CommunityImages/iei_students_chapter_cse_aot.webp";
+import autosecurityy from "../images/CommunityImages/autosecurityy.webp";
+import gdsc_iiest from "../images/CommunityImages/gdsc_iiest.webp";
 
 const sponsors = {
   Platinum: [
     {
       name: "Filecoin",
       img: filecoin,
-      link: "https://filecoin.io/",
+      link: "https://filecoin.io",
     },
   ],
   Gold: [
     {
       name: "Github",
       img: github,
-      link: "https://github.com/",
+      link: "https://github.com",
     },
 
     {
       name: "Avalanche",
       img: avalanche,
-      link: "https://www.avax.network/",
+      link: "https://www.avax.network",
     },
 
     {
@@ -42,26 +56,26 @@ const sponsors = {
     {
       name: "HackQuest",
       img: hackquest,
-      link: "https://www.hackquest.io/",
+      link: "https://www.hackquest.io",
     },
   ],
   Silver: [
     {
       name: "Road To DevCon",
       img: devcon,
-      link: "https://devcon.org/en/",
+      link: "https://devcon.org",
     },
   ],
   Bronze: [
     {
       name: "Router Protocol",
       img: router,
-      link: "https://www.routerprotocol.com/",
+      link: "https://www.routerprotocol.com",
     },
     {
       name: "GDG Cloud Kolkata",
       img: gdg,
-      link: "https://ccd2024.gdgcloudkol.org/",
+      link: "https://ccd2024.gdgcloudkol.org",
     },
   ],
   Domain: [
@@ -93,6 +107,77 @@ const sponsors = {
       name: "JIS",
       img: jis,
       link: "https://www.jis.com",
+    },
+  ],
+  Community: [
+    {
+      name: "Coding Catalyst",
+      img: coding_catalyst,
+      link: "https://linktr.ee/codingcatalystt",
+    },
+    {
+      name: "DevDotCom",
+      img: ddc,
+      link: "https://devdotcom.tech",
+    },
+    {
+      name: "GDSC NSEC",
+      img: gdsc_nsec,
+      link: "https://gdsc.community.dev/netaji-subhash-engineering-college-kolkata-india",
+    },
+    {
+      name: "GDSC MSIT",
+      img: gdsc_msit,
+      link: "https://gdsc.community.dev/meghnad-saha-institute-of-technology-kolkata-india",
+    },
+    {
+      name: "Bytemonk",
+      img: bytemonk,
+      link: "https://bytemonk.gcect.org.in",
+    },
+    {
+      name: "Resourcio Community",
+      img: resourcio_community,
+      link: "https://www.linkedin.com/company/resourcio-community2022",
+    },
+    {
+      name: "OS Community",
+      img: os_community,
+      link: "https://osdevcommunity.github.io/linktree",
+    },
+    {
+      name: "GDSC FIEM",
+      img: gdsc_fiem,
+      link: "https://gdsc.community.dev/future-institute-of-engineering-management-kolkata-india",
+    },
+    {
+      name: "SKEPSIS",
+      img: skepsis,
+    },
+    {
+      name: "NoobCode",
+      img: noobcode,
+      link: "https://noobcode-website.vercel.app",
+    },
+    {
+      name: "Polygon Guild Kolkata",
+      img: polygon_guild_kolkata,
+      link: "https://www.linkedin.com/company/polygon-guild-kolkata",
+    },
+    {
+      name: "IEI Students' Chapter CSE (AOT)",
+      img: iei_students_chapter_cse_aot,
+      link: "https://sccseaot.vercel.app",
+    },
+    {
+      name: "Autosecurityy",
+      img: autosecurityy,
+      link: "https://autosecurityy.com",
+    },
+    {
+      name: "GDSC IIEST",
+      img: gdsc_iiest,
+      link: "https://gdsc.community.dev/indian-institute-of-engineering-science-and-technology-shibpur-howrah-india",
     },
   ],
 };
