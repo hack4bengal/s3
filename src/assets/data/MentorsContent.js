@@ -1,7 +1,7 @@
-import md_nasirul_haque from "../images/MentorImages/md_nasirul_haque.webp";
-import snehangshu_bhattacharya from "../images/MentorImages/snehangshu_bhattacharya.webp";
-import anubhav_singh from "../images/MentorImages/anubhav_singh.webp"
-import kazi_haque from "../images/MentorImages/kazi_haque.webp"
+import md_nasirul_haque from "../images/MentorImages/md_nasirul_haque.png";
+import snehangshu_bhattacharya from "../images/MentorImages/snehangshu_bhattacharya.png";
+import anubhav_singh from "../images/MentorImages/anubhav_singh.png";
+import kazi_haque from "../images/MentorImages/kazi_haque.png";
 
 export const mentorContent = [
   {

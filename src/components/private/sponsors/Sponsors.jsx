@@ -65,6 +65,14 @@ const Sponsors = () => {
             </div>
           </div>
         </div>
+        <div className="sponsors__container domain_container">
+          <h1>Track Partner</h1>
+          <div className="sponsors__flexbox">
+            {sponsors["Track"].map((item, index) => {
+              return <SingleSponsors key={index} sponsor={item} type="track" />;
+            })}
+          </div>
+        </div>
         <div className="sponsors__container_flex">
           <div className="sponsors__container domain_container">
             <h1>Domain Partner</h1>
@@ -72,16 +80,6 @@ const Sponsors = () => {
               {sponsors["Domain"].map((item, index) => {
                 return (
                   <SingleSponsors key={index} sponsor={item} type="domain" />
-                );
-              })}
-            </div>
-          </div>
-          <div className="sponsors__container domain_container">
-            <h1>Track Partner</h1>
-            <div className="sponsors__flexbox">
-              {sponsors["Track"].map((item, index) => {
-                return (
-                  <SingleSponsors key={index} sponsor={item} type="track" />
                 );
               })}
             </div>
@@ -95,7 +93,7 @@ const Sponsors = () => {
                 autoFill={true}
                 pauseOnHover={true}
                 className="testimonials__container"
-                speed={50}
+                speed={60}
                 direction="right"
               >
                 {sponsors["Community"].map((item, index) => {
@@ -107,7 +105,7 @@ const Sponsors = () => {
             </div>
           </div>
         </div>
-      </div >
+      </div>
     </>
   );
 };
