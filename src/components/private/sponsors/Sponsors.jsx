@@ -85,26 +85,6 @@ const Sponsors = () => {
             </div>
           </div>
         </div>
-        <div className="sponsors__container_flex">
-          <div className="sponsors__container domain_container">
-            <h1>Community Partners</h1>
-            <div className="sponsors__flexbox community">
-              <Marquee
-                autoFill={true}
-                pauseOnHover={true}
-                className="testimonials__container"
-                speed={60}
-                direction="right"
-              >
-                {sponsors["Community"].map((item, index) => {
-                  return (
-                    <SingleSponsors key={index} sponsor={item} type="silver" />
-                  );
-                })}
-              </Marquee>
-            </div>
-          </div>
-        </div>
       </div>
     </>
   );

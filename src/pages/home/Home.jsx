@@ -14,6 +14,7 @@ import Timeline from "../../components/private/timeline/Timeline";
 import "./Home.scss";
 import Venue from "../../components/private/venue/Venue";
 import Theme from "../../components/private/themes/Theme";
+import CommunityPartners from "../../components/private/community/CommunityPartners";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       <Prizes />
       <Mentors />
       <Sponsors />
+      <CommunityPartners />
       <Testimonials />
       <FAQ />
     </div>

@@ -37,6 +37,15 @@ const HeaderData = {
     backWordSpacing_mobile: "0.2rem",
     frontWord: "Sponsors",
   },
+  cp: {
+    backWord: "Network",
+    backWordMobile: "Network",
+    backWordSize: "140px",
+    backWordSpacing: "0.3rem",
+    backWordSize_mobile: "75px",
+    backWordSpacing_mobile: "0.2rem",
+    frontWord: "Community Partners",
+  },
   collaborators: {
     backWord: "Collaborators",
     backWordMobile: "Collab",
