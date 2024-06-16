@@ -33,12 +33,12 @@ const Venue = () => {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1MJNxqZn4uNjKHJN9k8zBx7m6h7PS7aK7/view?usp=drivesdk"
+              href="https://hack4bengal.notion.site/Hack4Bengal-3-0-Guide-3a4e84ca957746f29a5ac22990c3db74"
               target="_blank"
               rel="noopener noreferrer"
               className="location_howtoreach_mobile"
             >
-              <button className="location__btn">How to reach</button>
+              <button className="location__btn">Event Guide</button>
             </a>
           </div>
 
@@ -50,12 +50,12 @@ const Venue = () => {
             <button className="location__btn">View in Google Maps</button>
           </a>
           <a
-            href="https://drive.google.com/file/d/1MJNxqZn4uNjKHJN9k8zBx7m6h7PS7aK7/view?usp=drivesdk"
+            href="https://hack4bengal.notion.site/Hack4Bengal-3-0-Guide-3a4e84ca957746f29a5ac22990c3db74"
             target="_blank"
             rel="noopener noreferrer"
             className="location_howtoreach"
           >
-            <button className="location__btn">How to reach</button>
+            <button className="location__btn">Event Guide</button>
           </a>
         </div>
       </div>
