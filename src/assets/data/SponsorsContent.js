@@ -17,7 +17,7 @@ import gdsc_nsec from "../images/CommunityImages/gdsc_nsec.png";
 import gdsc_msit from "../images/CommunityImages/gdsc_msit.png";
 import bytemonk from "../images/CommunityImages/bytemonk.webp";
 import resourcio_community from "../images/CommunityImages/resourcio_community.webp";
-import os_community from "../images/CommunityImages/os_community.webp";
+import os_community from "../images/CommunityImages/os_community.png";
 import gdsc_fiem from "../images/CommunityImages/gdsc_fiem.png";
 import skepsis from "../images/CommunityImages/skepsis.webp";
 import noobcode from "../images/CommunityImages/noobcode.webp";

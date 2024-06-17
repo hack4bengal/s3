@@ -41,6 +41,19 @@ const App = () => {
             />
             <Route
               exact
+              path="/guide"
+              element={
+                <Forward
+                  pathname={"/guide"}
+                  title={"Guide"}
+                  url={
+                    "https://hack4bengal.notion.site/Hack4Bengal-3-0-Guide-3a4e84ca957746f29a5ac22990c3db74"
+                  }
+                />
+              }
+            />
+            <Route
+              exact
               path="/community"
               element={
                 <Forward
