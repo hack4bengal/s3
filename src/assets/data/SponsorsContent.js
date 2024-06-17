@@ -26,6 +26,7 @@ import iei_students_chapter_cse_aot from "../images/CommunityImages/iei_students
 import autosecurityy from "../images/CommunityImages/autosecurityy.webp";
 import gdsc_iiest from "../images/CommunityImages/gdsc_iiest.webp";
 import merchanzi from "../images/SponsorImages/merchanzi.png";
+import loft from "../images/SponsorImages/loft.png";
 
 const sponsors = {
   Platinum: [
@@ -77,6 +78,11 @@ const sponsors = {
       name: "GDG Cloud Kolkata",
       img: gdg,
       link: "https://ccd2024.gdgcloudkol.org",
+    },
+    {
+      name: "Loft Labs",
+      img: loft,
+      link: "https://loft.sh/",
     },
   ],
   Domain: [
