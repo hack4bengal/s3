@@ -1,7 +1,20 @@
-import md_nasirul_haque from "../images/MentorImages/md_nasirul_haque.png";
-import snehangshu_bhattacharya from "../images/MentorImages/snehangshu_bhattacharya.png";
+import abhay from "../images/MentorImages/abhay.jpg";
 import anubhav_singh from "../images/MentorImages/anubhav_singh.png";
+import batrick from "../images/MentorImages/batrick.jpg";
+import boidushya from "../images/MentorImages/boidushya.jpg";
+import debajit from "../images/MentorImages/debajit.jpg";
+import jaydip from "../images/MentorImages/jaydip.jpg";
+import kaustav from "../images/MentorImages/kaustav.jpg";
 import kazi_haque from "../images/MentorImages/kazi_haque.png";
+import md_nasirul_haque from "../images/MentorImages/md_nasirul_haque.png";
+import niloy from "../images/MentorImages/niloy.jpg";
+import rajdip from "../images/MentorImages/rajdip.jpg";
+import richik from "../images/MentorImages/richik.jpg";
+import sawan from "../images/MentorImages/sawan.jpg";
+import snehangshu_bhattacharya from "../images/MentorImages/snehangshu_bhattacharya.png";
+import sunit from "../images/MentorImages/sunit.jpg";
+import varun from "../images/MentorImages/varun.jpg";
+import hrittik from "../images/MentorImages/hrittik.jpg";
 
 export const mentorContent = [
   {
@@ -35,5 +48,109 @@ export const mentorContent = [
     linkedin: "https://www.linkedin.com/in/haquekazi",
     twitter: "https://x.com/imkazi23",
     image: kazi_haque,
+  },
+  {
+    name: "Abhay",
+    designation: "Student & Researcher",
+    company: "CHARUSAT",
+    linkedin: "https://www.linkedin.com/in/abhaynath001/",
+    twitter: "https://x.com/AbhayNath001",
+    image: abhay,
+  },
+  {
+    name: "Bartick",
+    designation: "Protocol & Backend Engineer",
+    company: "Unloqen",
+    linkedin: "https://www.linkedin.com/in/bartick-maiti/",
+    twitter: "https://twitter.com/BartickM",
+    image: batrick,
+  },
+  {
+    name: "Boidushya",
+    designation: "Frontend Lead",
+    company: "Camp Network",
+    linkedin: "https://linkedin.com/in/boidushya",
+    twitter: "https://x.com/boidushya",
+    image: boidushya,
+  },
+  {
+    name: "Varun",
+    designation: "Blockchain Engineer",
+    company: "Chainrisk",
+    linkedin: "https://linkedin.com/in/varunxdoshi",
+    twitter: "https://x.com/Varunx10",
+    image: varun,
+  },
+  {
+    name: "Sunit",
+    designation: "Software Engineer",
+    company: "Bulk Labs",
+    linkedin: "https://linkedin.com/in/sunit-roy",
+    twitter: "https://x.com/HeySunit",
+    image: sunit,
+  },
+  {
+    name: "Jaydip",
+    designation: "SDE-1",
+    company: "Optum",
+    linkedin: "https://www.linkedin.com/in/jaydip-dey/",
+    twitter: "https://x.com/jaydipdey11",
+    image: jaydip,
+  },
+  {
+    name: "Kaustav",
+    designation: "Product Designer",
+    company: "Eugenie Technologies",
+    linkedin: "https://linkedin.com/in/kaustavr19",
+    twitter: "https://x.com/ux_by_roy",
+    image: kaustav,
+  },
+  {
+    name: "Debajit",
+    designation: "Software Engineer",
+    company: "P360",
+    linkedin: "https://linkedin.com/in/debajit-mallick",
+    twitter: "https://x.com/MallickDebajit",
+    image: debajit,
+  },
+  {
+    name: "Niloy",
+    designation: "Software Engineer",
+    company: "PressW AI",
+    linkedin: "https://linkedin.com/in/niloysikdar",
+    twitter: "https://x.com/niloysikdar_",
+    image: niloy,
+  },
+  {
+    name: "Rajdip",
+    designation: "CTO and Co-Founder",
+    company: "Keyshade",
+    linkedin: "https://www.linkedin.com/in/rajdip-bhattacharya-581119232/",
+    twitter: "https://x.com/RajB47",
+    image: rajdip,
+  },
+  {
+    name: "Richik",
+    designation: "Mid Level Product Engineer",
+    company: "Greyfinch",
+    linkedin: "https://linkedin.com/in/richik-chanda-0585ba15b",
+    twitter: "https://x.com/richik_chanda",
+    image: richik,
+  },
+  {
+    name: "Sawan",
+    designation: "Co-founder and CEO",
+    company: "Keyshade",
+    linkedin: "https://www.linkedin.com/in/sawan-bhattacharya/",
+    twitter: "https://x.com/kriptonian8",
+    image: sawan,
+  },
+  {
+    name: "Hrittik",
+    designation: "Platform Advocate",
+    company: "Loft Labs",
+    linkedin: "https://linkedin.com/in/hrittikhere",
+    twitter: "https://x.com/hrittikhere",
+    image: hrittik,
   },
 ];
