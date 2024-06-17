@@ -25,6 +25,7 @@ import polygon_guild_kolkata from "../images/CommunityImages/polygon_guild_kolka
 import iei_students_chapter_cse_aot from "../images/CommunityImages/iei_students_chapter_cse_aot.webp";
 import autosecurityy from "../images/CommunityImages/autosecurityy.webp";
 import gdsc_iiest from "../images/CommunityImages/gdsc_iiest.webp";
+import merchanzi from "../images/SponsorImages/merchanzi.png";
 
 const sponsors = {
   Platinum: [
@@ -83,6 +84,13 @@ const sponsors = {
       name: "xyz",
       img: xyz,
       link: "https://www.xyz.com",
+    },
+  ],
+  Merchandise: [
+    {
+      name: "Merchanzi",
+      img: merchanzi,
+      link: "https://wa.me/c/918100600345",
     },
   ],
   Track: [

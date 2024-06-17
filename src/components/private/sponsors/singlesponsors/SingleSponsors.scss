@@ -93,6 +93,11 @@
   transition: all 0.3s ease;
 }
 
+.merchandise {
+  border: 1px solid #00EA19;
+  transition: all 0.3s ease;
+}
+
 .track {
   border: 1px solid #7230ff;
   transition: all 0.3s ease;
@@ -109,6 +114,13 @@
   -webkit-box-shadow: inset 0px 0px 13px -2px #471754;
   -moz-box-shadow: inset 0px 0px 13px -2px #471754;
   box-shadow: inset 0px 0px 13px -2px #471754;
+  transition: all 0.3s ease;
+}
+
+.merchandise:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px #00EA19;
+  -moz-box-shadow: inset 0px 0px 13px -2px #00EA19;
+  box-shadow: inset 0px 0px 13px -2px #00EA19;
   transition: all 0.3s ease;
 }
 

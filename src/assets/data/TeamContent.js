@@ -34,7 +34,7 @@ const teamMember = {
     {
       img: manish,
       name: "Manish",
-      title: "GitHub Campus Expert",
+      title: "DevRel @HackQuest",
       linkedIn: "https://www.linkedin.com/in/imanishbarnwal/",
       twitter: "https://twitter.com/imanishbarnwal  ",
     },
@@ -42,7 +42,7 @@ const teamMember = {
       img: sagnik,
 
       name: "Sagnik",
-      title: "SDE @Odessa",
+      title: "SWE @Odessa",
       linkedIn: "https://www.linkedin.com/in/sagnikmitra/",
       twitter: "https://twitter.com/MitraSagnik",
     },
@@ -56,14 +56,14 @@ const teamMember = {
     {
       img: sanmoy,
       name: "Sanmoy",
-      title: "Community Aficionado",
+      title: "Founder @Merchanzi",
       linkedIn: "https://www.linkedin.com/in/sanmoydam/",
       twitter: "https://twitter.com/sanmoydam",
     },
     {
       img: ankita,
       name: "Ankita",
-      title: "President, GFG SNU Chapter",
+      title: "President @GFG SNU Chapter",
       linkedIn: "https://www.linkedin.com/in/iankitapanda",
       twitter: "https://x.com/iankitap?t=pDRhcbcwm-kgm0t9hw7m_A&s=08",
     },
@@ -124,7 +124,7 @@ const teamMember = {
     {
       img: prachi,
       name: "Prachi",
-      title: "Content team @H4B",
+      title: "Content Team @H4B",
       linkedIn: "https://linkedin.com/in/-prachi1710",
       twitter: "https://twitter.com/_prachi1710",
     },
@@ -165,7 +165,7 @@ const teamMember = {
     {
       img: utkarsh,
       name: "Utkarsh",
-      title: "Marketing team @H4B",
+      title: "Marketing Team @H4B",
       linkedIn:
         "https://www.linkedin.com/in/utkarsh-jaiswal-6170b5258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       twitter: "https://x.com/utkxrsh_jaiswal/",
@@ -204,7 +204,7 @@ const teamMember = {
     {
       img: anirban,
       name: "Anirban",
-      title: "App Dev Lead GDSC TMSL",
+      title: "App Dev Lead @GDSC TMSL",
       linkedIn: "https://www.linkedin.com/in/anbsaha/",
       twitter: "https://twitter.com/AnbSaha",
     },
