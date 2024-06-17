@@ -33,7 +33,7 @@ const Venue = () => {
             </a>
 
             <a
-              href="https://hack4bengal.notion.site/Hack4Bengal-3-0-Guide-3a4e84ca957746f29a5ac22990c3db74"
+              href="https://hack4bengal.tech/guide"
               target="_blank"
               rel="noopener noreferrer"
               className="location_howtoreach_mobile"
@@ -50,7 +50,7 @@ const Venue = () => {
             <button className="location__btn">View in Google Maps</button>
           </a>
           <a
-            href="https://hack4bengal.notion.site/Hack4Bengal-3-0-Guide-3a4e84ca957746f29a5ac22990c3db74"
+            href="https://hack4bengal.tech/guide"
             target="_blank"
             rel="noopener noreferrer"
             className="location_howtoreach"
