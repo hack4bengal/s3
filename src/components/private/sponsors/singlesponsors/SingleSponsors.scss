@@ -60,14 +60,14 @@
 }
 
 .silver {
-  border: 1px solid #BCC6CC;
+  border: 1px solid #bcc6cc;
   transition: all 0.3s ease;
 }
 
 .silver:hover {
-  -webkit-box-shadow: inset 0px 0px 13px -2px #BCC6CC;
-  -moz-box-shadow: inset 0px 0px 13px -2px #BCC6CC;
-  box-shadow: inset 0px 0px 13px -2px #BCC6CC;
+  -webkit-box-shadow: inset 0px 0px 13px -2px #bcc6cc;
+  -moz-box-shadow: inset 0px 0px 13px -2px #bcc6cc;
+  box-shadow: inset 0px 0px 13px -2px #bcc6cc;
   transition: all 0.3s ease;
 }
 
@@ -94,7 +94,7 @@
 }
 
 .track {
-  border: 1px solid #7230FF;
+  border: 1px solid #7230ff;
   transition: all 0.3s ease;
 }
 
@@ -113,8 +113,30 @@
 }
 
 .track:hover {
-  -webkit-box-shadow: inset 0px 0px 13px -2px #7230FF;
-  -moz-box-shadow: inset 0px 0px 13px -2px #7230FF;
-  box-shadow: inset 0px 0px 13px -2px #7230FF;
+  -webkit-box-shadow: inset 0px 0px 13px -2px #7230ff;
+  -moz-box-shadow: inset 0px 0px 13px -2px #7230ff;
+  box-shadow: inset 0px 0px 13px -2px #7230ff;
+  transition: all 0.3s ease;
+}
+
+.tezos:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px #0d61ff !important;
+  -moz-box-shadow: inset 0px 0px 13px -2px #0d61ff !important;
+  box-shadow: inset 0px 0px 13px -2px #0d61ff !important;
+  transition: all 0.3s ease;
+}
+
+.tezos {
+  border: 1px solid #0d61ff !important;
+}
+
+.callchimp {
+  border: 1px solid #3c78d8 !important;
+}
+
+.callchimp:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px #0d61ff !important;
+  -moz-box-shadow: inset 0px 0px 13px -2px #0d61ff !important;
+  box-shadow: inset 0px 0px 13px -2px #0d61ff !important;
   transition: all 0.3s ease;
 }

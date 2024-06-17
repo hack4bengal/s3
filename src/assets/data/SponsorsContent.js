@@ -89,16 +89,19 @@ const sponsors = {
     {
       name: "Superteam India",
       img: superteam,
+      cn: "superteam",
       link: "https://in.superteam.fun",
     },
     {
       name: "Tezos India",
+      cn: "tezos",
       img: tezos,
       link: "https://tezosindia.org.in/",
     },
     {
       name: "Callchimp",
       img: callchimp,
+      cn: "callchimp",
       link: "https://callchimp.ai/",
     },
   ],
