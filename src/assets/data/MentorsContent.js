@@ -3,6 +3,7 @@ import anubhav_singh from "../images/MentorImages/anubhav_singh.png";
 import batrick from "../images/MentorImages/batrick.jpg";
 import boidushya from "../images/MentorImages/boidushya.jpg";
 import debajit from "../images/MentorImages/debajit.jpg";
+import hrittik from "../images/MentorImages/hrittik.jpg";
 import jaydip from "../images/MentorImages/jaydip.jpg";
 import kaustav from "../images/MentorImages/kaustav.jpg";
 import kazi_haque from "../images/MentorImages/kazi_haque.png";
@@ -14,24 +15,15 @@ import sawan from "../images/MentorImages/sawan.jpg";
 import snehangshu_bhattacharya from "../images/MentorImages/snehangshu_bhattacharya.png";
 import sunit from "../images/MentorImages/sunit.jpg";
 import varun from "../images/MentorImages/varun.jpg";
-import hrittik from "../images/MentorImages/hrittik.jpg";
 
 export const mentorContent = [
   {
-    name: "Nasirul",
-    designation: "IT Analyst",
-    company: "Tata Consultancy Services",
-    linkedin: "https://www.linkedin.com/in/mdnasirulhaque",
-    twitter: "https://twitter.com/mdnasirulhaque",
-    image: md_nasirul_haque,
-  },
-  {
-    name: "Snehangshu",
-    designation: "Lead Engineer",
-    company: "Dynopii",
-    linkedin: "https://www.linkedin.com/in/snehangshub",
-    twitter: "https://twitter.com/snehangshu_",
-    image: snehangshu_bhattacharya,
+    name: "Abhay",
+    designation: "Student & Researcher",
+    company: "CHARUSAT",
+    linkedin: "https://www.linkedin.com/in/abhaynath001/",
+    twitter: "https://x.com/AbhayNath001",
+    image: abhay,
   },
   {
     name: "Anubhav",
@@ -40,22 +32,6 @@ export const mentorContent = [
     linkedin: "https://www.linkedin.com/in/xprilion",
     twitter: "https://twitter.com/xprilion",
     image: anubhav_singh,
-  },
-  {
-    name: "Kazi",
-    designation: "Co-Founder",
-    company: "Dynopii",
-    linkedin: "https://www.linkedin.com/in/haquekazi",
-    twitter: "https://x.com/imkazi23",
-    image: kazi_haque,
-  },
-  {
-    name: "Abhay",
-    designation: "Student & Researcher",
-    company: "CHARUSAT",
-    linkedin: "https://www.linkedin.com/in/abhaynath001/",
-    twitter: "https://x.com/AbhayNath001",
-    image: abhay,
   },
   {
     name: "Bartick",
@@ -74,20 +50,20 @@ export const mentorContent = [
     image: boidushya,
   },
   {
-    name: "Varun",
-    designation: "Blockchain Engineer",
-    company: "Chainrisk",
-    linkedin: "https://linkedin.com/in/varunxdoshi",
-    twitter: "https://x.com/Varunx10",
-    image: varun,
+    name: "Debajit",
+    designation: "Software Engineer",
+    company: "P360",
+    linkedin: "https://linkedin.com/in/debajit-mallick",
+    twitter: "https://x.com/MallickDebajit",
+    image: debajit,
   },
   {
-    name: "Sunit",
-    designation: "Software Engineer",
-    company: "Bulk Labs",
-    linkedin: "https://linkedin.com/in/sunit-roy",
-    twitter: "https://x.com/HeySunit",
-    image: sunit,
+    name: "Hrittik",
+    designation: "Platform Advocate",
+    company: "Loft Labs",
+    linkedin: "https://linkedin.com/in/hrittikhere",
+    twitter: "https://x.com/hrittikhere",
+    image: hrittik,
   },
   {
     name: "Jaydip",
@@ -106,12 +82,20 @@ export const mentorContent = [
     image: kaustav,
   },
   {
-    name: "Debajit",
-    designation: "Software Engineer",
-    company: "P360",
-    linkedin: "https://linkedin.com/in/debajit-mallick",
-    twitter: "https://x.com/MallickDebajit",
-    image: debajit,
+    name: "Kazi",
+    designation: "Co-Founder",
+    company: "Dynopii",
+    linkedin: "https://www.linkedin.com/in/haquekazi",
+    twitter: "https://x.com/imkazi23",
+    image: kazi_haque,
+  },
+  {
+    name: "Nasirul",
+    designation: "IT Analyst",
+    company: "Tata Consultancy Services",
+    linkedin: "https://www.linkedin.com/in/mdnasirulhaque",
+    twitter: "https://twitter.com/mdnasirulhaque",
+    image: md_nasirul_haque,
   },
   {
     name: "Niloy",
@@ -146,11 +130,27 @@ export const mentorContent = [
     image: sawan,
   },
   {
-    name: "Hrittik",
-    designation: "Platform Advocate",
-    company: "Loft Labs",
-    linkedin: "https://linkedin.com/in/hrittikhere",
-    twitter: "https://x.com/hrittikhere",
-    image: hrittik,
+    name: "Snehangshu",
+    designation: "Lead Engineer",
+    company: "Dynopii",
+    linkedin: "https://www.linkedin.com/in/snehangshub",
+    twitter: "https://twitter.com/snehangshu_",
+    image: snehangshu_bhattacharya,
+  },
+  {
+    name: "Sunit",
+    designation: "Software Engineer",
+    company: "Bulk Labs",
+    linkedin: "https://linkedin.com/in/sunit-roy",
+    twitter: "https://x.com/HeySunit",
+    image: sunit,
+  },
+  {
+    name: "Varun",
+    designation: "Blockchain Engineer",
+    company: "Chainrisk",
+    linkedin: "https://linkedin.com/in/varunxdoshi",
+    twitter: "https://x.com/Varunx10",
+    image: varun,
   },
 ];
