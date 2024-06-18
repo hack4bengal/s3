@@ -24,8 +24,8 @@ const Footer = () => {
         <div className="footer_flexdiv previous_season">
           <div className="footer_content">
             <div className="footer_policy">
-              <a href="https://s1.hack4bengal.tech/" target="_blank" rel="noopener noreferrer">1</a>
-              <a href="https://s2.hack4bengal.tech/" target="_blank" rel="noopener noreferrer">2</a>
+              <a href="https://s1.hack4bengal.tech/" target="_blank" rel="noopener noreferrer">Season 1</a>
+              <a href="https://s2.hack4bengal.tech/" target="_blank" rel="noopener noreferrer">Season 2</a>
             </div>
           </div>
         </div>
