@@ -59,7 +59,7 @@ export const mentorContent = [
   },
   {
     name: "Bartick",
-    designation: "Protocol & Backend Engineer",
+    designation: "Protocol & Backend Engg.",
     company: "Unloqen",
     linkedin: "https://www.linkedin.com/in/bartick-maiti/",
     twitter: "https://twitter.com/BartickM",
