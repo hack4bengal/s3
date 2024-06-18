@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import footerContent from "../../../assets/data/FooterContent";
 import gradient from "../../../assets/images/FooterImages/gradient.png";
-import h4b from "../../../assets/images/FooterImages/hack4bengalbrand.webp";
+import h4b from "../../../assets/images/BrandImages/h4b-white-light-text-wide-logo-68b9b9c9.webp";
 import taxi from "../../../assets/images/FooterImages/taxi.png";
 import tram from "../../../assets/images/FooterImages/tram.png";
 import "./Footer.scss";
