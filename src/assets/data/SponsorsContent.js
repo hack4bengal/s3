@@ -26,6 +26,7 @@ import autosecurityy from "../images/CommunityImages/autosecurityy.webp";
 import electica_tmsl from "../images/CommunityImages/electica_tmsl.webp";
 import gfg_cu from "../images/CommunityImages/gfg_cu.webp";
 import merchanzi from "../images/SponsorImages/merchanzi.png";
+import composio from "../images/SponsorImages/composio.png";
 import loft from "../images/SponsorImages/loft.png";
 
 const sponsors = {
@@ -111,6 +112,12 @@ const sponsors = {
       cn: "tezos",
       img: tezos,
       link: "https://tezosindia.org.in/",
+    },
+    {
+      name: "Composio",
+      img: composio,
+      cn: "composio",
+      link: "https://www.composio.dev/",
     },
     {
       name: "Callchimp",

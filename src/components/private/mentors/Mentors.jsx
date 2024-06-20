@@ -12,9 +12,7 @@ function Mentors() {
       <Header {...HeaderData.mentors} />
       <div className="mentors__container mentors__container_desktop">
         {mentorContent.map((mentor, index) => {
-          return (
-            <SingleMentors mentor={mentor} key={index} />
-          );
+          return <SingleMentors mentor={mentor} key={index} />;
         })}
       </div>
       <Marquee
@@ -24,11 +22,11 @@ function Mentors() {
         direction="right"
         className="mentors__container mentors__container_mobile"
       >
-        {mentorContent.map((mentor, index) => {
-          return (
-            <SingleMentors mentor={mentor} key={index} />
-          );
-        })}
+        {mentorContent
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((mentor, index) => {
+            return <SingleMentors mentor={mentor} key={index} />;
+          })}
       </Marquee>
     </section>
   );

@@ -94,7 +94,7 @@
 }
 
 .merchandise {
-  border: 1px solid #00EA19;
+  border: 1px solid #00ea19;
   transition: all 0.3s ease;
 }
 
@@ -118,9 +118,9 @@
 }
 
 .merchandise:hover {
-  -webkit-box-shadow: inset 0px 0px 13px -2px #00EA19;
-  -moz-box-shadow: inset 0px 0px 13px -2px #00EA19;
-  box-shadow: inset 0px 0px 13px -2px #00EA19;
+  -webkit-box-shadow: inset 0px 0px 13px -2px #00ea19;
+  -moz-box-shadow: inset 0px 0px 13px -2px #00ea19;
+  box-shadow: inset 0px 0px 13px -2px #00ea19;
   transition: all 0.3s ease;
 }
 
@@ -150,5 +150,16 @@
   -webkit-box-shadow: inset 0px 0px 13px -2px #0d61ff !important;
   -moz-box-shadow: inset 0px 0px 13px -2px #0d61ff !important;
   box-shadow: inset 0px 0px 13px -2px #0d61ff !important;
+  transition: all 0.3s ease;
+}
+
+.composio {
+  border: 1px solid #f77b45 !important;
+}
+
+.composio:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px #f77b45 !important;
+  -moz-box-shadow: inset 0px 0px 13px -2px #f77b45 !important;
+  box-shadow: inset 0px 0px 13px -2px #f77b45 !important;
   transition: all 0.3s ease;
 }

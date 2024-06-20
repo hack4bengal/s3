@@ -15,6 +15,10 @@ import sawan from "../images/MentorImages/sawan.jpg";
 import snehangshu_bhattacharya from "../images/MentorImages/snehangshu_bhattacharya.png";
 import sunit from "../images/MentorImages/sunit.jpg";
 import varun from "../images/MentorImages/varun.jpg";
+import shashank from "../images/MentorImages/shashank.png";
+import arghya from "../images/MentorImages/arghya.png";
+import soumyadip from "../images/MentorImages/soumyadip.jpg";
+import sarnavo from "../images/MentorImages/sarnavo.jpg";
 
 export const mentorContent = [
   {
@@ -24,6 +28,38 @@ export const mentorContent = [
     linkedin: "https://www.linkedin.com/in/abhaynath001/",
     twitter: "https://x.com/AbhayNath001",
     image: abhay,
+  },
+  {
+    name: "Arghya",
+    designation: "Dev Ambassador",
+    company: "Router Protocol",
+    linkedin: "https://www.linkedin.com/in/arghya-chowdhury-200111244/",
+    twitter: "https://x.com/ArghyaChow14",
+    image: arghya,
+  },
+  {
+    name: "Shashank",
+    designation: "SDE-2",
+    company: "Dell",
+    linkedin: "https://www.twitter.com/SRustagi1996",
+    twitter: "https://www.linkedin.com/in/srustagi1996",
+    image: shashank,
+  },
+  {
+    name: "Sarnavo",
+    designation: "Devrel & Jnr Auditor",
+    company: "QuillAudits",
+    linkedin: "https://www.linkedin.com/in/sarnavo/",
+    twitter: "https://x.com/0xSarnavo",
+    image: sarnavo,
+  },
+  {
+    name: "Soumyadip",
+    designation: "Senior Software Engineer",
+    company: "RedHat",
+    linkedin: "https://www.linkedin.com/in/soumyadip-chowdhury/",
+    twitter: "https://x.com/s_oumyadip/",
+    image: soumyadip,
   },
   {
     name: "Anubhav",
