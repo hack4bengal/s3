@@ -13,18 +13,18 @@ import callchimp from "../images/SponsorImages/callchimp.png";
 import tezos from "../images/SponsorImages/tezos.png";
 import coding_catalyst from "../images/CommunityImages/coding_catalyst.webp";
 import ddc from "../images/CommunityImages/ddc.webp";
-import gdsc_nsec from "../images/CommunityImages/gdsc_nsec.png";
-import gdsc_msit from "../images/CommunityImages/gdsc_msit.png";
-import bytemonk from "../images/CommunityImages/bytemonk.webp";
+import gdsc_nsec from "../images/CommunityImages/gdsc_nsec.webp";
+import gdsc_msit from "../images/CommunityImages/gdsc_msit.webp";
 import resourcio_community from "../images/CommunityImages/resourcio_community.webp";
-import os_community from "../images/CommunityImages/os_community.png";
-import gdsc_fiem from "../images/CommunityImages/gdsc_fiem.png";
+import os_community from "../images/CommunityImages/os_community.webp";
+import gdsc_fiem from "../images/CommunityImages/gdsc_fiem.webp";
 import skepsis from "../images/CommunityImages/skepsis.webp";
 import noobcode from "../images/CommunityImages/noobcode.webp";
 import polygon_guild_kolkata from "../images/CommunityImages/polygon_guild_kolkata.webp";
 import iei_students_chapter_cse_aot from "../images/CommunityImages/iei_students_chapter_cse_aot.webp";
 import autosecurityy from "../images/CommunityImages/autosecurityy.webp";
-import gdsc_iiest from "../images/CommunityImages/gdsc_iiest.webp";
+import electica_tmsl from "../images/CommunityImages/electica_tmsl.webp";
+import gfg_cu from "../images/CommunityImages/gfg_cu.webp";
 import merchanzi from "../images/SponsorImages/merchanzi.png";
 import loft from "../images/SponsorImages/loft.png";
 
@@ -148,11 +148,6 @@ const sponsors = {
       link: "https://gdsc.community.dev/meghnad-saha-institute-of-technology-kolkata-india",
     },
     {
-      name: "Bytemonk",
-      img: bytemonk,
-      link: "https://bytemonk.gcect.org.in",
-    },
-    {
       name: "Resourcio Community",
       img: resourcio_community,
       link: "https://www.linkedin.com/company/resourcio-community2022",
@@ -192,9 +187,14 @@ const sponsors = {
       link: "https://autosecurityy.com",
     },
     {
-      name: "GDSC IIEST",
-      img: gdsc_iiest,
-      link: "https://gdsc.community.dev/indian-institute-of-engineering-science-and-technology-shibpur-howrah-india",
+      name: "Eclectica TMSL",
+      img: electica_tmsl,
+      link: "https://eclecticatmsl.tech",
+    },
+    {
+      name: "GFG Students Chapter Chandigarh University",
+      img: gfg_cu,
+      link: "https://www.geeksforgeeks.org/colleges/chandigarh-university-cu-chandigarh",
     },
   ],
 };
