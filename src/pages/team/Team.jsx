@@ -1,10 +1,10 @@
 import HeaderData from "../../assets/data/HeaderContent";
 import teamContent from "../../assets/data/TeamContent";
-import { TeamCard } from "../../components/private";
-import { Header } from "../../components/shared";
+import {TeamCard} from "../../components/private";
+import {Header} from "../../components/shared";
 import "./Team.scss";
 
-const Team = ({ refs }) => {
+const Team = ({refs}) => {
   return (
     <div className="team__container" ref={refs}>
       {/* ORGS */}
@@ -64,6 +64,7 @@ const Team = ({ refs }) => {
                 img={advisor.img}
                 name={advisor.name}
                 title={advisor.title}
+                linkedIn={advisor.linkedIn}
               />
             );
           })}
