@@ -1,6 +1,6 @@
 import "./TeamCard.scss";
 
-const TeamCard = ({ img, imgAlt, name, title, twitter, linkedIn }) => {
+const TeamCard = ({img, imgAlt, name, title, twitter, linkedIn}) => {
   return (
     <>
       <div className="team__card">

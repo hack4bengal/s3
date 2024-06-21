@@ -80,6 +80,7 @@ const teamMember = {
       img: swarup,
       name: "Dr. Swarup Kumar Ghosh",
       title: "Associate Prof., Department of CSE, SNU",
+      linkedIn: "https://www.linkedin.com/in/dr-swarup-kr-ghosh-b8782557/",
     },
   ],
   lead: [
