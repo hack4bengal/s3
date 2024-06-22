@@ -4,7 +4,7 @@ import github from "../images/SponsorImages/github.png";
 import hackquest from "../images/SponsorImages/hackquest.png";
 import avalanche from "../images/SponsorImages/avalanche.png";
 import avax from "../images/SponsorImages/avax.png";
-import xyz from "../images/SponsorImages/xyz.png";
+import xyz from "../images/SponsorImages/.xyx-logo.png";
 import router from "../images/SponsorImages/router.png";
 import jis from "../images/SponsorImages/jis.png";
 import gdg from "../images/SponsorImages/gdg.png";
@@ -25,6 +25,7 @@ import iei_students_chapter_cse_aot from "../images/CommunityImages/iei_students
 import autosecurityy from "../images/CommunityImages/autosecurityy.webp";
 import electica_tmsl from "../images/CommunityImages/electica_tmsl.webp";
 import gfg_cu from "../images/CommunityImages/gfg_cu.webp";
+import jisce from "../images/CommunityImages/jisce.webp";
 import merchanzi from "../images/SponsorImages/merchanzi.png";
 import composio from "../images/SponsorImages/composio.png";
 import loft from "../images/SponsorImages/loft.png";
@@ -202,6 +203,11 @@ const sponsors = {
       name: "GFG Students Chapter Chandigarh University",
       img: gfg_cu,
       link: "https://www.geeksforgeeks.org/colleges/chandigarh-university-cu-chandigarh",
+    },
+    {
+      name: "JISCE",
+      img: jisce,
+      link: "https://www.facebook.com/jisphototrek",
     },
   ],
 };
