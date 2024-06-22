@@ -1,0 +1,276 @@
+.livepage_parent {
+  width: 100%;
+  // height: 100svh;
+  padding: 0rem 4.7rem;
+  font-family: "Montserrat", sans-serif;
+
+  @media screen and (max-width: 576px) {
+    padding: 0 2rem;
+  }
+
+  .livepage_body {
+    height: 80%;
+    margin-top: 150px;
+
+    .timer_section {
+      padding: 5% 0;
+
+      @media screen and (max-width: 1120px) {
+        padding: 12% 0;
+      }
+
+      @media screen and (max-width: 900px) {
+        padding: 20% 0;
+      }
+
+      @media screen and (max-width: 576px) {
+        padding: 5% 0;
+      }
+
+      .timer {
+        position: relative;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // overflow-y: hidden;
+
+        .time_left {
+          width: fit-content;
+          display: flex;
+          justify-content: center;
+          align-items: baseline;
+          flex-direction: row;
+          gap: 1rem;
+
+          p {
+            font-size: x-large;
+            font-weight: bold;
+            color: #ff1717;
+
+            @media screen and (max-width: 576px) {
+              font-size: large;
+            }
+          }
+        }
+
+        .countdown {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: first baseline;
+          gap: 1rem;
+
+          @media screen and (min-width: 900px) {
+            width: fit-content;
+          }
+
+          @media screen and (max-width: 576px) {
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+          }
+
+          .left_rectangle {
+            position: absolute;
+            left: -8%;
+            top: -20%;
+
+            @media screen and (max-width: 900px) {
+              left: -10%;
+              top: -50%;
+            }
+
+            @media screen and (max-width: 576px) {
+              left: -40%;
+              top: 0;
+            }
+          }
+
+          .right_rectangle {
+            position: absolute;
+
+            @media screen and (min-width: 900px) {
+              display: none;
+            }
+
+            @media screen and (max-width: 900px) {
+              bottom: -30%;
+              right: -10%;
+            }
+
+            @media screen and (max-width: 576px) {
+              bottom: 0;
+              right: -40%;
+            }
+          }
+
+
+          .time {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 200px;
+            text-align: center;
+            color: white;
+            font-weight: 800;
+            z-index: 1;
+
+            @media screen and (min-width: 1440px) {
+              font-size: 210px;
+            }
+
+            @media screen and (max-width: 1440px) {
+              font-size: 180px;
+            }
+
+            @media screen and (max-width: 1120px) {
+              font-size: 120px;
+            }
+
+            @media screen and (max-width: 900px) {
+              font-size: 100px;
+            }
+
+            @media screen and (max-width: 720px) {
+              font-size: 80px;
+            }
+
+            @media screen and (max-width: 576px) {
+              font-size: 100px;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              padding: 0.5rem;
+            }
+
+            p:nth-child(2) {
+              font-size: 24px;
+              font-weight: 600;
+              color: #646464;
+
+              @media screen and (max-width: 576px) {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+
+        .speed_sign {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          width: 40%;
+          position: absolute;
+          right: -10%;
+
+          .sign_1 {
+            position: relative;
+            width: 60%;
+            left: 40%;
+          }
+
+          .sign_2 {
+            position: relative;
+            width: 30%;
+            left: 85%;
+
+            @media screen and (min-width: 1440px) {
+              left: 75%;
+            }
+          }
+
+          .sign_3 {
+            position: relative;
+            width: 30%;
+            left: 80%;
+
+            @media screen and (min-width: 1440px) {
+              left: 70%;
+            }
+          }
+
+          @media screen and (min-width: 1440px) {
+            top: 3%;
+            right: -15%;
+          }
+
+          @media screen and (max-width: 1440px) {
+            top: 7%;
+          }
+
+          @media screen and (max-width: 1120px) {
+            gap: 1rem;
+            top: 7%;
+
+          }
+
+          @media screen and (max-width: 900px) {
+            display: none;
+          }
+        }
+
+        span {
+          @media screen and (max-width: 576px) {
+            display: none;
+          }
+        }
+
+        .colon {
+          font-size: 200px;
+          font-weight: 700;
+          line-height: 1px;
+          padding: 0 3rem;
+
+          @media screen and (max-width: 1440px) {
+            font-size: 150px;
+            padding: 0 1rem;
+          }
+
+          @media screen and (max-width: 1120px) {
+            font-size: 150px;
+            padding: 0 1rem;
+          }
+
+          @media screen and (max-width: 900px) {
+            font-size: 100px;
+            padding: 0 1rem;
+          }
+
+          @media screen and (max-width: 720px) {
+            font-size: 100px;
+            padding: 0;
+          }
+
+          @media screen and (max-width: 576px) {
+            display: none;
+          }
+
+          animation: blink 2s infinite; // Adjust the animation duration as needed
+        }
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
