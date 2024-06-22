@@ -10,7 +10,7 @@ const HeaderData = {
     backWord: "Venue",
     backWordSize_mobile: "85px",
     backWordSpacing_mobile: "0.2rem",
-    frontWord: "Location",
+    frontWord: "Venue & Education Partner",
     frontWordMobile: "Location",
   },
   timeline: {
