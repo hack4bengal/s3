@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderData from "../../../assets/data/HeaderContent";
 import sponsors from "../../../assets/data/SponsorsContent";
-import { Header } from "../../shared";
+import {Header} from "../../shared";
 import Marquee from "react-fast-marquee";
 import SingleSponsors from "../sponsors/singlesponsors/SingleSponsors";
 
