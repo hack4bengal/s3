@@ -30,7 +30,12 @@ const Sponsors = () => {
             })}
           </div>
         </div>
-        <div className="sponsors__container_flex">
+        <div
+          className="sponsors__container_flex"
+          style={{
+            alignItems: "end",
+          }}
+        >
           <div className="sponsors__container domain_container silv">
             <h1>Silver Sponsor</h1>
             <div className="sponsors__flexbox">
@@ -42,7 +47,7 @@ const Sponsors = () => {
             </div>
           </div>
           <div className="sponsors__container silv">
-            <h1>Education Partner</h1>
+            <h1>Venue & Education Partner</h1>
             <div className="sponsors__flexbox">
               {sponsors["Education"].map((item, index) => {
                 return (
