@@ -11,10 +11,11 @@ import SpeedSign03 from '../../assets/images/livepage/SpeedSign03.svg';
 
 // Css imports
 import "./Live.scss";
+import EventSection from "./EventSection";
 
 const Live = () => {
-  // const LiveDate = new Date("2024-06-28T18:00:00");
-  const LiveDate = new Date("2024-06-22T00:00:00");
+  const LiveDate = new Date("2024-06-28T18:00:00");
+
   const calculateTimeLeft = () => {
     const targetDate = new Date("2024-06-30T06:00:00");
     const now = new Date();
@@ -75,9 +76,11 @@ const Live = () => {
 
                   <div className="time">
                     <p>
-                      {timeLeft?.hours < 10
-                        ? `0${timeLeft?.hours}`
-                        : timeLeft?.hours}
+                      {timeLeft?.days > 0 ?
+                        `${timeLeft?.hours + timeLeft?.days * 24}`
+                        : (timeLeft?.hours < 10
+                          ? `0${timeLeft?.hours}` : timeLeft?.hours)
+                      }
                     </p>
                     <p>Hours</p>
                   </div>
@@ -107,10 +110,15 @@ const Live = () => {
 
               </div>
             ) : (
-              <div>Not Started yet</div>
+              <div className="starting-soon">
+                <img src={RedStar} alt="design-prop-03" />
+                <p>Starting Soon...</p>
+                <img src={WhiteStar} alt="design-prop-04" />
+              </div>
             )
           }
         </div>
+        <EventSection />
       </div>
     </div>
   );

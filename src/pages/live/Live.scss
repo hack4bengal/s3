@@ -11,9 +11,15 @@
   .livepage_body {
     height: 80%;
     margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 
     .timer_section {
       padding: 5% 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       @media screen and (max-width: 1120px) {
         padding: 12% 0;
@@ -256,6 +262,26 @@
 
           animation: blink 2s infinite; // Adjust the animation duration as needed
         }
+      }
+
+      .starting-soon {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-direction: row;
+        gap: 1rem;
+
+        p {
+          font-size: xx-large;
+          font-weight: bold;
+          color: #ff1717;
+
+          @media screen and (max-width: 576px) {
+            font-size: large;
+          }
+        }
+
       }
     }
   }
