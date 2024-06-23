@@ -25,10 +25,11 @@ import iei_students_chapter_cse_aot from "../images/CommunityImages/iei_students
 import autosecurityy from "../images/CommunityImages/autosecurityy.webp";
 import electica_tmsl from "../images/CommunityImages/electica_tmsl.webp";
 import gfg_cu from "../images/CommunityImages/gfg_cu.webp";
-import jisce from "../images/CommunityImages/jisce.webp";
+import jisce from "../images/CommunityImages/jisce.png";
 import merchanzi from "../images/SponsorImages/merchanzi.png";
 import composio from "../images/SponsorImages/composio.png";
 import loft from "../images/SponsorImages/loft.png";
+import gfd from "../images/SponsorImages/gfd.png";
 
 const sponsors = {
   Platinum: [
@@ -68,6 +69,11 @@ const sponsors = {
       name: "Road To DevCon",
       img: devcon,
       link: "https://devcon.org",
+    },
+    {
+      name: "Google For Developers",
+      img: gfd,
+      link: "https://developers.google.com",
     },
   ],
   Bronze: [
