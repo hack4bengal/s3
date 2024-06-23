@@ -4,7 +4,7 @@ import github from "../images/SponsorImages/github.png";
 import hackquest from "../images/SponsorImages/hackquest.png";
 import avalanche from "../images/SponsorImages/avalanche.png";
 import avax from "../images/SponsorImages/avax.png";
-import xyz from "../images/SponsorImages/xyz.png";
+import xyz from "../images/SponsorImages/xyz_new.png";
 import router from "../images/SponsorImages/router.png";
 import jis from "../images/SponsorImages/jis.png";
 import gdg from "../images/SponsorImages/gdg.png";

@@ -2,7 +2,7 @@ import React from "react";
 import "./SingleSponsors.scss";
 import clsx from "clsx";
 
-const SingleSponsors = ({ sponsor, type }) => {
+const SingleSponsors = ({sponsor, type}) => {
   const style = {};
 
   return (
