@@ -70,11 +70,11 @@ const sponsors = {
       img: devcon,
       link: "https://devcon.org",
     },
-    {
-      name: "Google For Developers",
-      img: gfd,
-      link: "https://developers.google.com",
-    },
+    // {
+    //   name: "Google For Developers",
+    //   img: gfd,
+    //   link: "https://developers.google.com",
+    // },
   ],
   Bronze: [
     {

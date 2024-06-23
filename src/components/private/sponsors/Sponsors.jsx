@@ -40,6 +40,16 @@ const Sponsors = () => {
             })}
           </div>
         </div>
+        <div className="sponsors__container gold_container">
+          <h1>Venue & Education Partner</h1>
+          <div className="sponsors__flexbox">
+            {sponsors["Education"].map((item, index) => {
+              return (
+                <SingleSponsors key={index} sponsor={item} type="silver" />
+              );
+            })}
+          </div>
+        </div>
         {/* <div className="sponsors__container domain_container silv">
           <h1>Silver Sponsor</h1>
           <div className="sponsors__flexbox">
