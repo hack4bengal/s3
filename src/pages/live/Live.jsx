@@ -14,10 +14,12 @@ import "./Live.scss";
 import EventSection from "./EventSection";
 
 const Live = () => {
-  const LiveDate = new Date("2024-06-28T18:00:00");
+  const LiveDate = new Date("2024-06-22T18:00:00");
+  // const LiveDate = new Date("2024-06-28T18:00:00");
 
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2024-06-30T06:00:00");
+    const targetDate = new Date("2024-06-25T06:00:00");
+    // const targetDate = new Date("2024-06-30T06:00:00");
     const now = new Date();
     const difference = targetDate - now;
 

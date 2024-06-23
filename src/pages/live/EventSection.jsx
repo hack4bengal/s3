@@ -6,14 +6,14 @@ import "./EventSection.scss";
 const EventCard = ({ event }) => {
     return (
         <div className="card">
-            <img src={event.thumbnail} alt={event.name} className="card-img-top" />
+            {/* <img src={event.thumbnail} alt={event.name} className="card-img-top" /> */}
             <div className="card-body">
                 <div className='card-details'>
                 <h2 className="card-title">{event.name}</h2>
                 <p className="card-description">{event.description}</p>
                 </div>
                 <p className="card-text">
-                    <small className="text-muted">{new Date(event.time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</small>
+                    <small className="text-muted">{new Date(event.startTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} - {new Date(event.endTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</small>
                     <small className="text-muted">{event.place}</small>
                 </p>
             </div>
@@ -23,20 +23,20 @@ const EventCard = ({ event }) => {
 
 const EventSection = () => {
     const currentTime = new Date();
-    const sixHoursLater = new Date(currentTime.getTime() + 6 * 60 * 60 * 1000);
 
     // Sort events by time
-    const sortedEvents = [...Events].sort((a, b) => new Date(a.time) - new Date(b.time));
+    const sortedEvents = [...Events].sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
 
     // Determine the status of each event
     const eventsWithStatus = sortedEvents.map(event => {
-        const eventTime = new Date(event.time);
-        const twoHoursLater = new Date(eventTime.getTime() + 2 * 60 * 60 * 1000);
+
+        const startTime = new Date(event.startTime);
+        const endTime = new Date(event.endTime);
         let status = '';
 
-        if (currentTime >= eventTime && currentTime <= twoHoursLater) {
+        if (currentTime >= startTime && currentTime <= endTime) {
             status = 'Live';
-        } else if (currentTime < eventTime) {
+        } else if (currentTime < startTime) {
             status = 'Upcoming';
         } else {
             status = 'Past';
@@ -47,9 +47,7 @@ const EventSection = () => {
 
     // Separate live event and upcoming events
     const liveEvent = eventsWithStatus.find(event => event.status === 'Live');
-    const upcomingEvents = eventsWithStatus.filter(event =>
-        event.status === 'Upcoming' && new Date(event.time) <= sixHoursLater
-    );
+    const upcomingEvents = eventsWithStatus.filter(event => event.status === 'Upcoming');
 
     return (
         <div className="event-list">
