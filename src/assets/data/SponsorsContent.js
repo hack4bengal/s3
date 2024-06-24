@@ -70,11 +70,11 @@ const sponsors = {
       img: devcon,
       link: "https://devcon.org",
     },
-    // {
-    //   name: "Google For Developers",
-    //   img: gfd,
-    //   link: "https://developers.google.com",
-    // },
+    {
+      name: "Google For Developers",
+      img: gfd,
+      link: "https://developers.google.com",
+    },
   ],
   Bronze: [
     {
@@ -82,11 +82,11 @@ const sponsors = {
       img: router,
       link: "https://www.routerprotocol.com",
     },
-    {
-      name: "GDG Cloud Kolkata",
-      img: gdg,
-      link: "https://ccd2024.gdgcloudkol.org",
-    },
+    // {
+    //   name: "GDG Cloud Kolkata",
+    //   img: gdg,
+    //   link: "https://ccd2024.gdgcloudkol.org",
+    // },
     {
       name: "Loft Labs",
       img: loft,
