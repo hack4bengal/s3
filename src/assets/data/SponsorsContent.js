@@ -7,7 +7,6 @@ import avax from "../images/SponsorImages/avax.png";
 import xyz from "../images/SponsorImages/.xyx-logo.png";
 import router from "../images/SponsorImages/router.png";
 import jis from "../images/SponsorImages/jis.png";
-import gdg from "../images/SponsorImages/gdg.png";
 import superteam from "../images/SponsorImages/superteam.png";
 import callchimp from "../images/SponsorImages/callchimp.png";
 import tezos from "../images/SponsorImages/tezos.png";
@@ -30,6 +29,7 @@ import merchanzi from "../images/SponsorImages/merchanzi.png";
 import composio from "../images/SponsorImages/composio.png";
 import loft from "../images/SponsorImages/loft.png";
 import gfd from "../images/SponsorImages/gfd.png";
+import tt from "../images/SponsorImages/tt.jpg";
 
 const sponsors = {
   Platinum: [
@@ -82,11 +82,7 @@ const sponsors = {
       img: router,
       link: "https://www.routerprotocol.com",
     },
-    // {
-    //   name: "GDG Cloud Kolkata",
-    //   img: gdg,
-    //   link: "https://ccd2024.gdgcloudkol.org",
-    // },
+
     {
       name: "Loft Labs",
       img: loft,
@@ -138,6 +134,13 @@ const sponsors = {
       name: "JIS",
       img: jis,
       link: "https://www.jis.com",
+    },
+  ],
+  digitalMedia: [
+    {
+      name: "Edugraph",
+      img: tt,
+      link: "https://www.telegraphindia.com/edugraph",
     },
   ],
   Community: [
