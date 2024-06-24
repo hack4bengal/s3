@@ -29,9 +29,18 @@ import merchanzi from "../images/SponsorImages/merchanzi.png";
 import composio from "../images/SponsorImages/composio.png";
 import loft from "../images/SponsorImages/loft.png";
 import gfd from "../images/SponsorImages/gfd.png";
-import tt from "../images/SponsorImages/tt.jpg";
+import tt from "../images/SponsorImages/tt.png";
+import diamnante from "../images/SponsorImages/diamante.webp";
 
 const sponsors = {
+  title: [
+    {
+      name: "Diamante Blockchain",
+      img: diamnante,
+      cn: "diamante",
+      link: "https://diamanteblockchain.com/",
+    },
+  ],
   Platinum: [
     {
       name: "Filecoin",
@@ -45,19 +54,16 @@ const sponsors = {
       img: github,
       link: "https://github.com",
     },
-
     {
       name: "Avalanche",
       img: avalanche,
       link: "https://www.avax.network",
     },
-
     {
       name: "AvaxDAO",
       img: avax,
       link: "https://www.avax.network/ambassador",
     },
-
     {
       name: "HackQuest",
       img: hackquest,
@@ -140,6 +146,7 @@ const sponsors = {
     {
       name: "Edugraph",
       img: tt,
+      cn: "edugraph",
       link: "https://www.telegraphindia.com/edugraph",
     },
   ],

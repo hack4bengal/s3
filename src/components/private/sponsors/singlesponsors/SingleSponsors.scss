@@ -163,3 +163,18 @@
   box-shadow: inset 0px 0px 13px -2px #f77b45 !important;
   transition: all 0.3s ease;
 }
+
+.diamante {
+  border: 1px solid #9001a8 !important;
+}
+
+.diamante:hover {
+  -webkit-box-shadow: inset 0px 0px 13px -2px #9001a8 !important;
+  -moz-box-shadow: inset 0px 0px 13px -2px #9001a8 !important;
+  box-shadow: inset 0px 0px 13px -2px #9001a8 !important;
+  transition: all 0.3s ease;
+}
+
+.edugraph {
+  background-color: #fff;
+}
