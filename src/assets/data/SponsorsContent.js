@@ -30,7 +30,7 @@ import composio from "../images/SponsorImages/composio.png";
 import loft from "../images/SponsorImages/loft.png";
 import gfd from "../images/SponsorImages/gfd.png";
 import tt from "../images/SponsorImages/tt.png";
-import diamnante from "../images/SponsorImages/diamante.webp";
+import diamnante from "../images/SponsorImages/diamante.png";
 
 const sponsors = {
   title: [
