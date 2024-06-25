@@ -1,6 +1,6 @@
-import React, { Suspense } from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { Footer, Navbar } from "./components/shared";
+import React, {Suspense} from "react";
+import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import {Footer, Navbar} from "./components/shared";
 import Loading from "./components/shared/loading/Loading";
 import Notfound from "./pages/404/Notfound";
 import Forward from "./pages/Forward";
@@ -103,7 +103,8 @@ const App = () => {
 
         {window.location.pathname !== "/surprise" &&
           window.location.pathname !== "/register" &&
-          window.location.pathname !== "/discord" && <Footer />}
+          window.location.pathname !== "/discord" &&
+          window.location.pathname !== "/*" && <Footer />}
       </Suspense>
     </Router>
   );
