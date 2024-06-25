@@ -38,14 +38,6 @@ export const mentorContent = [
     image: arghya,
   },
   {
-    name: "Shashank",
-    designation: "SDE-2",
-    company: "Dell",
-    linkedin: "https://www.twitter.com/SRustagi1996",
-    twitter: "https://www.linkedin.com/in/srustagi1996",
-    image: shashank,
-  },
-  {
     name: "Sarnavo",
     designation: "Devrel & Jnr Auditor",
     company: "QuillAudits",

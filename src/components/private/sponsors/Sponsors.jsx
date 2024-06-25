@@ -13,6 +13,16 @@ const Sponsors = () => {
         <Header {...HeaderData.sponsors} />
 
         <div className="sponsors__container gold_container">
+          <h1>Title Sponsor</h1>
+          <div className="sponsors__flexbox">
+            {sponsors["title"].map((item, index) => {
+              return (
+                <SingleSponsors key={index} sponsor={item} type="platinum" />
+              );
+            })}
+          </div>
+        </div>
+        <div className="sponsors__container gold_container">
           <h1>Platinum Sponsor</h1>
           <div className="sponsors__flexbox">
             {sponsors["Platinum"].map((item, index) => {
@@ -30,31 +40,24 @@ const Sponsors = () => {
             })}
           </div>
         </div>
-        <div
-          className="sponsors__container_flex"
-          style={{
-            alignItems: "end",
-          }}
-        >
-          <div className="sponsors__container domain_container silv">
-            <h1>Silver Sponsor</h1>
-            <div className="sponsors__flexbox">
-              {sponsors["Silver"].map((item, index) => {
-                return (
-                  <SingleSponsors key={index} sponsor={item} type="silver" />
-                );
-              })}
-            </div>
+        <div className="sponsors__container gold_container">
+          <h1>Silver Sponsors</h1>
+          <div className="sponsors__flexbox">
+            {sponsors["Silver"].map((item, index) => {
+              return (
+                <SingleSponsors key={index} sponsor={item} type="silver" />
+              );
+            })}
           </div>
-          <div className="sponsors__container silv">
-            <h1>Venue & Education Partner</h1>
-            <div className="sponsors__flexbox">
-              {sponsors["Education"].map((item, index) => {
-                return (
-                  <SingleSponsors key={index} sponsor={item} type="education" />
-                );
-              })}
-            </div>
+        </div>
+        <div className="sponsors__container gold_container">
+          <h1>Venue & Education Partner</h1>
+          <div className="sponsors__flexbox">
+            {sponsors["Education"].map((item, index) => {
+              return (
+                <SingleSponsors key={index} sponsor={item} type="silver" />
+              );
+            })}
           </div>
         </div>
 
@@ -102,6 +105,17 @@ const Sponsors = () => {
                 );
               })}
             </div>
+          </div>
+        </div>
+
+        <div className="sponsors__container gold_container">
+          <h1>Digital Media Partner</h1>
+          <div className="sponsors__flexbox">
+            {sponsors["digitalMedia"].map((item, index) => {
+              return (
+                <SingleSponsors key={index} sponsor={item} type="silver" />
+              );
+            })}
           </div>
         </div>
       </div>
