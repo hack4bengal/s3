@@ -1,5 +1,3 @@
-import ml101 from "../../assets/images/EventsImages/ml101.webp";
-import uiux101 from "../../assets/images/EventsImages/uiux101.webp";
 
 export const Events = [
     {
