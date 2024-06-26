@@ -15,12 +15,12 @@ import sawan from "../images/MentorImages/sawan.jpg";
 import snehangshu_bhattacharya from "../images/MentorImages/snehangshu_bhattacharya.png";
 import sunit from "../images/MentorImages/sunit.jpg";
 import varun from "../images/MentorImages/varun.jpg";
-import shashank from "../images/MentorImages/shashank.png";
 import arghya from "../images/MentorImages/arghya.png";
 import soumyadip from "../images/MentorImages/soumyadip.jpg";
 import sarnavo from "../images/MentorImages/sarnavo.jpg";
 import surya from "../images/MentorImages/surya.jpg";
 import joshua from "../images/MentorImages/joshua.jpg";
+import ashutosh from "../images/MentorImages/ashutosh.jpeg";
 
 export const mentorContent = [
   {
@@ -198,5 +198,13 @@ export const mentorContent = [
     linkedin: "https://www.linkedin.com/in/f-calvin-joshua-3039b7213/",
     twitter: "https://x.com/im_calvin1",
     image: joshua,
+  },
+  {
+    name: "Ashutosh",
+    designation: "Devloper Relations Engineer",
+    company: "AvaLabs",
+    linkedin: "https://www.linkedin.com/in/ashngmi/",
+    twitter: "https://x.com/ashngmi",
+    image: ashutosh,
   },
 ];
