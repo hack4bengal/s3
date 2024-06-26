@@ -1,5 +1,5 @@
 import React from "react";
-import "./NotFound.scss";
+import "./Notfound.scss";
 import "../../components/shared/button/Button.scss";
 import {Link} from "react-router-dom";
 
