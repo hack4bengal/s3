@@ -3,7 +3,7 @@ import "./NotFound.scss";
 import "../../components/shared/button/Button.scss";
 import {Link} from "react-router-dom";
 
-const NotFound = () => {
+function NotFound() {
   return (
     <div className="pageNotFound__container">
       <div className="row">OMG</div>
@@ -15,7 +15,7 @@ const NotFound = () => {
       </div>
     </div>
   );
-};
+}
 
 export default NotFound;
 
