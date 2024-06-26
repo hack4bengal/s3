@@ -19,6 +19,8 @@ import shashank from "../images/MentorImages/shashank.png";
 import arghya from "../images/MentorImages/arghya.png";
 import soumyadip from "../images/MentorImages/soumyadip.jpg";
 import sarnavo from "../images/MentorImages/sarnavo.jpg";
+import surya from "../images/MentorImages/surya.jpg";
+import joshua from "../images/MentorImages/joshua.jpg";
 
 export const mentorContent = [
   {
@@ -36,14 +38,6 @@ export const mentorContent = [
     linkedin: "https://www.linkedin.com/in/arghya-chowdhury-200111244/",
     twitter: "https://x.com/ArghyaChow14",
     image: arghya,
-  },
-  {
-    name: "Shashank",
-    designation: "SDE-2",
-    company: "Dell",
-    linkedin: "https://www.twitter.com/SRustagi1996",
-    twitter: "https://www.linkedin.com/in/srustagi1996",
-    image: shashank,
   },
   {
     name: "Sarnavo",
@@ -188,5 +182,21 @@ export const mentorContent = [
     linkedin: "https://linkedin.com/in/varunxdoshi",
     twitter: "https://x.com/Varunx10",
     image: varun,
+  },
+  {
+    name: "Suryakanta",
+    designation: "Group Lead",
+    company: "Diamante Blockchain",
+    linkedin: "https://www.linkedin.com/in/suryakanta-mahanty-74483aa2/",
+    twitter: "https://x.com/SuryaMahanty",
+    image: surya,
+  },
+  {
+    name: "Calvin",
+    designation: "Blockchain Lead",
+    company: "Diamante Blockchain",
+    linkedin: "https://www.linkedin.com/in/f-calvin-joshua-3039b7213/",
+    twitter: "https://x.com/im_calvin1",
+    image: joshua,
   },
 ];

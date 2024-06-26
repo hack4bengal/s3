@@ -6,7 +6,6 @@ import ankita from "../images/TeamCardImages/ankita.webp";
 import arindam from "../images/TeamCardImages/arindam.webp";
 import arkapravo from "../images/TeamCardImages/arkapravo.webp";
 import kiran from "../images/TeamCardImages/kiran.webp";
-import krishnendu from "../images/TeamCardImages/krishnendu.webp";
 import manish from "../images/TeamCardImages/manish.webp";
 import prachi from "../images/TeamCardImages/prachi.webp";
 import rabishankar from "../images/TeamCardImages/rabishankar.webp";
@@ -251,13 +250,6 @@ const teamMember = {
       title: "Just a Tech",
       linkedIn: "https://www.linkedin.com/in/arkapravo-ghosh",
       twitter: "https://x.com/ArkapravoGhosh1",
-    },
-    {
-      img: krishnendu,
-      name: "Krishnendu",
-      title: "Media lead @GDSC SNU",
-      linkedIn:
-        "https://www.linkedin.com/in/krishnendu-samanta-25302a238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   ],
 };
