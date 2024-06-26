@@ -9,6 +9,7 @@ import Cloud from "./pages/cloud101/Cloud101";
 import CodeofConduct from "./pages/coc/CodeofConduct";
 import Evangelist from "./pages/evangelist/Evangelist";
 import Events from "./pages/events/Events";
+import Live from './pages/live/Live'
 import Home from "./pages/home/Home";
 import Surprise from "./pages/surprise/Surprise";
 import Team from "./pages/team/Team";
@@ -25,6 +26,7 @@ const App = () => {
             window.location.pathname === "/coc" ||
             window.location.pathname === "/brand" ||
             window.location.pathname === "/events" ||
+            window.location.pathname === "/live" ||
             window.location.pathname === "/team") && <Navbar />}
           <Routes>
             <Route exact path="/" element={<Home />} />
@@ -95,6 +97,7 @@ const App = () => {
             <Route exact path="/events" element={<Events />} />
             <Route exact path="/evangelist" element={<Evangelist />} />
             <Route exact path="/team" element={<Team />} />
+            <Route exact path="/live" element={<Live />} />
             <Route exact path="/load" element={<Loading />} />
             {/* <Route exact path="/surprise" element={<Register />} /> */}
             <Route exact path="/*" element={<Notfound />} />

@@ -1,0 +1,136 @@
+.card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    border: solid white 1px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 20px 0;
+
+    @media screen and (max-width: 720px) {
+        flex-direction: column;
+        width: 250px;
+        padding: 0 1rem;
+        gap: 0;
+    }
+
+    .card-img-top {
+        $size: 250px;
+        height: $size;
+        width: $size;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 3rem;
+
+        @media screen and (max-width: 720px) {
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .card-details {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .card-description {
+                opacity: 40%;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .card-text {
+        display: flex;
+        gap: 1rem;
+        font-weight: 600;
+        font-size: large;
+    }
+}
+
+.event-list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10rem;
+    padding: 0 7rem;
+
+    @media screen and (max-width: 1120px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 0;
+    }
+
+
+    .live-event {
+        flex: 1;
+        flex-direction: column;
+        max-width: 600px;
+
+        .badge-live {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 5px;
+            color: #fff;
+            padding: 1rem 0;
+
+            span {
+                $size: 20px;
+                height: $size;
+                width: $size;
+                border-radius: 50%;
+                background-color: #28a745;
+                animation: blink 2s infinite;
+            }
+        }
+    }
+
+    .upcoming-events {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+
+        .badge-upcoming {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 5px;
+            color: #fff;
+            padding: 1rem 0;
+
+            span {
+                $size: 20px;
+                height: $size;
+                width: $size;
+                border-radius: 50%;
+                background-color: #ff1717;
+                animation: blink 2s infinite;
+            }
+        }
+    }
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
