@@ -10,7 +10,7 @@ const EventCard = ({ event }) => {
             <div className="card-body">
                 <div className='card-details'>
                 <h2 className="card-title">{event.name}</h2>
-                <p className="card-description">{event.description}</p>
+                {/* <p className="card-description">{event.description}</p> */}
                 </div>
                 <p className="card-text">
                     <small className="text-muted">{new Date(event.startTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} - {new Date(event.endTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</small>
@@ -63,9 +63,10 @@ const EventSection = () => {
                     <span></span>
                     <h2>Upcoming Event</h2>
                 </div>
-                {upcomingEvents.map((event, index) => (
+                {upcomingEvents && <EventCard event={upcomingEvents[0]} />}
+                {/* {upcomingEvents.map((event, index) => (
                     <EventCard key={index} event={event} />
-                ))}
+                ))} */}
             </div>
         </div>
     );
