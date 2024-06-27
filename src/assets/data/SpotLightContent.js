@@ -2,9 +2,9 @@ import link_icon from "../images/EventsImages/Icons/link.svg";
 import ml101 from "../images/EventsImages/ml101.webp";
 import uiux101 from "../images/EventsImages/uiux101.webp";
 
-const speakers = [
+const spotlightContent = [
   {
-    topic: "UI/UX 101",
+    topic: "Tamal becomes Famous",
     date: "Apr 27, 2024",
     button: {
       text: "Learn More",
@@ -14,7 +14,7 @@ const speakers = [
     image: uiux101,
   },
   {
-    topic: "ML 101",
+    topic: "Tamal - The discord",
     date: "Mar 17, 2024",
     button: {
       text: "Learn More",
@@ -25,4 +25,4 @@ const speakers = [
   },
 ];
 
-export default speakers;
+export default spotlightContent;

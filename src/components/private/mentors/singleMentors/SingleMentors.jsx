@@ -19,9 +19,13 @@ const SingleMentors = ({ mentor }) => {
           <hr />
           <div className="mentor__social_wrapper">
             {mentor.twitter && (
-              <a href={mentor?.twitter} target="_blank" rel="noopener noreferrer">
-
-                <svg aria-label="Twitter"
+              <a
+                href={mentor?.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  aria-label="Twitter"
                   stroke="currentColor"
                   fill="currentColor"
                   stroke-width="0"
@@ -41,7 +45,8 @@ const SingleMentors = ({ mentor }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg aria-label="LinkedIn"
+                <svg
+                  aria-label="LinkedIn"
                   stroke="currentColor"
                   fill="currentColor"
                   stroke-width="0"

@@ -13,6 +13,15 @@ const HeaderData = {
     frontWord: "Venue & Education Partner",
     frontWordMobile: "Location",
   },
+  spotlight: {
+    backWord: "Featured",
+    backWordSize_mobile: "80px",
+    backWordSize: "150px",
+    backWordSpacing: "0.3rem",
+    backWordSpacing_mobile: "0.2rem",
+    frontWord: "SpotLight",
+    frontWordMobile: "Featured",
+  },
   timeline: {
     backWord: "Roadmap",
     backWordMobile: "Plan",

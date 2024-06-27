@@ -9,12 +9,11 @@ import {
   Sponsors,
   Testimonials,
 } from "../../components/private";
-import Timer from "../../components/private/timer/Timer";
-import Timeline from "../../components/private/timeline/Timeline";
-import "./Home.scss";
-import Venue from "../../components/private/venue/Venue";
-import Theme from "../../components/private/themes/Theme";
 import CommunityPartners from "../../components/private/community/CommunityPartners";
+import Theme from "../../components/private/themes/Theme";
+import Timer from "../../components/private/timer/Timer";
+import Venue from "../../components/private/venue/Venue";
+import "./Home.scss";
 
 const Home = () => {
   return (
@@ -24,6 +23,7 @@ const Home = () => {
       <Timer />
       {/* <Timeline /> */}
       <About />
+      {/* <Spotlight /> */}
       <Venue />
       <Theme />
       <Prizes />

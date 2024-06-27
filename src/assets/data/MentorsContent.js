@@ -1,26 +1,27 @@
 import abhay from "../images/MentorImages/abhay.jpg";
 import anubhav_singh from "../images/MentorImages/anubhav_singh.png";
+import arghya from "../images/MentorImages/arghya.png";
+import ashutosh from "../images/MentorImages/ashutosh.jpeg";
 import batrick from "../images/MentorImages/batrick.jpg";
 import boidushya from "../images/MentorImages/boidushya.jpg";
 import debajit from "../images/MentorImages/debajit.jpg";
 import hrittik from "../images/MentorImages/hrittik.jpg";
+import imran from "../images/MentorImages/imran.jpg";
 import jaydip from "../images/MentorImages/jaydip.jpg";
+import joshua from "../images/MentorImages/joshua.jpg";
 import kaustav from "../images/MentorImages/kaustav.jpg";
 import kazi_haque from "../images/MentorImages/kazi_haque.png";
 import md_nasirul_haque from "../images/MentorImages/md_nasirul_haque.png";
 import niloy from "../images/MentorImages/niloy.jpg";
 import rajdip from "../images/MentorImages/rajdip.jpg";
 import richik from "../images/MentorImages/richik.jpg";
+import sarnavo from "../images/MentorImages/sarnavo.jpg";
 import sawan from "../images/MentorImages/sawan.jpg";
 import snehangshu_bhattacharya from "../images/MentorImages/snehangshu_bhattacharya.png";
-import sunit from "../images/MentorImages/sunit.jpg";
-import varun from "../images/MentorImages/varun.jpg";
-import arghya from "../images/MentorImages/arghya.png";
 import soumyadip from "../images/MentorImages/soumyadip.jpg";
-import sarnavo from "../images/MentorImages/sarnavo.jpg";
+import sunit from "../images/MentorImages/sunit.jpg";
 import surya from "../images/MentorImages/surya.jpg";
-import joshua from "../images/MentorImages/joshua.jpg";
-import ashutosh from "../images/MentorImages/ashutosh.jpeg";
+import varun from "../images/MentorImages/varun.jpg";
 
 export const mentorContent = [
   {
@@ -30,6 +31,14 @@ export const mentorContent = [
     linkedin: "https://www.linkedin.com/in/abhaynath001/",
     twitter: "https://x.com/AbhayNath001",
     image: abhay,
+  },
+  {
+    name: "Imran Roshan",
+    designation: "Senior Executive - RA",
+    company: "Deloitte",
+    linkedin: "https://www.linkedin.com/in/imranfosec",
+    twitter: "https://x.com/imranfosec",
+    image: imran,
   },
   {
     name: "Arghya",
