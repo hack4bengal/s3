@@ -28,7 +28,7 @@ const Landing = () => {
                 Join Discord
               </Button>
               <Button type="solid" isDisabled={true}>
-                Register Now
+                Closed Now
               </Button>
             </div>
           </div>

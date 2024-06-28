@@ -6,7 +6,7 @@ function Marquee() {
 
   const paragraphs = [];
   for (let i = 0; i < numParagraphs; i++) {
-    paragraphs.push(<p key={i}> Hack4Bengal 3.0 Registrations Are Closed!</p>);
+    paragraphs.push(<p key={i}> Hack4Bengal 3.0 is Live!</p>);
   }
 
   return (
