@@ -9,13 +9,15 @@ import Cloud from "./pages/cloud101/Cloud101";
 import CodeofConduct from "./pages/coc/CodeofConduct";
 import Evangelist from "./pages/evangelist/Evangelist";
 import Events from "./pages/events/Events";
-import Live from './pages/live/Live'
+import Live from "./pages/live/Live";
 import Home from "./pages/home/Home";
 import Surprise from "./pages/surprise/Surprise";
 import Team from "./pages/team/Team";
 import Telegram from "./pages/telegram/Telegram";
 import "./styles/Globals.scss";
 import Register from "./pages/registration/Register";
+import Verify from "./pages/verify/Verify";
+import Certificate from "./pages/certificate/Certificate";
 
 const App = () => {
   return (
@@ -93,6 +95,8 @@ const App = () => {
             <Route exact path="/coc" element={<CodeofConduct />} />
             <Route exact path="/brand" element={<Brand />} />
             <Route exact path="/tg" element={<Telegram />} />
+            <Route exact path="/verify" element={<Verify />} />
+            <Route exact path="/certificate" element={<Certificate />} />
             <Route exact path="/cloud-101" element={<Cloud />} />
             <Route exact path="/events" element={<Events />} />
             <Route exact path="/evangelist" element={<Evangelist />} />
