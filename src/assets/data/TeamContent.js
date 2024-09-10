@@ -43,7 +43,7 @@ const teamMember = {
       name: "Sagnik",
       title: "SWE @Odessa",
       linkedIn: "https://www.linkedin.com/in/sagnikmitra/",
-      twitter: "https://twitter.com/MitraSagnik",
+      twitter: "https://twitter.com/sagnikmitr",
     },
     {
       img: shubham,
