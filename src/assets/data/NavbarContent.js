@@ -13,10 +13,6 @@ const navbarContent = {
     // },
 
     {
-      text: "Timeline",
-      link: "timeline",
-    },
-    {
       text: "Venue",
       link: "venue",
     },
@@ -48,10 +44,7 @@ const navbarContent = {
         text: "Testimonials",
         link: "testimonials",
       },
-      {
-        text: "Events",
-        link: "/events",
-      },
+
       {
         text: "FAQ",
         link: "faq",

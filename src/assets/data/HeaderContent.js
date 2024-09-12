@@ -6,6 +6,13 @@ const HeaderData = {
     frontWord: "Hackathon Prizes",
     frontWordMobile: "Prizes",
   },
+  winner: {
+    backWord: "Winners",
+    backWordSize_mobile: "85px",
+    backWordSpacing_mobile: "0.2rem",
+    frontWord: "Champions",
+    frontWordMobile: "Champions",
+  },
   venue: {
     backWord: "Venue",
     backWordSize_mobile: "85px",

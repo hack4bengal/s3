@@ -11,8 +11,8 @@ import {
 } from "../../components/private";
 import CommunityPartners from "../../components/private/community/CommunityPartners";
 import Theme from "../../components/private/themes/Theme";
-import Timer from "../../components/private/timer/Timer";
 import Venue from "../../components/private/venue/Venue";
+import Winner from "../../components/private/winners/Winner";
 import "./Home.scss";
 
 const Home = () => {
@@ -20,10 +20,8 @@ const Home = () => {
     <div className="main_parent">
       <Landing />
       {window.innerWidth < 600 && <Marquee />}
-      <Timer />
-      {/* <Timeline /> */}
+      <Winner />
       <About />
-      {/* <Spotlight /> */}
       <Venue />
       <Theme />
       <Prizes />

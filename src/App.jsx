@@ -5,19 +5,14 @@ import Loading from "./components/shared/loading/Loading";
 import Notfound from "./pages/404/Notfound";
 import Forward from "./pages/Forward";
 import Brand from "./pages/brand/Brand";
-import Cloud from "./pages/cloud101/Cloud101";
+import Certificate from "./pages/certificate/Certificate";
 import CodeofConduct from "./pages/coc/CodeofConduct";
-import Evangelist from "./pages/evangelist/Evangelist";
 import Events from "./pages/events/Events";
-import Live from "./pages/live/Live";
 import Home from "./pages/home/Home";
-import Surprise from "./pages/surprise/Surprise";
 import Team from "./pages/team/Team";
 import Telegram from "./pages/telegram/Telegram";
-import "./styles/Globals.scss";
-import Register from "./pages/registration/Register";
 import Verify from "./pages/verify/Verify";
-import Certificate from "./pages/certificate/Certificate";
+import "./styles/Globals.scss";
 
 const App = () => {
   return (
@@ -43,6 +38,7 @@ const App = () => {
                 />
               }
             />
+
             <Route
               exact
               path="/guide"
@@ -56,74 +52,19 @@ const App = () => {
                 />
               }
             />
-            <Route
-              exact
-              path="/community"
-              element={
-                <Forward
-                  pathname={"/community"}
-                  title={"Community Partners"}
-                  url={"https://lu.ma/H4B-community-partners"}
-                />
-              }
-            />
-            <Route
-              exact
-              path="/apply"
-              element={
-                <Forward
-                  pathname={"/apply"}
-                  title={"S4 Applications"}
-                  url={
-                    "https://docs.google.com/forms/d/e/1FAIpQLScxL27u1UUIRi6L6I8GOpfSaLIJnW34_gfoL2_Lfy9xItgCYw/viewform"
-                  }
-                />
-              }
-            />
-            <Route
-              exact
-              path="/howto"
-              element={
-                <Forward
-                  pathname={"/howto"}
-                  title={"Registration Walkthrough"}
-                  url={
-                    "https://www.instagram.com/reel/C7y9O1Ly4nk/?igsh=amYyamVtMDVlcmRi"
-                  }
-                />
-              }
-            />
-            <Route
-              exact
-              path="/call-for-mentors"
-              element={
-                <Forward
-                  pathname={"/call-for-mentors"}
-                  title={"Call for Mentors"}
-                  url={"https://lu.ma/9fkggmb3"}
-                />
-              }
-            />
 
             <Route exact path="/coc" element={<CodeofConduct />} />
             <Route exact path="/brand" element={<Brand />} />
             <Route exact path="/tg" element={<Telegram />} />
             <Route exact path="/verify" element={<Verify />} />
             <Route exact path="/certificate" element={<Certificate />} />
-            <Route exact path="/cloud-101" element={<Cloud />} />
             <Route exact path="/events" element={<Events />} />
-            <Route exact path="/evangelist" element={<Evangelist />} />
             <Route exact path="/team" element={<Team />} />
-            <Route exact path="/live" element={<Live />} />
-            <Route exact path="/load" element={<Loading />} />
-            {/* <Route exact path="/surprise" element={<Register />} /> */}
             <Route exact path="/*" element={<Notfound />} />
           </Routes>
         </main>
 
-        {window.location.pathname !== "/surprise" &&
-          window.location.pathname !== "/register" &&
-          window.location.pathname !== "/discord" && <Footer />}
+        {window.location.pathname !== "/discord" && <Footer />}
       </Suspense>
     </Router>
   );

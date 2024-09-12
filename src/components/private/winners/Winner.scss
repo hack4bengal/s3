@@ -1,0 +1,137 @@
+.winners_parent {
+  padding: 4rem 7rem;
+  padding-bottom: 0;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 576px) {
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .winners_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6rem;
+
+    &.mobile {
+      display: none;
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin-top: 4rem;
+      flex-direction: column;
+      gap: 3rem;
+      width: 100%;
+      align-items: center;
+
+      &.mobile {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .first_runner_up {
+        &.desktop {
+          display: none;
+        }
+      }
+
+      .second_runner_up {
+        &.desktop {
+          display: none;
+        }
+      }
+    }
+
+    .winner_box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+      text-align: center;
+      font-family: var(--heading-font);
+
+      h1 {
+        font-weight: 800;
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        svg {
+          cursor: pointer;
+          width: 25px;
+          height: 25px;
+          color: #ff1717;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      img {
+        @media screen and (max-width: 576px) {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .winner {
+      h1 {
+        font-size: 3rem;
+        background: #ffffff;
+        background: linear-gradient(to right, #ffffff 0%, #ffc700 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media screen and (max-width: 576px) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .first_runner_up {
+      h1 {
+        font-size: 2.5rem;
+
+        background: #ffffff;
+        background: linear-gradient(to right, #ffffff 0%, #554c4c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media screen and (max-width: 576px) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .second_runner_up {
+      h1 {
+        font-size: 2.5rem;
+
+        background: #ffffff;
+        background: linear-gradient(to right, #ffffff 0%, #ec8423 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media screen and (max-width: 576px) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
