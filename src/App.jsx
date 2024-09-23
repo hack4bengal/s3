@@ -53,6 +53,20 @@ const App = () => {
               }
             />
 
+            <Route
+              exact
+              path="/apply"
+              element={
+                <Forward
+                  pathname={"/apply"}
+                  title={"S4 Applications"}
+                  url={
+                    "https://docs.google.com/forms/d/e/1FAIpQLScxL27u1UUIRi6L6I8GOpfSaLIJnW34_gfoL2_Lfy9xItgCYw/viewform"
+                  }
+                />
+              }
+            />
+
             <Route exact path="/coc" element={<CodeofConduct />} />
             <Route exact path="/brand" element={<Brand />} />
             <Route exact path="/tg" element={<Telegram />} />
