@@ -30,8 +30,7 @@
     .brand_card__text {
       min-height: 5rem;
       p {
-        font-size: 17px;
-        font-weight: 600;
+        font-size: 15px;
         letter-spacing: 1px;
       }
     }
@@ -44,7 +43,14 @@
         text-decoration: none;
         border: 1px solid #ffffff;
         padding: 5px 40px;
-        border-radius: 50px;
+        border-radius: 4px;
+        font-size: 15px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          border: 1px solid var(--h4bred);
+          transition: all 0.2s ease-in-out;
+        }
       }
     }
   }

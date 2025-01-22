@@ -60,9 +60,7 @@ const App = () => {
                 <Forward
                   pathname={"/apply"}
                   title={"S4 Applications"}
-                  url={
-                    "https://docs.google.com/forms/d/e/1FAIpQLScxL27u1UUIRi6L6I8GOpfSaLIJnW34_gfoL2_Lfy9xItgCYw/viewform"
-                  }
+                  url={"https://forms.gle/vqZg6agMfDDf4kug8"}
                 />
               }
             />
