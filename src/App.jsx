@@ -34,7 +34,7 @@ const App = () => {
                 <Forward
                   pathname={"/discord"}
                   title={"Discord"}
-                  url={"https://discord.gg/hack4bengal"}
+                  url={"https://discord.gg/GqMSgsAn9m"}
                 />
               }
             />

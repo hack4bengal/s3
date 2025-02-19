@@ -24,11 +24,11 @@ const Landing = () => {
             </p>
 
             <div className="home__buttons">
-              <Button type="outline" to={"https://discord.gg/hack4bengal"}>
+              <Button type="outline" to={"https://discord.gg/GqMSgsAn9m"}>
                 Join Discord
               </Button>
-              <Button type="solid" isDisabled={true}>
-                Closed Now
+              <Button type="solid" to={"https://forms.gle/CxactLDHbsA6cemT7"}>
+                Pre Register
               </Button>
             </div>
           </div>
