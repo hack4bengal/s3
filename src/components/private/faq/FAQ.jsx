@@ -29,7 +29,7 @@ const Faq = () => {
     {
       question: "How much does it cost to participate?",
       answer:
-        "Nothing, participation in Hack4Bengal 3.0 is absolutely FREE!!🎉 We'll have meals, snacks, and beverages onsite at the hackathon, in addition to swags, prizes, fun mini-events and more.",
+        "Nothing, participation in Hack4Bengal 4.0 is absolutely FREE!!🎉 We'll have meals, snacks, and beverages onsite at the hackathon, in addition to swags, prizes, fun mini-events and more.",
     },
     {
       question: "What is the maximum/ minimum team size?",
@@ -55,7 +55,7 @@ const Faq = () => {
     {
       question: "Can I participate remotely?",
       answer:
-        "Hack4Bengal 3.0 is an in-person hackathon. So remote participation is not applicable.",
+        "Hack4Bengal 4.0 is an in-person hackathon. So remote participation is not applicable.",
     },
   ];
 

@@ -51,7 +51,7 @@ const HeaderData = {
     backWordSpacing: "0.3rem",
     backWordSize_mobile: "75px",
     backWordSpacing_mobile: "0.2rem",
-    frontWord: "Sponsors",
+    frontWord: "Past Sponsors",
   },
   cp: {
     backWord: "Network",
@@ -76,8 +76,8 @@ const HeaderData = {
     backWordMobile: "Experts",
     backWordSize_mobile: "78px",
     backWordSpacing_mobile: "0.2rem",
-    frontWord: "Mentors/ Judges",
-    frontWordMobile: "Mentors/ Judges",
+    frontWord: "Past Mentors",
+    frontWordMobile: "Past Mentors",
   },
   testimonials: {
     backWord: "Stories",

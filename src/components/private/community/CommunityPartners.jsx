@@ -1,14 +1,15 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import HeaderData from "../../../assets/data/HeaderContent";
 import sponsors from "../../../assets/data/SponsorsContent";
-import {Header} from "../../shared";
-import Marquee from "react-fast-marquee";
+import { Header } from "../../shared";
 import SingleSponsors from "../sponsors/singlesponsors/SingleSponsors";
+import "../sponsors/Sponsors.scss";
 
 const CommunityPartners = () => {
   return (
     <>
-      <div className="sponsors__parent" id="sponsors">
+      <div className="sponsors__parent" id="community">
         <Header {...HeaderData.cp} />
 
         <div className="sponsors__container_flex">

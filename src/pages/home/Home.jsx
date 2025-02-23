@@ -5,12 +5,10 @@ import {
   Landing,
   Marquee,
   Mentors,
-  Prizes,
   Sponsors,
   Testimonials,
 } from "../../components/private";
 import CommunityPartners from "../../components/private/community/CommunityPartners";
-import Theme from "../../components/private/themes/Theme";
 import Venue from "../../components/private/venue/Venue";
 import Winner from "../../components/private/winners/Winner";
 import "./Home.scss";
@@ -22,9 +20,10 @@ const Home = () => {
       {window.innerWidth < 600 && <Marquee />}
       <Winner />
       <About />
+
       <Venue />
-      <Theme />
-      <Prizes />
+      {/* <Theme />
+      <Prizes /> */}
       <Mentors />
       <Sponsors />
       <CommunityPartners />
