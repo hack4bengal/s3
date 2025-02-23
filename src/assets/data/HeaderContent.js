@@ -10,8 +10,8 @@ const HeaderData = {
     backWord: "Winners",
     backWordSize_mobile: "85px",
     backWordSpacing_mobile: "0.2rem",
-    frontWord: "Champions",
-    frontWordMobile: "Champions",
+    frontWord: "Champions 2023",
+    frontWordMobile: "Champions 2023",
   },
   venue: {
     backWord: "Venue",
